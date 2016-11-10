@@ -1,0 +1,10 @@
+
+State Machine - |ula_3bits|sel
+Name sel.110 sel.101 sel.100 sel.011 sel.010 sel.001 sel.000 
+sel.000 0 0 0 0 0 0 0 
+sel.001 0 0 0 0 0 1 1 
+sel.010 0 0 0 0 1 0 1 
+sel.011 0 0 0 1 0 0 1 
+sel.100 0 0 1 0 0 0 1 
+sel.101 0 1 0 0 0 0 1 
+sel.110 1 0 0 0 0 0 1 

@@ -1,0 +1,19 @@
+module subtrator(			//Declaration of the input and output ports used by the module
+    input [2:0] a,		//Input operand - 3 bits wide
+    input [2:0] b,		//Input operand - 3 bits wide
+	 output reg s,			//Signal
+    output reg [3:0] out		//Output - 4 bits wide
+    );
+
+reg [3:0] resultado;
+
+always @(*)
+begin
+	resultado = a - b;
+	s = resultado[3];
+	if(s)
+		out = ~resultado + 1'b1;
+	else
+		out = resultado;
+end
+endmodule

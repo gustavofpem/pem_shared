@@ -1,0 +1,150 @@
+module processador(
+	input clk,					//Input operand - clock signal
+	input rst,					//Input operand - reset signal
+	input [5:0] SW,			//Input switches
+	input	[3:0] KEY,					//Input operand - 1 bit wide
+	output reg [2:0] LEDG,					//Input operand - 3 bit wide
+	output reg [8:0] disp0,		//Output operand - 4 bits wide 
+	output reg [8:0] disp1, 		//Output operand - 4 bits wide
+	output reg [3:0] disp2, 		//Output operand - 4 bits wide
+	output reg [3:0] disp3, 		//Output operand - 4 bits wide
+	output [7:0] HEX0,		//Output operand - 7 bits wide - 7 segments display
+	output [7:0] HEX1,		//Output operand - 7 bits wide - 7 segments display
+	output [7:0] HEX2,		//Output operand - 7 bits wide - 7 segments display
+	output [7:0] HEX3			//Output operand - 7 bits wide - 7 segments display
+);
+
+//Data RAM
+reg we_d;
+reg [7:0] data;
+reg addr_d;
+wire [7:0] out_dram;	//Transition operand - Connected to the Data RAM output
+
+//Program ROM
+reg [3:0] addr_p;
+wire [3:0] out_prom;	//Transition operand - Connected to the Program ROM output
+
+//Other
+reg [2:0] pc;
+reg [7:0] out_ula;
+
+program_rom prominstance(
+		.addr_p(addr_p),
+		.clk(clk),
+		.out_prom(out_prom)
+	  );
+	  
+data_ram draminstance(
+	   .data(data),
+		.addr_d(addr_d),
+		.we_d(we_d),
+		.clk(clk),
+		.out_dram(out_dram)
+	  );
+	  
+ula ulainstance (		//XOR module instantiation
+    .a(out_dram[7:4]),						//Relation between the "a" input from the calctop and the "a" input of the adder module.
+    .b(out_dram[3:0]),						//Relation between the "b" input from the calctop and the "b" input of the adder module.
+	 .op(opcode),
+    .out(out_ula)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+    );	
+	 
+seg7 seg7instance (			//7 segments display module instantiation
+    .clk(clk), 				//Relation between the "clk" input from the calctop and the "clk" input of the seg7 module.		
+    .rst(rst), 				//Relation between the "rst" input from the calctop and the "rst" input of the seg7 module.
+    .d0(disp0), 				//Relation the d0 7 segments display and the output, on this the 4 less significant bits of the output will be showed.
+    .d1(disp1), 				//Relation the d1 7 segments display and the output, on this the 4 most significant bits of the output will be showed.
+    .d2(disp2), 				//Relation the d2 7 segments display and the output, on this the 4 less significant bits of the output will be showed.
+    .d3(disp3), 			   //Relation the d3 7 segments display and the output, on this the 4 less significant bits of the output will be showed.
+    .hex_out0(HEX0),
+	 .hex_out1(HEX1),			 
+	 .hex_out2(HEX2),			
+	 .hex_out3(HEX3)
+    );
+	 
+assign a[2:0] = SW[2:0];
+assign b[2:0] = SW[5:3];
+
+always @(clk)
+begin
+	addr_p = pc;
+	case(out_prom)				   //Selects the output of the ALU
+		 4'b0001:				//Somador
+			begin
+				disp1 = out_ula/10;
+				disp0 = out_ula%10;
+			end
+		 4'b0010:				//Subtrator
+		 	begin
+				case(sinal)
+					1'b1: disp1 <= 4'b1111;
+					default: disp1 <= out_ula/10;
+				endcase
+				disp0 <= out_ula%10;
+			end
+		 4'b0011:				//Multiplication
+			begin
+				disp1 <= out_ula/10;
+				disp0 <= out_ula%10;/*
+				we_d = 0;
+				addr_d = 0;
+				disp1 = out_dram[3:0]; //out_dram[3:0];
+				disp0 = out_dram[7:4]; //out_dram[7:4];*/
+			end
+		 4'b0100:				//AND
+			begin
+				disp1 <= out_ula/10;
+				disp0 <= out_ula%10;
+			end
+		 4'b0101:				//OR
+			begin
+				disp1 <= out_ula/10;
+				disp0 <= out_ula%10;
+			end
+		 4'b0110:				//XOR
+			begin
+				disp1 <= out_ula/10;
+				disp0 <= out_ula%10;
+			end
+		 4'b0111:				//DIV
+			begin
+			if (b==0)
+				begin
+					disp1 = 9;
+					disp0 = 9;
+				end
+			else
+				begin
+					disp1 <= out_ula/10;
+					disp0 <= out_ula%10;
+				end
+			end
+		 default:
+			begin
+				disp1 <= 7'b0000110;
+				disp0 <= 7'b0101111;
+			end
+	endcase
+	
+	if(~KEY[2])
+	begin
+		addr_d = 0;
+		data = (b << 4) | a;
+		we_d = 1;
+	end
+	else
+		we_d = 0;
+		
+	disp3 <= out_dram[7:4];
+	disp2 <= out_dram[3:0];
+end
+
+always @(negedge KEY[3]) //Armazenar operacoes
+begin
+	pc = pc + 1;
+	if(pc >= 4)
+		pc = 0;
+	LEDG = pc;
+end
+
+endmodule
