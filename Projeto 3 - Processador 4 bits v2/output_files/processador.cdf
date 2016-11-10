@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("/run/media/gustavof/GUSTAVO/pem/Sistemas Digitais/Projetos/Projeto 3 - Processador 4 bits v2/output_files/") File("processador.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("/home/tiagot/pem_shared/Projeto 3 - Processador 4 bits v2/output_files/") File("processador.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

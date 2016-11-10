@@ -29,7 +29,7 @@ reg [7:0] hex_out;
 //    ----
 //      3
 
-always @(*)
+always @(posedge clk)
 begin
 	case(display_state)
 		2'b00:
@@ -58,6 +58,7 @@ begin
 			display_state = 0;
 		end
 	endcase
+	
 	case(d)									  	 // 7 segments display encoding conditions, depending of the "d0".
 		4'b0001: hex_out = 7'b1111001;   // 1
 		4'b0010: hex_out = 7'b0100100;   // 2
@@ -76,6 +77,7 @@ begin
 		4'b1111: hex_out = 7'b0001110;   // F
 		default: hex_out = 7'b1000000;   // 0
 	endcase
+	
 	case(display_state)
 		2'b00: hex_out3 = hex_out;
 		2'b01: hex_out0 = hex_out;

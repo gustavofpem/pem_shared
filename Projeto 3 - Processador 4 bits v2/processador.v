@@ -3,6 +3,7 @@ module processador(
 	input [7:0] SW,			//Input switches
 	input	[3:0] KEY,					//Input operand - 1 bit wide
 	output reg [2:0] LEDG,					//Input operand - 3 bit wide
+	output reg [7:0] LEDR,
 	output reg [3:0] disp0,		//Output operand - 4 bits wide 
 	output reg [3:0] disp1, 		//Output operand - 4 bits wide
 	output reg [3:0] disp2, 		//Output operand - 4 bits wide
@@ -20,7 +21,7 @@ assign rst = KEY[0];
 
 //Data RAM
 reg we_d;
-reg [7:0] data;
+reg [8:0] data;
 reg addr_d;
 wire [7:0] out_dram;	
 
@@ -32,7 +33,7 @@ wire [3:0] out_prom;
 wire [3:0] a;
 wire [3:0] b;
 reg [2:0] pc;
-wire [8:0] out_ula;
+wire [7:0] out_ula;
 reg [3:0] opcode;
 wire sinal;
 
@@ -77,22 +78,23 @@ assign b[3:0] = SW[3:0];
 
 always @(posedge clk)
 begin
-	addr_p <= pc;
-	opcode <= out_prom;
 	addr_d <= 0;
+	we_d <= 0;
 	
 	if(~KEY[2])
 	begin
 		we_d <= 1;
 		addr_d <= 0;
 		data <= (b << 4) | a;
+		LEDR <= out_dram;
 	end
 	else
 		we_d <= 0;
-	disp3 <= a;
-	disp2 <= b;
-	disp1 <= 1;
-	disp0 <= 2;
+		
+	disp3 <= out_dram[3:0];
+	disp2 <= out_dram[7:4];
+	disp1 <= out_ula[7:4];
+	disp0 <= out_ula[3:0];
 end
 
 always @(negedge KEY[3]) //Armazenar operacoes
@@ -100,7 +102,11 @@ begin
 	pc <= pc + 1;
 	if(pc > 4)
 		pc <= 0;
+	
+	addr_p <= pc;
+	opcode <= 2;//out_prom;
 	LEDG <= pc;
+	
 end
 
 endmodule
