@@ -12,8 +12,8 @@ reg [4:0] resultado;
 always @(posedge clk)
 begin
 	resultado <= a - b;
-	if(op == 2)
-		s <= resultado[4];
+	if(op == 4'b0010)
+		s <= 1; //resultado[4];
 	else
 		s <= 0;
 	if(s)

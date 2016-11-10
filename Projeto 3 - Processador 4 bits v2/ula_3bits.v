@@ -4,7 +4,7 @@ module ula_3bits(
 	input [3:0] a,
 	input [3:0] b,
 	input [3:0] op,
-	output sinal,
+	input sinal,
 	output reg [8:0] out_ula
 );
 
@@ -65,9 +65,9 @@ always @(posedge clk)
 begin
 	case(op)				   	//Selects the output of the ALU
 		4'b0001:				//Somador
-			out_ula <= out_somador;
+			out_ula <= 5;//out_somador;
 		4'b0010:				//Subtrator
-			out_ula <= out_subtrator;
+			out_ula <= 6;//out_subtrator;
 		4'b0011:				//Multiplicacao
 			out_ula <= out_mult;
 		4'b0100:				//AND

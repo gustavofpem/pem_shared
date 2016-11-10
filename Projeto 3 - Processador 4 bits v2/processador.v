@@ -35,7 +35,7 @@ wire [3:0] b;
 reg [2:0] pc;
 wire [7:0] out_ula;
 reg [3:0] opcode;
-wire sinal;
+reg sinal;
 
 program_rom prominstance(
 		.addr_p(addr_p),
@@ -93,8 +93,8 @@ begin
 		
 	disp3 <= out_dram[3:0];
 	disp2 <= out_dram[7:4];
-	disp1 <= out_ula[7:4];
-	disp0 <= out_ula[3:0];
+	disp1 <= 5; //out_ula/10;
+	disp0 <= out_ula%10;
 end
 
 always @(negedge KEY[3]) //Armazenar operacoes
@@ -104,7 +104,7 @@ begin
 		pc <= 0;
 	
 	addr_p <= pc;
-	opcode <= 2;//out_prom;
+	opcode <= pc;//out_prom;
 	LEDG <= pc;
 	
 end
