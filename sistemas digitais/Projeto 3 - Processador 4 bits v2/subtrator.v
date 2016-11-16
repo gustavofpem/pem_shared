@@ -13,7 +13,7 @@ always @(posedge clk)
 begin
 	resultado <= a - b;
 	if(op == 4'b0010)
-		s <= 1; //resultado[4];
+		s <= resultado[4];
 	else
 		s <= 0;
 	if(s)

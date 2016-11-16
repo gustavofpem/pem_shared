@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador
-Wed Nov 16 17:42:59 2016
+Wed Nov 16 18:02:42 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -19,23 +19,21 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web E
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: program_rom:prominstance
- 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 16. Parameter Settings for Inferred Entity Instance: ula_3bits:ulainstance|mult:multinstance|lpm_mult:Mult0
- 17. Parameter Settings for Inferred Entity Instance: ula_3bits:ulainstance|div:divinstance|lpm_divide:Div0
- 18. lpm_mult Parameter Settings by Entity Instance
- 19. Port Connectivity Checks: "ula_3bits:ulainstance|div:divinstance"
- 20. Port Connectivity Checks: "ula_3bits:ulainstance|op_xor:op_xorinstance"
- 21. Port Connectivity Checks: "ula_3bits:ulainstance|op_or:op_orinstance"
- 22. Port Connectivity Checks: "ula_3bits:ulainstance|op_and:op_andinstance"
- 23. Port Connectivity Checks: "ula_3bits:ulainstance|mult:multinstance"
- 24. Port Connectivity Checks: "ula_3bits:ulainstance|subtrator:subtratorinstance"
- 25. Port Connectivity Checks: "ula_3bits:ulainstance|somador:somadorinstance"
- 26. Port Connectivity Checks: "ula_3bits:ulainstance"
- 27. Port Connectivity Checks: "data_ram:draminstance"
- 28. Port Connectivity Checks: "program_rom:prominstance"
- 29. Elapsed Time Per Partition
- 30. Analysis & Synthesis Messages
+ 14. Parameter Settings for Inferred Entity Instance: ula_3bits:ulainstance|mult:multinstance|lpm_mult:Mult0
+ 15. Parameter Settings for Inferred Entity Instance: ula_3bits:ulainstance|div:divinstance|lpm_divide:Div0
+ 16. lpm_mult Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "ula_3bits:ulainstance|div:divinstance"
+ 18. Port Connectivity Checks: "ula_3bits:ulainstance|op_xor:op_xorinstance"
+ 19. Port Connectivity Checks: "ula_3bits:ulainstance|op_or:op_orinstance"
+ 20. Port Connectivity Checks: "ula_3bits:ulainstance|op_and:op_andinstance"
+ 21. Port Connectivity Checks: "ula_3bits:ulainstance|mult:multinstance"
+ 22. Port Connectivity Checks: "ula_3bits:ulainstance|subtrator:subtratorinstance"
+ 23. Port Connectivity Checks: "ula_3bits:ulainstance|somador:somadorinstance"
+ 24. Port Connectivity Checks: "ula_3bits:ulainstance"
+ 25. Port Connectivity Checks: "data_ram:draminstance"
+ 26. Port Connectivity Checks: "program_rom:prominstance"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -61,15 +59,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 16 17:42:59 2016              ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 16 18:02:42 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; processador                                        ;
 ; Top-level Entity Name              ; processador                                        ;
 ; Family                             ; Cyclone II                                         ;
-; Total logic elements               ; 229                                                ;
-;     Total combinational functions  ; 173                                                ;
-;     Dedicated logic registers      ; 96                                                 ;
-; Total registers                    ; 96                                                 ;
+; Total logic elements               ; 166                                                ;
+;     Total combinational functions  ; 108                                                ;
+;     Dedicated logic registers      ; 93                                                 ;
+; Total registers                    ; 93                                                 ;
 ; Total pins                         ; 72                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 0                                                  ;
@@ -191,17 +189,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; mult.v                           ; yes             ; User Verilog HDL File        ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/mult.v                     ;         ;
 ; div.v                            ; yes             ; User Verilog HDL File        ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/div.v                      ;         ;
 ; data_ram.v                       ; yes             ; User Verilog HDL File        ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/data_ram.v                 ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                                                      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                                                     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                 ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                      ;         ;
-; db/lpm_divide_45m.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/lpm_divide_45m.tdf      ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/sign_div_unsign_bkh.tdf ;         ;
-; db/alt_u_div_ove.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/alt_u_div_ove.tdf       ;         ;
-; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_lkc.tdf         ;         ;
-; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_mkc.tdf         ;         ;
-; db/lpm_divide_1dm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/lpm_divide_1dm.tdf      ;         ;
 ; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                                        ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                      ;         ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                     ;         ;
 ; multcore.inc                     ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/multcore.inc                                                        ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                        ;         ;
@@ -223,9 +212,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; db/add_sub_07h.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_07h.tdf         ;         ;
 ; db/add_sub_17h.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_17h.tdf         ;         ;
 ; altshift.tdf                     ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                                        ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                                                      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                                                     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                 ;         ;
 ; db/lpm_divide_tcm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/lpm_divide_tcm.tdf      ;         ;
 ; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/sign_div_unsign_7kh.tdf ;         ;
 ; db/alt_u_div_gve.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/alt_u_div_gve.tdf       ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_lkc.tdf         ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/tiagot/Desktop/PEM_git/pem_shared/sistemas digitais/Projeto 3 - Processador 4 bits v2/db/add_sub_mkc.tdf         ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -234,28 +228,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 229      ;
+; Estimated Total logic elements              ; 166      ;
 ;                                             ;          ;
-; Total combinational functions               ; 173      ;
+; Total combinational functions               ; 108      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 48       ;
-;     -- 3 input functions                    ; 48       ;
-;     -- <=2 input functions                  ; 77       ;
+;     -- 4 input functions                    ; 43       ;
+;     -- 3 input functions                    ; 31       ;
+;     -- <=2 input functions                  ; 34       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 130      ;
-;     -- arithmetic mode                      ; 43       ;
+;     -- normal mode                          ; 88       ;
+;     -- arithmetic mode                      ; 20       ;
 ;                                             ;          ;
-; Total registers                             ; 96       ;
-;     -- Dedicated logic registers            ; 96       ;
+; Total registers                             ; 93       ;
+;     -- Dedicated logic registers            ; 93       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
 ; I/O pins                                    ; 72       ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 87       ;
-; Total fan-out                               ; 761      ;
-; Average fan-out                             ; 2.23     ;
+; Total fan-out                               ; 612      ;
+; Average fan-out                             ; 2.24     ;
 +---------------------------------------------+----------+
 
 
@@ -264,18 +258,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                         ; Library Name ;
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |processador                                         ; 173 (11)          ; 96 (41)      ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |processador                                                                                                                                                                ; work         ;
+; |processador                                         ; 108 (4)           ; 93 (37)      ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |processador                                                                                                                                                                ; work         ;
 ;    |data_ram:draminstance|                           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|data_ram:draminstance                                                                                                                                          ; work         ;
-;    |lpm_divide:Div0|                                 ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Div0                                                                                                                                                ; work         ;
-;       |lpm_divide_1dm:auto_generated|                ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Div0|lpm_divide_1dm:auto_generated                                                                                                                  ; work         ;
-;          |sign_div_unsign_bkh:divider|               ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Div0|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider                                                                                      ; work         ;
-;             |alt_u_div_ove:divider|                  ; 26 (26)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Div0|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                ; work         ;
-;    |lpm_divide:Mod0|                                 ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Mod0                                                                                                                                                ; work         ;
-;       |lpm_divide_45m:auto_generated|                ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Mod0|lpm_divide_45m:auto_generated                                                                                                                  ; work         ;
-;          |sign_div_unsign_bkh:divider|               ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider                                                                                      ; work         ;
-;             |alt_u_div_ove:divider|                  ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                ; work         ;
 ;    |seg7:seg7instance|                               ; 26 (26)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|seg7:seg7instance                                                                                                                                              ; work         ;
-;    |ula_3bits:ulainstance|                           ; 76 (24)           ; 15 (6)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance                                                                                                                                          ; work         ;
+;    |ula_3bits:ulainstance|                           ; 78 (26)           ; 16 (6)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance                                                                                                                                          ; work         ;
 ;       |div:divinstance|                              ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|div:divinstance                                                                                                                          ; work         ;
 ;          |lpm_divide:Div0|                           ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|div:divinstance|lpm_divide:Div0                                                                                                          ; work         ;
 ;             |lpm_divide_tcm:auto_generated|          ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|div:divinstance|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                                            ; work         ;
@@ -292,7 +278,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                         |add_sub_17h:auto_generated| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|mult:multinstance|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_17h:auto_generated ; work         ;
 ;       |op_xor:op_xorinstance|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|op_xor:op_xorinstance                                                                                                                    ; work         ;
 ;       |somador:somadorinstance|                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|somador:somadorinstance                                                                                                                  ; work         ;
-;       |subtrator:subtratorinstance|                  ; 10 (10)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|subtrator:subtratorinstance                                                                                                              ; work         ;
+;       |subtrator:subtratorinstance|                  ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador|ula_3bits:ulainstance|subtrator:subtratorinstance                                                                                                              ; work         ;
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -310,26 +296,28 @@ Encoding Type:  One-Hot
 +------------------+------------------+------------------+------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                            ;
-+----------------------------------------------------------------+----------------------------------------------+
-; Register name                                                  ; Reason for Removal                           ;
-+----------------------------------------------------------------+----------------------------------------------+
-; opcode[3]                                                      ; Stuck at GND due to stuck port data_in       ;
-; addr_d                                                         ; Stuck at GND due to stuck port data_in       ;
-; seg7:seg7instance|hex_out1[7]                                  ; Stuck at GND due to stuck port data_in       ;
-; seg7:seg7instance|hex_out2[7]                                  ; Stuck at GND due to stuck port data_in       ;
-; seg7:seg7instance|hex_out0[7]                                  ; Stuck at GND due to stuck port data_in       ;
-; seg7:seg7instance|hex_out3[7]                                  ; Stuck at GND due to stuck port data_in       ;
-; data_ram:draminstance|addr_reg                                 ; Stuck at GND due to stuck port data_in       ;
-; ula_3bits:ulainstance|subtrator:subtratorinstance|resultado[4] ; Lost fanout                                  ;
-; ula_3bits:ulainstance|out_ula[7]                               ; Merged with ula_3bits:ulainstance|out_ula[6] ;
-; ula_3bits:ulainstance|out_ula[6]                               ; Stuck at GND due to stuck port data_in       ;
-; seg7:seg7instance|display_state~2                              ; Lost fanout                                  ;
-; seg7:seg7instance|display_state~3                              ; Lost fanout                                  ;
-; disp1[3]~reg0                                                  ; Stuck at GND due to stuck port data_in       ;
-; Total Number of Removed Registers = 13                         ;                                              ;
-+----------------------------------------------------------------+----------------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; opcode[3]                              ; Stuck at GND due to stuck port data_in ;
+; addr_d                                 ; Stuck at GND due to stuck port data_in ;
+; seg7:seg7instance|hex_out1[7]          ; Stuck at GND due to stuck port data_in ;
+; seg7:seg7instance|hex_out2[7]          ; Stuck at GND due to stuck port data_in ;
+; seg7:seg7instance|hex_out0[7]          ; Stuck at GND due to stuck port data_in ;
+; seg7:seg7instance|hex_out3[7]          ; Stuck at GND due to stuck port data_in ;
+; data_ram:draminstance|addr_reg         ; Stuck at GND due to stuck port data_in ;
+; pc[0]                                  ; Merged with opcode[0]                  ;
+; pc[1]                                  ; Merged with opcode[1]                  ;
+; pc[2]                                  ; Merged with opcode[2]                  ;
+; disp1[0]~reg0                          ; Merged with disp0[3]~reg0              ;
+; ula_3bits:ulainstance|out_ula[6]       ; Stuck at GND due to stuck port data_in ;
+; disp1[3]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; seg7:seg7instance|display_state~2      ; Lost fanout                            ;
+; seg7:seg7instance|display_state~3      ; Lost fanout                            ;
+; Total Number of Removed Registers = 15 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -349,7 +337,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 96    ;
+; Total registers                              ; 93    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -364,8 +352,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |processador|ula_3bits:ulainstance|out_ula[2] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador|seg7:seg7instance|Selector0      ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |processador|ula_3bits:ulainstance|out_ula[1] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processador|seg7:seg7instance|Selector1      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
@@ -382,52 +370,6 @@ Encoding Type:  One-Hot
 ; OR             ; 0110  ; Unsigned Binary                              ;
 ; XOR            ; 0111  ; Unsigned Binary                              ;
 +----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_45m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_1dm ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -576,13 +518,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ula_3bits:ulainstance"                                                                                                        ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                    ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; out_ula ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (8 bits) it drives; bit(s) "out_ula[8..8]" have no fanouts ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ula_3bits:ulainstance"                                                                       ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; out_ula[8..7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -618,7 +560,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Wed Nov 16 17:42:57 2016
+    Info: Processing started: Wed Nov 16 18:02:41 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador -c processador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ula_3bits.v
@@ -646,8 +588,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file div.v
 Info (12021): Found 1 design units, including 1 entities, in source file data_ram.v
     Info (12023): Found entity 1: data_ram
 Info (12127): Elaborating entity "processador" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at processador.v(100): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at processador.v(101): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at processador.v(106): truncated value with size 32 to match size of target (3)
 Warning (10230): Verilog HDL assignment warning at processador.v(112): truncated value with size 4 to match size of target (3)
 Info (12128): Elaborating entity "program_rom" for hierarchy "program_rom:prominstance"
@@ -667,35 +607,9 @@ Info (12128): Elaborating entity "div" for hierarchy "ula_3bits:ulainstance|div:
 Info (12128): Elaborating entity "seg7" for hierarchy "seg7:seg7instance"
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "data_ram:draminstance|dram" is uninferred due to inappropriate RAM size
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
+Info (278001): Inferred 2 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ula_3bits:ulainstance|mult:multinstance|Mult0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ula_3bits:ulainstance|div:divinstance|Div0"
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "8"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_45m.tdf
-    Info (12023): Found entity 1: lpm_divide_45m
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
-    Info (12023): Found entity 1: alt_u_div_ove
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
-    Info (12023): Found entity 1: add_sub_lkc
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
-    Info (12023): Found entity 1: add_sub_mkc
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0"
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "8"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1dm.tdf
-    Info (12023): Found entity 1: lpm_divide_1dm
 Info (12130): Elaborated megafunction instantiation "ula_3bits:ulainstance|mult:multinstance|lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "ula_3bits:ulainstance|mult:multinstance|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "3"
@@ -729,27 +643,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_7kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gve.tdf
     Info (12023): Found entity 1: alt_u_div_gve
-Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "disp1[3]" is stuck at GND
     Warning (13410): Pin "HEX0[7]" is stuck at GND
     Warning (13410): Pin "HEX1[7]" is stuck at GND
     Warning (13410): Pin "HEX2[7]" is stuck at GND
     Warning (13410): Pin "HEX3[7]" is stuck at GND
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]"
     Warning (15610): No output dependent on input pin "KEY[1]"
-Info (21057): Implemented 308 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 248 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 59 output pins
-    Info (21061): Implemented 236 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 740 megabytes
-    Info: Processing ended: Wed Nov 16 17:42:59 2016
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 176 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 733 megabytes
+    Info: Processing ended: Wed Nov 16 18:02:42 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

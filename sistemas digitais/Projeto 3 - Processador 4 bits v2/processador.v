@@ -35,7 +35,7 @@ wire [3:0] b;
 reg [2:0] pc;
 
 // ULA
-wire [7:0] out_ula;
+wire [8:0] out_ula;
 reg [3:0] opcode;
 wire sinal;
 
@@ -97,19 +97,19 @@ begin
 		
 	disp3 <= out_dram[3:0];
 	disp2 <= out_dram[7:4];
-	disp1 <= out_ula/10;
-	disp0 <= out_ula%10;
+	disp1 <= out_ula[7:4];
+	disp0 <= out_ula[3:0];
 end
 
 always @(negedge KEY[3]) //Armazenar operacoes
 begin
-	pc <= pc + 1;
+	pc = pc + 1;
 	if(pc > 4)
-		pc <= 0;
+		pc = 0;
 	
-	addr_p <= pc;
-	opcode <= pc;//out_prom;
-	LEDG <= opcode;
+	addr_p = pc;
+	opcode = pc;//out_prom;
+	LEDG = opcode;
 end
 
 endmodule
