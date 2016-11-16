@@ -1,61 +1,438 @@
-http://www.rinkworks.com/slapdash/broken.shtml
-http://www.rinkworks.com/
-http://www.rinkworks.com/guide/
-http://www.rinkworks.com/guide/reader.shtml
-http://www.rinkworks.com/guide/humor.shtml
-http://www.rinkworks.com/guide/games.shtml
-http://www.rinkworks.com/guide/fiction.shtml
-http://www.rinkworks.com/guide/movies.shtml
-http://www.rinkworks.com/guide/hobbies.shtml
-http://www.rinkworks.com/guide/humorbites.shtml
-http://www.rinkworks.com/guide/downloads.shtml
-http://www.rinkworks.com/rookchat/
-http://www.rinkworks.com/rookchat/features.shtml
-http://www.rinkworks.com/rookchat/commands.shtml
-http://www.rinkworks.com/rookchat/smileys.shtml
-http://www.rinkworks.com/rookchat/botgames.shtml
-http://www.rinkworks.com/rookchat/demo.shtml
-http://www.rinkworks.com/rookchat/downloads.shtml
-http://www.rinkworks.com/rookchat/development.shtml
-http://www.rinkworks.com/rookchat/sourceforge.shtml
-http://www.rinkworks.com/rookchat/index.cgi?action=recover&language=english_american
-http://www.rinkworks.com/rookchat/index.cgi?language=english_american
-http://www.rinkworks.com/filmmaker/
-http://www.rinkworks.com/fnovel/
-http://www.rinkworks.com/brick/
-http://www.rinkworks.com/slapdash/
-http://www.rinkworks.com/slapdash/guestbook.shtml
-http://www.rinkworks.com/slapdash/home.shtml
-http://www.rinkworks.com/slapdash/names.shtml
-http://www.rinkworks.com/slapdash/award.shtml
-http://www.rinkworks.com/slapdash/elsa.shtml
-http://www.rinkworks.com/slapdash/journal.shtml
-http://www.rinkworks.com/slapdash/sofa.shtml
-http://www.rinkworks.com/slapdash/colors.shtml
-http://www.rinkworks.com/slapdash/white.html
-http://www.rinkworks.com/slapdash/orange.html
-http://www.rinkworks.com/slapdash/sanguine.shtml
-http://www.rinkworks.com/slapdash/number.shtml
-http://www.rinkworks.com/slapdash/answer.shtml
-http://www.rinkworks.com/slapdash/sniff.shtml
-http://www.rinkworks.com/slapdash/nocalc.shtml
+http://www.asic-world.com/tidbits/blocking.html
+http://www.asic-world.com/digital/index.html
+http://www.asic-world.com/digital/tutorial.html
+http://www.asic-world.com/digital/questions.html
+http://www.asic-world.com/digital/tools.html
+http://www.asic-world.com/digital/books.html
+http://www.asic-world.com/digital/dlinks.html
+http://www.asic-world.com/sponsor.html
+http://www.asic-world.com/verilog/index.html
+http://www.asic-world.com/verilog/veritut.html
+http://www.asic-world.com/examples/verilog/index.html
+http://www.asic-world.com/verilog/questions.html
+http://www.asic-world.com/verilog/tools.html
+http://www.asic-world.com/verilog/books.html
+http://www.asic-world.com/verilog/verilinks.html
+http://www.asic-world.com/verilog/verifaq.html
+http://www.asic-world.com/index.html
+http://www.asic-world.com/systemverilog/index.html
+http://www.asic-world.com/systemverilog/tutorial.html
+http://www.asic-world.com/examples/systemverilog/index.html
+http://www.asic-world.com/systemverilog/tools.html
+http://www.asic-world.com/systemverilog/books.html
+http://www.asic-world.com/systemverilog/links.html
+http://www.asic-world.com/disclaimer.html
+http://www.asic-world.com/specman/index.html
+http://www.asic-world.com/specman/tutorial.html
+http://www.asic-world.com/examples/specman/index.html
+http://www.asic-world.com/specman/tools.html
+http://www.asic-world.com/specman/books.html
+http://www.asic-world.com/specman/links.html
+http://www.asic-world.com/faq.html
+http://www.asic-world.com/systemc/index.html
+http://www.asic-world.com/systemc/tutorial.html
+http://www.asic-world.com/examples/systemc/index.html
+http://www.asic-world.com/systemc/tools.html
+http://www.asic-world.com/systemc/books.html
+http://www.asic-world.com/systemc/links.html
+http://www.asic-world.com/jobs.html
+http://www.asic-world.com/vera/index.html
+http://www.asic-world.com/vera/tutorial.html
+http://www.asic-world.com/examples/vera/index.html
+http://www.asic-world.com/vera/tools.html
+http://www.asic-world.com/vera/books.html
+http://www.asic-world.com/vera/links.html
+http://www.asic-world.com/examples/vera/memory.html
+http://www.asic-world.com/examples/vera/memory1.html
+http://www.asic-world.com/code/vera_examples/mem_driver.vr
+http://www.asic-world.com/code/vera_examples/mem_ip_monitor.vr
+http://www.asic-world.com/code/vera_examples/mem_op_monitor.vr
+http://www.asic-world.com/code/vera_examples/mem_scoreboard.vr
+http://www.asic-world.com/examples/vera/memory2.html
+http://www.asic-world.com/code/vera_examples/memory_tb.v
+http://www.asic-world.com/code/vera_examples/memory_top.vr
+http://www.asic-world.com/examples/vera/memory3.html
+http://www.asic-world.com/code/vera_examples/mem_ports.vrh
+http://www.asic-world.com/code/vera_examples/mem_binds.vrh
+http://www.asic-world.com/examples/vera/uart.html
+http://www.asic-world.com/examples/vera/uart1.html
+http://www.asic-world.com/examples/vera/uart2.html
+http://www.asic-world.com/code/vera_examples/uart_tb.v
+http://www.asic-world.com/code/vera_examples/uart_top.vr
+http://www.asic-world.com/examples/vera/uart3.html
+http://www.asic-world.com/code/vera_examples/uart_if.vrh
+http://www.asic-world.com/code/vera_examples/uart_ports.vrh
+http://www.asic-world.com/code/vera_examples/uart_binds.vrh
+http://www.asic-world.com/examples/vera/fifo.html
+http://www.asic-world.com/examples/vera/fifo1.html
+http://www.asic-world.com/examples/vera/fifo2.html
+http://www.asic-world.com/code/vera_examples/fifo_tb.v
+http://www.asic-world.com/code/vera_examples/fifo_top.vr
+http://www.asic-world.com/examples/vera/fifo3.html
+http://www.asic-world.com/code/vera_examples/fifo_if.vrh
+http://www.asic-world.com/code/vera_examples/fifo_ports.vrh
+http://www.asic-world.com/code/vera_examples/fifo_binds.vrh
+http://www.asic-world.com/vera/intro.html
+http://www.asic-world.com/vera/history.html
+http://www.asic-world.com/vera/vera_first.html
+http://www.asic-world.com/vera/vera_first1.html
+http://www.asic-world.com/code/vera/hello.vr
+http://www.asic-world.com/vera/vera_first2.html
+http://www.asic-world.com/code/vera/memory.vr
+http://www.asic-world.com/vera/verification_flow.html
+http://www.asic-world.com/vera/verification_flow1.html
+http://www.asic-world.com/vera/vera_basics.html
+http://www.asic-world.com/vera/vera_basics1.html
+http://www.asic-world.com/code/vera/comments.vr
+http://www.asic-world.com/code/vera/identifiers.vr
+http://www.asic-world.com/vera/vera_basics2.html
+http://www.asic-world.com/code/vera/string_constants.vr
+http://www.asic-world.com/vera/vera_basics3.html
+http://www.asic-world.com/code/vera/statement_block.vr
+http://www.asic-world.com/code/vera/compound_assignment.vr
+http://www.asic-world.com/vera/data_types.html
+http://www.asic-world.com/vera/data_types1.html
+http://www.asic-world.com/code/vera/integer_t.vr
+http://www.asic-world.com/vera/data_types2.html
+http://www.asic-world.com/code/vera/reg_t.vr
+http://www.asic-world.com/vera/data_types3.html
+http://www.asic-world.com/code/vera/string_t.vr
+http://www.asic-world.com/vera/data_types4.html
+http://www.asic-world.com/code/vera/event_t.vr
+http://www.asic-world.com/vera/data_types5.html
+http://www.asic-world.com/code/vera/enum_t.vr
+http://www.asic-world.com/vera/data_types6.html
+http://www.asic-world.com/code/vera/virtual_port.vr
+http://www.asic-world.com/code/vera/virtual_port.v
+http://www.asic-world.com/vera/data_types7.html
+http://www.asic-world.com/code/vera/multi_dimension_array.vr
+http://www.asic-world.com/code/vera/associative_array.vr
+http://www.asic-world.com/vera/data_types8.html
+http://www.asic-world.com/code/vera/smart_queue.vr
+http://www.asic-world.com/vera/data_types9.html
+http://www.asic-world.com/code/vera/class_t.vr
+http://www.asic-world.com/vera/data_types10.html
+http://www.asic-world.com/vera/operators.html
+http://www.asic-world.com/vera/operators1.html
+http://www.asic-world.com/code/vera/arithmetic.vr
+http://www.asic-world.com/vera/operators2.html
+http://www.asic-world.com/code/vera/bitwise.vr
+http://www.asic-world.com/vera/operators3.html
+http://www.asic-world.com/code/vera/logical.vr
+http://www.asic-world.com/vera/operators4.html
+http://www.asic-world.com/code/vera/relational.vr
+http://www.asic-world.com/vera/operators5.html
+http://www.asic-world.com/code/vera/equality.vr
+http://www.asic-world.com/vera/operators6.html
+http://www.asic-world.com/code/vera/reduction.vr
+http://www.asic-world.com/vera/operators7.html
+http://www.asic-world.com/code/vera/shift.vr
+http://www.asic-world.com/vera/operators8.html
+http://www.asic-world.com/code/vera/inc_dec.vr
+http://www.asic-world.com/vera/operators9.html
+http://www.asic-world.com/code/vera/concatenation.vr
+http://www.asic-world.com/vera/operators10.html
+http://www.asic-world.com/code/vera/conditional.vr
+http://www.asic-world.com/vera/operators11.html
+http://www.asic-world.com/vera/sequential_control.html
+http://www.asic-world.com/vera/sequential_control1.html
+http://www.asic-world.com/code/vera/if_else.vr
+http://www.asic-world.com/vera/sequential_control2.html
+http://www.asic-world.com/code/vera/case_statement.vr
+http://www.asic-world.com/vera/sequential_control3.html
+http://www.asic-world.com/code/vera/repeat_statement.vr
+http://www.asic-world.com/vera/sequential_control4.html
+http://www.asic-world.com/code/vera/for_statement.vr
+http://www.asic-world.com/vera/sequential_control5.html
+http://www.asic-world.com/code/vera/while_statement.vr
+http://www.asic-world.com/vera/sequential_control6.html
+http://www.asic-world.com/code/vera/foreach_statement.vr
+http://www.asic-world.com/vera/sequential_control7.html
+http://www.asic-world.com/code/vera/loop_control.vr
+http://www.asic-world.com/vera/sequential_control8.html
+http://www.asic-world.com/code/vera/randcase_statement.vr
+http://www.asic-world.com/vera/procedure_methods.html
+http://www.asic-world.com/vera/procedure_methods1.html
+http://www.asic-world.com/code/vera/function_ex.vr
+http://www.asic-world.com/vera/procedure_methods2.html
+http://www.asic-world.com/code/vera/task_ex.vr
+http://www.asic-world.com/vera/procedure_methods3.html
+http://www.asic-world.com/code/vera/pass_by_value.vr
+http://www.asic-world.com/vera/procedure_methods4.html
+http://www.asic-world.com/code/vera/pass_by_ref.vr
+http://www.asic-world.com/vera/procedure_methods5.html
+http://www.asic-world.com/code/vera/default_value.vr
+http://www.asic-world.com/vera/procedure_methods6.html
+http://www.asic-world.com/code/vera/optional_value.vr
+http://www.asic-world.com/vera/procedure_methods7.html
+http://www.asic-world.com/code/vera/task_terminate.vr
+http://www.asic-world.com/vera/concurrency_control.html
+http://www.asic-world.com/vera/concurrency_control1.html
+http://www.asic-world.com/code/vera/shadow_variable.vr
+http://www.asic-world.com/vera/concurrency_control2.html
+http://www.asic-world.com/code/vera/wait_var_ex.vr
+http://www.asic-world.com/vera/concurrency_control3.html
+http://www.asic-world.com/code/vera/event_sync.vr
+http://www.asic-world.com/vera/concurrency_control4.html
+http://www.asic-world.com/code/vera/semaphore.vr
+http://www.asic-world.com/vera/concurrency_control5.html
+http://www.asic-world.com/code/vera/region.vr
+http://www.asic-world.com/vera/concurrency_control6.html
+http://www.asic-world.com/code/vera/mailbox.vr
+http://www.asic-world.com/vera/concurrency_control7.html
+http://www.asic-world.com/code/vera/timeout_t.vr
+http://www.asic-world.com/vera/oop.html
+http://www.asic-world.com/vera/oop1.html
+http://www.asic-world.com/code/vera/copy_object.vr
+http://www.asic-world.com/vera/oop2.html
+http://www.asic-world.com/code/vera/this_ex.vr
+http://www.asic-world.com/vera/oop3.html
+http://www.asic-world.com/code/vera/class_extension.vr
+http://www.asic-world.com/vera/oop4.html
+http://www.asic-world.com/code/vera/forward_ref.vr
+http://www.asic-world.com/code/vera/class_a.vr
+http://www.asic-world.com/vera/constraints.html
+http://www.asic-world.com/vera/constraints1.html
+http://www.asic-world.com/code/vera/rand_ex.vr
+http://www.asic-world.com/vera/constraints2.html
+http://www.asic-world.com/code/vera/constraint_mode_ex.vr
+http://www.asic-world.com/vera/constraints3.html
+http://www.asic-world.com/code/vera/rand_mode_ex.vr
+http://www.asic-world.com/vera/constraints4.html
+http://www.asic-world.com/code/vera/randomize_with.vr
+http://www.asic-world.com/vera/constraints5.html
+http://www.asic-world.com/code/vera/pre_post_randomize.vr
+http://www.asic-world.com/vera/constraints6.html
+http://www.asic-world.com/code/vera/default_constraint.vr
+http://www.asic-world.com/vera/constraints7.html
+http://www.asic-world.com/code/vera/inclusive_exclusive.vr
+http://www.asic-world.com/vera/constraints8.html
+http://www.asic-world.com/code/vera/distribution.vr
+http://www.asic-world.com/vera/constraints9.html
+http://www.asic-world.com/code/vera/conditional_con.vr
+http://www.asic-world.com/vera/hdl.html
+http://www.asic-world.com/vera/hdl1.html
+http://www.asic-world.com/code/vera/interface_ex.vr
+http://www.asic-world.com/code/vera/sample_if.v
+http://www.asic-world.com/vera/hdl2.html
+http://www.asic-world.com/code/vera/vera_shell.v
+http://www.asic-world.com/code/vera/hdl_node_ex.vr
+http://www.asic-world.com/code/vera/hdl_node_if.v
+http://www.asic-world.com/vera/hdl3.html
+http://www.asic-world.com/code/vera/signal_connect_ex.vr
+http://www.asic-world.com/code/vera/signal_connect_ex.v
+http://www.asic-world.com/vera/hdl4.html
+http://www.asic-world.com/code/vera/bind_ex.vr
+http://www.asic-world.com/code/vera/bind_port.v
+http://www.asic-world.com/vera/hdl5.html
+http://www.asic-world.com/code/vera/sig_ref.vr
+http://www.asic-world.com/code/vera/sig_ref.v
+http://www.asic-world.com/vera/hdl6.html
+http://www.asic-world.com/code/vera/vera2hdl.vr
+http://www.asic-world.com/code/vera/vera2hdl.v
+http://www.asic-world.com/vera/hdl7.html
+http://www.asic-world.com/code/vera/explicit.vr
+http://www.asic-world.com/code/vera/explicit.v
+http://www.asic-world.com/code/vera/async_signal.vr
+http://www.asic-world.com/code/vera/async_signal.v
+http://www.asic-world.com/vera/hdl8.html
+http://www.asic-world.com/vera/hdl9.html
+http://www.asic-world.com/vera/hdl10.html
+http://www.asic-world.com/vera/coverage.html
+http://www.asic-world.com/vera/coverage1.html
+http://www.asic-world.com/vera/coverage2.html
+http://www.asic-world.com/code/vera/coverage_covergroup.vr
+http://www.asic-world.com/code/vera/coverage_covergroup_standalone.vr
+http://www.asic-world.com/vera/coverage3.html
+http://www.asic-world.com/code/vera/coverage_implicit.vr
+http://www.asic-world.com/code/vera/coverage_explicit.vr
+http://www.asic-world.com/code/vera/coverage_null.vr
+http://www.asic-world.com/vera/coverage4.html
+http://www.asic-world.com/code/vera/coverage_interface.vr
+http://www.asic-world.com/code/vera/coverage_interface.v
+http://www.asic-world.com/vera/coverage5.html
+http://www.asic-world.com/code/vera/coverage_sample_events.vr
+http://www.asic-world.com/vera/coverage6.html
+http://www.asic-world.com/code/vera/coverage_state.vr
+http://www.asic-world.com/vera/coverage7.html
+http://www.asic-world.com/code/vera/coverage_state_condition.vr
+http://www.asic-world.com/vera/coverage8.html
+http://www.asic-world.com/code/vera/coverage_state_all.vr
+http://www.asic-world.com/vera/coverage9.html
+http://www.asic-world.com/code/vera/coverage_not_state.vr
+http://www.asic-world.com/vera/coverage10.html
+http://www.asic-world.com/code/vera/coverage_m_state.vr
+http://www.asic-world.com/vera/coverage11.html
+http://www.asic-world.com/code/vera/coverage_m_bad_state.vr
+http://www.asic-world.com/vera/coverage12.html
+http://www.asic-world.com/code/vera/coverage_wildcard_state.vr
+http://www.asic-world.com/vera/coverage13.html
+http://www.asic-world.com/code/vera/coverage_tran.vr
+http://www.asic-world.com/vera/coverage14.html
+http://www.asic-world.com/code/vera/coverage_tran_all.vr
+http://www.asic-world.com/vera/coverage15.html
+http://www.asic-world.com/code/vera/coverage_no_tran.vr
+http://www.asic-world.com/vera/coverage16.html
+http://www.asic-world.com/code/vera/coverage_m_tran.vr
+http://www.asic-world.com/vera/coverage17.html
+http://www.asic-world.com/code/vera/coverage_m_bad_tran.vr
+http://www.asic-world.com/vera/coverage18.html
+http://www.asic-world.com/code/vera/coverage_wildcard_tran.vr
+http://www.asic-world.com/vera/coverage19.html
+http://www.asic-world.com/code/vera/coverage_cross.vr
+http://www.asic-world.com/vera/coverage20.html
+http://www.asic-world.com/code/vera/coverage_cross_ignored.vr
+http://www.asic-world.com/vera/coverage21.html
+http://www.asic-world.com/code/vera/coverage_cross_bad_state_simple.vr
+http://www.asic-world.com/vera/coverage22.html
+http://www.asic-world.com/code/vera/coverage_cross_bad_state_binsof.vr
+http://www.asic-world.com/vera/coverage23.html
+http://www.asic-world.com/code/vera/coverage_cumulative_on.vr
+http://www.asic-world.com/vera/coverage24.html
+http://www.asic-world.com/code/vera/coverage_cumulative_off.vr
+http://www.asic-world.com/vera/coverage25.html
+http://www.asic-world.com/vera/coverage26.html
+http://www.asic-world.com/vera/rvm.html
+http://www.asic-world.com/vera/rvm1.html
+http://www.asic-world.com/vera/rvm2.html
+http://www.asic-world.com/code/vera/rvm_log_format_ex.vr
+http://www.asic-world.com/vera/rvm3.html
+http://www.asic-world.com/vera/rvm4.html
+http://www.asic-world.com/vera/rvm5.html
+http://www.asic-world.com/vera/rvm6.html
+http://www.asic-world.com/vera/rvm7.html
+http://www.asic-world.com/vera/rvm8.html
+http://www.asic-world.com/vera/rvm9.html
+http://www.asic-world.com/vera/rvm10.html
 
 
 TRAVERSAL WAS INTERRUPTED
 
 	    here is a list of the history stack so that you may rebuild
 
-Slapdash City: Good Web Site Award	http://www.rinkworks.com/slapdash/award.shtml
-Slapdash City: Sounding Out Fun Names	http://www.rinkworks.com/slapdash/names.shtml
-Slapdash City: My Home Page	http://www.rinkworks.com/slapdash/home.shtml
-Slapdash City	http://www.rinkworks.com/slapdash/
-RinkWorks Site Guide: Humor Bites	http://www.rinkworks.com/guide/humorbites.shtml
-RinkWorks Site Guide: Hobbies	http://www.rinkworks.com/guide/hobbies.shtml
-RinkWorks Site Guide: Movies	http://www.rinkworks.com/guide/movies.shtml
-RinkWorks Site Guide: Fiction	http://www.rinkworks.com/guide/fiction.shtml
-RinkWorks Site Guide: Games	http://www.rinkworks.com/guide/games.shtml
-RinkWorks Site Guide: Humor	http://www.rinkworks.com/guide/humor.shtml
-RinkWorks Site Guide: Reader Areas	http://www.rinkworks.com/guide/reader.shtml
-RinkWorks Site Guide	http://www.rinkworks.com/guide/
-RinkWorks	http://www.rinkworks.com/
-Slapdash City: Broken Link List	http://www.rinkworks.com/slapdash/broken.shtml
+VERA Functional Coverage 	http://www.asic-world.com/vera/coverage.html
+Interfacing With HDL Part - X 	http://www.asic-world.com/vera/hdl10.html
+Interfacing With HDL Part - IX 	http://www.asic-world.com/vera/hdl9.html
+Interfacing With HDL Part - VIII 	http://www.asic-world.com/vera/hdl8.html
+Interfacing With HDL Part - VII 	http://www.asic-world.com/vera/hdl7.html
+Interfacing With HDL Part - VI 	http://www.asic-world.com/vera/hdl6.html
+Interfacing With HDL Part - V 	http://www.asic-world.com/vera/hdl5.html
+Interfacing With HDL Part - IV 	http://www.asic-world.com/vera/hdl4.html
+Interfacing With HDL Part - III 	http://www.asic-world.com/vera/hdl3.html
+Interfacing With HDL Part - II 	http://www.asic-world.com/vera/hdl2.html
+Interfacing With HDL Part - I 	http://www.asic-world.com/vera/hdl1.html
+Interfacing With HDL 	http://www.asic-world.com/vera/hdl.html
+VERA Randomization Part - IX 	http://www.asic-world.com/vera/constraints9.html
+VERA Randomization Part - VIII 	http://www.asic-world.com/vera/constraints8.html
+VERA Randomization Part - VII 	http://www.asic-world.com/vera/constraints7.html
+VERA Randomization Part - VI 	http://www.asic-world.com/vera/constraints6.html
+VERA Randomization Part - V 	http://www.asic-world.com/vera/constraints5.html
+VERA Randomization Part - IV 	http://www.asic-world.com/vera/constraints4.html
+VERA Randomization Part - II 	http://www.asic-world.com/vera/constraints3.html
+VERA Randomization Part - II 	http://www.asic-world.com/vera/constraints2.html
+VERA Randomization Part - I 	http://www.asic-world.com/vera/constraints1.html
+VERA Randomization 	http://www.asic-world.com/vera/constraints.html
+VERA OOP Part - IV 	http://www.asic-world.com/vera/oop4.html
+VERA OOP Part - III 	http://www.asic-world.com/vera/oop3.html
+VERA OOP Part - II 	http://www.asic-world.com/vera/oop2.html
+VERA OOP Part - I 	http://www.asic-world.com/vera/oop1.html
+VERA OOP 	http://www.asic-world.com/vera/oop.html
+VERA Concurrency Control Part - VII 	http://www.asic-world.com/vera/concurrency_control7.html
+VERA Concurrency Control Part - IV 	http://www.asic-world.com/vera/concurrency_control6.html
+VERA Concurrency Control Part - V  	http://www.asic-world.com/vera/concurrency_control5.html
+VERA Concurrency Control Part - IV 	http://www.asic-world.com/vera/concurrency_control4.html
+VERA Concurrency Control Part - III 	http://www.asic-world.com/vera/concurrency_control3.html
+VERA Concurrency Control Part - II 	http://www.asic-world.com/vera/concurrency_control2.html
+VERA Concurrency Control Part - I 	http://www.asic-world.com/vera/concurrency_control1.html
+VERA Concurrency Control 	http://www.asic-world.com/vera/concurrency_control.html
+VERA Procedure And Methods Part - VII 	http://www.asic-world.com/vera/procedure_methods7.html
+VERA Procedure And Methods Part - VI 	http://www.asic-world.com/vera/procedure_methods6.html
+VERA Procedure And Methods Part - V 	http://www.asic-world.com/vera/procedure_methods5.html
+VERA Procedure And Methods Part - IV 	http://www.asic-world.com/vera/procedure_methods4.html
+VERA Procedure And Methods Part - III 	http://www.asic-world.com/vera/procedure_methods3.html
+VERA Procedure And Methods Part - II 	http://www.asic-world.com/vera/procedure_methods2.html
+VERA Procedure And Methods Part - I 	http://www.asic-world.com/vera/procedure_methods1.html
+VERA Procedure And Methods 	http://www.asic-world.com/vera/procedure_methods.html
+VERA Sequential Control PART - VIII 	http://www.asic-world.com/vera/sequential_control8.html
+VERA Sequential Control PART - VII 	http://www.asic-world.com/vera/sequential_control7.html
+VERA Sequential Control PART - VI 	http://www.asic-world.com/vera/sequential_control6.html
+VERA Sequential Control PART - V 	http://www.asic-world.com/vera/sequential_control5.html
+VERA Sequential Control PART - IV 	http://www.asic-world.com/vera/sequential_control4.html
+VERA Sequential Control PART - III 	http://www.asic-world.com/vera/sequential_control3.html
+VERA Sequential Control PART - II 	http://www.asic-world.com/vera/sequential_control2.html
+VERA Sequential Control PART - I 	http://www.asic-world.com/vera/sequential_control1.html
+VERA Sequential Control 	http://www.asic-world.com/vera/sequential_control.html
+VERA Operators Part - XI 	http://www.asic-world.com/vera/operators11.html
+VERA Operators Part - X  	http://www.asic-world.com/vera/operators10.html
+VERA Operators Part - IX 	http://www.asic-world.com/vera/operators9.html
+VERA Operators Part - VIII 	http://www.asic-world.com/vera/operators8.html
+VERA Operators Part - VII 	http://www.asic-world.com/vera/operators7.html
+VERA Operators Part - VI 	http://www.asic-world.com/vera/operators6.html
+VERA Operators Part -V  	http://www.asic-world.com/vera/operators5.html
+VERA Operators Part - IV 	http://www.asic-world.com/vera/operators4.html
+VERA Operators Part - III 	http://www.asic-world.com/vera/operators3.html
+VERA Operators Part - II 	http://www.asic-world.com/vera/operators2.html
+VERA Operators Part - I 	http://www.asic-world.com/vera/operators1.html
+VERA Operators 	http://www.asic-world.com/vera/operators.html
+VERA Data Types Part - X 	http://www.asic-world.com/vera/data_types10.html
+VERA Data Types Part - IX 	http://www.asic-world.com/vera/data_types9.html
+VERA Data Types Part - VIII 	http://www.asic-world.com/vera/data_types8.html
+VERA Data Types Part - VII 	http://www.asic-world.com/vera/data_types7.html
+VERA Data Types Part - VI 	http://www.asic-world.com/vera/data_types6.html
+VERA Data Types Part - V 	http://www.asic-world.com/vera/data_types5.html
+VERA Data Types Part - IV 	http://www.asic-world.com/vera/data_types4.html
+VERA Data Types Part - III 	http://www.asic-world.com/vera/data_types3.html
+VERA Data Types Part - II 	http://www.asic-world.com/vera/data_types2.html
+VERA Data Types Part - I 	http://www.asic-world.com/vera/data_types1.html
+VERA Data Types 	http://www.asic-world.com/vera/data_types.html
+VERA Basics Part - III 	http://www.asic-world.com/vera/vera_basics3.html
+VERA Basics Part - II 	http://www.asic-world.com/vera/vera_basics2.html
+VERA Basics Part - I 	http://www.asic-world.com/vera/vera_basics1.html
+VERA Basics 	http://www.asic-world.com/vera/vera_basics.html
+Verification Flow  Part I  	http://www.asic-world.com/vera/verification_flow1.html
+Verification Flow  	http://www.asic-world.com/vera/verification_flow.html
+First Program In Vera Part - II 	http://www.asic-world.com/vera/vera_first2.html
+First Program In Vera Part - I 	http://www.asic-world.com/vera/vera_first1.html
+First Program In Vera 	http://www.asic-world.com/vera/vera_first.html
+History of VERA   	http://www.asic-world.com/vera/history.html
+Introduction  	http://www.asic-world.com/vera/intro.html
+VERA Tutorial  	http://www.asic-world.com/vera/tutorial.html
+Welcome To VERA Page  	http://www.asic-world.com/vera/index.html
+Hot Jobs 	http://www.asic-world.com/jobs.html
+SystemC Links 	http://www.asic-world.com/systemc/links.html
+SystemC Books 	http://www.asic-world.com/systemc/books.html
+SystemC Tools 	http://www.asic-world.com/systemc/tools.html
+SystemC Examples 	http://www.asic-world.com/examples/systemc/index.html
+SystemC Tutorial  	http://www.asic-world.com/systemc/tutorial.html
+Welcome To  SystemC Page  	http://www.asic-world.com/systemc/index.html
+Site FAQ 	http://www.asic-world.com/faq.html
+Verification Links 	http://www.asic-world.com/specman/links.html
+Verification Books 	http://www.asic-world.com/specman/books.html
+Verification Tools 	http://www.asic-world.com/specman/tools.html
+Specman Examples 	http://www.asic-world.com/examples/specman/index.html
+Specman Tutorial  	http://www.asic-world.com/specman/tutorial.html
+Welcome To Specman  Central  	http://www.asic-world.com/specman/index.html
+DISCLAIMER 	http://www.asic-world.com/disclaimer.html
+SystemVerilog Links 	http://www.asic-world.com/systemverilog/links.html
+SystemVerilog Books 	http://www.asic-world.com/systemverilog/books.html
+SystemVerilog Tools 	http://www.asic-world.com/systemverilog/tools.html
+SystemVerilog Examples 	http://www.asic-world.com/examples/systemverilog/index.html
+SystemVerilog Tutorial  	http://www.asic-world.com/systemverilog/tutorial.html
+Welcome To SystemVerilog  Central  	http://www.asic-world.com/systemverilog/index.html
+WELCOME TO WORLD OF ASIC 	http://www.asic-world.com/index.html
+VERILOG FAQ 	http://www.asic-world.com/verilog/verifaq.html
+Verilog Links 	http://www.asic-world.com/verilog/verilinks.html
+Verilog Books 	http://www.asic-world.com/verilog/books.html
+Verilog Tools 	http://www.asic-world.com/verilog/tools.html
+Verilog Questions 	http://www.asic-world.com/verilog/questions.html
+Verilog Examples 	http://www.asic-world.com/examples/verilog/index.html
+Verilog Tutorial  	http://www.asic-world.com/verilog/veritut.html
+Welcome To  Verilog Page 	http://www.asic-world.com/verilog/index.html
+Marketing Opportunities 	http://www.asic-world.com/sponsor.html
+Digital Links 	http://www.asic-world.com/digital/dlinks.html
+Digital Books 	http://www.asic-world.com/digital/books.html
+Digital Tools 	http://www.asic-world.com/digital/tools.html
+Digital Questions 	http://www.asic-world.com/digital/questions.html
+Digital Electronics Tutorial 	http://www.asic-world.com/digital/tutorial.html
+Are You A Digital Engineer ? 	http://www.asic-world.com/digital/index.html
+Blocking And Nonblocking In Verilog 	http://www.asic-world.com/tidbits/blocking.html

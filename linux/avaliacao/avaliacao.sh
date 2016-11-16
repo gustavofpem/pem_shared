@@ -1,8 +1,23 @@
 #!/bin/bash
  
 page=$1
- 
-lynx -traversal "$page" >> ./tmp.txt
+if [ -s "traverse.dat" ] ; then
+	rm traverse.dat
+fi
+if [ -s "traverse2.dat" ] ; then
+	rm traverse2.dat
+fi
+if [ -s "reject.dat" ] ; then
+	rm reject.dat
+fi
+if [ -s "traverse.errors" ] ; then
+	rm traverse.errors
+fi
+
+lynx -traversal -accept_all_cookies "$page" >> /dev/null
 echo "Broken links: "
-cat traverse.errors | sed "s/\s.*$//"
-rm ./tmp.txt
+if [ -s "traverse.errors" ] ; then
+	cat traverse.errors | sed "s/\s.*$//"
+else
+	echo "None"
+fi
