@@ -7,10 +7,11 @@ module data_ram
 );
 
 	// Declare the RAM variable
-	reg [7:0] dram[1:0];
-	
+	//reg [7:0] dram[1:0] /* synthesis ramstyle = "M512" */;
+	(* ramstyle = "M512" *) reg [7:0] dram[1:0];
 	// Variable to hold the registered read address
-	reg addr_reg;
+	(* ramstyle = "M512" *) reg [0:7] my_ram[0:63];
+		reg addr_reg;
 	
 	always @ (posedge clk)
 	begin

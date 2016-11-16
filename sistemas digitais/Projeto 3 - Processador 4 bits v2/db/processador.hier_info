@@ -1,5 +1,5 @@
 |processador
-CLOCK_50 => clk.IN3
+CLOCK_50 => clk.IN4
 SW[0] => data.DATAB
 SW[1] => data.DATAB
 SW[2] => data.DATAB
@@ -8,7 +8,7 @@ SW[4] => data.DATAB
 SW[5] => data.DATAB
 SW[6] => data.DATAB
 SW[7] => data.DATAB
-KEY[0] => rst.IN1
+KEY[0] => rst.IN2
 KEY[1] => ~NO_FANOUT~
 KEY[2] => data.OUTPUTSELECT
 KEY[2] => data.OUTPUTSELECT
@@ -152,14 +152,14 @@ clk => dram.data_a[1].CLK
 clk => dram.data_a[0].CLK
 clk => addr_reg.CLK
 clk => dram.CLK0
-out_dram[0] <= dram.DATAOUT
-out_dram[1] <= dram.DATAOUT1
-out_dram[2] <= dram.DATAOUT2
-out_dram[3] <= dram.DATAOUT3
-out_dram[4] <= dram.DATAOUT4
-out_dram[5] <= dram.DATAOUT5
-out_dram[6] <= dram.DATAOUT6
-out_dram[7] <= dram.DATAOUT7
+out_dram[0] <= out_dram[0].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[1] <= out_dram[1].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[2] <= out_dram[2].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[3] <= out_dram[3].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[4] <= out_dram[4].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[5] <= out_dram[5].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[6] <= out_dram[6].DB_MAX_OUTPUT_PORT_TYPE
+out_dram[7] <= out_dram[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador|ula_3bits:ulainstance
@@ -177,7 +177,7 @@ op[0] => op[0].IN1
 op[1] => op[1].IN1
 op[2] => op[2].IN1
 op[3] => op[3].IN1
-sinal => sinal.IN1
+sinal <= subtrator:subtratorinstance.s
 out_ula[0] <= out_ula[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out_ula[1] <= out_ula[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out_ula[2] <= out_ula[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

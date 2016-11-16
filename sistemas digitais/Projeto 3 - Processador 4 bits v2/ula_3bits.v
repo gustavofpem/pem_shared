@@ -4,7 +4,7 @@ module ula_3bits(
 	input [3:0] a,
 	input [3:0] b,
 	input [3:0] op,
-	input sinal,
+	output sinal,
 	output reg [8:0] out_ula
 );
 
@@ -22,13 +22,13 @@ somador somadorinstance (		//Adder module instantiation
     .out(out_somador)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
     );
 
-subtrator subtratorinstance (		//Adder module instantiation
+subtrator subtratorinstance (	
     .clk(clk),
-	 .a(a),							//Relation between the "a" input from the calctop and the "a" input of the adder module.
-    .b(b),							//Relation between the "b" input from the calctop and the "b" input of the adder module.					 
+	 .a(a),							
+    .b(b),	
+	 .op(op),						 				 
     .s(sinal),
-	 .op(op),
-	 .out(out_subtrator)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+	 .out(out_subtrator)			
     );	 
 	 
 mult multinstance (			//Multiplication module instantiation
@@ -65,9 +65,9 @@ always @(posedge clk)
 begin
 	case(op)				   	//Selects the output of the ALU
 		4'b0001:				//Somador
-			out_ula <= 5;//out_somador;
+			out_ula <= out_somador;
 		4'b0010:				//Subtrator
-			out_ula <= 6;//out_subtrator;
+			out_ula <= out_subtrator;
 		4'b0011:				//Multiplicacao
 			out_ula <= out_mult;
 		4'b0100:				//AND

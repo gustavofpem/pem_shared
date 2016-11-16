@@ -33,9 +33,11 @@ wire [3:0] out_prom;
 wire [3:0] a;
 wire [3:0] b;
 reg [2:0] pc;
+
+// ULA
 wire [7:0] out_ula;
 reg [3:0] opcode;
-reg sinal;
+wire sinal;
 
 program_rom prominstance(
 		.addr_p(addr_p),
@@ -51,7 +53,9 @@ data_ram draminstance(
 		.out_dram(out_dram)
 	  );
 	  
-ula_3bits ulainstance (		//XOR module instantiation
+ula_3bits ulainstance (		
+    .clk(clk),
+	 .rst(rst),
     .a(out_dram[3:0]),			
     .b(out_dram[7:4]),			
 	 .op(opcode),
@@ -59,7 +63,7 @@ ula_3bits ulainstance (		//XOR module instantiation
     .out_ula(out_ula)			
     );	
 	 
-seg7 seg7instance (			//7 segments display module instantiation
+seg7 seg7instance (			
     .clk(clk), 				
     .rst(rst), 				
 	 .sinal(sinal),
@@ -93,7 +97,7 @@ begin
 		
 	disp3 <= out_dram[3:0];
 	disp2 <= out_dram[7:4];
-	disp1 <= 5; //out_ula/10;
+	disp1 <= out_ula/10;
 	disp0 <= out_ula%10;
 end
 
@@ -105,8 +109,7 @@ begin
 	
 	addr_p <= pc;
 	opcode <= pc;//out_prom;
-	LEDG <= pc;
-	
+	LEDG <= opcode;
 end
 
 endmodule
