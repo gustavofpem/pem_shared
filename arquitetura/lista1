@@ -1,0 +1,41 @@
+PEM - Arquitetura de Computadores
+Lista 1
+Gustavo Goncalves de Sousa Forte
+
+1.
+a) Tradutor:
+	Substitui as instruções escritas em uma linguagem (por exemplo, L1, mais conveniente para o projetista) em instruções de outra linguagem (por exemplo, L0, mais próxima da linguagem de máquina). O programa resultante consiste inteiramente em instruções L0.
+
+b) Interpretador:
+	É um programa que transforma instruções de L1 em instruções de L0, executando diretamente, sem a geração prévia de um programa em L0.
+
+c) Máquina real:
+
+	
+d) Máquina virtual:
+
+
+e) Arquitetura de computadores:
+	Se refere aos atributos de um sistema que são visíveis ao programador, ou seja, aqueles atributos que têm um impacto direto na execução lógica de um programa. Exemplos: conjunto de instruções, número de bits usados para representação de dados, mecanismos de E/S, técnicas de endereçamento de memória.
+
+f) Organização de computadores:
+	Se refere às unidades operacionais e suas interconexões, como os recursos são implementados. Exemplos: sinais de controle, interfaces entre o computador e os periféricos, tecnologia de memória utilizada.
+
+
+2.
+Na tradução, um arquivo é traduzido, gerando outro arquivo em linguagem de nível inferior, para que uma máquina neste nível inferior consiga executar essas instruções. Já na interpretação, não é criado um arquivo traduzido. As instruções são interpretadas diretamente para a máquina de nível inferior.
+
+3.
+É o conjunto de instruções, as operações básicas que a máquina disponibiliza ao programador. Pode ser diferente em cada máquina, sendo a escolha das instruções que compõem a ISA um item de projeto. A partir da ISA, podem-se desenvolver outras rotinas e funções que realizam outras tarefas. De acordo com a quantidade e a complexidade das instruções, tem-se uma máquina com diferentes características (RISC ou CISC), sendo cada uma mais adequada ou não, para diferentes aplicações.
+
+4.
+
+
+
+5.
+Máquina virtual é um software que simula uma máquina física e consegue executar vários programas, gerenciar processos, memória e arquivos. Ela constitui de uma plataforma onde a memória, o processador e seus outros recursos, são totalmente virtuais, não dependendo de hardwares. Portanto, além da Java Virtual Machine ser ser um interpretador de código, ela é também responsável pela execução das pilhas, gerenciamento de memória, threads, etc., ou seja, é um “computador virtual”. Como isso cria uma independência do hardware e do sistema operacional, os programas compilados podem rodar corretamente em diferentes máquinas.
+
+6.
+
+
+

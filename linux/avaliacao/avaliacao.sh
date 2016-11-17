@@ -14,6 +14,13 @@ if [ -s "traverse.errors" ] ; then
 	rm traverse.errors
 fi
 
+page="$(sed s@^https\:\/\/@http\:\/\/@ <<< $page)"
+if grep -qv "^http\:\/\/" <<< "$page" ; then
+	page="http://"$page
+fi
+echo -n "Searching link: "
+echo $page
+
 lynx -traversal -accept_all_cookies "$page" >> /dev/null
 echo "Broken links: "
 if [ -s "traverse.errors" ] ; then
