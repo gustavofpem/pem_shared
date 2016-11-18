@@ -1,41 +1,61 @@
 PEM - Arquitetura de Computadores
+Gustavo Gonçalves de Sousa Forte
 Lista 1
-Gustavo Goncalves de Sousa Forte
 
 1.
-a) Tradutor:
-	Substitui as instruções escritas em uma linguagem (por exemplo, L1, mais conveniente para o projetista) em instruções de outra linguagem (por exemplo, L0, mais próxima da linguagem de máquina). O programa resultante consiste inteiramente em instruções L0.
-
-b) Interpretador:
-	É um programa que transforma instruções de L1 em instruções de L0, executando diretamente, sem a geração prévia de um programa em L0.
-
-c) Máquina real:
-
-	
-d) Máquina virtual:
-
-
-e) Arquitetura de computadores:
-	Se refere aos atributos de um sistema que são visíveis ao programador, ou seja, aqueles atributos que têm um impacto direto na execução lógica de um programa. Exemplos: conjunto de instruções, número de bits usados para representação de dados, mecanismos de E/S, técnicas de endereçamento de memória.
-
-f) Organização de computadores:
-	Se refere às unidades operacionais e suas interconexões, como os recursos são implementados. Exemplos: sinais de controle, interfaces entre o computador e os periféricos, tecnologia de memória utilizada.
-
+a) Tradutor: substitui as instruções escritas em uma linguagem (por exemplo, L1, mais conveniente para o projetista) em instruções de outra linguagem (por exemplo, L0, mais próxima da linguagem de máquina). O programa resultante consiste inteiramente em instruções L0.
+b) Interpretador:	é um programa que transforma instruções de L1 em instruções de L0, executando diretamente, sem a geração prévia de um programa em L0.
+c) Máquina real: máquina que existe na prática, com seus dispositivos eletrônicos. Consegue executar programas na linguagem de máquina (L0, por exemplo).
+d) Máquina virtual: uma abstração que pode ser feita, como se existisse uma máquina que executasse instruções da linguagem L1, ou L2, ou outra linguagem em nível acima da linguagem de máquina (L0).
+e) Arquitetura de computadores: se refere aos atributos de um sistema que são visíveis ao programador, ou seja, aqueles atributos que têm um impacto direto na execução lógica de um programa. Exemplos: conjunto de instruções, número de bits usados para representação de dados, mecanismos de E/S, técnicas de endereçamento de memória.
+f) Organização de computadores: se refere às unidades operacionais e suas interconexões, como os recursos são implementados. Exemplos: sinais de controle, interfaces entre o computador e os periféricos, tecnologia de memória utilizada.
 
 2.
-Na tradução, um arquivo é traduzido, gerando outro arquivo em linguagem de nível inferior, para que uma máquina neste nível inferior consiga executar essas instruções. Já na interpretação, não é criado um arquivo traduzido. As instruções são interpretadas diretamente para a máquina de nível inferior.
+	Na tradução, um arquivo é traduzido, gerando outro arquivo em linguagem de nível inferior, para que uma máquina neste nível inferior consiga executar essas instruções. Já na interpretação, não é criado um arquivo traduzido. As instruções são interpretadas diretamente para a máquina de nível inferior.
 
 3.
-É o conjunto de instruções, as operações básicas que a máquina disponibiliza ao programador. Pode ser diferente em cada máquina, sendo a escolha das instruções que compõem a ISA um item de projeto. A partir da ISA, podem-se desenvolver outras rotinas e funções que realizam outras tarefas. De acordo com a quantidade e a complexidade das instruções, tem-se uma máquina com diferentes características (RISC ou CISC), sendo cada uma mais adequada ou não, para diferentes aplicações.
+	É o conjunto de instruções, as operações básicas que a máquina disponibiliza ao programador. Pode ser diferente em cada máquina, sendo a escolha das instruções que compõem a ISA um item de projeto. A partir da ISA, podem-se desenvolver outras rotinas e funções que realizam outras tarefas. De acordo com a quantidade e a complexidade das instruções, tem-se uma máquina com diferentes características (RISC ou CISC), sendo cada uma mais adequada ou não, para diferentes aplicações.
 
 4.
-
+	Sim, mas com alguns problemas. Um problema encontrado seria o tamanho do código resultante, visto que uma instrução ISA realiza várias microinstruções. Outro problema é que o compilador ficaria mais complexo, pois precisaria tratar com uma linguagem mais primitiva. A vantagem é que o programa seria mais rápido, visto que, para o computador, seria um nível a menos de interpretação.
 
 
 5.
-Máquina virtual é um software que simula uma máquina física e consegue executar vários programas, gerenciar processos, memória e arquivos. Ela constitui de uma plataforma onde a memória, o processador e seus outros recursos, são totalmente virtuais, não dependendo de hardwares. Portanto, além da Java Virtual Machine ser ser um interpretador de código, ela é também responsável pela execução das pilhas, gerenciamento de memória, threads, etc., ou seja, é um “computador virtual”. Como isso cria uma independência do hardware e do sistema operacional, os programas compilados podem rodar corretamente em diferentes máquinas.
+	Máquina virtual é um software que simula uma máquina física e consegue executar vários programas, gerenciar processos, memória e arquivos. Ela constitui de uma plataforma onde a memória, o processador e seus outros recursos, são totalmente virtuais, não dependendo de hardwares. Portanto, além da Java Virtual Machine ser ser um interpretador de código, ela é também responsável pela execução das pilhas, gerenciamento de memória, threads, etc., ou seja, é um “computador virtual”. Como isso cria uma independência do hardware e do sistema operacional, os programas compilados podem rodar corretamente em diferentes máquinas.
 
 6.
+	A máquina de Von Neumann é um modelo de computador de programa armazenado. Foi proposto em 1945 e ainda hoje é utilizada como base de todos computadores digitais atuais, com raras exceções. A arquitetura de Von Neumann descreve um computuador digital eletrônico, consistindo das seguintes partes, como pode ser visto na Figura 1:
+1) uma Unidade Lógica e Aritmética (ULA), pois são as operações mais elementares e mais frequentes a serem realizadas pelo computador;
+2) uma Unidade de Controle (UC), responsável pelo controle lógico do dispositivo, pela interpretação das instruções e pela execução destas. Junto com a ULA, forma a Unidade Central de Processamento (UCP);
+3) uma memória, para armazenar as instruções e auxiliar no processamento das mesmas;
+4) dispositivos de entrada, capazes de transferir informações do mundo externo para o computador. São operados pela UC;
+5) dispositivos de saída, capazes de transferir informações do computador ao mundo externo. São operados pela UC.
 
+7.
+	O IAS possui uma memória de 1000 palavras, cada uma com 40 bits, que armazena tanto dados como instruções. As instruções são representadas por códigos binários. Números são representados na forma binária, sendo formados por 1 bit de sinal e 39 de valor. Uma palavra pode, também, conter duas instruções de 20 bits, com cada instrução possuindo 8 bits de opcode (que especifica a operação a ser feita) e 12 bits de endereço de uma palavra na memória.
+	A Unidade de Controle opera buscando as instruções na memória e executando-as uma a uma, com o auxílio de registradores de propósito específico. Alguns registradores encontrados na UCP (ULA e UC) são:
+- Memory Buffer Register (MBR): contém uma palavra a ser armazenada na memória ou enviada à unidade de E/S, ou então para receber uma palavra da memória ou da unidade de E/S;
+- Memory Address Register (MAR): especifica o endereço na memória da palavra a ser escrita no MBR ou lida deste;
+- Instruction Register (IR): contém o opcode de 8 bits da instrução em execução;
+- Instruction Buffer Register (IBR): guarda temporariamente a segunda instrução de uma palavra da memória;
+- Program Counter (PC): contém o endereço da(s) próxima(s) instrução(ões) a ser(em) buscada(s) na memória;
+- Accumulator (AC) e Multiplier Quotient (MQ): guardam temporariamente os operandos e resultados da ULA.
+	O IAS opera executando repetidamente o ciclo de instrução, que consiste no ciclo de busca (instrução é carregada no IR e o endereço é carregado no MAR) e o ciclo de execução (o opcode é interpretado e a instrução é executada).
 
+8.
+	System-on-a-chip (SoC) são circuitos integrados que possuem em seu interior diferentes componentes eletrônicos. Geralmente os componentes são feitos separadamente: memória, processador, componentes de radiofrequência, processador de gráficos, conversores analógico-digital e digital-analógico, entre outros. No caso dos SoCs, esses componentes são integrados em apenas um chip. Uma vantagem disso é o tamanho menor do chip, sendo muito útil para diversas aplicações onde é necessário um computador e as dimensões são importantes. Como é menor, também utiliza menos potência. Se comparado a computadores comuns (com CPU e componentes externos), possuem menos recursos, mas também são mais baratos de se fabricar.
+
+9.
+a)
+- Location: possui os recursos de identificar a localização global.
+- Kryo CPU: Unidade Central de Processamento (CPU) quad-core de 64 bits, indo até 2,2 GHz. Produzido com a tecnologia FinFET 14nm.
+- Adreno 530 GPU: Unidade de Processamento Gráfico (GPU). Otimiza o processamento dos cálculos gráficos. 
+- Adreno DPU e Adreno VPU:	Unidade de Processamento de Display (DPU) e Unidade de Processamento de Vídeo. Funcionam em conjunto para melhorar a experiência do usuário e otimizar o consumo de energia.
+- Memory Subsystem:	memória do tipo LPDDR4.
+- Spectra ISP: Processadores de Sinal de Imagem (ISP) dual de 14 bits. Suporta até 28MP em 30fps, com menos shutter lag, maior precisão para melhor qualidade de imagem. Possui também algoritmos de low light e uma superior redução de ruído.
+- Connectivity: controlador de sinais 4G LTE, Wi-Fi, Bluetooth, entre outros, possibilitando rápida comunicação e melhor performance.
+- DSP: inclui dois Processadores Digitais de Sinais (DSPs): Hexagon 680 e Snapdragon Sensor Core.
+
+b)
+	Não. É um chip projetado para aplicações em dispositivos móveis (celulares, tablets, etc.), visto que possui vários processadores e controladores de sinais, sensores, câmeras, displays, conexões, entre outros, todas presentes na maioria dos dispositivos móveis atuais.
 
