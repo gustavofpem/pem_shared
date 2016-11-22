@@ -24,14 +24,14 @@ parameter JMP = 4'd12;
 	
 	// Variable to hold the registered read address
 	reg [7:0] addr_reg;
-	
+
 	initial
 	begin
-		prom[0] = (MOVE << 12) | (4'd0 << 8) | 8'd4; // MOVE 4 para ACC
-		prom[1] = (MOVE << 12) | (4'd1 << 8) | 8'd5; // MOVE 5 para REGA
-		prom[2] = (ADD << 12) | (4'd1 << 8) | 8'd0; // ADD ACC com REGA
-		prom[3] = (STORE << 12) | (4'd0 << 8) | 8'd0; // STORE ACC no endereço 0 da RAM
-		prom[4] = (PRINT << 12) | (4'd5 << 8) | 8'd0; // PRINT out_ula no LEDG
+		prom[0] = 16'b1000000000000100; // MOVE 4 para ACC
+		prom[1] = 16'b1000001000000101; // MOVE 5 para REGB
+		prom[2] = 16'b0001001000000000; // ADD ACC com REGB
+		//prom[3] = 16'b1010010000000000; // STORE REGC no endereço 0 da RAM
+		prom[3] = 16'b1011010100000000; // PRINT out_ula no LEDG
 	/*	prom[5] = ;
 		prom[6] = ;
 		prom[7] = ;

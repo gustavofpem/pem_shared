@@ -61,7 +61,7 @@ parameter OR = 4'h4;
 parameter NOT = 4'h5;
 parameter XOR = 4'h6;
 
-always @(posedge clk)
+always @(*)
 begin
 	case(op)
 		ADD:

@@ -15,19 +15,20 @@ module processador(
 	output [6:0] HEX3			//Output operand - 7 bits wide - 7 segments display
 );
 
-parameter NOP = 4'd0;
-parameter ADD = 4'd1;
+parameter NOP = 4'd0; //0000
+parameter ADD = 4'd1; //0001
 parameter SUB = 4'd2;
 parameter AND = 4'd3;
 parameter OR = 4'd4;
 parameter NOT = 4'd5;
 parameter XOR = 4'd6;
-parameter CLEAR = 4'd7;
+parameter CLEAR = 4'd7; // 0111
 parameter MOVE = 4'd8;
 parameter LOAD = 4'd9;
 parameter STORE = 4'd10;
 parameter PRINT = 4'd11;
-parameter JMP = 4'd12;
+parameter PRINT7SEG = 4'd12;
+parameter JMP = 4'd13; 1011
 
 //Data RAM
 reg we_d;
@@ -117,7 +118,6 @@ seg7 seg7instance3(
 );
 
 assign STDIN = SW[7:0];
-assign STDOUT = LEDR[7:0];
 
 always @(posedge clk or posedge rst)
 begin
@@ -130,12 +130,14 @@ begin
 		REGA <= 'd0;
 		REGB <= 'd0;
 		REGC <= 'd0;
+		LEDR <= 10'b1111111111;
 	end
 	else
 	begin
 		PC <= PC + 1'b1;
 		addr_p <= PC;
 		OPCODE <= out_prom[15:12];
+		LEDR <= REGB;
 		case(OPCODE)
 			MOVE:
 			begin
@@ -157,6 +159,7 @@ begin
 					4'b0011: ACC2 <= REGC;
 					default: ACC2 <= out_prom[7:0];
 				endcase
+				REGC <= out_ula;
 			end
 			AND:
 			begin
@@ -221,6 +224,7 @@ begin
 					4'b0010: data <= REGB;
 					4'b0011: data <= REGC;
 					4'b0100: data <= MADDR;
+					4'b0101: data <= out_ula;
 					default: data <= ACC;
 				endcase
 			end
@@ -235,18 +239,50 @@ begin
 					default: ACC <= 8'd0;
 				endcase
 			end
+			PRINT:
+			begin
+				case(out_prom[11:8])
+					4'b0000: LEDG <= ACC;
+					4'b0001: LEDG <= ACC2;
+					4'b0010: LEDG <= REGA;
+					4'b0011: LEDG <= REGB;
+					4'b0100: LEDG <= REGC;
+					4'b0101: LEDG <= out_ula;
+					default: LEDG <= ACC;
+				endcase
+			end
+			PRINT7SEG:
+			begin
+				case(out_prom[11:8])
+					4'b0000: 
+					begin	
+						disp0 <= out_ula[3:0];
+						disp1 <= out_ula[7:4];
+						disp2 <= ACC2;
+						disp3 <= ACC;
+					end
+					4'b0001:
+					begin	
+						disp0 <= REGA;
+						disp1 <= REGB;
+						disp2 <= REGC;
+						disp3 <= ACC;
+					end
+					default:				
+					begin	
+						disp0 <= out_ula[3:0];
+						disp1 <= out_ula[7:4];
+						disp2 <= ACC2;
+						disp3 <= ACC;
+					end
+				endcase
+			end
 			JMP:
 			begin
 				PC <= out_prom[7:0];
 			end
 		endcase
 		
-		/*
-		disp3 <= out_dram[3:0];
-		disp2 <= out_dram[7:4];
-		disp1 <= out_ula[7:4];
-		disp0 <= out_ula[3:0];
-		*/
 	end
 end
 
@@ -273,3 +309,4 @@ begin
 end*/
 
 endmodule
+
