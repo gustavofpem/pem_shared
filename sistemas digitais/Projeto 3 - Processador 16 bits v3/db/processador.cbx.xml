@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="processador">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|processador:processadorinstance|dram:draminstance|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r4a1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

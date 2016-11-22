@@ -15,18 +15,19 @@ module processador(
 	output [6:0] HEX3			//Output operand - 7 bits wide - 7 segments display
 );
 
-parameter NOP = 4'h0;
-parameter ADD = 4'h1;
-parameter SUB = 4'h2;
-parameter AND = 4'h3;
-parameter OR = 4'h4;
-parameter NOT = 4'h5;
-parameter XOR = 4'h6;
-parameter NAND = 4'h7;
-parameter NOR = 4'h8;
-parameter LOAD = 4'h9;
-parameter STORE = 4'hA;
-parameter PRINT = 4'hB;
+parameter NOP = 4'd0;
+parameter ADD = 4'd1;
+parameter SUB = 4'd2;
+parameter AND = 4'd3;
+parameter OR = 4'd4;
+parameter NOT = 4'd5;
+parameter XOR = 4'd6;
+parameter CLEAR = 4'd7;
+parameter MOVE = 4'd8;
+parameter LOAD = 4'd9;
+parameter STORE = 4'd10;
+parameter PRINT = 4'd11;
+parameter JMP = 4'd12;
 
 //Data RAM
 reg we_d;
@@ -45,15 +46,17 @@ wire [7:0] STDOUT;
 //Registradores
 reg [7:0] PC;
 reg [3:0] OPCODE;
+reg [7:0] ACC;
+reg [7:0] ACC2;
 reg [7:0] REGA;
 reg [7:0] REGB;
 reg [7:0] REGC;
 reg [7:0] MADDR;
 reg [7:0] ZERO;
-assign ZERO = 8'd0;
 
 // ULA
 wire [7:0] out_ula;
+wire CARRY;
 wire sinal;
 
 program_rom prominstance(
@@ -73,9 +76,10 @@ dram draminstance(
 ula ulainstance(		
 	.clk(clk),
 	.rst(rst),
-	.a(REGA),
-	.b(REGB),
+	.a(ACC),
+	.b(ACC2),
 	.op(OPCODE),
+	.carry(CARRY),
 	.sinal(sinal),
 	.out_ula(out_ula)			
 );
@@ -117,33 +121,124 @@ assign STDOUT = LEDR[7:0];
 
 always @(posedge clk or posedge rst)
 begin
+	ZERO <= 8'd0;
 	if(rst)
 	begin
-		PC <= 0;
-		REGA <= 0;
-		REGB <= 0;
-		REGC <= 0;
+		PC <= 'd0;
+		ACC <= 'd0;
+		ACC2 <= 'd0;
+		REGA <= 'd0;
+		REGB <= 'd0;
+		REGC <= 'd0;
 	end
 	else
 	begin
+		PC <= PC + 1'b1;
 		addr_p <= PC;
 		OPCODE <= out_prom[15:12];
 		case(OPCODE)
-			LOAD:
+			MOVE:
 			begin
 				case(out_prom[11:8])
-					4'b0000: REGA <= out_prom[7:0];
-					4'b0001: REGB <= out_prom[7:0];
-					4'b0010: REGC <= out_prom[7:0];
-					4'b0011: MADDR <= out_prom[7:0];
-					default: REGA <= out_prom[7:0];
+					4'b0000: ACC <= out_prom[7:0];
+					4'b0001: REGA <= out_prom[7:0];
+					4'b0010: REGB <= out_prom[7:0];
+					4'b0011: REGC <= out_prom[7:0];
+					4'b0100: MADDR <= out_prom[7:0];
+					default: ACC <= out_prom[7:0];
 				endcase
 			end
 			ADD:
 			begin
-				
+				case(out_prom[11:8])
+					4'b0000: ACC2 <= out_prom[7:0];
+					4'b0001: ACC2 <= REGA;
+					4'b0010: ACC2 <= REGB;
+					4'b0011: ACC2 <= REGC;
+					default: ACC2 <= out_prom[7:0];
+				endcase
 			end
-			
+			AND:
+			begin
+				case(out_prom[11:8])
+					4'b0000: ACC2 <= out_prom[7:0];
+					4'b0001: ACC2 <= REGA;
+					4'b0010: ACC2 <= REGB;
+					4'b0011: ACC2 <= REGC;
+					default: ACC2 <= out_prom[7:0];
+				endcase
+			end
+			OR:
+			begin
+				case(out_prom[11:8])
+					4'b0000: ACC2 <= out_prom[7:0];
+					4'b0001: ACC2 <= REGA;
+					4'b0010: ACC2 <= REGB;
+					4'b0011: ACC2 <= REGC;
+					default: ACC2 <= out_prom[7:0];
+				endcase
+			end
+			NOT:
+			begin
+				case(out_prom[11:8])
+					4'b0000: ACC2 <= out_prom[7:0];
+					4'b0001: ACC2 <= REGA;
+					4'b0010: ACC2 <= REGB;
+					4'b0011: ACC2 <= REGC;
+					default: ACC2 <= out_prom[7:0];
+				endcase
+			end
+			XOR:
+			begin
+				case(out_prom[11:8])
+					4'b0000: ACC2 <= out_prom[7:0];
+					4'b0001: ACC2 <= REGA;
+					4'b0010: ACC2 <= REGB;
+					4'b0011: ACC2 <= REGC;
+					default: ACC2 <= out_prom[7:0];
+				endcase
+			end
+			LOAD:
+			begin
+				addr_d <= out_prom[7:0];
+				we_d <= 1'b0;
+				case(out_prom[11:8])
+					4'b0000: ACC <= out_dram;
+					4'b0001: REGA <= out_dram;
+					4'b0010: REGB <= out_dram;
+					4'b0011: REGC <= out_dram;
+					4'b0100: MADDR <= out_dram;
+					default: ACC <= out_dram;
+				endcase
+			end
+			STORE:
+			begin
+				addr_d <= out_prom[7:0];
+				we_d <= 1'b1;
+				case(out_prom[11:8])
+					4'b0000: data <= out_prom;
+					4'b0001: data <= REGA;
+					4'b0010: data <= REGB;
+					4'b0011: data <= REGC;
+					4'b0100: data <= MADDR;
+					default: data <= ACC;
+				endcase
+			end
+			CLEAR:
+			begin
+				case(out_prom[11:8])
+					4'b0000: ACC <= 8'd0;
+					4'b0001: REGA <= 8'd0;
+					4'b0010: REGB <= 8'd0;
+					4'b0011: REGC <= 8'd0;
+					4'b0100: MADDR <= 8'd0;
+					default: ACC <= 8'd0;
+				endcase
+			end
+			JMP:
+			begin
+				PC <= out_prom[7:0];
+			end
 		endcase
 		
 		/*
