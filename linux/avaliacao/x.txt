@@ -1,2 +1,0 @@
-wget -nv http://www.asdoiuasdoijasd.com/ -o ./x.txt
-

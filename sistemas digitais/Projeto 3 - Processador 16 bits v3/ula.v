@@ -1,13 +1,10 @@
 module ula(
-	input clk,					//Input operand - clock signal
-	input rst,					//Input operand - reset signal
 	input [7:0] a,
 	input [7:0] b,
 	input [3:0] op,
-	output sinal,
 	output reg carry,
 	output reg [7:0] out_ula
-);
+	);
 
 wire [8:0] out_somador;		
 wire [7:0] out_subtrator;		
@@ -16,31 +13,28 @@ wire [7:0] out_or;
 wire [7:0] out_not;
 wire [7:0] out_xor;
 
-somador somadorinstance (		//Adder module instantiation
-    .a(a),							//Relation between the "a" input from the calctop and the "a" input of the adder module.
-    .b(b),							//Relation between the "b" input from the calctop and the "b" input of the adder module.					 
-    .out(out_somador)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+somador somadorinstance (
+    .a(a),					
+    .b(b),				
+    .out(out_somador)
     );
 
-subtrator subtratorinstance (	
-    .clk(clk),
-	 .a(a),							
-    .b(b),	
-	 .op(op),						 				 
-    .s(sinal),
-	 .out(out_subtrator)			
+subtrator subtratorinstance (
+	 .a(a),
+    .b(b),
+	 .out(out_subtrator)
     );
 
-op_and op_andinstance (		//AND module instantiation
-    .a(a),						//Relation between the "a" input from the calctop and the "a" input of the adder module.
-    .b(b),						//Relation between the "b" input from the calctop and the "b" input of the adder module.					 
-    .out(out_and)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+op_and op_andinstance (
+    .a(a),
+    .b(b),
+    .out(out_and)
     );
 
-op_or op_orinstance (		//OR module instantiation
-    .a(a),						//Relation between the "a" input from the calctop and the "a" input of the adder module.
-    .b(b),						//Relation between the "b" input from the calctop and the "b" input of the adder module.					 
-    .out(out_or)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+op_or op_orinstance (
+    .a(a),
+    .b(b),
+    .out(out_or)
     );
 	 
 op_not op_notinstance (
@@ -48,10 +42,10 @@ op_not op_notinstance (
     .out(out_not)
     );
 
-op_xor op_xorinstance (		//XOR module instantiation
-    .a(a),						//Relation between the "a" input from the calctop and the "a" input of the adder module.
-    .b(b),						//Relation between the "b" input from the calctop and the "b" input of the adder module.					 
-    .out(out_xor)			//Relation between the "out" output of the calctop and the "out_adder" output of the adder module.
+op_xor op_xorinstance (
+    .a(a),
+    .b(b),
+    .out(out_xor)
     );	
 	 
 parameter ADD = 4'h1;
@@ -70,7 +64,7 @@ begin
 			if(out_somador[8])
 				carry <= out_somador[8];
 			else
-				carry <= 1'd0;
+				carry <= 'd0;
 		end
 		SUB:
 			out_ula <= out_subtrator;
@@ -82,7 +76,7 @@ begin
 			out_ula <= out_not;
 		XOR:
 			out_ula <= out_xor;
-		default: out_ula <= 8'd0;
+		default: out_ula <= 'd0;
 	endcase
 end
 

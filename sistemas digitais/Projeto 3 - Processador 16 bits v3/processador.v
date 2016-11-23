@@ -1,18 +1,18 @@
 module processador(
-	input clk,					//Input operand - clock signal
+	input clk,
 	input rst,
-	input [7:0] SW,			//Input switches
-	input	[2:1] KEY,					//Input operand - 1 bit wide
-	output reg [2:0] LEDG,					//Input operand - 3 bit wide
+	input [7:0] SW,
+	input	[2:1] KEY,
+	output reg [2:0] LEDG,
 	output reg [7:0] LEDR,
-	output reg [3:0] disp0,		//Output operand - 4 bits wide 
-	output reg [3:0] disp1, 		//Output operand - 4 bits wide
-	output reg [3:0] disp2, 		//Output operand - 4 bits wide
-	output reg [3:0] disp3, 		//Output operand - 4 bits wide
-	output [6:0] HEX0,		//Output operand - 7 bits wide - 7 segments display
-	output [6:0] HEX1,		//Output operand - 7 bits wide - 7 segments display
-	output [6:0] HEX2,		//Output operand - 7 bits wide - 7 segments display
-	output [6:0] HEX3			//Output operand - 7 bits wide - 7 segments display
+	output reg [3:0] disp0,
+	output reg [3:0] disp1,
+	output reg [3:0] disp2,
+	output reg [3:0] disp3,
+	output [6:0] HEX0,
+	output [6:0] HEX1,
+	output [6:0] HEX2,
+	output [6:0] HEX3
 );
 
 parameter NOP = 4'd0; //0000
@@ -28,7 +28,7 @@ parameter LOAD = 4'd9;
 parameter STORE = 4'd10;
 parameter PRINT = 4'd11;
 parameter PRINT7SEG = 4'd12;
-parameter JMP = 4'd13; 1011
+parameter JMP = 4'd13;
 
 //Data RAM
 reg we_d;
@@ -37,7 +37,6 @@ reg addr_d;
 wire [7:0] out_dram;
 
 //Program ROM
-reg [7:0] addr_p;
 wire [15:0] out_prom;
 
 //AUX
@@ -58,10 +57,9 @@ reg [7:0] ZERO;
 // ULA
 wire [7:0] out_ula;
 wire CARRY;
-wire sinal;
 
 program_rom prominstance(
-	.addr_p(addr_p),
+	.addr_p(PC),
 	.clk(clk),
 	.out_prom(out_prom)
 );
@@ -81,43 +79,42 @@ ula ulainstance(
 	.b(ACC2),
 	.op(OPCODE),
 	.carry(CARRY),
-	.sinal(sinal),
 	.out_ula(out_ula)			
 );
 	 
-seg7 seg7instance0(			
-	.clk(clk),
-	.rst(rst),
-	.sinal(0),
+seg7 seg7instance0(
 	.d(disp0), 			   
 	.hex_out(HEX0)
 );
 
-seg7 seg7instance1(			
-	.clk(clk),		
-	.rst(rst),
-	.sinal(sinal),
+seg7 seg7instance1(
 	.d(disp1), 			   
 	.hex_out(HEX1)
 );
 
-seg7 seg7instance2(			
-	.clk(clk), 				
-	.rst(rst),
-	.sinal(0),
+seg7 seg7instance2(
 	.d(disp2), 			   
 	.hex_out(HEX2)
 );
 
-seg7 seg7instance3(			
-	.clk(clk), 				
-	.rst(rst),
-	.sinal(0),
+seg7 seg7instance3(
 	.d(disp3), 			   
 	.hex_out(HEX3)
 );
 
 assign STDIN = SW[7:0];
+
+/*
+ALTERAÇOES:
+	- SUBTRATOR SEM SINAL, RESPOSTA EM COMPLEMENTO DE 2, USUARIO QUE SE VIRE
+	- ULA E SEUS SUBMODULOS, SAO TODOS COMBINACIONAIS
+	- SEG7 NAO USA CLOCK, TAMBEM E´ COMBINACIONAL
+	- NAO TEM NECESSIDADE DE ADDR_P, PQ A SAIDA DA ROM E´ DO ENDEREÇO DO PC (VER INSTANCIA DA PROM)
+	
+FAZER:
+	- CCU (PROCESSADOR.V) E´ COMBINACIONAL, NAO DEPENDE DE CLOCK. PEGA INSTRUCAO E DECODIFICA. OU SEJA, UMA ENTRADA = UMA SAIDA, NAO E´ REPROGRAMAVEL.
+	- REGISTER FILE (BANCO DE REGISTRADORES)
+*/
 
 always @(posedge clk or posedge rst)
 begin
@@ -134,10 +131,8 @@ begin
 	end
 	else
 	begin
-		PC <= PC + 1'b1;
-		addr_p <= PC;
-		OPCODE <= out_prom[15:12];
-		LEDR <= REGB;
+		PC <= PC + 1;
+		OPCODE <= out_prom[15:12]; // 4 bits opcode
 		case(OPCODE)
 			MOVE:
 			begin
@@ -282,31 +277,7 @@ begin
 				PC <= out_prom[7:0];
 			end
 		endcase
-		
 	end
 end
-
-/*
-always @(posedge KEY[3] or posedge rst) //Armazenar operacoes
-begin
-	if(rst)
-	begin
-		PC = 0;
-		opcode = 0;
-		LEDG = 0;
-		addr_p = 0;
-	end
-	else
-	begin
-		pc = pc + 1;
-		if(pc > 4)
-			pc = 0;
-
-		addr_p = pc;
-		opcode = out_prom;
-		LEDG = opcode;
-	end
-end*/
-
 endmodule
 

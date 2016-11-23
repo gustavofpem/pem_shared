@@ -509,8 +509,6 @@ set_global_assignment -name VERILOG_FILE processador.v
 set_global_assignment -name VERILOG_FILE op_xor.v
 set_global_assignment -name VERILOG_FILE op_or.v
 set_global_assignment -name VERILOG_FILE op_and.v
-set_global_assignment -name VERILOG_FILE mult.v
-set_global_assignment -name VERILOG_FILE div.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
