@@ -1,0 +1,7 @@
+
+State Machine - |DE1_TOP|processador:processadorinstance|seg7:seg7instance|display_state
+Name display_state.11 display_state.10 display_state.01 display_state.00 
+display_state.00 0 0 0 0 
+display_state.01 0 0 1 1 
+display_state.10 0 1 0 1 
+display_state.11 1 0 0 1 
