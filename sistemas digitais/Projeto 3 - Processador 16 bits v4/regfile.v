@@ -9,11 +9,14 @@ module regfile(
 );
 
 //Registradores
-parameter [7:0] REGA = 'd1;
-parameter [7:0] REGB = 'd2;
-parameter [7:0] REGC = 'd3;
-parameter [7:0] MADDR = 'd4;
-parameter [7:0] ZERO = 'd15;
+parameter ACCUMULATOR = 4'd0;
+parameter REGA = 4'd1;
+parameter REGB = 4'd2;
+parameter REGC = 4'd3;
+parameter REGE = 4'd5;
+parameter REGD = 4'd4;
+parameter MADDR = 4'd14;
+parameter ZERO = 4'd15;
 
 reg [7:0] regfile[15:0];
 
@@ -21,10 +24,12 @@ always @(posedge clk or posedge rst)
 begin
 	if(rst)
 	begin
-		regfile[ACC] <= 'd0;
+		regfile[ACCUMULATOR] <= 'd0;
 		regfile[REGA] <= 'd0;
 		regfile[REGB] <= 'd0;
 		regfile[REGC] <= 'd0;
+		regfile[REGD] <= 'd0;
+		regfile[REGE] <= 'd0;
 		regfile[MADDR] <= 'd0;
 	end
 	else
@@ -33,6 +38,6 @@ begin
 end
 
 assign out_reg = regfile[addr_reg];
-assign ACC = regfile[0];
+assign ACC = regfile[ACCUMULATOR];
 
 endmodule

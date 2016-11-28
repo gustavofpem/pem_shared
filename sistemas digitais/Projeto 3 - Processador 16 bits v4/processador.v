@@ -15,20 +15,20 @@ module processador(
 	output [6:0] HEX3
 );
 
-parameter NOP = 4'd0; //0000
-parameter ADD = 4'd1; //0001
-parameter SUB = 4'd2;
-parameter AND = 4'd3;
-parameter OR = 4'd4;
-parameter NOT = 4'd5;
-parameter XOR = 4'd6;
-parameter CLEAR = 4'd7; // 0111
-parameter MOVE = 4'd8;
-parameter LOAD = 4'd9;
-parameter STORE = 4'd10;
-parameter PRINT = 4'd11;
-parameter PRINT7SEG = 4'd12;
-parameter JMP = 4'd13;
+parameter NOP = 4'd0;			// No Operation
+parameter LI = 4'd1;			// Load Immediate
+parameter LOAD = 4'd2;			// Load from RAM
+parameter STORE = 4'd3;			// Store to RAM
+parameter ADD = 4'd4;
+parameter SUB = 4'd5;
+parameter AND = 4'd6;
+parameter OR = 4'd7;
+parameter XOR = 4'd8;
+parameter NOT = 4'd9;
+parameter LIN = 4'd10;			// Load from Input
+parameter PRINT = 4'd11;		// Print to Output LEDs
+parameter PRINT7SEG = 4'd12;	// Print to Output 7seg
+parameter JMP = 4'd13;			// Jump
 
 //Data RAM
 reg we_d;
@@ -54,6 +54,7 @@ reg [3:0] OPCODE;
 // ULA
 wire [7:0] ACC;
 reg [7:0] ACC2;
+reg [7:0] ULA_OUT;
 wire [7:0] out_ula;
 wire CARRY;
 
@@ -115,7 +116,7 @@ seg7 seg7instance3(
 	.hex_out(HEX3)
 );
 
-assign STDIN = SW[9:0];
+assign STDIN = SW[7:0];
 
 /*
 ALTERAÇOES:
@@ -141,11 +142,27 @@ begin
 		LEDR <= out_reg;
 		LEDG <= ACC;
 		case(OPCODE)
-			MOVE:
+			LI:
 			begin
 				we_reg <= 'd1;
 				addr_reg <= out_prom[11:8];
 				data_reg <= out_prom[7:0];
+			end
+			LOAD:
+			begin
+				addr_d <= out_prom[7:0];
+				addr_reg <= out_prom[11:8];
+				data_reg <= out_dram;
+				we_d <= 'd0;
+				we_reg <= 'd1;
+			end
+			STORE:
+			begin
+				addr_d <= out_prom[7:0];
+				addr_reg <= out_prom[11:8];
+				we_reg <= 'd0;
+				data_reg <= out_dram;
+				we_d <= 'd1;
 			end
 			ADD:
 			begin
@@ -165,39 +182,23 @@ begin
 				addr_reg <= out_prom[11:8];
 				ACC2 <= out_reg;
 			end
-			NOT:
-			begin
-				we_reg <= 'd0;
-				addr_reg <= out_prom[11:8];
-				ACC2 <= out_reg;
-			end
 			XOR:
 			begin
 				we_reg <= 'd0;
 				addr_reg <= out_prom[11:8];
 				ACC2 <= out_reg;
 			end
-			LOAD:
+			NOT:
 			begin
-				addr_d <= out_prom[7:0];
-				addr_reg <= out_prom[11:8];
-				data_reg <= out_dram;
-				we_d <= 'd0;
-				we_reg <= 'd1;
-			end
-			STORE:
-			begin
-				addr_d <= out_prom[7:0];
-				addr_reg <= out_prom[11:8];
 				we_reg <= 'd0;
-				data_reg <= out_dram;
-				we_d <= 'd1;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
-			CLEAR:
+			LIN:
 			begin
 				we_reg <= 'd1;
 				addr_reg <= out_prom[11:8];
-				data_reg <= 'd0;
+				data_reg <= STDIN;
 			end
 			PRINT:
 			begin
@@ -207,33 +208,13 @@ begin
 			end
 			PRINT7SEG:
 			begin
-				/*case(out_prom[11:8])
-					4'b0000: 
-					begin	
-						disp0 <= out_ula[3:0];
-						disp1 <= out_ula[7:4];
-						disp2 <= ACC2;
-						disp3 <= ACC;
-					end
-					4'b0001:
-					begin	
-						disp0 <= REGA;
-						disp1 <= REGB;
-						disp2 <= REGC;
-						disp3 <= ACC;
-					end
-					default:				
-					begin	
-						disp0 <= out_ula[3:0];
-						disp1 <= out_ula[7:4];
-						disp2 <= ACC2;
-						disp3 <= ACC;
-					end
-				endcase*/
+				disp0 <= out_ula[3:0];
+				disp1 <= out_ula[7:4];
 			end
 			JMP:
 			begin
 			end
+			default:
 		endcase
 	end
 end
