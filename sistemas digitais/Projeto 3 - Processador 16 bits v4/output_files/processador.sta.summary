@@ -2,68 +2,108 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'KEY[0]'
-Slack : -6.088
-TNS   : -117.370
-
 Type  : Slow Model Setup 'KEY[3]'
-Slack : -4.277
-TNS   : -172.505
+Slack : -5.374
+TNS   : -370.787
 
-Type  : Slow Model Hold 'KEY[0]'
-Slack : -0.262
-TNS   : -0.723
+Type  : Slow Model Setup 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -4.905
+TNS   : -27.935
+
+Type  : Slow Model Setup 'KEY[0]'
+Slack : -1.703
+TNS   : -11.904
+
+Type  : Slow Model Hold 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -3.063
+TNS   : -22.834
 
 Type  : Slow Model Hold 'KEY[3]'
-Slack : 0.440
+Slack : -1.340
+TNS   : -22.401
+
+Type  : Slow Model Hold 'KEY[0]'
+Slack : 1.297
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'KEY[3]'
-Slack : -0.079
-TNS   : -0.158
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Slow Model Removal 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -2.434
+TNS   : -21.154
 
 Type  : Slow Model Removal 'KEY[3]'
-Slack : -0.063
-TNS   : -0.126
+Slack : -0.093
+TNS   : -1.669
 
 Type  : Slow Model Minimum Pulse Width 'KEY[3]'
 Slack : -2.064
-TNS   : -122.805
+TNS   : -217.421
 
 Type  : Slow Model Minimum Pulse Width 'KEY[0]'
 Slack : -1.469
 TNS   : -1.469
 
-Type  : Fast Model Setup 'KEY[0]'
-Slack : -1.778
-TNS   : -27.531
+Type  : Slow Model Minimum Pulse Width 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -0.838
+TNS   : -48.280
 
 Type  : Fast Model Setup 'KEY[3]'
-Slack : -1.460
-TNS   : -56.799
+Slack : -1.858
+TNS   : -116.207
 
-Type  : Fast Model Hold 'KEY[0]'
-Slack : -0.651
-TNS   : -3.378
+Type  : Fast Model Setup 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -1.793
+TNS   : -7.063
+
+Type  : Fast Model Setup 'KEY[0]'
+Slack : -0.131
+TNS   : -0.424
+
+Type  : Fast Model Hold 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -1.674
+TNS   : -12.636
 
 Type  : Fast Model Hold 'KEY[3]'
-Slack : 0.215
+Slack : -1.011
+TNS   : -27.549
+
+Type  : Fast Model Hold 'KEY[0]'
+Slack : 0.640
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : 0.160
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'KEY[3]'
-Slack : 0.263
+Slack : 0.299
 TNS   : 0.000
 
+Type  : Fast Model Removal 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : -1.086
+TNS   : -9.092
+
 Type  : Fast Model Removal 'KEY[3]'
-Slack : -0.043
-TNS   : -0.126
+Slack : -0.079
+TNS   : -1.209
 
 Type  : Fast Model Minimum Pulse Width 'KEY[3]'
 Slack : -2.000
-TNS   : -109.222
+TNS   : -197.222
 
 Type  : Fast Model Minimum Pulse Width 'KEY[0]'
 Slack : -1.222
 TNS   : -1.222
+
+Type  : Fast Model Minimum Pulse Width 'processador:processadorinstance|program_rom:prominstance|addr_reg[0]'
+Slack : 0.007
+TNS   : 0.000
 
 ------------------------------------------------------------

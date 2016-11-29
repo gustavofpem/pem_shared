@@ -38,11 +38,28 @@ parameter ZERO = 12'hF00;
 	begin
 		prom[0] = NOP; //16'b0000000000000000; // No Operation
 		prom[1] = LI | ACCUMULATOR | 8'd4; //16'b1000000000000100; // LI 4 para ACC
-		prom[2] = LI | REGB | 8'd5; //16'b1000001000000101; // LI 5 para REGB
-		prom[3] = ADD | REGB; //16'b0001001000000000; // ADD ACC com REGB
-		prom[4] = PRINT | REGB; //16'b1011010100000000; // PRINT out_ula no LEDG
-		prom[5] = //16'b1011001000000000; // PRINT REGB no LEDG
-		prom[6] = //16'b1010010000000000; // STORE REGC no endereço 0 da RAM
+		prom[2] = LI | REGA | 8'd55; //16'b1000000100000010; // LI 2 para REGA
+		prom[3] = LI | REGB | 8'd22; //16'b1000001000000011; // LI 3 para REGB
+		prom[4] = LI | ACCUMULATOR | 8'd5; //16'b1000001100000100; // LI 4 para REGC
+		prom[5] = LI | ACCUMULATOR | 8'd1;
+		prom[6] = ADD | REGA;
+		prom[7] = PRINT | ACCUMULATOR; //16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[8] = PRINT | REGA; //16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[9] = LIN | REGA;
+		prom[10] = PRINT | REGA; //16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[11] = PRINT7SEG | 8'h21; //16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[12] = STORE | REGA | 8'd0;
+		prom[13] = STORE | REGB | 8'd5;
+		prom[14] = PRINT | REGC;
+		prom[15] = LOAD | REGC | 8'd5;
+		prom[16] = PRINT | REGC;
+		prom[17] = PRINT | REGD;
+		prom[18] = LOAD | REGD | 8'd0;
+		prom[19] = PRINT | REGD;
+		prom[20] = JMP | 8'd5;
+		
+		//prom[12] = PRINT7SEG; //16'b1011001000000000; // PRINT REGB no LEDG
+		//prom[6] = STORE | REGC | 8'd0; //16'b1010010000000000; // STORE REGC no endereço 0 da RAM
 		
 	/*	prom[5] = ;
 		prom[6] = ;

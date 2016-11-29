@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at processador.v(122): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at regfile.v(7): object "out_ula" differs only in case from object "OUT_ULA" in the same scope

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("/home/gustavof/pem/pem_shared/sistemas digitais/Projeto 3 - Processador 16 bits v3/output_files/") File("processador.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("/home/gustavof/pem/pem_shared/sistemas digitais/Projeto 3 - Processador 16 bits v4/output_files/") File("processador.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
