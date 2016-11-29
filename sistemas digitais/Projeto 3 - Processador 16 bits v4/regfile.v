@@ -4,6 +4,7 @@ module regfile(
 	 input we_reg,
 	 input [3:0] addr_reg,
 	 input [7:0] data_reg,
+	 input [7:0] out_ula,
 	 output [7:0] out_reg,
 	 output [7:0] ACC
 );
