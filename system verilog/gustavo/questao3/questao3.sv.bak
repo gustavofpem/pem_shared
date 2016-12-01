@@ -1,0 +1,27 @@
+module questao2(
+	input logic clk, rst,
+	output logic [3:0] sequencia
+);
+
+signed logic [1:0] variavel;
+
+always_ff @(posedge clk or posedge rst)
+begin
+	if(rst)
+	begin	
+		sequencia <= 'd0;
+		variavel <= 'd1;
+	end
+	else
+	begin
+		sequencia <= sequencia + variavel;
+		if(sequencia >= 4'd15)
+			variavel <= variavel - 1'd1;
+		else
+			if(sequencia <= 4'd0)
+				variavel <= variavel + 1'd1;
+			else
+				variavel <= variavel;
+	end
+end
+endmodule
