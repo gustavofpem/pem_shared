@@ -8,6 +8,10 @@ module questao5(
 	output logic [4:0] horas
 );
 
+logic [15:0] cont;
+logic [5:0] segundos;
+logic [5:0] minutos;
+
 seg7 seg7instance0(
 	.d(segundos%10),
 	.hex_out(HEX0)
@@ -25,10 +29,6 @@ seg7 seg7instance3(
 	.hex_out(HEX3)
 );
 
-logic [15:0] cont;
-logic [5:0] segundos;
-logic [5:0] minutos;
-
 always_ff @(posedge clk or posedge rst)
 begin
 	if(rst)
@@ -44,7 +44,7 @@ begin
 		if(start)
 		begin
 			cont <= cont + 1'd1;
-			if(cont >= 16'd50000)
+			if(cont >= 16'd50)
 			begin
 				cont <= 'd0;
 				if(milesimos < 10'd999)

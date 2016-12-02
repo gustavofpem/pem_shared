@@ -1,5 +1,5 @@
 Analysis & Synthesis report for questao5
-Thu Dec  1 19:48:57 2016
+Fri Dec  2 19:25:27 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -49,13 +49,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec  1 19:48:57 2016              ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec  2 19:25:26 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; questao5                                           ;
 ; Top-level Entity Name              ; DE1_TOP                                            ;
 ; Family                             ; Cyclone II                                         ;
-; Total logic elements               ; 214                                                ;
-;     Total combinational functions  ; 214                                                ;
+; Total logic elements               ; 215                                                ;
+;     Total combinational functions  ; 215                                                ;
 ;     Dedicated logic registers      ; 43                                                 ;
 ; Total registers                    ; 43                                                 ;
 ; Total pins                         ; 283                                                ;
@@ -168,25 +168,25 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
-; DE1_TOP.v                        ; yes             ; User Verilog HDL File        ; /home/gustavof/pem/pem_shared/system verilog/questao5/DE1_TOP.v                  ;         ;
-; seg7.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/system verilog/questao5/seg7.sv                    ;         ;
-; questao5.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/system verilog/questao5/questao5.sv                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                ;         ;
-; db/lpm_divide_25m.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/lpm_divide_25m.tdf      ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/sign_div_unsign_9kh.tdf ;         ;
-; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/alt_u_div_kve.tdf       ;         ;
-; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/add_sub_lkc.tdf         ;         ;
-; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/add_sub_mkc.tdf         ;         ;
-; db/lpm_divide_vcm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/questao5/db/lpm_divide_vcm.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; DE1_TOP.v                        ; yes             ; User Verilog HDL File        ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v                  ;         ;
+; seg7.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv                    ;         ;
+; questao5.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                        ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                       ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                   ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; /opt/altera13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                        ;         ;
+; db/lpm_divide_25m.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/lpm_divide_25m.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/alt_u_div_kve.tdf       ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/add_sub_lkc.tdf         ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/add_sub_mkc.tdf         ;         ;
+; db/lpm_divide_vcm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/db/lpm_divide_vcm.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -194,16 +194,16 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 214      ;
+; Estimated Total logic elements              ; 215      ;
 ;                                             ;          ;
-; Total combinational functions               ; 214      ;
+; Total combinational functions               ; 215      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 37       ;
+;     -- 4 input functions                    ; 38       ;
 ;     -- 3 input functions                    ; 52       ;
 ;     -- <=2 input functions                  ; 125      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 132      ;
+;     -- normal mode                          ; 133      ;
 ;     -- arithmetic mode                      ; 82       ;
 ;                                             ;          ;
 ; Total registers                             ; 43       ;
@@ -214,7 +214,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 43       ;
-; Total fan-out                               ; 783      ;
+; Total fan-out                               ; 787      ;
 ; Average fan-out                             ; 1.45     ;
 +---------------------------------------------+----------+
 
@@ -224,8 +224,8 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE1_TOP                                  ; 214 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 283  ; 0            ; |DE1_TOP                                                                                                                     ; work         ;
-;    |questao5:q5instance|                  ; 214 (60)          ; 43 (43)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|questao5:q5instance                                                                                                 ; work         ;
+; |DE1_TOP                                  ; 215 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 283  ; 0            ; |DE1_TOP                                                                                                                     ; work         ;
+;    |questao5:q5instance|                  ; 215 (61)          ; 43 (43)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|questao5:q5instance                                                                                                 ; work         ;
 ;       |lpm_divide:Div0|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_vcm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_9kh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
@@ -408,7 +408,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Thu Dec  1 19:48:55 2016
+    Info: Processing started: Fri Dec  2 19:25:25 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off questao5 -c questao5
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file DE1_TOP.v
@@ -609,14 +609,14 @@ Warning (21074): Design contains 24 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "PS2_DAT"
     Warning (15610): No output dependent on input pin "PS2_CLK"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 497 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 498 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 137 output pins
     Info (21060): Implemented 119 bidirectional pins
-    Info (21061): Implemented 214 logic cells
+    Info (21061): Implemented 215 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 158 warnings
-    Info: Peak virtual memory: 750 megabytes
-    Info: Processing ended: Thu Dec  1 19:48:57 2016
+    Info: Peak virtual memory: 751 megabytes
+    Info: Processing ended: Fri Dec  2 19:25:27 2016
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

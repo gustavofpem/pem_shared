@@ -1,5 +1,5 @@
 Fitter report for questao5
-Thu Dec  1 19:49:05 2016
+Fri Dec  2 19:25:34 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -63,15 +63,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                          ;
 +------------------------------------+----------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Dec  1 19:49:05 2016              ;
+; Fitter Status                      ; Successful - Fri Dec  2 19:25:34 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; questao5                                           ;
 ; Top-level Entity Name              ; DE1_TOP                                            ;
 ; Family                             ; Cyclone II                                         ;
 ; Device                             ; EP2C20F484C7                                       ;
 ; Timing Models                      ; Final                                              ;
-; Total logic elements               ; 214 / 18,752 ( 1 % )                               ;
-;     Total combinational functions  ; 214 / 18,752 ( 1 % )                               ;
+; Total logic elements               ; 215 / 18,752 ( 1 % )                               ;
+;     Total combinational functions  ; 215 / 18,752 ( 1 % )                               ;
 ;     Dedicated logic registers      ; 43 / 18,752 ( < 1 % )                              ;
 ; Total registers                    ; 43                                                 ;
 ; Total pins                         ; 283 / 315 ( 90 % )                                 ;
@@ -156,8 +156,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 545 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 545 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 546 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 546 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -180,7 +180,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 542     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 543     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -188,7 +188,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/questao5/output_files/questao5.pin.
+The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/output_files/questao5.pin.
 
 
 +---------------------------------------------------------------------+
@@ -196,19 +196,19 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 214 / 18,752 ( 1 % )  ;
-;     -- Combinational with no register       ; 171                   ;
+; Total logic elements                        ; 215 / 18,752 ( 1 % )  ;
+;     -- Combinational with no register       ; 172                   ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 43                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 37                    ;
+;     -- 4 input functions                    ; 38                    ;
 ;     -- 3 input functions                    ; 52                    ;
 ;     -- <=2 input functions                  ; 125                   ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 132                   ;
+;     -- normal mode                          ; 133                   ;
 ;     -- arithmetic mode                      ; 82                    ;
 ;                                             ;                       ;
 ; Total registers*                            ; 43 / 19,649 ( < 1 % ) ;
@@ -231,11 +231,11 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 0%          ;
+; Peak interconnect usage (total/H/V)         ; 1% / 0% / 1%          ;
 ; Maximum fan-out                             ; 43                    ;
 ; Highest non-global fan-out                  ; 43                    ;
-; Total fan-out                               ; 784                   ;
-; Average fan-out                             ; 1.44                  ;
+; Total fan-out                               ; 788                   ;
+; Average fan-out                             ; 1.45                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -248,19 +248,19 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 214 / 18752 ( 1 % )  ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 171                  ; 0                              ;
+; Total logic elements                        ; 215 / 18752 ( 1 % )  ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 172                  ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 43                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 37                   ; 0                              ;
+;     -- 4 input functions                    ; 38                   ; 0                              ;
 ;     -- 3 input functions                    ; 52                   ; 0                              ;
 ;     -- <=2 input functions                  ; 125                  ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 132                  ; 0                              ;
+;     -- normal mode                          ; 133                  ; 0                              ;
 ;     -- arithmetic mode                      ; 82                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 43                   ; 0                              ;
@@ -282,8 +282,8 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 784                  ; 0                              ;
-;     -- Registered Connections               ; 165                  ; 0                              ;
+;     -- Total Connections                    ; 788                  ; 0                              ;
+;     -- Registered Connections               ; 170                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -328,7 +328,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; KEY[3]      ; T21   ; 6        ; 50           ; 9            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PS2_CLK     ; H15   ; 4        ; 44           ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PS2_DAT     ; J14   ; 4        ; 42           ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[0]       ; L22   ; 5        ; 50           ; 14           ; 0           ; 19                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[0]       ; L22   ; 5        ; 50           ; 14           ; 0           ; 17                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[1]       ; L21   ; 5        ; 50           ; 14           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[2]       ; M22   ; 6        ; 50           ; 14           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[3]       ; V12   ; 7        ; 26           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -447,7 +447,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; LEDR[7]       ; U18   ; 6        ; 50           ; 3            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; LEDR[8]       ; R18   ; 6        ; 50           ; 8            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; LEDR[9]       ; R17   ; 6        ; 50           ; 5            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; SD_CLK        ; V20   ; 6        ; 50           ; 4            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_CLK        ; W16   ; 7        ; 46           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; SRAM_ADDR[0]  ; AA3   ; 8        ; 1            ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_ADDR[10] ; R11   ; 8        ; 20           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_ADDR[11] ; T11   ; 8        ; 18           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
@@ -595,9 +595,9 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; GPIO_1[8]   ; F12   ; 4        ; 31           ; 27           ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; GPIO_1[9]   ; F13   ; 4        ; 35           ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; I2C_SDAT    ; B3    ; 3        ; 1            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; SD_CMD      ; P8    ; 8        ; 7            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; SD_DAT      ; G8    ; 3        ; 7            ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; SD_DAT3     ; R16   ; 7        ; 44           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_CMD      ; G8    ; 3        ; 7            ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_DAT      ; H8    ; 3        ; 7            ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_DAT3     ; H11   ; 3        ; 20           ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[0]  ; AA6   ; 8        ; 7            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[10] ; V9    ; 8        ; 9            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[11] ; U9    ; 8        ; 13           ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
@@ -624,12 +624,12 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 +----------+------------------+---------------+--------------+
 ; 1        ; 40 / 41 ( 98 % ) ; 3.3V          ; --           ;
 ; 2        ; 32 / 33 ( 97 % ) ; 3.3V          ; --           ;
-; 3        ; 29 / 43 ( 67 % ) ; 3.3V          ; --           ;
+; 3        ; 31 / 43 ( 72 % ) ; 3.3V          ; --           ;
 ; 4        ; 38 / 40 ( 95 % ) ; 3.3V          ; --           ;
 ; 5        ; 36 / 39 ( 92 % ) ; 3.3V          ; --           ;
-; 6        ; 32 / 36 ( 89 % ) ; 3.3V          ; --           ;
+; 6        ; 31 / 36 ( 86 % ) ; 3.3V          ; --           ;
 ; 7        ; 37 / 40 ( 93 % ) ; 3.3V          ; --           ;
-; 8        ; 42 / 43 ( 98 % ) ; 3.3V          ; --           ;
+; 8        ; 41 / 43 ( 95 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -821,7 +821,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; G5       ; 12         ; 2        ; HEX2[0]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; G6       ; 11         ; 2        ; HEX2[1]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; G7       ; 317        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G8       ; 313        ; 3        ; SD_DAT                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G8       ; 313        ; 3        ; SD_CMD                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; G10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G11      ; 291        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -843,10 +843,10 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; H5       ; 18         ; 2        ; HEX1[2]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H6       ; 19         ; 2        ; HEX1[1]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H7       ; 318        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H8       ; 314        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H8       ; 314        ; 3        ; SD_DAT                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H9       ; 300        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H10      ; 299        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H11      ; 290        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H11      ; 290        ; 3        ; SD_DAT3                                  ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H12      ; 274        ; 4        ; GPIO_1[0]                                ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; H13      ; 263        ; 4        ; GPIO_1[1]                                ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; H14      ; 257        ; 4        ; GPIO_1[2]                                ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -975,7 +975,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; P5       ; 55         ; 1        ; DRAM_ADDR[7]                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P6       ; 56         ; 1        ; DRAM_ADDR[6]                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P7       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; P8       ; 95         ; 8        ; SD_CMD                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; P8       ; 95         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P9       ; 94         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P10      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1005,7 +1005,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; R13      ; 145        ; 7        ; FL_ADDR[21]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; R14      ; 150        ; 7        ; FL_ADDR[8]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; R15      ; 151        ; 7        ; FL_ADDR[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; R16      ; 155        ; 7        ; SD_DAT3                                  ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R16      ; 155        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R17      ; 177        ; 6        ; LEDR[9]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; R18      ; 184        ; 6        ; LEDR[8]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; R19      ; 185        ; 6        ; LEDR[1]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -1075,7 +1075,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; V17      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V18      ;            ;          ; GND_PLL4                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V19      ; 166        ; 6        ; LEDR[5]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; V20      ; 173        ; 6        ; SD_CLK                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V20      ; 173        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V21      ; 180        ; 6        ; LEDG[3]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; V22      ; 181        ; 6        ; LEDG[2]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; W1       ; 71         ; 1        ; DRAM_DQ[4]                               ; bidir  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -1093,7 +1093,7 @@ The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/qu
 ; W13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W14      ; 141        ; 7        ; FL_RST_N                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; W15      ; 149        ; 7        ; FL_ADDR[7]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; W16      ; 160        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; W16      ; 160        ; 7        ; SD_CLK                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; W17      ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; W18      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; W19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1168,8 +1168,8 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                          ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE1_TOP                                  ; 214 (0)     ; 43 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 283  ; 0            ; 171 (0)      ; 0 (0)             ; 43 (0)           ; |DE1_TOP                                                                                                                     ; work         ;
-;    |questao5:q5instance|                  ; 214 (60)    ; 43 (43)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 171 (17)     ; 0 (0)             ; 43 (43)          ; |DE1_TOP|questao5:q5instance                                                                                                 ; work         ;
+; |DE1_TOP                                  ; 215 (0)     ; 43 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 283  ; 0            ; 172 (0)      ; 0 (0)             ; 43 (0)           ; |DE1_TOP                                                                                                                     ; work         ;
+;    |questao5:q5instance|                  ; 215 (61)    ; 43 (43)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 172 (18)     ; 0 (0)             ; 43 (43)          ; |DE1_TOP|questao5:q5instance                                                                                                 ; work         ;
 ;       |lpm_divide:Div0|                   ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_vcm:auto_generated|  ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_9kh:divider| ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; |DE1_TOP|questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
@@ -1635,71 +1635,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_ADCDAT                              ;                   ;         ;
 ; CLOCK_50                                ;                   ;         ;
 ; KEY[0]                                  ;                   ;         ;
-;      - questao5:q5instance|segundos[5]  ; 0                 ; 6       ;
-;      - questao5:q5instance|segundos[4]  ; 0                 ; 6       ;
-;      - questao5:q5instance|segundos[3]  ; 0                 ; 6       ;
-;      - questao5:q5instance|segundos[2]  ; 0                 ; 6       ;
-;      - questao5:q5instance|segundos[1]  ; 0                 ; 6       ;
-;      - questao5:q5instance|segundos[0]  ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[5]   ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[4]   ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[3]   ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[2]   ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[1]   ; 0                 ; 6       ;
-;      - questao5:q5instance|minutos[0]   ; 0                 ; 6       ;
-;      - questao5:q5instance|horas[0]     ; 0                 ; 6       ;
-;      - questao5:q5instance|horas[1]     ; 0                 ; 6       ;
-;      - questao5:q5instance|horas[2]     ; 0                 ; 6       ;
-;      - questao5:q5instance|horas[3]     ; 0                 ; 6       ;
-;      - questao5:q5instance|horas[4]     ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[0] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[1] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[2] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[3] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[4] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[5] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[6] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[7] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[8] ; 0                 ; 6       ;
-;      - questao5:q5instance|milesimos[9] ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[4]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[5]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[6]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[7]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[8]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[9]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[10]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[11]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[12]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[13]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[14]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[15]     ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[3]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[2]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[1]      ; 0                 ; 6       ;
-;      - questao5:q5instance|cont[0]      ; 0                 ; 6       ;
+;      - questao5:q5instance|segundos[5]  ; 1                 ; 6       ;
+;      - questao5:q5instance|segundos[4]  ; 1                 ; 6       ;
+;      - questao5:q5instance|segundos[3]  ; 1                 ; 6       ;
+;      - questao5:q5instance|segundos[2]  ; 1                 ; 6       ;
+;      - questao5:q5instance|segundos[1]  ; 1                 ; 6       ;
+;      - questao5:q5instance|segundos[0]  ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[5]   ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[4]   ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[3]   ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[2]   ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[1]   ; 1                 ; 6       ;
+;      - questao5:q5instance|minutos[0]   ; 1                 ; 6       ;
+;      - questao5:q5instance|horas[0]     ; 1                 ; 6       ;
+;      - questao5:q5instance|horas[1]     ; 1                 ; 6       ;
+;      - questao5:q5instance|horas[2]     ; 1                 ; 6       ;
+;      - questao5:q5instance|horas[3]     ; 1                 ; 6       ;
+;      - questao5:q5instance|horas[4]     ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[0] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[1] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[2] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[3] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[4] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[5] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[6] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[7] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[8] ; 1                 ; 6       ;
+;      - questao5:q5instance|milesimos[9] ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[1]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[2]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[3]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[4]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[5]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[6]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[7]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[8]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[9]      ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[10]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[11]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[12]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[13]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[14]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[15]     ; 1                 ; 6       ;
+;      - questao5:q5instance|cont[0]      ; 1                 ; 6       ;
 ; SW[0]                                   ;                   ;         ;
 +-----------------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                  ;
-+-------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                            ; PIN_L1             ; 43      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; KEY[0]                              ; PIN_R22            ; 43      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; SW[0]                               ; PIN_L22            ; 19      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|LessThan0~3     ; LCCOMB_X22_Y17_N22 ; 19      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|LessThan1~2     ; LCCOMB_X24_Y17_N28 ; 13      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|LessThan2~1     ; LCCOMB_X22_Y17_N18 ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|LessThan3~1     ; LCCOMB_X19_Y17_N12 ; 7       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|LessThan4~1     ; LCCOMB_X23_Y17_N30 ; 5       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|horas[0]~5      ; LCCOMB_X19_Y17_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|horas[0]~8      ; LCCOMB_X23_Y17_N20 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|milesimos[0]~10 ; LCCOMB_X22_Y17_N14 ; 11      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; questao5:q5instance|segundos[5]~8   ; LCCOMB_X22_Y17_N20 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+-------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                 ;
++-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                            ; PIN_L1            ; 43      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; KEY[0]                              ; PIN_R22           ; 43      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; SW[0]                               ; PIN_L22           ; 17      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|LessThan0~4     ; LCCOMB_X5_Y19_N6  ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|LessThan1~2     ; LCCOMB_X8_Y19_N28 ; 13      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|LessThan2~1     ; LCCOMB_X4_Y19_N0  ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|LessThan3~1     ; LCCOMB_X4_Y19_N14 ; 7       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|LessThan4~1     ; LCCOMB_X5_Y19_N22 ; 5       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|horas[0]~5      ; LCCOMB_X4_Y19_N28 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|horas[0]~8      ; LCCOMB_X5_Y19_N28 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|milesimos[0]~10 ; LCCOMB_X5_Y19_N30 ; 13      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; questao5:q5instance|segundos[5]~8   ; LCCOMB_X4_Y19_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -1717,14 +1717,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                                          ; Fan-Out ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; KEY[0]                                                                                                                                        ; 43      ;
-; SW[0]                                                                                                                                         ; 19      ;
-; questao5:q5instance|LessThan0~3                                                                                                               ; 19      ;
+; SW[0]                                                                                                                                         ; 17      ;
 ; questao5:q5instance|lpm_divide:Div1|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[4]~6 ; 17      ;
 ; questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[4]~6 ; 17      ;
+; questao5:q5instance|LessThan0~4                                                                                                               ; 16      ;
 ; questao5:q5instance|lpm_divide:Div1|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_4_result_int[5]~8 ; 15      ;
 ; questao5:q5instance|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_4_result_int[5]~8 ; 15      ;
 ; questao5:q5instance|LessThan1~2                                                                                                               ; 13      ;
-; questao5:q5instance|milesimos[0]~10                                                                                                           ; 11      ;
+; questao5:q5instance|milesimos[0]~10                                                                                                           ; 13      ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[4]~6 ; 10      ;
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[4]~6 ; 10      ;
 ; questao5:q5instance|minutos[0]                                                                                                                ; 9       ;
@@ -1755,6 +1755,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; questao5:q5instance|segundos[5]                                                                                                               ; 6       ;
 ; questao5:q5instance|horas[0]~8                                                                                                                ; 5       ;
 ; questao5:q5instance|LessThan4~1                                                                                                               ; 5       ;
+; questao5:q5instance|cont[15]                                                                                                                  ; 3       ;
+; questao5:q5instance|cont[14]                                                                                                                  ; 3       ;
 ; questao5:q5instance|milesimos[9]                                                                                                              ; 3       ;
 ; questao5:q5instance|milesimos[8]                                                                                                              ; 3       ;
 ; questao5:q5instance|milesimos[7]                                                                                                              ; 3       ;
@@ -1774,24 +1776,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_5_result_int[5]~8 ; 3       ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[22]~34           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[22]~34           ; 2       ;
+; questao5:q5instance|LessThan0~3                                                                                                               ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[21]~29           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[21]~28           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[22]~27           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[21]~29           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[21]~28           ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod0|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|StageOut[22]~27           ; 2       ;
-; questao5:q5instance|cont[7]                                                                                                                   ; 2       ;
-; questao5:q5instance|cont[6]                                                                                                                   ; 2       ;
 ; questao5:q5instance|cont[5]                                                                                                                   ; 2       ;
 ; questao5:q5instance|cont[4]                                                                                                                   ; 2       ;
-; questao5:q5instance|cont[9]                                                                                                                   ; 2       ;
-; questao5:q5instance|cont[8]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[3]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[2]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[1]                                                                                                                   ; 2       ;
 ; questao5:q5instance|cont[13]                                                                                                                  ; 2       ;
 ; questao5:q5instance|cont[12]                                                                                                                  ; 2       ;
 ; questao5:q5instance|cont[11]                                                                                                                  ; 2       ;
 ; questao5:q5instance|cont[10]                                                                                                                  ; 2       ;
-; questao5:q5instance|cont[15]                                                                                                                  ; 2       ;
-; questao5:q5instance|cont[14]                                                                                                                  ; 2       ;
+; questao5:q5instance|cont[9]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[8]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[7]                                                                                                                   ; 2       ;
+; questao5:q5instance|cont[6]                                                                                                                   ; 2       ;
 ; questao5:q5instance|lpm_divide:Div1|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[2]~2 ; 2       ;
 ; questao5:q5instance|lpm_divide:Div1|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[1]~0 ; 2       ;
 ; questao5:q5instance|lpm_divide:Mod1|lpm_divide_25m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider|add_sub_3_result_int[2]~2 ; 2       ;
@@ -1924,9 +1928,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; questao5:q5instance|cont[0]~17                                                                                                                ; 1       ;
 ; questao5:q5instance|cont[0]~16                                                                                                                ; 1       ;
 ; questao5:q5instance|cont[0]                                                                                                                   ; 1       ;
-; questao5:q5instance|cont[1]                                                                                                                   ; 1       ;
-; questao5:q5instance|cont[2]                                                                                                                   ; 1       ;
-; questao5:q5instance|cont[3]                                                                                                                   ; 1       ;
 ; questao5:q5instance|milesimos[9]~29                                                                                                           ; 1       ;
 ; questao5:q5instance|milesimos[8]~28                                                                                                           ; 1       ;
 ; questao5:q5instance|milesimos[8]~27                                                                                                           ; 1       ;
@@ -2051,81 +2052,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 170 / 54,004 ( < 1 % ) ;
-; C16 interconnects           ; 3 / 2,100 ( < 1 % )    ;
-; C4 interconnects            ; 100 / 36,000 ( < 1 % ) ;
-; Direct links                ; 72 / 54,004 ( < 1 % )  ;
+; Block interconnects         ; 172 / 54,004 ( < 1 % ) ;
+; C16 interconnects           ; 15 / 2,100 ( < 1 % )   ;
+; C4 interconnects            ; 90 / 36,000 ( < 1 % )  ;
+; Direct links                ; 84 / 54,004 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 117 / 18,752 ( < 1 % ) ;
-; R24 interconnects           ; 19 / 1,900 ( 1 % )     ;
-; R4 interconnects            ; 192 / 46,920 ( < 1 % ) ;
+; Local interconnects         ; 121 / 18,752 ( < 1 % ) ;
+; R24 interconnects           ; 28 / 1,900 ( 1 % )     ;
+; R4 interconnects            ; 108 / 46,920 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.38) ; Number of LABs  (Total = 16) ;
+; Number of Logic Elements  (Average = 13.44) ; Number of LABs  (Total = 16) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
+; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
+; 3                                           ; 1                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 2                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 0                            ;
 ; 13                                          ; 1                            ;
-; 14                                          ; 2                            ;
+; 14                                          ; 4                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 8                            ;
+; 16                                          ; 6                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.81) ; Number of LABs  (Total = 16) ;
+; LAB-wide Signals  (Average = 0.94) ; Number of LABs  (Total = 16) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 5                            ;
 ; 1 Clock                            ; 5                            ;
-; 1 Clock enable                     ; 2                            ;
-; 1 Sync. clear                      ; 1                            ;
+; 1 Clock enable                     ; 3                            ;
+; 1 Sync. clear                      ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.19) ; Number of LABs  (Total = 16) ;
+; Number of Signals Sourced  (Average = 15.25) ; Number of LABs  (Total = 16) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
+; 3                                            ; 1                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 2                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 2                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 5                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 4                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
 ; 23                                           ; 1                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
@@ -2142,47 +2143,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.94) ; Number of LABs  (Total = 16) ;
+; Number of Signals Sourced Out  (Average = 7.88) ; Number of LABs  (Total = 16) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 1                            ;
+; 1                                               ; 0                            ;
 ; 2                                               ; 1                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 2                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 1                            ;
 ; 5                                               ; 0                            ;
-; 6                                               ; 0                            ;
+; 6                                               ; 2                            ;
 ; 7                                               ; 3                            ;
-; 8                                               ; 2                            ;
-; 9                                               ; 2                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 1                            ;
 ; 10                                              ; 0                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 2                            ;
-; 13                                              ; 2                            ;
+; 11                                              ; 2                            ;
+; 12                                              ; 0                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 1                            ;
+; 15                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 7.31) ; Number of LABs  (Total = 16) ;
+; Number of Distinct Inputs  (Average = 7.44) ; Number of LABs  (Total = 16) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 3                            ;
-; 4                                           ; 2                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 1                            ;
 ; 6                                           ; 3                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 4                            ;
+; 7                                           ; 2                            ;
+; 8                                           ; 2                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 2                            ;
 ; 11                                          ; 0                            ;
 ; 12                                          ; 1                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
 ; 15                                          ; 0                            ;
-; 16                                          ; 1                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 0                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 0                            ;
+; 21                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -2266,11 +2274,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y14 to location X11_Y27
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 256 output pins without output pin load capacitance assignment
     Info (306007): Pin "SD_DAT3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2654,10 +2662,10 @@ Warning (169064): Following 119 pins have no output enable or a GND or VCC outpu
     Info (169065): Pin GPIO_1[34] has a permanently disabled output enable
     Info (169065): Pin GPIO_1[35] has a permanently disabled output enable
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file /home/gustavof/pem/pem_shared/system verilog/questao5/output_files/questao5.fit.smsg
+Info (144001): Generated suppressed messages file /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/output_files/questao5.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 898 megabytes
-    Info: Processing ended: Thu Dec  1 19:49:05 2016
+    Info: Peak virtual memory: 878 megabytes
+    Info: Processing ended: Fri Dec  2 19:25:34 2016
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
@@ -2665,6 +2673,6 @@ Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/gustavof/pem/pem_shared/system verilog/questao5/output_files/questao5.fit.smsg.
+The suppressed messages can be found in /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/output_files/questao5.fit.smsg.
 
 

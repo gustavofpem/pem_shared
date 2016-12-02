@@ -1,0 +1,72 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/simulation/modelsim
+vDE1_TOP
+I<n7AiUb6boGT^[:W8oTRL2
+VbQ46gQPH<lmBB_>`AP17i1
+Z1 d/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/simulation/modelsim
+Z2 w1480714047
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/DE1_TOP.v
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/DE1_TOP.v
+L0 43
+Z3 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+n@d@e1_@t@o@p
+!i10b 1
+!s100 nA?1=GK2KAaHPeXLdRV=92
+!s85 0
+!s108 1480716332.932216
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/DE1_TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/DE1_TOP.v|
+!s101 -O0
+!s92 -vlog01compat -work work {+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3} -O0
+vquestao3
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I4aP29YDR26W^HOd_k4Hh_0
+VN31U75e9UePWU7:K15<0l1
+S1
+R1
+R2
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/questao3.sv
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/questao3.sv
+L0 1
+R3
+r1
+31
+Z5 o-sv -work work -O0
+!i10b 1
+!s100 :CL@2k[A6_jRb@onD:XKH3
+!s105 questao3_sv_unit
+!s85 0
+!s108 1480716332.957292
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/questao3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/questao3.sv|
+!s101 -O0
+Z6 !s92 -sv -work work {+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3} -O0
+vtb
+R4
+!i10b 1
+!s100 Y^>JD8Tj>1GoP=F?9Wmh;0
+I:TnZ3oZ>[cgOIH81FEfK=2
+VV@Xn<HnSRM[I5c1?BH]3a3
+!s105 tb_sv_unit
+S1
+R1
+w1480715882
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/tb.sv
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1480716332.972335
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao3/tb.sv|
+!s101 -O0
+R5
+R6

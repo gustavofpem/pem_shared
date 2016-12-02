@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao1 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao1/DE1_TOP.v}
+vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao1 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao1/seg7.sv}
+vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao1 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao1/max2.sv}
+vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao1 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao1/questao1.sv}
+

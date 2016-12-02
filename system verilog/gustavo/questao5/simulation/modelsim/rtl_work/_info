@@ -1,0 +1,95 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/simulation/modelsim
+vDE1_TOP
+IYd37eK`GEN[ihz;[dZO>D1
+VbQ46gQPH<lmBB_>`AP17i1
+Z1 d/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/simulation/modelsim
+Z2 w1480714047
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v
+L0 43
+Z3 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+n@d@e1_@t@o@p
+!i10b 1
+!s100 bA3dZ>JLA=i>W]`QDFE[Z1
+!s85 0
+!s108 1480717565.008570
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v|
+!s101 -O0
+!s92 -vlog01compat -work work {+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5} -O0
+vquestao5
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Ik9h`KN0H`6dNXLk7^o;e30
+VVbXT>_JOL[J2U3N^RnWI33
+S1
+R1
+w1480717523
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv
+L0 1
+R3
+r1
+31
+Z5 o-sv -work work -O0
+Z6 !s92 -sv -work work {+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5} -O0
+!i10b 1
+!s100 7i:dN59SY2=fdJE=ej?4G1
+!s105 questao5_sv_unit
+!s85 0
+!s108 1480717565.053954
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv|
+!s101 -O0
+vseg7
+R4
+IW@<ZC?PVBO@5n=SJS@hZm2
+Va0Q7`^]@LCecgi;1za0gK0
+S1
+R1
+R2
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv
+L0 1
+R3
+r1
+31
+R5
+R6
+!i10b 1
+!s100 L=NAom`7QJY1mziJaY>z_0
+!s105 seg7_sv_unit
+!s85 0
+!s108 1480717565.033108
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv|
+!s101 -O0
+vtb
+R4
+!i10b 1
+!s100 WQTMTPQbHXkh@3F47menN2
+I`kbj_hASHhReOUP8VJH^F3
+VV@Xn<HnSRM[I5c1?BH]3a3
+!s105 tb_sv_unit
+S1
+R1
+w1480717306
+8/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/tb.sv
+F/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1480717565.070391
+!s107 /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5|/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/tb.sv|
+!s101 -O0
+R5
+R6

@@ -1,0 +1,61 @@
+# do questao5_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao5 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/DE1_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE1_TOP
+# 
+# Top level modules:
+# 	DE1_TOP
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao5 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao5 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module questao5
+# 
+# Top level modules:
+# 	questao5
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao5 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.questao5
+# Loading work.seg7
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv(18): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'd'. The port definition is at: /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv(2).
+#         Region: /tb/q5instance/seg7instance0
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv(22): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'd'. The port definition is at: /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv(2).
+#         Region: /tb/q5instance/seg7instance1
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv(26): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'd'. The port definition is at: /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv(2).
+#         Region: /tb/q5instance/seg7instance2
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/questao5.sv(30): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'd'. The port definition is at: /home/gustavof/pem/pem_shared/system verilog/gustavo/questao5/seg7.sv(2).
+#         Region: /tb/q5instance/seg7instance3
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 sec
+add wave -r /*
+# Break key hit 
+# Simulation stop requested.

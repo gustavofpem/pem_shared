@@ -1,0 +1,45 @@
+# do questao4_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao4 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao4/DE1_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE1_TOP
+# 
+# Top level modules:
+# 	DE1_TOP
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao4 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao4/questao4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module questao4
+# 
+# Top level modules:
+# 	questao4
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/system\ verilog/gustavo/questao4 {/home/gustavof/pem/pem_shared/system verilog/gustavo/questao4/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.questao4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 sec
+# Break key hit 
+# Simulation stop requested.

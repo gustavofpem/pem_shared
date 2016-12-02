@@ -1,0 +1,25 @@
+`timescale 10ns/10ps
+
+module tb(
+	logic clk, rst,
+	logic [3:0] sequencia
+);
+
+questao2 q2instance(
+	.clk(clk),
+	.rst(rst),
+	.sequencia(sequencia)
+);
+
+initial
+begin
+	clk = 0;
+	rst = 0;
+	sequencia = 0;
+	
+	#200 rst = 1;
+	#10 rst = 0;
+end
+
+always
+	#50 clk = ~clk;

@@ -24,2497 +24,2497 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "DE1_TOP")
-  (DATE "12/01/2016 18:49:37")
+  (DATE "12/02/2016 18:47:49")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition")
   (DIVIDER .)
-  (TIMESCALE 1 ps)
+  (TIMESCALE 10 ns)
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE KEY\[3\]\~I.asynch_inst)
+    (INSTANCE KEY_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (474:474:474) (474:474:474))
+        (IOPATH padio combout (0.0474:0.0474:0.0474) (0.0474:0.0474:0.0474))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sequencia\[0\]\~11)
+    (INSTANCE q2instance_asequencia_a0_a_a11)
     (DELAY
       (ABSOLUTE
-        (IOPATH datac combout (184:184:184) (184:184:184))
+        (IOPATH datac combout (0.0184:0.0184:0.0184) (0.0184:0.0184:0.0184))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE KEY\[0\]\~I.asynch_inst)
+    (INSTANCE KEY_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (464:464:464) (464:464:464))
+        (IOPATH padio combout (0.0464:0.0464:0.0464) (0.0464:0.0464:0.0464))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE q2instance\|sequencia\[0\])
+    (INSTANCE q2instance_asequencia_a0_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (669:669:669) (669:669:669))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (3235:3235:3235) (3235:3235:3235))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+        (PORT clk (0.0669:0.0669:0.0669) (0.0669:0.0669:0.0669))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3235:0.3235:0.3235) (0.3235:0.3235:0.3235))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sequencia\[1\]\~4)
+    (INSTANCE q2instance_asequencia_a1_a_a4)
     (DELAY
       (ABSOLUTE
-        (PORT datab (151:151:151) (151:151:151))
-        (IOPATH datab cout (198:198:198) (198:198:198))
+        (PORT datab (0.0151:0.0151:0.0151) (0.0151:0.0151:0.0151))
+        (IOPATH datab cout (0.0198:0.0198:0.0198) (0.0198:0.0198:0.0198))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sequencia\[1\]\~5)
+    (INSTANCE q2instance_asequencia_a1_a_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (160:160:160) (160:160:160))
-        (PORT datab (155:155:155) (155:155:155))
-        (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH dataa cout (150:150:150) (150:150:150))
-        (IOPATH datab combout (175:175:175) (175:175:175))
-        (IOPATH datab cout (143:143:143) (143:143:143))
-        (IOPATH datad combout (59:59:59) (59:59:59))
-        (IOPATH cin combout (170:170:170) (170:170:170))
-        (IOPATH cin cout (35:35:35) (35:35:35))
+        (PORT dataa (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sequencia\[2\]\~7)
+    (INSTANCE q2instance_asequencia_a2_a_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (240:240:240) (240:240:240))
-        (PORT datab (154:154:154) (154:154:154))
-        (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH dataa cout (150:150:150) (150:150:150))
-        (IOPATH datab combout (175:175:175) (175:175:175))
-        (IOPATH datab cout (143:143:143) (143:143:143))
-        (IOPATH datad combout (59:59:59) (59:59:59))
-        (IOPATH cin combout (170:170:170) (170:170:170))
-        (IOPATH cin cout (35:35:35) (35:35:35))
+        (PORT dataa (0.024:0.024:0.024) (0.024:0.024:0.024))
+        (PORT datab (0.0154:0.0154:0.0154) (0.0154:0.0154:0.0154))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE q2instance\|sequencia\[2\])
+    (INSTANCE q2instance_asequencia_a2_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (669:669:669) (669:669:669))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (3235:3235:3235) (3235:3235:3235))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+        (PORT clk (0.0669:0.0669:0.0669) (0.0669:0.0669:0.0669))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3235:0.3235:0.3235) (0.3235:0.3235:0.3235))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sentido\~0)
+    (INSTANCE q2instance_asentido_a0)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (164:164:164) (164:164:164))
-        (PORT datab (236:236:236) (236:236:236))
-        (PORT datad (153:153:153) (153:153:153))
-        (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH datab combout (175:175:175) (175:175:175))
-        (IOPATH datac combout (184:184:184) (184:184:184))
-        (IOPATH datad combout (59:59:59) (59:59:59))
+        (PORT dataa (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datab (0.0236:0.0236:0.0236) (0.0236:0.0236:0.0236))
+        (PORT datad (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0184:0.0184:0.0184) (0.0184:0.0184:0.0184))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE q2instance\|sentido)
+    (INSTANCE q2instance_asentido)
     (DELAY
       (ABSOLUTE
-        (PORT clk (669:669:669) (669:669:669))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (3235:3235:3235) (3235:3235:3235))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+        (PORT clk (0.0669:0.0669:0.0669) (0.0669:0.0669:0.0669))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3235:0.3235:0.3235) (0.3235:0.3235:0.3235))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE q2instance\|sequencia\[1\])
+    (INSTANCE q2instance_asequencia_a1_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (669:669:669) (669:669:669))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (3235:3235:3235) (3235:3235:3235))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+        (PORT clk (0.0669:0.0669:0.0669) (0.0669:0.0669:0.0669))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3235:0.3235:0.3235) (0.3235:0.3235:0.3235))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE q2instance\|sequencia\[3\]\~9)
+    (INSTANCE q2instance_asequencia_a3_a_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (162:162:162) (162:162:162))
-        (PORT datad (153:153:153) (153:153:153))
-        (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH datad combout (59:59:59) (59:59:59))
-        (IOPATH cin combout (170:170:170) (170:170:170))
+        (PORT dataa (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datad (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE q2instance\|sequencia\[3\])
+    (INSTANCE q2instance_asequencia_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (669:669:669) (669:669:669))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (3235:3235:3235) (3235:3235:3235))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+        (PORT clk (0.0669:0.0669:0.0669) (0.0669:0.0669:0.0669))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3235:0.3235:0.3235) (0.3235:0.3235:0.3235))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SD_DAT3\~I.asynch_inst)
+    (INSTANCE SD_DAT3_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SD_CMD\~I.asynch_inst)
+    (INSTANCE SD_CMD_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[0\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[1\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[2\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[3\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[4\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[5\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[6\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[7\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[8\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[9\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[10\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[11\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[12\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[13\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[14\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_DQ\[15\]\~I.asynch_inst)
+    (INSTANCE DRAM_DQ_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[0\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[1\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[2\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[3\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[4\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[5\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[6\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_DQ\[7\]\~I.asynch_inst)
+    (INSTANCE FL_DQ_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[0\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[1\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[2\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[3\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[4\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[5\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[6\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[7\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[8\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[9\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[10\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[11\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[12\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[13\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[14\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_DQ\[15\]\~I.asynch_inst)
+    (INSTANCE SRAM_DQ_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SD_DAT\~I.asynch_inst)
+    (INSTANCE SD_DAT_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE I2C_SDAT\~I.asynch_inst)
+    (INSTANCE I2C_SDAT_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
+        (IOPATH datain padio (0.1553:0.1553:0.1553) (0.1553:0.1553:0.1553))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE AUD_ADCLRCK\~I.asynch_inst)
+    (INSTANCE AUD_ADCLRCK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE AUD_DACLRCK\~I.asynch_inst)
+    (INSTANCE AUD_DACLRCK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE AUD_BCLK\~I.asynch_inst)
+    (INSTANCE AUD_BCLK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[0\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[1\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[2\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[3\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[4\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[5\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[6\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[7\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[8\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[9\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[10\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[11\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[12\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[13\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[14\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
+        (IOPATH datain padio (0.1553:0.1553:0.1553) (0.1553:0.1553:0.1553))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[15\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[16\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a16_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[17\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a17_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[18\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a18_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[19\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a19_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[20\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a20_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[21\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a21_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[22\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a22_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[23\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a23_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[24\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a24_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[25\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a25_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[26\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a26_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[27\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a27_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[28\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a28_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[29\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a29_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[30\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a30_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[31\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a31_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[32\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a32_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[33\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a33_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[34\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a34_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_0\[35\]\~I.asynch_inst)
+    (INSTANCE GPIO_0_a35_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[0\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[1\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[2\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[3\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[4\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[5\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[6\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[7\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[8\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[9\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[10\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[11\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[12\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[13\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[14\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[15\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[16\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a16_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[17\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a17_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[18\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a18_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[19\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a19_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[20\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a20_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[21\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a21_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[22\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a22_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[23\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a23_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[24\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a24_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[25\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a25_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[26\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a26_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[27\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a27_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[28\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a28_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[29\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a29_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[30\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a30_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[31\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a31_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[32\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a32_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[33\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a33_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[34\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a34_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE GPIO_1\[35\]\~I.asynch_inst)
+    (INSTANCE GPIO_1_a35_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[0\]\~I.asynch_inst)
+    (INSTANCE HEX0_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[1\]\~I.asynch_inst)
+    (INSTANCE HEX0_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[2\]\~I.asynch_inst)
+    (INSTANCE HEX0_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[3\]\~I.asynch_inst)
+    (INSTANCE HEX0_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[4\]\~I.asynch_inst)
+    (INSTANCE HEX0_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[5\]\~I.asynch_inst)
+    (INSTANCE HEX0_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX0\[6\]\~I.asynch_inst)
+    (INSTANCE HEX0_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[0\]\~I.asynch_inst)
+    (INSTANCE HEX1_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[1\]\~I.asynch_inst)
+    (INSTANCE HEX1_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[2\]\~I.asynch_inst)
+    (INSTANCE HEX1_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[3\]\~I.asynch_inst)
+    (INSTANCE HEX1_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[4\]\~I.asynch_inst)
+    (INSTANCE HEX1_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[5\]\~I.asynch_inst)
+    (INSTANCE HEX1_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX1\[6\]\~I.asynch_inst)
+    (INSTANCE HEX1_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[0\]\~I.asynch_inst)
+    (INSTANCE HEX2_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[1\]\~I.asynch_inst)
+    (INSTANCE HEX2_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[2\]\~I.asynch_inst)
+    (INSTANCE HEX2_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[3\]\~I.asynch_inst)
+    (INSTANCE HEX2_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[4\]\~I.asynch_inst)
+    (INSTANCE HEX2_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[5\]\~I.asynch_inst)
+    (INSTANCE HEX2_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX2\[6\]\~I.asynch_inst)
+    (INSTANCE HEX2_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[0\]\~I.asynch_inst)
+    (INSTANCE HEX3_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[1\]\~I.asynch_inst)
+    (INSTANCE HEX3_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[2\]\~I.asynch_inst)
+    (INSTANCE HEX3_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[3\]\~I.asynch_inst)
+    (INSTANCE HEX3_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[4\]\~I.asynch_inst)
+    (INSTANCE HEX3_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[5\]\~I.asynch_inst)
+    (INSTANCE HEX3_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE HEX3\[6\]\~I.asynch_inst)
+    (INSTANCE HEX3_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[0\]\~I.asynch_inst)
+    (INSTANCE LEDG_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (398:398:398) (398:398:398))
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (PORT datain (0.0398:0.0398:0.0398) (0.0398:0.0398:0.0398))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[1\]\~I.asynch_inst)
+    (INSTANCE LEDG_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (483:483:483) (483:483:483))
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (PORT datain (0.0483:0.0483:0.0483) (0.0483:0.0483:0.0483))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[2\]\~I.asynch_inst)
+    (INSTANCE LEDG_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (372:372:372) (372:372:372))
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (PORT datain (0.0372:0.0372:0.0372) (0.0372:0.0372:0.0372))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[3\]\~I.asynch_inst)
+    (INSTANCE LEDG_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (389:389:389) (389:389:389))
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (PORT datain (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[4\]\~I.asynch_inst)
+    (INSTANCE LEDG_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[5\]\~I.asynch_inst)
+    (INSTANCE LEDG_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[6\]\~I.asynch_inst)
+    (INSTANCE LEDG_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1438:1438:1438) (1438:1438:1438))
+        (IOPATH datain padio (0.1438:0.1438:0.1438) (0.1438:0.1438:0.1438))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDG\[7\]\~I.asynch_inst)
+    (INSTANCE LEDG_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1438:1438:1438) (1438:1438:1438))
+        (IOPATH datain padio (0.1438:0.1438:0.1438) (0.1438:0.1438:0.1438))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[0\]\~I.asynch_inst)
+    (INSTANCE LEDR_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[1\]\~I.asynch_inst)
+    (INSTANCE LEDR_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[2\]\~I.asynch_inst)
+    (INSTANCE LEDR_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[3\]\~I.asynch_inst)
+    (INSTANCE LEDR_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[4\]\~I.asynch_inst)
+    (INSTANCE LEDR_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[5\]\~I.asynch_inst)
+    (INSTANCE LEDR_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[6\]\~I.asynch_inst)
+    (INSTANCE LEDR_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[7\]\~I.asynch_inst)
+    (INSTANCE LEDR_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[8\]\~I.asynch_inst)
+    (INSTANCE LEDR_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE LEDR\[9\]\~I.asynch_inst)
+    (INSTANCE LEDR_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE UART_TXD\~I.asynch_inst)
+    (INSTANCE UART_TXD_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[0\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[1\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[2\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[3\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[4\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[5\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[6\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[7\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[8\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[9\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[10\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_ADDR\[11\]\~I.asynch_inst)
+    (INSTANCE DRAM_ADDR_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_LDQM\~I.asynch_inst)
+    (INSTANCE DRAM_LDQM_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_UDQM\~I.asynch_inst)
+    (INSTANCE DRAM_UDQM_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1378:1378:1378) (1378:1378:1378))
+        (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_WE_N\~I.asynch_inst)
+    (INSTANCE DRAM_WE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_CAS_N\~I.asynch_inst)
+    (INSTANCE DRAM_CAS_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_RAS_N\~I.asynch_inst)
+    (INSTANCE DRAM_RAS_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_CS_N\~I.asynch_inst)
+    (INSTANCE DRAM_CS_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_BA_0\~I.asynch_inst)
+    (INSTANCE DRAM_BA_0_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_BA_1\~I.asynch_inst)
+    (INSTANCE DRAM_BA_1_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_CLK\~I.asynch_inst)
+    (INSTANCE DRAM_CLK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1398:1398:1398) (1398:1398:1398))
+        (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE DRAM_CKE\~I.asynch_inst)
+    (INSTANCE DRAM_CKE_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
+        (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[0\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[1\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[2\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[3\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[4\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[5\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[6\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[7\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[8\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[9\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[10\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[11\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[12\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[13\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[14\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[15\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[16\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a16_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[17\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a17_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[18\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a18_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[19\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a19_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[20\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a20_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_ADDR\[21\]\~I.asynch_inst)
+    (INSTANCE FL_ADDR_a21_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_WE_N\~I.asynch_inst)
+    (INSTANCE FL_WE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_RST_N\~I.asynch_inst)
+    (INSTANCE FL_RST_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_OE_N\~I.asynch_inst)
+    (INSTANCE FL_OE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE FL_CE_N\~I.asynch_inst)
+    (INSTANCE FL_CE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[0\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[1\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[2\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[3\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[4\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[5\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[6\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[7\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[8\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[9\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[10\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a10_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1493:1493:1493) (1493:1493:1493))
+        (IOPATH datain padio (0.1493:0.1493:0.1493) (0.1493:0.1493:0.1493))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[11\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a11_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[12\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a12_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[13\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a13_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[14\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a14_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[15\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a15_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[16\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a16_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_ADDR\[17\]\~I.asynch_inst)
+    (INSTANCE SRAM_ADDR_a17_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_UB_N\~I.asynch_inst)
+    (INSTANCE SRAM_UB_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_LB_N\~I.asynch_inst)
+    (INSTANCE SRAM_LB_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_WE_N\~I.asynch_inst)
+    (INSTANCE SRAM_WE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_CE_N\~I.asynch_inst)
+    (INSTANCE SRAM_CE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SRAM_OE_N\~I.asynch_inst)
+    (INSTANCE SRAM_OE_N_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE SD_CLK\~I.asynch_inst)
+    (INSTANCE SD_CLK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE TDO\~I.asynch_inst)
+    (INSTANCE TDO_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE I2C_SCLK\~I.asynch_inst)
+    (INSTANCE I2C_SCLK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_HS\~I.asynch_inst)
+    (INSTANCE VGA_HS_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_VS\~I.asynch_inst)
+    (INSTANCE VGA_VS_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_R\[0\]\~I.asynch_inst)
+    (INSTANCE VGA_R_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_R\[1\]\~I.asynch_inst)
+    (INSTANCE VGA_R_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_R\[2\]\~I.asynch_inst)
+    (INSTANCE VGA_R_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_R\[3\]\~I.asynch_inst)
+    (INSTANCE VGA_R_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1503:1503:1503) (1503:1503:1503))
+        (IOPATH datain padio (0.1503:0.1503:0.1503) (0.1503:0.1503:0.1503))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_G\[0\]\~I.asynch_inst)
+    (INSTANCE VGA_G_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_G\[1\]\~I.asynch_inst)
+    (INSTANCE VGA_G_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1523:1523:1523) (1523:1523:1523))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_G\[2\]\~I.asynch_inst)
+    (INSTANCE VGA_G_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_G\[3\]\~I.asynch_inst)
+    (INSTANCE VGA_G_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_B\[0\]\~I.asynch_inst)
+    (INSTANCE VGA_B_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_B\[1\]\~I.asynch_inst)
+    (INSTANCE VGA_B_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1513:1513:1513) (1513:1513:1513))
+        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_B\[2\]\~I.asynch_inst)
+    (INSTANCE VGA_B_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE VGA_B\[3\]\~I.asynch_inst)
+    (INSTANCE VGA_B_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1493:1493:1493) (1493:1493:1493))
+        (IOPATH datain padio (0.1493:0.1493:0.1493) (0.1493:0.1493:0.1493))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE AUD_DACDAT\~I.asynch_inst)
+    (INSTANCE AUD_DACDAT_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE AUD_XCK\~I.asynch_inst)
+    (INSTANCE AUD_XCK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (0.1543:0.1543:0.1543) (0.1543:0.1543:0.1543))
       )
     )
   )
