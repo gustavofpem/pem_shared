@@ -227,7 +227,7 @@ assign	GPIO_1		=	36'hzzzzzzzzz;
 
 /*#####################################################*/
 
-questao5 q5instance(
+cronometro2 cr2instance(
 	.clk(CLOCK_50),
 	.rst(~KEY[0]),
 	.ss(~KEY[1]),
@@ -237,7 +237,8 @@ questao5 q5instance(
 	.HEX1(HEX1),
 	.HEX2(HEX2),
 	.HEX3(HEX3),
-	.centesimos(LEDR[6:0])
+	.LEDR(LEDR[6:0]),
+	.LEDG(LEDG)
 );
 
 /*#####################################################*/

@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (SystemVerilog)"
+set corner_file_list {
+	{{"Slow Model"} {cronometro2.svo cronometro2_v.sdo}}
+	{{"Fast Model"} {cronometro2_fast.svo cronometro2_v_fast.sdo}}
+}
