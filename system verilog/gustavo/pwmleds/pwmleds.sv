@@ -31,22 +31,28 @@ begin
 		else
 		begin
 			cont <= 'd0;
-			/*tau[0] += 10;
-			tau[1] += 10;
-			tau[2] += 10;
-			tau[3] += 10;
-			tau[4] += 10;
-			tau[5] += 10;*/
-			for(j = 'd0; j <= 'd8; j++)
+			if(sentido)
 			begin
-				tau[j] <= tau[j+1];
-				if(j == 4'd9)
-					tau[9] <= tau[0];
+				for(j = 'd0; j <= 'd8; j++)
+				begin
+					tau[j] <= tau[j+1];
+					if(j == 4'd8)
+						tau[9] <= tau[0];
+				end
+			end
+			else
+			begin
+				for(j = 'd9; j >= 'd1; j--)
+				begin
+					tau[j] <= tau[j-1];
+					if(j == 4'd1)
+						tau[0] <= tau[9];
+				end
 			end
 		end
 	end
 end
-assign LEDG = j;
+assign LEDG = tau[5];
 assign LEDR[0] = (periodo > tau[0]) ? 'd0 : 'd1;
 assign LEDR[1] = (periodo > tau[1]) ? 'd0 : 'd1;
 assign LEDR[2] = (periodo > tau[2]) ? 'd0 : 'd1;

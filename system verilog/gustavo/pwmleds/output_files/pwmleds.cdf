@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("/home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/output_files/") File("pwmleds.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("/home/tiagot/pem_shared/system verilog/gustavo/pwmleds/output_files/") File("pwmleds.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

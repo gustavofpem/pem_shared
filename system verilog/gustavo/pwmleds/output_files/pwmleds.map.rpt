@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwmleds
-Tue Dec  6 19:11:08 2016
+Wed Dec  7 09:32:15 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -14,11 +14,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web E
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +43,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec  6 19:11:08 2016              ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec  7 09:32:15 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; pwmleds                                            ;
 ; Top-level Entity Name              ; DE1_TOP                                            ;
 ; Family                             ; Cyclone II                                         ;
-; Total logic elements               ; 138                                                ;
-;     Total combinational functions  ; 121                                                ;
-;     Dedicated logic registers      ; 70                                                 ;
-; Total registers                    ; 70                                                 ;
+; Total logic elements               ; 157                                                ;
+;     Total combinational functions  ; 157                                                ;
+;     Dedicated logic registers      ; 75                                                 ;
+; Total registers                    ; 75                                                 ;
 ; Total pins                         ; 283                                                ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 0                                                  ;
@@ -163,14 +162,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; pwmleds.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/pwmleds.sv ;         ;
-; DE1_TOP.v                        ; yes             ; User Verilog HDL File        ; /home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/DE1_TOP.v  ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; pwmleds.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/tiagot/pem_shared/system verilog/gustavo/pwmleds/pwmleds.sv ;         ;
+; DE1_TOP.v                        ; yes             ; User Verilog HDL File        ; /home/tiagot/pem_shared/system verilog/gustavo/pwmleds/DE1_TOP.v  ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -178,28 +177,28 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 138      ;
+; Estimated Total logic elements              ; 157      ;
 ;                                             ;          ;
-; Total combinational functions               ; 121      ;
+; Total combinational functions               ; 157      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 22       ;
-;     -- 3 input functions                    ; 38       ;
-;     -- <=2 input functions                  ; 61       ;
+;     -- 4 input functions                    ; 9        ;
+;     -- 3 input functions                    ; 93       ;
+;     -- <=2 input functions                  ; 55       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
 ;     -- normal mode                          ; 66       ;
-;     -- arithmetic mode                      ; 55       ;
+;     -- arithmetic mode                      ; 91       ;
 ;                                             ;          ;
-; Total registers                             ; 70       ;
-;     -- Dedicated logic registers            ; 70       ;
+; Total registers                             ; 75       ;
+;     -- Dedicated logic registers            ; 75       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
 ; I/O pins                                    ; 283      ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 70       ;
-; Total fan-out                               ; 591      ;
-; Average fan-out                             ; 1.25     ;
+; Maximum fan-out                             ; 75       ;
+; Total fan-out                               ; 737      ;
+; Average fan-out                             ; 1.43     ;
 +---------------------------------------------+----------+
 
 
@@ -208,8 +207,8 @@ applicable agreement for further details.
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |DE1_TOP                     ; 121 (0)           ; 70 (0)       ; 0           ; 0            ; 0       ; 0         ; 283  ; 0            ; |DE1_TOP                         ; work         ;
-;    |pwmleds:pwmledsinstance| ; 121 (121)         ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|pwmleds:pwmledsinstance ; work         ;
+; |DE1_TOP                     ; 157 (0)           ; 75 (0)       ; 0           ; 0            ; 0       ; 0         ; 283  ; 0            ; |DE1_TOP                         ; work         ;
+;    |pwmleds:pwmledsinstance| ; 157 (157)         ; 75 (75)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE1_TOP|pwmleds:pwmledsinstance ; work         ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,53 +218,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+-----------------------------------------------+
 ; Register name                          ; Reason for Removal                            ;
 +----------------------------------------+-----------------------------------------------+
-; pwmleds:pwmledsinstance|tau[8][6]      ; Stuck at VCC due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[8][5]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[8][4]      ; Stuck at VCC due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[8][2]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[8][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[7][6]      ; Stuck at VCC due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[7][5]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[7][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[6][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[5][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[4][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[3][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[2][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[1][0]      ; Stuck at GND due to stuck port data_in        ;
+; pwmleds:pwmledsinstance|tau[9][6]      ; Merged with pwmleds:pwmledsinstance|tau[6][5] ;
+; pwmleds:pwmledsinstance|tau[9][5]      ; Merged with pwmleds:pwmledsinstance|tau[2][6] ;
+; pwmleds:pwmledsinstance|tau[3][1]      ; Merged with pwmleds:pwmledsinstance|tau[1][1] ;
+; pwmleds:pwmledsinstance|tau[5][1]      ; Merged with pwmleds:pwmledsinstance|tau[1][1] ;
+; pwmleds:pwmledsinstance|tau[7][1]      ; Merged with pwmleds:pwmledsinstance|tau[1][1] ;
+; pwmleds:pwmledsinstance|tau[9][1]      ; Merged with pwmleds:pwmledsinstance|tau[1][1] ;
+; pwmleds:pwmledsinstance|tau[1][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[2][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[3][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[4][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[5][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[6][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[7][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[8][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[9][0]      ; Merged with pwmleds:pwmledsinstance|tau[0][0] ;
+; pwmleds:pwmledsinstance|tau[8][6]      ; Merged with pwmleds:pwmledsinstance|tau[5][5] ;
+; pwmleds:pwmledsinstance|tau[8][5]      ; Merged with pwmleds:pwmledsinstance|tau[1][6] ;
+; pwmleds:pwmledsinstance|tau[2][1]      ; Merged with pwmleds:pwmledsinstance|tau[0][1] ;
+; pwmleds:pwmledsinstance|tau[4][1]      ; Merged with pwmleds:pwmledsinstance|tau[0][1] ;
+; pwmleds:pwmledsinstance|tau[6][1]      ; Merged with pwmleds:pwmledsinstance|tau[0][1] ;
+; pwmleds:pwmledsinstance|tau[8][1]      ; Merged with pwmleds:pwmledsinstance|tau[0][1] ;
+; pwmleds:pwmledsinstance|tau[7][6]      ; Merged with pwmleds:pwmledsinstance|tau[4][5] ;
+; pwmleds:pwmledsinstance|tau[7][5]      ; Merged with pwmleds:pwmledsinstance|tau[0][6] ;
+; pwmleds:pwmledsinstance|tau[6][6]      ; Merged with pwmleds:pwmledsinstance|tau[3][5] ;
+; pwmleds:pwmledsinstance|tau[5][6]      ; Merged with pwmleds:pwmledsinstance|tau[2][5] ;
+; pwmleds:pwmledsinstance|tau[4][6]      ; Merged with pwmleds:pwmledsinstance|tau[1][5] ;
+; pwmleds:pwmledsinstance|tau[3][6]      ; Merged with pwmleds:pwmledsinstance|tau[0][5] ;
 ; pwmleds:pwmledsinstance|tau[0][0]      ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|j[3]           ; Stuck at VCC due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|j[1,2]         ; Stuck at GND due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|j[0]           ; Stuck at VCC due to stuck port data_in        ;
-; pwmleds:pwmledsinstance|tau[6][5]      ; Merged with pwmleds:pwmledsinstance|tau[7][2] ;
-; pwmleds:pwmledsinstance|tau[6][6]      ; Merged with pwmleds:pwmledsinstance|tau[7][4] ;
-; pwmleds:pwmledsinstance|tau[7][4]      ; Merged with pwmleds:pwmledsinstance|tau[8][1] ;
-; pwmleds:pwmledsinstance|tau[8][1]      ; Merged with pwmleds:pwmledsinstance|tau[8][3] ;
-; pwmleds:pwmledsinstance|tau[7][2]      ; Merged with pwmleds:pwmledsinstance|tau[8][3] ;
-; pwmleds:pwmledsinstance|tau[5][6]      ; Merged with pwmleds:pwmledsinstance|tau[7][3] ;
-; pwmleds:pwmledsinstance|tau[6][2]      ; Merged with pwmleds:pwmledsinstance|tau[7][3] ;
-; pwmleds:pwmledsinstance|tau[5][5]      ; Merged with pwmleds:pwmledsinstance|tau[7][3] ;
-; pwmleds:pwmledsinstance|tau[6][4]      ; Merged with pwmleds:pwmledsinstance|tau[7][1] ;
-; pwmleds:pwmledsinstance|tau[5][2]      ; Merged with pwmleds:pwmledsinstance|tau[6][3] ;
-; pwmleds:pwmledsinstance|tau[4][5]      ; Merged with pwmleds:pwmledsinstance|tau[4][6] ;
-; Total Number of Removed Registers = 30 ;                                               ;
+; Total Number of Removed Registers = 28 ;                                               ;
 +----------------------------------------+-----------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                           ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
-; Register name                     ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
-; pwmleds:pwmledsinstance|tau[8][0] ; Stuck at GND              ; pwmleds:pwmledsinstance|tau[7][0], pwmleds:pwmledsinstance|tau[6][0], ;
-;                                   ; due to stuck port data_in ; pwmleds:pwmledsinstance|tau[5][0], pwmleds:pwmledsinstance|tau[4][0], ;
-;                                   ;                           ; pwmleds:pwmledsinstance|tau[3][0], pwmleds:pwmledsinstance|tau[2][0], ;
-;                                   ;                           ; pwmleds:pwmledsinstance|tau[1][0], pwmleds:pwmledsinstance|tau[0][0]  ;
-; pwmleds:pwmledsinstance|tau[8][6] ; Stuck at VCC              ; pwmleds:pwmledsinstance|tau[7][6]                                     ;
-;                                   ; due to stuck port data_in ;                                                                       ;
-; pwmleds:pwmledsinstance|tau[8][5] ; Stuck at GND              ; pwmleds:pwmledsinstance|tau[7][5]                                     ;
-;                                   ; due to stuck port data_in ;                                                                       ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -273,12 +255,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 70    ;
+; Total registers                              ; 75    ;
 ; Number of registers using Synchronous Clear  ; 33    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 44    ;
+; Number of registers using Asynchronous Clear ; 49    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 63    ;
+; Number of registers using Clock Enable       ; 68    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -288,20 +270,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; pwmleds:pwmledsinstance|tau[1][3]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[1][1]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[2][4]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[2][2]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[3][4]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[3][3]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[3][2]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[3][1]       ; 2       ;
+; pwmleds:pwmledsinstance|tau[1][1]       ; 7       ;
+; pwmleds:pwmledsinstance|tau[5][4]       ; 4       ;
+; pwmleds:pwmledsinstance|tau[5][5]       ; 5       ;
+; pwmleds:pwmledsinstance|tau[1][3]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[2][4]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[2][2]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[3][4]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[3][3]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[3][2]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[4][5]       ; 4       ;
 ; pwmleds:pwmledsinstance|tau[4][3]       ; 3       ;
-; pwmleds:pwmledsinstance|tau[5][4]       ; 3       ;
-; pwmleds:pwmledsinstance|tau[6][3]       ; 5       ;
-; pwmleds:pwmledsinstance|tau[5][1]       ; 2       ;
-; pwmleds:pwmledsinstance|tau[7][1]       ; 5       ;
-; Total number of inverted registers = 13 ;         ;
+; pwmleds:pwmledsinstance|tau[6][5]       ; 4       ;
+; pwmleds:pwmledsinstance|tau[6][4]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[6][3]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[6][2]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[7][2]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[8][4]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[9][4]       ; 3       ;
+; pwmleds:pwmledsinstance|tau[9][3]       ; 3       ;
+; Total number of inverted registers = 19 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -320,7 +308,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Tue Dec  6 19:11:06 2016
+    Info: Processing started: Wed Dec  7 09:32:14 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off questao1 -c pwmleds
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file pwmleds.sv
@@ -363,23 +351,16 @@ Warning (10034): Output port "AUD_DACDAT" at DE1_TOP.v(201) has no driver
 Warning (10034): Output port "AUD_XCK" at DE1_TOP.v(203) has no driver
 Info (12128): Elaborating entity "pwmleds" for hierarchy "pwmleds:pwmledsinstance"
 Warning (10230): Verilog HDL assignment warning at pwmleds.sv(19): truncated value with size 32 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(50): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(51): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(52): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(53): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(54): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(55): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(56): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(57): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(58): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at pwmleds.sv(59): truncated value with size 32 to match size of target (1)
-Info (10041): Inferred latch for "tau[9][0]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][1]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][2]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][3]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][4]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][5]" at pwmleds.sv(13)
-Info (10041): Inferred latch for "tau[9][6]" at pwmleds.sv(13)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(62): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(63): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(64): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(65): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(66): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(67): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(68): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(69): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(70): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at pwmleds.sv(71): truncated value with size 32 to match size of target (1)
 Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "SD_DAT3" has no driver
     Warning (13040): Bidir "SD_CMD" has no driver
@@ -414,13 +395,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX3[4]" is stuck at VCC
     Warning (13410): Pin "HEX3[5]" is stuck at VCC
     Warning (13410): Pin "HEX3[6]" is stuck at VCC
-    Warning (13410): Pin "LEDG[0]" is stuck at VCC
-    Warning (13410): Pin "LEDG[1]" is stuck at GND
-    Warning (13410): Pin "LEDG[2]" is stuck at GND
-    Warning (13410): Pin "LEDG[3]" is stuck at VCC
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[0]" is stuck at GND
     Warning (13410): Pin "LEDG[7]" is stuck at GND
     Warning (13410): Pin "UART_TXD" is stuck at GND
     Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND
@@ -515,7 +490,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "AUD_XCK" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 25 input pin(s) that do not drive logic
+Warning (21074): Design contains 24 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK_24[0]"
     Warning (15610): No output dependent on input pin "CLOCK_24[1]"
     Warning (15610): No output dependent on input pin "CLOCK_27[0]"
@@ -524,7 +499,6 @@ Warning (21074): Design contains 25 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]"
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-    Warning (15610): No output dependent on input pin "SW[0]"
     Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
@@ -541,15 +515,15 @@ Warning (21074): Design contains 25 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "PS2_DAT"
     Warning (15610): No output dependent on input pin "PS2_CLK"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 421 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 440 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 137 output pins
     Info (21060): Implemented 119 bidirectional pins
-    Info (21061): Implemented 138 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 201 warnings
+    Info (21061): Implemented 157 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 194 warnings
     Info: Peak virtual memory: 734 megabytes
-    Info: Processing ended: Tue Dec  6 19:11:08 2016
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Dec  7 09:32:15 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

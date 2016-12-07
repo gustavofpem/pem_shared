@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "DE1_TOP")
-  (DATE "12/06/2016 19:11:29")
+  (DATE "12/07/2016 09:32:36")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition")
@@ -36,10 +36,10 @@
     (INSTANCE pwmledsinstance_acont_a23_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -54,10 +54,10 @@
     (INSTANCE pwmledsinstance_acont_a5_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -72,10 +72,10 @@
     (INSTANCE pwmledsinstance_acont_a0_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -90,10 +90,10 @@
     (INSTANCE pwmledsinstance_acont_a19_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -159,62 +159,112 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a0_a_a5_a)
+    (INSTANCE pwmledsinstance_atau_a1_a_a2_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0345:0.0345:0.0345) (0.0345:0.0345:0.0345))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a5_a)
+    (INSTANCE pwmledsinstance_atau_a6_a_a4_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0343:0.0343:0.0343) (0.0343:0.0343:0.0343))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a7_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a8_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan6_a1)
+    (INSTANCE pwmledsinstance_atau_a14)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0489:0.0489:0.0489) (0.0489:0.0489:0.0489))
-        (PORT datab (0.0349:0.0349:0.0349) (0.0349:0.0349:0.0349))
-        (PORT datad (0.0224:0.0224:0.0224) (0.0224:0.0224:0.0224))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (PORT datab (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (PORT datac (0.0888:0.0888:0.0888) (0.0888:0.0888:0.0888))
+        (PORT datad (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan6_a2)
+    (INSTANCE pwmledsinstance_atau_a28)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0499:0.0499:0.0499) (0.0499:0.0499:0.0499))
-        (PORT datab (0.0334:0.0334:0.0334) (0.0334:0.0334:0.0334))
-        (PORT datad (0.0176:0.0176:0.0176) (0.0176:0.0176:0.0176))
+        (PORT datab (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (PORT datac (0.0838:0.0838:0.0838) (0.0838:0.0838:0.0838))
+        (PORT datad (0.0242:0.0242:0.0242) (0.0242:0.0242:0.0242))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a33)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
+        (PORT datab (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
+        (PORT datad (0.0843:0.0843:0.0843) (0.0843:0.0843:0.0843))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -223,98 +273,14 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan7_a1)
+    (INSTANCE pwmledsinstance_atau_a36)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0345:0.0345:0.0345) (0.0345:0.0345:0.0345))
-        (PORT datab (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
-        (PORT datad (0.0466:0.0466:0.0466) (0.0466:0.0466:0.0466))
+        (PORT dataa (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (PORT datab (0.0236:0.0236:0.0236) (0.0236:0.0236:0.0236))
+        (PORT datad (0.0844:0.0844:0.0844) (0.0844:0.0844:0.0844))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan8_a1)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0367:0.0367:0.0367) (0.0367:0.0367:0.0367))
-        (PORT datac (0.0374:0.0374:0.0374) (0.0374:0.0374:0.0374))
-        (PORT datad (0.0454:0.0454:0.0454) (0.0454:0.0454:0.0454))
         (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan8_a2)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0114:0.0114:0.0114) (0.0114:0.0114:0.0114))
-        (PORT datac (0.0356:0.0356:0.0356) (0.0356:0.0356:0.0356))
-        (PORT datad (0.0459:0.0459:0.0459) (0.0459:0.0459:0.0459))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan8_a3)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0118:0.0118:0.0118) (0.0118:0.0118:0.0118))
-        (PORT datac (0.0627:0.0627:0.0627) (0.0627:0.0627:0.0627))
-        (PORT datad (0.048:0.048:0.048) (0.048:0.048:0.048))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan9_a0)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0368:0.0368:0.0368) (0.0368:0.0368:0.0368))
-        (PORT datac (0.0372:0.0372:0.0372) (0.0372:0.0372:0.0372))
-        (PORT datad (0.016:0.016:0.016) (0.016:0.016:0.016))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan9_a1)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
-        (PORT datac (0.0355:0.0355:0.0355) (0.0355:0.0355:0.0355))
-        (PORT datad (0.0172:0.0172:0.0172) (0.0172:0.0172:0.0172))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan9_a2)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
-        (PORT datac (0.0626:0.0626:0.0626) (0.0626:0.0626:0.0626))
-        (PORT datad (0.046:0.046:0.046) (0.046:0.046:0.046))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
@@ -354,13 +320,11 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a0_a_a7)
+    (INSTANCE pwmledsinstance_atau_a0_a_a1_a_a43)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0156:0.0156:0.0156) (0.0156:0.0156:0.0156))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT datac (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
       )
     )
   )
@@ -371,227 +335,6 @@
       (ABSOLUTE
         (IOPATH padio combout (0.0464:0.0464:0.0464) (0.0464:0.0464:0.0464))
       )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a5_a_a17)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0171:0.0171:0.0171) (0.0171:0.0171:0.0171))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a5_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan0_a0)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0176:0.0176:0.0176) (0.0176:0.0176:0.0176))
-        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
-        (PORT datac (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
-        (PORT datad (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan0_a1)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0176:0.0176:0.0176) (0.0176:0.0176:0.0176))
-        (PORT datab (0.0239:0.0239:0.0239) (0.0239:0.0239:0.0239))
-        (PORT datac (0.0167:0.0167:0.0167) (0.0167:0.0167:0.0167))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a0_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a1_a_a9)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a1_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a2_a_a11)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a3_a_a13)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a4_a_a15)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aperiodo_a6_a_a19)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
@@ -613,10 +356,10 @@
     (INSTANCE pwmledsinstance_acont_a1_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -673,10 +416,10 @@
     (INSTANCE pwmledsinstance_acont_a4_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -705,10 +448,10 @@
     (INSTANCE pwmledsinstance_acont_a6_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -751,10 +494,10 @@
     (INSTANCE pwmledsinstance_acont_a8_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -797,10 +540,10 @@
     (INSTANCE pwmledsinstance_acont_a10_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -829,10 +572,10 @@
     (INSTANCE pwmledsinstance_acont_a11_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -861,10 +604,10 @@
     (INSTANCE pwmledsinstance_acont_a12_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -893,10 +636,10 @@
     (INSTANCE pwmledsinstance_acont_a13_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -911,7 +654,7 @@
     (INSTANCE pwmledsinstance_acont_a14_a_a54)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
+        (PORT datab (0.0566:0.0566:0.0566) (0.0566:0.0566:0.0566))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -925,16 +668,16 @@
     (INSTANCE pwmledsinstance_acont_a14_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT sdata (0.06:0.06:0.06) (0.06:0.06:0.06))
+        (PORT sclr (0.0587:0.0587:0.0587) (0.0587:0.0587:0.0587))
+        (PORT ena (0.3616:0.3616:0.3616) (0.3616:0.3616:0.3616))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
@@ -957,10 +700,10 @@
     (INSTANCE pwmledsinstance_acont_a15_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -975,7 +718,7 @@
     (INSTANCE pwmledsinstance_acont_a16_a_a58)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT dataa (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -989,7 +732,7 @@
     (INSTANCE pwmledsinstance_acont_a17_a_a60)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0158:0.0158:0.0158) (0.0158:0.0158:0.0158))
+        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1003,10 +746,10 @@
     (INSTANCE pwmledsinstance_acont_a17_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1049,10 +792,10 @@
     (INSTANCE pwmledsinstance_acont_a20_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1081,7 +824,7 @@
     (INSTANCE pwmledsinstance_acont_a22_a_a70)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0156:0.0156:0.0156) (0.0156:0.0156:0.0156))
+        (PORT datab (0.0154:0.0154:0.0154) (0.0154:0.0154:0.0154))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1095,10 +838,10 @@
     (INSTANCE pwmledsinstance_acont_a22_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1113,7 +856,7 @@
     (INSTANCE pwmledsinstance_acont_a24_a_a74)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0157:0.0157:0.0157) (0.0157:0.0157:0.0157))
+        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1127,10 +870,10 @@
     (INSTANCE pwmledsinstance_acont_a24_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1156,10 +899,10 @@
     (INSTANCE pwmledsinstance_acont_a25_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1167,40 +910,6 @@
       (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_acont_a9_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan1_a0)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0242:0.0242:0.0242) (0.0242:0.0242:0.0242))
-        (PORT datab (0.0237:0.0237:0.0237) (0.0237:0.0237:0.0237))
-        (PORT datac (0.0367:0.0367:0.0367) (0.0367:0.0367:0.0367))
-        (PORT datad (0.0234:0.0234:0.0234) (0.0234:0.0234:0.0234))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
     )
   )
   (CELL
@@ -1208,28 +917,10 @@
     (INSTANCE pwmledsinstance_acont_a7_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_acont_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1244,10 +935,28 @@
     (INSTANCE pwmledsinstance_acont_a2_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
-        (PORT ena (0.3221:0.3221:0.3221) (0.3221:0.3221:0.3221))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_acont_a3_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1264,8 +973,8 @@
       (ABSOLUTE
         (PORT dataa (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
         (PORT datab (0.0158:0.0158:0.0158) (0.0158:0.0158:0.0158))
-        (PORT datac (0.0231:0.0231:0.0231) (0.0231:0.0231:0.0231))
-        (PORT datad (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
+        (PORT datac (0.0234:0.0234:0.0234) (0.0234:0.0234:0.0234))
+        (PORT datad (0.016:0.016:0.016) (0.016:0.016:0.016))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
@@ -1290,30 +999,14 @@
     )
   )
   (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan1_a3)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.034:0.034:0.034) (0.034:0.034:0.034))
-        (PORT datab (0.0368:0.0368:0.0368) (0.0368:0.0368:0.0368))
-        (PORT datac (0.0104:0.0104:0.0104) (0.0104:0.0104:0.0104))
-        (PORT datad (0.0189:0.0189:0.0189) (0.0189:0.0189:0.0189))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_acont_a21_a)
+    (INSTANCE pwmledsinstance_acont_a9_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (PORT ena (0.347:0.347:0.347) (0.347:0.347:0.347))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1324,14 +1017,46 @@
     )
   )
   (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan1_a0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0336:0.0336:0.0336) (0.0336:0.0336:0.0336))
+        (PORT datab (0.0234:0.0234:0.0234) (0.0234:0.0234:0.0234))
+        (PORT datac (0.0332:0.0332:0.0332) (0.0332:0.0332:0.0332))
+        (PORT datad (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan1_a3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.037:0.037:0.037) (0.037:0.037:0.037))
+        (PORT datab (0.0241:0.0241:0.0241) (0.0241:0.0241:0.0241))
+        (PORT datac (0.0191:0.0191:0.0191) (0.0191:0.0191:0.0191))
+        (PORT datad (0.0111:0.0111:0.0111) (0.0111:0.0111:0.0111))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
     (CELLTYPE "cycloneii_lcell_ff")
     (INSTANCE pwmledsinstance_acont_a18_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1346,9 +1071,9 @@
     (INSTANCE pwmledsinstance_aLessThan1_a4)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0167:0.0167:0.0167) (0.0167:0.0167:0.0167))
-        (PORT datab (0.0158:0.0158:0.0158) (0.0158:0.0158:0.0158))
-        (PORT datad (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT dataa (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
+        (PORT datab (0.0157:0.0157:0.0157) (0.0157:0.0157:0.0157))
+        (PORT datad (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
         (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
         (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1357,13 +1082,31 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_acont_a21_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
     (INSTANCE pwmledsinstance_acont_a16_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1044:0.1044:0.1044) (0.1044:0.1044:0.1044))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT sclr (0.0701:0.0701:0.0701) (0.0701:0.0701:0.0701))
-        (PORT ena (0.3328:0.3328:0.3328) (0.3328:0.3328:0.3328))
+        (PORT sclr (0.0601:0.0601:0.0601) (0.0601:0.0601:0.0601))
+        (PORT ena (0.3473:0.3473:0.3473) (0.3473:0.3473:0.3473))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
       )
     )
@@ -1378,10 +1121,10 @@
     (INSTANCE pwmledsinstance_aLessThan1_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
-        (PORT datab (0.023:0.023:0.023) (0.023:0.023:0.023))
-        (PORT datac (0.0337:0.0337:0.0337) (0.0337:0.0337:0.0337))
-        (PORT datad (0.0361:0.0361:0.0361) (0.0361:0.0361:0.0361))
+        (PORT dataa (0.025:0.025:0.025) (0.025:0.025:0.025))
+        (PORT datab (0.0239:0.0239:0.0239) (0.0239:0.0239:0.0239))
+        (PORT datac (0.0339:0.0339:0.0339) (0.0339:0.0339:0.0339))
+        (PORT datad (0.0325:0.0325:0.0325) (0.0325:0.0325:0.0325))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
@@ -1394,12 +1137,12 @@
     (INSTANCE pwmledsinstance_aLessThan1_a6)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0461:0.0461:0.0461) (0.0461:0.0461:0.0461))
-        (PORT datab (0.0366:0.0366:0.0366) (0.0366:0.0366:0.0366))
-        (PORT datac (0.0368:0.0368:0.0368) (0.0368:0.0368:0.0368))
-        (PORT datad (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (PORT dataa (0.037:0.037:0.037) (0.037:0.037:0.037))
+        (PORT datab (0.0456:0.0456:0.0456) (0.0456:0.0456:0.0456))
+        (PORT datac (0.0464:0.0464:0.0464) (0.0464:0.0464:0.0464))
+        (PORT datad (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
@@ -1410,10 +1153,10 @@
     (INSTANCE pwmledsinstance_aLessThan1_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0379:0.0379:0.0379) (0.0379:0.0379:0.0379))
-        (PORT datab (0.0462:0.0462:0.0462) (0.0462:0.0462:0.0462))
-        (PORT datac (0.0317:0.0317:0.0317) (0.0317:0.0317:0.0317))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
+        (PORT dataa (0.0384:0.0384:0.0384) (0.0384:0.0384:0.0384))
+        (PORT datab (0.0316:0.0316:0.0316) (0.0316:0.0316:0.0316))
+        (PORT datac (0.0461:0.0461:0.0461) (0.0461:0.0461:0.0461))
+        (PORT datad (0.011:0.011:0.011) (0.011:0.011:0.011))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
@@ -1426,9 +1169,9 @@
     (INSTANCE pwmledsinstance_aLessThan1_a8)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0464:0.0464:0.0464) (0.0464:0.0464:0.0464))
-        (PORT datab (0.0103:0.0103:0.0103) (0.0103:0.0103:0.0103))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
+        (PORT dataa (0.0609:0.0609:0.0609) (0.0609:0.0609:0.0609))
+        (PORT datab (0.0112:0.0112:0.0112) (0.0112:0.0112:0.0112))
+        (PORT datad (0.0109:0.0109:0.0109) (0.0109:0.0109:0.0109))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1440,9 +1183,270 @@
     (INSTANCE pwmledsinstance_aLessThan1_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.037:0.037:0.037) (0.037:0.037:0.037))
-        (PORT datab (0.0557:0.0557:0.0557) (0.0557:0.0557:0.0557))
-        (PORT datad (0.0109:0.0109:0.0109) (0.0109:0.0109:0.0109))
+        (PORT dataa (0.0467:0.0467:0.0467) (0.0467:0.0467:0.0467))
+        (PORT datab (0.0461:0.0461:0.0461) (0.0461:0.0461:0.0461))
+        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a0_a_a1_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a1_a_a1_a_a40)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a1_a_a1_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE SW_a0_a_aI.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (0.0571:0.0571:0.0571) (0.0571:0.0571:0.0571))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a30)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (PORT datad (0.0843:0.0843:0.0843) (0.0843:0.0843:0.0843))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a6_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a18)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (PORT datac (0.0889:0.0889:0.0889) (0.0889:0.0889:0.0889))
+        (PORT datad (0.0236:0.0236:0.0236) (0.0236:0.0236:0.0236))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a2_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a22)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0851:0.0851:0.0851) (0.0851:0.0851:0.0851))
+        (PORT datac (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datad (0.0238:0.0238:0.0238) (0.0238:0.0238:0.0238))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a3_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a26)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (PORT datac (0.0243:0.0243:0.0243) (0.0243:0.0243:0.0243))
+        (PORT datad (0.0844:0.0844:0.0844) (0.0844:0.0844:0.0844))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a4_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT datac (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datad (0.0844:0.0844:0.0844) (0.0844:0.0844:0.0844))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a5_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a38)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0171:0.0171:0.0171) (0.0171:0.0171:0.0171))
+        (PORT datac (0.089:0.089:0.089) (0.089:0.089:0.089))
+        (PORT datad (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a9_a_a3_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a35)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0897:0.0897:0.0897) (0.0897:0.0897:0.0897))
+        (PORT datab (0.0332:0.0332:0.0332) (0.0332:0.0332:0.0332))
+        (PORT datad (0.0154:0.0154:0.0154) (0.0154:0.0154:0.0154))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
@@ -1454,10 +1458,10 @@
     (INSTANCE pwmledsinstance_atau_a8_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3278:0.3278:0.3278) (0.3278:0.3278:0.3278))
-        (PORT ena (0.0671:0.0671:0.0671) (0.0671:0.0671:0.0671))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -1465,6 +1469,20 @@
     (TIMINGCHECK
       (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a32)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.089:0.089:0.089) (0.089:0.089:0.089))
+        (PORT datab (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
+        (PORT datad (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
     )
   )
   (CELL
@@ -1472,100 +1490,10 @@
     (INSTANCE pwmledsinstance_atau_a7_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0736:0.0736:0.0736) (0.0736:0.0736:0.0736))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a4_a_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0425:0.0425:0.0425) (0.0425:0.0425:0.0425))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0899:0.0899:0.0899) (0.0899:0.0899:0.0899))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.052:0.052:0.052) (0.052:0.052:0.052))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0516:0.0516:0.0516) (0.0516:0.0516:0.0516))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a0_a_a6_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0428:0.0428:0.0428) (0.0428:0.0428:0.0428))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT sdata (0.0371:0.0371:0.0371) (0.0371:0.0371:0.0371))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -1577,177 +1505,15 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a7_a_a1_a_a18)
+    (INSTANCE pwmledsinstance_atau_a29)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a7_a_a1_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1026:0.1026:0.1026) (0.1026:0.1026:0.1026))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3278:0.3278:0.3278) (0.3278:0.3278:0.3278))
-        (PORT ena (0.0671:0.0671:0.0671) (0.0671:0.0671:0.0671))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a5_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0646:0.0646:0.0646) (0.0646:0.0646:0.0646))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a4_a_a4_a_a12)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0255:0.0255:0.0255) (0.0255:0.0255:0.0255))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a4_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a3_a_a4_a_a9)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0331:0.0331:0.0331) (0.0331:0.0331:0.0331))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.316:0.316:0.316) (0.316:0.316:0.316))
-        (PORT ena (0.0671:0.0671:0.0671) (0.0671:0.0671:0.0671))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0429:0.0429:0.0429) (0.0429:0.0429:0.0429))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a1_a_a4_a_a2)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a0_a_a4_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0416:0.0416:0.0416) (0.0416:0.0416:0.0416))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a6_a_a3_a_a16)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0358:0.0358:0.0358) (0.0358:0.0358:0.0358))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
+        (PORT dataa (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (PORT datab (0.0331:0.0331:0.0331) (0.0331:0.0331:0.0331))
+        (PORT datad (0.0803:0.0803:0.0803) (0.0803:0.0803:0.0803))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
@@ -1756,10 +1522,10 @@
     (INSTANCE pwmledsinstance_atau_a6_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -1771,141 +1537,15 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a5_a_a3_a_a15)
+    (INSTANCE pwmledsinstance_atau_a8)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a5_a_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a4_a_a3_a_a13)
-    (DELAY
-      (ABSOLUTE
-        (PORT datac (0.0235:0.0235:0.0235) (0.0235:0.0235:0.0235))
+        (PORT dataa (0.089:0.089:0.089) (0.089:0.089:0.089))
+        (PORT datac (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT datad (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a4_a_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.048:0.048:0.048) (0.048:0.048:0.048))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0426:0.0426:0.0426) (0.0426:0.0426:0.0426))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a2_a_a3_a_a6)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0383:0.0383:0.0383) (0.0383:0.0383:0.0383))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0477:0.0477:0.0477) (0.0477:0.0477:0.0477))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a1_a_a3_a_a3)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0325:0.0325:0.0325) (0.0325:0.0325:0.0325))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a3_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0478:0.0478:0.0478) (0.0478:0.0478:0.0478))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a0_a_a3_a_a0)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0618:0.0618:0.0618) (0.0618:0.0618:0.0618))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
@@ -1914,10 +1554,10 @@
     (INSTANCE pwmledsinstance_atau_a0_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -1928,162 +1568,28 @@
     )
   )
   (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a4_a_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0529:0.0529:0.0529) (0.0529:0.0529:0.0529))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a3_a_a2_a_a10)
+    (INSTANCE pwmledsinstance_atau_a13)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0334:0.0334:0.0334) (0.0334:0.0334:0.0334))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0482:0.0482:0.0482) (0.0482:0.0482:0.0482))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0537:0.0537:0.0537) (0.0537:0.0537:0.0537))
-        (PORT aclr (0.3267:0.3267:0.3267) (0.3267:0.3267:0.3267))
-        (PORT ena (0.0674:0.0674:0.0674) (0.0674:0.0674:0.0674))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a1_a_a2_a_a4)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0158:0.0158:0.0158) (0.0158:0.0158:0.0158))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.047:0.047:0.047) (0.047:0.047:0.047))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a0_a_a2_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0424:0.0424:0.0424) (0.0424:0.0424:0.0424))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a6_a_a1_a_a19)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0238:0.0238:0.0238) (0.0238:0.0238:0.0238))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a6_a_a1_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0609:0.0609:0.0609) (0.0609:0.0609:0.0609))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a5_a_a1_a_a17)
-    (DELAY
-      (ABSOLUTE
-        (PORT datac (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (PORT dataa (0.0889:0.0889:0.0889) (0.0889:0.0889:0.0889))
+        (PORT datab (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datac (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a5_a_a1_a)
+    (INSTANCE pwmledsinstance_atau_a1_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -2095,79 +1601,27 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a4_a_a1_a_a14)
+    (INSTANCE pwmledsinstance_atau_a17)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0152:0.0152:0.0152) (0.0152:0.0152:0.0152))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a4_a_a1_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a3_a_a1_a_a11)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (0.0154:0.0154:0.0154) (0.0154:0.0154:0.0154))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a1_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a2_a_a1_a_a7)
-    (DELAY
-      (ABSOLUTE
-        (PORT datac (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
+        (PORT dataa (0.0888:0.0888:0.0888) (0.0888:0.0888:0.0888))
+        (PORT datab (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datac (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a1_a)
+    (INSTANCE pwmledsinstance_atau_a2_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -2179,23 +1633,27 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a1_a_a1_a_a5)
+    (INSTANCE pwmledsinstance_atau_a21)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
+        (PORT dataa (0.089:0.089:0.089) (0.089:0.089:0.089))
+        (PORT datab (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
+        (PORT datad (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a1_a_a1_a)
+    (INSTANCE pwmledsinstance_atau_a3_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3269:0.3269:0.3269) (0.3269:0.3269:0.3269))
-        (PORT ena (0.058:0.058:0.058) (0.058:0.058:0.058))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -2207,129 +1665,455 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a0_a_a1_a_a1)
+    (INSTANCE pwmledsinstance_atau_a25)
     (DELAY
       (ABSOLUTE
-        (PORT datad (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
-        (IOPATH datad combout (0.0079:0.0079:0.0079) (0.0079:0.0079:0.0079))
+        (PORT dataa (0.0888:0.0888:0.0888) (0.0888:0.0888:0.0888))
+        (PORT datab (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datad (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a0_a_a1_a)
+    (INSTANCE pwmledsinstance_atau_a4_a_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0744:0.0744:0.0744) (0.0744:0.0744:0.0744))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
     )
     (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
       (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a1)
+    (INSTANCE pwmledsinstance_atau_a1)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0352:0.0352:0.0352) (0.0352:0.0352:0.0352))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a3)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0488:0.0488:0.0488) (0.0488:0.0488:0.0488))
-        (PORT datab (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a5)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0519:0.0519:0.0519) (0.0519:0.0519:0.0519))
-        (PORT datab (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a7)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0498:0.0498:0.0498) (0.0498:0.0498:0.0498))
-        (PORT datab (0.0235:0.0235:0.0235) (0.0235:0.0235:0.0235))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a9)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0747:0.0747:0.0747) (0.0747:0.0747:0.0747))
-        (PORT datab (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a11)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0156:0.0156:0.0156) (0.0156:0.0156:0.0156))
-        (PORT datab (0.0482:0.0482:0.0482) (0.0482:0.0482:0.0482))
-        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
-        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan2_a12)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0501:0.0501:0.0501) (0.0501:0.0501:0.0501))
-        (PORT datad (0.0149:0.0149:0.0149) (0.0149:0.0149:0.0149))
+        (PORT dataa (0.0893:0.0893:0.0893) (0.0893:0.0893:0.0893))
+        (PORT datab (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datad (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
         (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a5_a_a3_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a16)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datab (0.0155:0.0155:0.0155) (0.0155:0.0155:0.0155))
+        (PORT datad (0.0872:0.0872:0.0872) (0.0872:0.0872:0.0872))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a2_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT sdata (0.0474:0.0474:0.0474) (0.0474:0.0474:0.0474))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a20)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (PORT datac (0.084:0.084:0.084) (0.084:0.084:0.084))
+        (PORT datad (0.024:0.024:0.024) (0.024:0.024:0.024))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a3_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a24)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datac (0.084:0.084:0.084) (0.084:0.084:0.084))
+        (PORT datad (0.0151:0.0151:0.0151) (0.0151:0.0151:0.0151))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a4_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
+        (PORT datab (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
+        (PORT datad (0.0869:0.0869:0.0869) (0.0869:0.0869:0.0869))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a5_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
+        (PORT datac (0.0341:0.0341:0.0341) (0.0341:0.0341:0.0341))
+        (PORT datad (0.0872:0.0872:0.0872) (0.0872:0.0872:0.0872))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a0_a_a6_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a27)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
+        (PORT datac (0.0341:0.0341:0.0341) (0.0341:0.0341:0.0341))
+        (PORT datad (0.0892:0.0892:0.0892) (0.0892:0.0892:0.0892))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a6_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3409:0.3409:0.3409) (0.3409:0.3409:0.3409))
+        (PORT ena (0.0571:0.0571:0.0571) (0.0571:0.0571:0.0571))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0169:0.0169:0.0169) (0.0169:0.0169:0.0169))
+        (PORT datac (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
+        (PORT datad (0.0868:0.0868:0.0868) (0.0868:0.0868:0.0868))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a1_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a4)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (PORT datac (0.0167:0.0167:0.0167) (0.0167:0.0167:0.0167))
+        (PORT datad (0.0872:0.0872:0.0872) (0.0872:0.0872:0.0872))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a2_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a19)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0433:0.0433:0.0433) (0.0433:0.0433:0.0433))
+        (PORT datab (0.0156:0.0156:0.0156) (0.0156:0.0156:0.0156))
+        (PORT datad (0.087:0.087:0.087) (0.087:0.087:0.087))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a3_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a23)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0895:0.0895:0.0895) (0.0895:0.0895:0.0895))
+        (PORT datab (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datad (0.0226:0.0226:0.0226) (0.0226:0.0226:0.0226))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a4_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT sdata (0.0375:0.0375:0.0375) (0.0375:0.0375:0.0375))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a3)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0343:0.0343:0.0343) (0.0343:0.0343:0.0343))
+        (PORT datac (0.0882:0.0882:0.0882) (0.0882:0.0882:0.0882))
+        (PORT datad (0.0416:0.0416:0.0416) (0.0416:0.0416:0.0416))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a5_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a0_a_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datab cout (0.0198:0.0198:0.0198) (0.0198:0.0198:0.0198))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a5_a_a17)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0174:0.0174:0.0174) (0.0174:0.0174:0.0174))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
         (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_aperiodo_a3_a)
+    (INSTANCE pwmledsinstance_aperiodo_a5_a)
     (DELAY
       (ABSOLUTE
-        (PORT clk (0.1025:0.1025:0.1025) (0.1025:0.1025:0.1025))
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
         (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
-        (PORT aclr (0.3273:0.3273:0.3273) (0.3273:0.3273:0.3273))
-        (PORT sclr (0.0389:0.0389:0.0389) (0.0389:0.0389:0.0389))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
         (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
         (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
       )
@@ -2341,11 +2125,608 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a1_a_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0171:0.0171:0.0171) (0.0171:0.0171:0.0171))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a1_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan0_a0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0174:0.0174:0.0174) (0.0174:0.0174:0.0174))
+        (PORT datab (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (PORT datac (0.0169:0.0169:0.0169) (0.0169:0.0169:0.0169))
+        (PORT datad (0.0231:0.0231:0.0231) (0.0231:0.0231:0.0231))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan0_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0246:0.0246:0.0246) (0.0246:0.0246:0.0246))
+        (PORT datab (0.0164:0.0164:0.0164) (0.0164:0.0164:0.0164))
+        (PORT datac (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (PORT datad (0.0112:0.0112:0.0112) (0.0112:0.0112:0.0112))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a0_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a2_a_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a3_a_a13)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0171:0.0171:0.0171) (0.0171:0.0171:0.0171))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a4_a_a15)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aperiodo_a6_a_a19)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a6_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0166:0.0166:0.0166) (0.0166:0.0166:0.0166))
+        (PORT datac (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
+        (PORT datad (0.0868:0.0868:0.0868) (0.0868:0.0868:0.0868))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a0_a_a5_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a39)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0243:0.0243:0.0243) (0.0243:0.0243:0.0243))
+        (PORT datac (0.0886:0.0886:0.0886) (0.0886:0.0886:0.0886))
+        (PORT datad (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a9_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.017:0.017:0.017) (0.017:0.017:0.017))
+        (PORT datab (0.0153:0.0153:0.0153) (0.0153:0.0153:0.0153))
+        (PORT datac (0.089:0.089:0.089) (0.089:0.089:0.089))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a0_a_a2_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0364:0.0364:0.0364) (0.0364:0.0364:0.0364))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0724:0.0724:0.0724) (0.0724:0.0724:0.0724))
+        (PORT datab (0.046:0.046:0.046) (0.046:0.046:0.046))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0357:0.0357:0.0357) (0.0357:0.0357:0.0357))
+        (PORT datab (0.0356:0.0356:0.0356) (0.0356:0.0356:0.0356))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.036:0.036:0.036) (0.036:0.036:0.036))
+        (PORT datab (0.0362:0.0362:0.0362) (0.0362:0.0362:0.0362))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0372:0.0372:0.0372) (0.0372:0.0372:0.0372))
+        (PORT datab (0.0348:0.0348:0.0348) (0.0348:0.0348:0.0348))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0638:0.0638:0.0638) (0.0638:0.0638:0.0638))
+        (PORT datab (0.037:0.037:0.037) (0.037:0.037:0.037))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan2_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0348:0.0348:0.0348) (0.0348:0.0348:0.0348))
+        (PORT datad (0.0376:0.0376:0.0376) (0.0376:0.0376:0.0376))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a15)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0345:0.0345:0.0345) (0.0345:0.0345:0.0345))
+        (PORT datac (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datad (0.0867:0.0867:0.0867) (0.0867:0.0867:0.0867))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a2_a_a6_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a10)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0344:0.0344:0.0344) (0.0344:0.0344:0.0344))
+        (PORT datac (0.0347:0.0347:0.0347) (0.0347:0.0347:0.0347))
+        (PORT datad (0.0843:0.0843:0.0843) (0.0843:0.0843:0.0843))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a1_a_a6_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1041:0.1041:0.1041) (0.1041:0.1041:0.1041))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3514:0.3514:0.3514) (0.3514:0.3514:0.3514))
+        (PORT ena (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a31)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
+        (PORT datab (0.0167:0.0167:0.0167) (0.0167:0.0167:0.0167))
+        (PORT datad (0.087:0.087:0.087) (0.087:0.087:0.087))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a7_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT sdata (0.0362:0.0362:0.0362) (0.0362:0.0362:0.0362))
+        (PORT aclr (0.3557:0.3557:0.3557) (0.3557:0.3557:0.3557))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a34)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (PORT datac (0.0834:0.0834:0.0834) (0.0834:0.0834:0.0834))
+        (PORT datad (0.0242:0.0242:0.0242) (0.0242:0.0242:0.0242))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a8_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a37)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
+        (PORT datac (0.0836:0.0836:0.0836) (0.0836:0.0836:0.0836))
+        (PORT datad (0.0162:0.0162:0.0162) (0.0162:0.0162:0.0162))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a9_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
+        (PORT datab (0.0869:0.0869:0.0869) (0.0869:0.0869:0.0869))
+        (PORT datad (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a0_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_atau_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
+        (PORT datac (0.0838:0.0838:0.0838) (0.0838:0.0838:0.0838))
+        (PORT datad (0.0239:0.0239:0.0239) (0.0239:0.0239:0.0239))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_atau_a1_a_a4_a)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.1042:0.1042:0.1042) (0.1042:0.1042:0.1042))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3556:0.3556:0.3556) (0.3556:0.3556:0.3556))
+        (PORT ena (0.0673:0.0673:0.0673) (0.0673:0.0673:0.0673))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
     (INSTANCE pwmledsinstance_aLessThan3_a1)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.035:0.035:0.035) (0.035:0.035:0.035))
-        (IOPATH datab cout (0.0198:0.0198:0.0198) (0.0198:0.0198:0.0198))
+        (PORT dataa (0.0394:0.0394:0.0394) (0.0394:0.0394:0.0394))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
       )
     )
   )
@@ -2355,7 +2736,7 @@
     (DELAY
       (ABSOLUTE
         (PORT dataa (0.0491:0.0491:0.0491) (0.0491:0.0491:0.0491))
-        (PORT datab (0.0431:0.0431:0.0431) (0.0431:0.0431:0.0431))
+        (PORT datab (0.0593:0.0593:0.0593) (0.0593:0.0593:0.0593))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2367,8 +2748,8 @@
     (INSTANCE pwmledsinstance_aLessThan3_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0521:0.0521:0.0521) (0.0521:0.0521:0.0521))
-        (PORT datab (0.016:0.016:0.016) (0.016:0.016:0.016))
+        (PORT dataa (0.0377:0.0377:0.0377) (0.0377:0.0377:0.0377))
+        (PORT datab (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2380,8 +2761,8 @@
     (INSTANCE pwmledsinstance_aLessThan3_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
-        (PORT datab (0.0476:0.0476:0.0476) (0.0476:0.0476:0.0476))
+        (PORT dataa (0.0602:0.0602:0.0602) (0.0602:0.0602:0.0602))
+        (PORT datab (0.0448:0.0448:0.0448) (0.0448:0.0448:0.0448))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2393,8 +2774,8 @@
     (INSTANCE pwmledsinstance_aLessThan3_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0749:0.0749:0.0749) (0.0749:0.0749:0.0749))
-        (PORT datab (0.0233:0.0233:0.0233) (0.0233:0.0233:0.0233))
+        (PORT dataa (0.0578:0.0578:0.0578) (0.0578:0.0578:0.0578))
+        (PORT datab (0.0361:0.0361:0.0361) (0.0361:0.0361:0.0361))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2406,8 +2787,8 @@
     (INSTANCE pwmledsinstance_aLessThan3_a11)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0163:0.0163:0.0163) (0.0163:0.0163:0.0163))
-        (PORT datab (0.0484:0.0484:0.0484) (0.0484:0.0484:0.0484))
+        (PORT dataa (0.0585:0.0585:0.0585) (0.0585:0.0585:0.0585))
+        (PORT datab (0.0384:0.0384:0.0384) (0.0384:0.0384:0.0384))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2419,57 +2800,12 @@
     (INSTANCE pwmledsinstance_aLessThan3_a12)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0249:0.0249:0.0249) (0.0249:0.0249:0.0249))
-        (PORT datad (0.0495:0.0495:0.0495) (0.0495:0.0495:0.0495))
+        (PORT dataa (0.0468:0.0468:0.0468) (0.0468:0.0468:0.0468))
+        (PORT datab (0.05:0.05:0.05) (0.05:0.05:0.05))
         (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_atau_a3_a_a5_a_a8)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datac combout (0.0184:0.0184:0.0184) (0.0184:0.0184:0.0184))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a3_a_a5_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0475:0.0475:0.0475) (0.0475:0.0475:0.0475))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE pwmledsinstance_atau_a2_a_a5_a)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (0.1032:0.1032:0.1032) (0.1032:0.1032:0.1032))
-        (PORT sdata (0.0426:0.0426:0.0426) (0.0426:0.0426:0.0426))
-        (PORT aclr (0.327:0.327:0.327) (0.327:0.327:0.327))
-        (PORT ena (0.0579:0.0579:0.0579) (0.0579:0.0579:0.0579))
-        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
-        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD sdata (posedge clk) (0.0152:0.0152:0.0152))
-      (HOLD ena (posedge clk) (0.0152:0.0152:0.0152))
     )
   )
   (CELL
@@ -2477,7 +2813,7 @@
     (INSTANCE pwmledsinstance_aLessThan4_a1)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0264:0.0264:0.0264) (0.0264:0.0264:0.0264))
+        (PORT datab (0.0497:0.0497:0.0497) (0.0497:0.0497:0.0497))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
       )
     )
@@ -2487,8 +2823,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0484:0.0484:0.0484) (0.0484:0.0484:0.0484))
-        (PORT datab (0.0335:0.0335:0.0335) (0.0335:0.0335:0.0335))
+        (PORT dataa (0.0507:0.0507:0.0507) (0.0507:0.0507:0.0507))
+        (PORT datab (0.0565:0.0565:0.0565) (0.0565:0.0565:0.0565))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2500,8 +2836,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
-        (PORT datab (0.0246:0.0246:0.0246) (0.0246:0.0246:0.0246))
+        (PORT dataa (0.0487:0.0487:0.0487) (0.0487:0.0487:0.0487))
+        (PORT datab (0.0454:0.0454:0.0454) (0.0454:0.0454:0.0454))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2513,8 +2849,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0482:0.0482:0.0482) (0.0482:0.0482:0.0482))
-        (PORT datab (0.024:0.024:0.024) (0.024:0.024:0.024))
+        (PORT dataa (0.0647:0.0647:0.0647) (0.0647:0.0647:0.0647))
+        (PORT datab (0.0457:0.0457:0.0457) (0.0457:0.0457:0.0457))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2526,8 +2862,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.063:0.063:0.063) (0.063:0.063:0.063))
-        (PORT datab (0.0373:0.0373:0.0373) (0.0373:0.0373:0.0373))
+        (PORT dataa (0.0462:0.0462:0.0462) (0.0462:0.0462:0.0462))
+        (PORT datab (0.0485:0.0485:0.0485) (0.0485:0.0485:0.0485))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2539,8 +2875,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a11)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.038:0.038:0.038) (0.038:0.038:0.038))
-        (PORT datab (0.0331:0.0331:0.0331) (0.0331:0.0331:0.0331))
+        (PORT dataa (0.0378:0.0378:0.0378) (0.0378:0.0378:0.0378))
+        (PORT datab (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2552,8 +2888,8 @@
     (INSTANCE pwmledsinstance_aLessThan4_a12)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0487:0.0487:0.0487) (0.0487:0.0487:0.0487))
-        (PORT datad (0.0335:0.0335:0.0335) (0.0335:0.0335:0.0335))
+        (PORT dataa (0.0522:0.0522:0.0522) (0.0522:0.0522:0.0522))
+        (PORT datad (0.0361:0.0361:0.0361) (0.0361:0.0361:0.0361))
         (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
         (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
@@ -2565,8 +2901,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a1)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0258:0.0258:0.0258) (0.0258:0.0258:0.0258))
-        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (PORT dataa (0.0363:0.0363:0.0363) (0.0363:0.0363:0.0363))
+        (IOPATH dataa cout (0.0204:0.0204:0.0204) (0.0204:0.0204:0.0204))
       )
     )
   )
@@ -2575,8 +2911,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0339:0.0339:0.0339) (0.0339:0.0339:0.0339))
-        (PORT datab (0.0471:0.0471:0.0471) (0.0471:0.0471:0.0471))
+        (PORT dataa (0.0463:0.0463:0.0463) (0.0463:0.0463:0.0463))
+        (PORT datab (0.033:0.033:0.033) (0.033:0.033:0.033))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2588,8 +2924,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.036:0.036:0.036) (0.036:0.036:0.036))
-        (PORT datab (0.0482:0.0482:0.0482) (0.0482:0.0482:0.0482))
+        (PORT dataa (0.0353:0.0353:0.0353) (0.0353:0.0353:0.0353))
+        (PORT datab (0.046:0.046:0.046) (0.046:0.046:0.046))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2601,8 +2937,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0479:0.0479:0.0479) (0.0479:0.0479:0.0479))
-        (PORT datab (0.0385:0.0385:0.0385) (0.0385:0.0385:0.0385))
+        (PORT dataa (0.0355:0.0355:0.0355) (0.0355:0.0355:0.0355))
+        (PORT datab (0.0553:0.0553:0.0553) (0.0553:0.0553:0.0553))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2614,8 +2950,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0342:0.0342:0.0342) (0.0342:0.0342:0.0342))
-        (PORT datab (0.0374:0.0374:0.0374) (0.0374:0.0374:0.0374))
+        (PORT dataa (0.0373:0.0373:0.0373) (0.0373:0.0373:0.0373))
+        (PORT datab (0.0344:0.0344:0.0344) (0.0344:0.0344:0.0344))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2627,8 +2963,8 @@
     (INSTANCE pwmledsinstance_aLessThan5_a11)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0383:0.0383:0.0383) (0.0383:0.0383:0.0383))
-        (PORT datab (0.033:0.033:0.033) (0.033:0.033:0.033))
+        (PORT dataa (0.0635:0.0635:0.0635) (0.0635:0.0635:0.0635))
+        (PORT datab (0.0377:0.0377:0.0377) (0.0377:0.0377:0.0377))
         (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
         (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
         (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
@@ -2640,27 +2976,39 @@
     (INSTANCE pwmledsinstance_aLessThan5_a12)
     (DELAY
       (ABSOLUTE
-        (PORT datab (0.0338:0.0338:0.0338) (0.0338:0.0338:0.0338))
-        (PORT datad (0.0481:0.0481:0.0481) (0.0481:0.0481:0.0481))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
+        (PORT datab (0.0347:0.0347:0.0347) (0.0347:0.0347:0.0347))
+        (PORT datad (0.0366:0.0366:0.0366) (0.0366:0.0366:0.0366))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
         (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
     )
   )
   (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan6_a0)
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE pwmledsinstance_aperiodo_a3_a)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0263:0.0263:0.0263) (0.0263:0.0263:0.0263))
-        (PORT datab (0.0159:0.0159:0.0159) (0.0159:0.0159:0.0159))
-        (PORT datac (0.0466:0.0466:0.0466) (0.0466:0.0466:0.0466))
-        (PORT datad (0.0483:0.0483:0.0483) (0.0483:0.0483:0.0483))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT clk (0.1045:0.1045:0.1045) (0.1045:0.1045:0.1045))
+        (PORT datain (0.0042:0.0042:0.0042) (0.0042:0.0042:0.0042))
+        (PORT aclr (0.3508:0.3508:0.3508) (0.3508:0.3508:0.3508))
+        (PORT sclr (0.0395:0.0395:0.0395) (0.0395:0.0395:0.0395))
+        (IOPATH (posedge clk) regout (0.0141:0.0141:0.0141) (0.0141:0.0141:0.0141))
+        (IOPATH (posedge aclr) regout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (0.0152:0.0152:0.0152))
+      (HOLD sclr (posedge clk) (0.0152:0.0152:0.0152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan6_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0267:0.0267:0.0267) (0.0267:0.0267:0.0267))
+        (IOPATH dataa cout (0.0204:0.0204:0.0204) (0.0204:0.0204:0.0204))
       )
     )
   )
@@ -2669,28 +3017,11 @@
     (INSTANCE pwmledsinstance_aLessThan6_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0121:0.0121:0.0121) (0.0121:0.0121:0.0121))
-        (PORT datac (0.048:0.048:0.048) (0.048:0.048:0.048))
-        (PORT datad (0.0253:0.0253:0.0253) (0.0253:0.0253:0.0253))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan6_a4)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0387:0.0387:0.0387) (0.0387:0.0387:0.0387))
-        (PORT datab (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
-        (PORT datac (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0474:0.0474:0.0474) (0.0474:0.0474:0.0474))
+        (PORT datab (0.0719:0.0719:0.0719) (0.0719:0.0719:0.0719))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
@@ -2699,44 +3030,73 @@
     (INSTANCE pwmledsinstance_aLessThan6_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0495:0.0495:0.0495) (0.0495:0.0495:0.0495))
-        (PORT datab (0.0495:0.0495:0.0495) (0.0495:0.0495:0.0495))
-        (PORT datac (0.071:0.071:0.071) (0.071:0.071:0.071))
-        (PORT datad (0.0113:0.0113:0.0113) (0.0113:0.0113:0.0113))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0466:0.0466:0.0466) (0.0466:0.0466:0.0466))
+        (PORT datab (0.025:0.025:0.025) (0.025:0.025:0.025))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan7_a0)
+    (INSTANCE pwmledsinstance_aLessThan6_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0391:0.0391:0.0391) (0.0391:0.0391:0.0391))
-        (PORT datab (0.0484:0.0484:0.0484) (0.0484:0.0484:0.0484))
-        (PORT datac (0.016:0.016:0.016) (0.016:0.016:0.016))
-        (PORT datad (0.0257:0.0257:0.0257) (0.0257:0.0257:0.0257))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
+        (PORT dataa (0.0372:0.0372:0.0372) (0.0372:0.0372:0.0372))
+        (PORT datab (0.0651:0.0651:0.0651) (0.0651:0.0651:0.0651))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan6_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0361:0.0361:0.0361) (0.0361:0.0361:0.0361))
+        (PORT datab (0.0248:0.0248:0.0248) (0.0248:0.0248:0.0248))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan6_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0345:0.0345:0.0345) (0.0345:0.0345:0.0345))
+        (PORT datab (0.0456:0.0456:0.0456) (0.0456:0.0456:0.0456))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan6_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0249:0.0249:0.0249) (0.0249:0.0249:0.0249))
+        (PORT datad (0.0338:0.0338:0.0338) (0.0338:0.0338:0.0338))
         (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan7_a2)
+    (INSTANCE pwmledsinstance_aLessThan7_a1)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0114:0.0114:0.0114) (0.0114:0.0114:0.0114))
-        (PORT datac (0.0246:0.0246:0.0246) (0.0246:0.0246:0.0246))
-        (PORT datad (0.0491:0.0491:0.0491) (0.0491:0.0491:0.0491))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT datab (0.0494:0.0494:0.0494) (0.0494:0.0494:0.0494))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
       )
     )
   )
@@ -2745,28 +3105,11 @@
     (INSTANCE pwmledsinstance_aLessThan7_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (PORT datab (0.0104:0.0104:0.0104) (0.0104:0.0104:0.0104))
-        (PORT datad (0.0485:0.0485:0.0485) (0.0485:0.0485:0.0485))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan7_a4)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0391:0.0391:0.0391) (0.0391:0.0391:0.0391))
-        (PORT datab (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (PORT datac (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (PORT datad (0.0257:0.0257:0.0257) (0.0257:0.0257:0.0257))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0503:0.0503:0.0503) (0.0503:0.0503:0.0503))
+        (PORT datab (0.0586:0.0586:0.0586) (0.0586:0.0586:0.0586))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
@@ -2775,46 +3118,86 @@
     (INSTANCE pwmledsinstance_aLessThan7_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0493:0.0493:0.0493) (0.0493:0.0493:0.0493))
-        (PORT datab (0.0495:0.0495:0.0495) (0.0495:0.0495:0.0495))
-        (PORT datac (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (PORT datad (0.036:0.036:0.036) (0.036:0.036:0.036))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0489:0.0489:0.0489) (0.0489:0.0489:0.0489))
+        (PORT datab (0.0449:0.0449:0.0449) (0.0449:0.0449:0.0449))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan8_a0)
+    (INSTANCE pwmledsinstance_aLessThan7_a7)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0346:0.0346:0.0346) (0.0346:0.0346:0.0346))
-        (PORT datab (0.0482:0.0482:0.0482) (0.0482:0.0482:0.0482))
-        (PORT datac (0.0626:0.0626:0.0626) (0.0626:0.0626:0.0626))
-        (PORT datad (0.0157:0.0157:0.0157) (0.0157:0.0157:0.0157))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.0133:0.0133:0.0133) (0.0133:0.0133:0.0133))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0649:0.0649:0.0649) (0.0649:0.0649:0.0649))
+        (PORT datab (0.0557:0.0557:0.0557) (0.0557:0.0557:0.0557))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan8_a4)
+    (INSTANCE pwmledsinstance_aLessThan7_a9)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0116:0.0116:0.0116) (0.0116:0.0116:0.0116))
-        (PORT datab (0.0105:0.0105:0.0105) (0.0105:0.0105:0.0105))
-        (PORT datac (0.0357:0.0357:0.0357) (0.0357:0.0357:0.0357))
-        (PORT datad (0.0161:0.0161:0.0161) (0.0161:0.0161:0.0161))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (PORT dataa (0.06:0.06:0.06) (0.06:0.06:0.06))
+        (PORT datab (0.0483:0.0483:0.0483) (0.0483:0.0483:0.0483))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan7_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0491:0.0491:0.0491) (0.0491:0.0491:0.0491))
+        (PORT datab (0.0371:0.0371:0.0371) (0.0371:0.0371:0.0371))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan7_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0521:0.0521:0.0521) (0.0521:0.0521:0.0521))
+        (PORT datad (0.037:0.037:0.037) (0.037:0.037:0.037))
+        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0268:0.0268:0.0268) (0.0268:0.0268:0.0268))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0473:0.0473:0.0473) (0.0473:0.0473:0.0473))
+        (PORT datab (0.0722:0.0722:0.0722) (0.0722:0.0722:0.0722))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
@@ -2823,14 +3206,73 @@
     (INSTANCE pwmledsinstance_aLessThan8_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0368:0.0368:0.0368) (0.0368:0.0368:0.0368))
-        (PORT datab (0.0612:0.0612:0.0612) (0.0612:0.0612:0.0612))
-        (PORT datac (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
-        (PORT datad (0.0173:0.0173:0.0173) (0.0173:0.0173:0.0173))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (PORT dataa (0.0378:0.0378:0.0378) (0.0378:0.0378:0.0378))
+        (PORT datab (0.0254:0.0254:0.0254) (0.0254:0.0254:0.0254))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0346:0.0346:0.0346) (0.0346:0.0346:0.0346))
+        (PORT datab (0.0367:0.0367:0.0367) (0.0367:0.0367:0.0367))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0467:0.0467:0.0467) (0.0467:0.0467:0.0467))
+        (PORT datab (0.0251:0.0251:0.0251) (0.0251:0.0251:0.0251))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0346:0.0346:0.0346) (0.0346:0.0346:0.0346))
+        (PORT datab (0.0466:0.0466:0.0466) (0.0466:0.0466:0.0466))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan8_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.025:0.025:0.025) (0.025:0.025:0.025))
+        (PORT datad (0.0375:0.0375:0.0375) (0.0375:0.0375:0.0375))
+        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan9_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0239:0.0239:0.0239) (0.0239:0.0239:0.0239))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
       )
     )
   )
@@ -2839,26 +3281,76 @@
     (INSTANCE pwmledsinstance_aLessThan9_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0117:0.0117:0.0117) (0.0117:0.0117:0.0117))
-        (PORT datac (0.0355:0.0355:0.0355) (0.0355:0.0355:0.0355))
-        (PORT datad (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0343:0.0343:0.0343) (0.0343:0.0343:0.0343))
+        (PORT datab (0.0358:0.0358:0.0358) (0.0358:0.0358:0.0358))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan9_a4)
+    (INSTANCE pwmledsinstance_aLessThan9_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0365:0.0365:0.0365) (0.0365:0.0365:0.0365))
-        (PORT datab (0.0616:0.0616:0.0616) (0.0616:0.0616:0.0616))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (PORT dataa (0.0377:0.0377:0.0377) (0.0377:0.0377:0.0377))
+        (PORT datab (0.024:0.024:0.024) (0.024:0.024:0.024))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan9_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0734:0.0734:0.0734) (0.0734:0.0734:0.0734))
+        (PORT datab (0.0546:0.0546:0.0546) (0.0546:0.0546:0.0546))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan9_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0554:0.0554:0.0554) (0.0554:0.0554:0.0554))
+        (PORT datab (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan9_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
+        (PORT datab (0.0469:0.0469:0.0469) (0.0469:0.0469:0.0469))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan9_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0165:0.0165:0.0165) (0.0165:0.0165:0.0165))
+        (PORT datad (0.0358:0.0358:0.0358) (0.0358:0.0358:0.0358))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
     )
   )
@@ -2867,44 +3359,8 @@
     (INSTANCE pwmledsinstance_aLessThan10_a1)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0631:0.0631:0.0631) (0.0631:0.0631:0.0631))
-        (PORT datab (0.0367:0.0367:0.0367) (0.0367:0.0367:0.0367))
-        (PORT datac (0.0372:0.0372:0.0372) (0.0372:0.0372:0.0372))
-        (PORT datad (0.063:0.063:0.063) (0.063:0.063:0.063))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan10_a0)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (0.0251:0.0251:0.0251) (0.0251:0.0251:0.0251))
-        (PORT datab (0.024:0.024:0.024) (0.024:0.024:0.024))
-        (PORT datac (0.0242:0.0242:0.0242) (0.0242:0.0242:0.0242))
-        (PORT datad (0.0333:0.0333:0.0333) (0.0333:0.0333:0.0333))
-        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datab combout (0.018:0.018:0.018) (0.018:0.018:0.018))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan10_a2)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
-        (PORT datac (0.0298:0.0298:0.0298) (0.0298:0.0298:0.0298))
-        (PORT datad (0.017:0.017:0.017) (0.017:0.017:0.017))
-        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
-        (IOPATH datac combout (0.011:0.011:0.011) (0.011:0.011:0.011))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0396:0.0396:0.0396) (0.0396:0.0396:0.0396))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
       )
     )
   )
@@ -2913,30 +3369,164 @@
     (INSTANCE pwmledsinstance_aLessThan10_a3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0365:0.0365:0.0365) (0.0365:0.0365:0.0365))
-        (PORT datab (0.0614:0.0614:0.0614) (0.0614:0.0614:0.0614))
-        (PORT datac (0.0355:0.0355:0.0355) (0.0355:0.0355:0.0355))
-        (PORT datad (0.0106:0.0106:0.0106) (0.0106:0.0106:0.0106))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
-        (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
-        (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (PORT dataa (0.0571:0.0571:0.0571) (0.0571:0.0571:0.0571))
+        (PORT datab (0.0499:0.0499:0.0499) (0.0499:0.0499:0.0499))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE pwmledsinstance_aLessThan11_a0)
+    (INSTANCE pwmledsinstance_aLessThan10_a5)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (0.0177:0.0177:0.0177) (0.0177:0.0177:0.0177))
-        (PORT datab (0.0108:0.0108:0.0108) (0.0108:0.0108:0.0108))
-        (PORT datac (0.0167:0.0167:0.0167) (0.0167:0.0167:0.0167))
-        (PORT datad (0.0168:0.0168:0.0168) (0.0168:0.0168:0.0168))
-        (IOPATH dataa combout (0.0187:0.0187:0.0187) (0.0187:0.0187:0.0187))
+        (PORT dataa (0.0382:0.0382:0.0382) (0.0382:0.0382:0.0382))
+        (PORT datab (0.0476:0.0476:0.0476) (0.0476:0.0476:0.0476))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan10_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0605:0.0605:0.0605) (0.0605:0.0605:0.0605))
+        (PORT datab (0.0354:0.0354:0.0354) (0.0354:0.0354:0.0354))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan10_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0581:0.0581:0.0581) (0.0581:0.0581:0.0581))
+        (PORT datab (0.0455:0.0455:0.0455) (0.0455:0.0455:0.0455))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan10_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0467:0.0467:0.0467) (0.0467:0.0467:0.0467))
+        (PORT datab (0.0386:0.0386:0.0386) (0.0386:0.0386:0.0386))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan10_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.038:0.038:0.038) (0.038:0.038:0.038))
+        (PORT datab (0.0501:0.0501:0.0501) (0.0501:0.0501:0.0501))
+        (IOPATH dataa combout (0.018:0.018:0.018) (0.018:0.018:0.018))
         (IOPATH datab combout (0.0178:0.0178:0.0178) (0.0178:0.0178:0.0178))
-        (IOPATH datac combout (0.0107:0.0107:0.0107) (0.0107:0.0107:0.0107))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.039:0.039:0.039) (0.039:0.039:0.039))
+        (IOPATH datab cout (0.0198:0.0198:0.0198) (0.0198:0.0198:0.0198))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0495:0.0495:0.0495) (0.0495:0.0495:0.0495))
+        (PORT datab (0.0592:0.0592:0.0592) (0.0592:0.0592:0.0592))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a5)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0476:0.0476:0.0476) (0.0476:0.0476:0.0476))
+        (PORT datab (0.0375:0.0375:0.0375) (0.0375:0.0375:0.0375))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0333:0.0333:0.0333) (0.0333:0.0333:0.0333))
+        (PORT datab (0.0588:0.0588:0.0588) (0.0588:0.0588:0.0588))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a9)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0483:0.0483:0.0483) (0.0483:0.0483:0.0483))
+        (PORT datab (0.0486:0.0486:0.0486) (0.0486:0.0486:0.0486))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.0484:0.0484:0.0484) (0.0484:0.0484:0.0484))
+        (PORT datab (0.0384:0.0384:0.0384) (0.0384:0.0384:0.0384))
+        (IOPATH dataa cout (0.015:0.015:0.015) (0.015:0.015:0.015))
+        (IOPATH datab cout (0.0143:0.0143:0.0143) (0.0143:0.0143:0.0143))
+        (IOPATH cin cout (0.0035:0.0035:0.0035) (0.0035:0.0035:0.0035))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE pwmledsinstance_aLessThan11_a12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.0356:0.0356:0.0356) (0.0356:0.0356:0.0356))
+        (PORT datad (0.0634:0.0634:0.0634) (0.0634:0.0634:0.0634))
+        (IOPATH datab combout (0.0175:0.0175:0.0175) (0.0175:0.0175:0.0175))
         (IOPATH datad combout (0.0059:0.0059:0.0059) (0.0059:0.0059:0.0059))
+        (IOPATH cin combout (0.017:0.017:0.017) (0.017:0.017:0.017))
       )
     )
   )
@@ -2945,7 +3535,7 @@
     (INSTANCE SD_DAT3_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
+        (IOPATH datain padio (0.1533:0.1533:0.1533) (0.1533:0.1533:0.1533))
       )
     )
   )
@@ -3323,7 +3913,7 @@
     (INSTANCE SD_DAT_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
@@ -4277,6 +4867,7 @@
     (INSTANCE LEDG_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.0511:0.0511:0.0511) (0.0511:0.0511:0.0511))
         (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
@@ -4286,6 +4877,7 @@
     (INSTANCE LEDG_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.0474:0.0474:0.0474) (0.0474:0.0474:0.0474))
         (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
@@ -4295,6 +4887,7 @@
     (INSTANCE LEDG_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.0473:0.0473:0.0473) (0.0473:0.0473:0.0473))
         (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
@@ -4304,6 +4897,7 @@
     (INSTANCE LEDG_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.0391:0.0391:0.0391) (0.0391:0.0391:0.0391))
         (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
@@ -4313,6 +4907,7 @@
     (INSTANCE LEDG_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.0329:0.0329:0.0329) (0.0329:0.0329:0.0329))
         (IOPATH datain padio (0.1428:0.1428:0.1428) (0.1428:0.1428:0.1428))
       )
     )
@@ -4322,6 +4917,7 @@
     (INSTANCE LEDG_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (PORT datain (0.038:0.038:0.038) (0.038:0.038:0.038))
         (IOPATH datain padio (0.1438:0.1438:0.1438) (0.1438:0.1438:0.1438))
       )
     )
@@ -4340,7 +4936,7 @@
     (INSTANCE LEDR_a0_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0416:0.0416:0.0416) (0.0416:0.0416:0.0416))
+        (PORT datain (0.0487:0.0487:0.0487) (0.0487:0.0487:0.0487))
         (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
@@ -4350,7 +4946,7 @@
     (INSTANCE LEDR_a1_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0281:0.0281:0.0281) (0.0281:0.0281:0.0281))
+        (PORT datain (0.0442:0.0442:0.0442) (0.0442:0.0442:0.0442))
         (IOPATH datain padio (0.1398:0.1398:0.1398) (0.1398:0.1398:0.1398))
       )
     )
@@ -4360,7 +4956,7 @@
     (INSTANCE LEDR_a2_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0508:0.0508:0.0508) (0.0508:0.0508:0.0508))
+        (PORT datain (0.0318:0.0318:0.0318) (0.0318:0.0318:0.0318))
         (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
@@ -4370,7 +4966,7 @@
     (INSTANCE LEDR_a3_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0671:0.0671:0.0671) (0.0671:0.0671:0.0671))
+        (PORT datain (0.0306:0.0306:0.0306) (0.0306:0.0306:0.0306))
         (IOPATH datain padio (0.1418:0.1418:0.1418) (0.1418:0.1418:0.1418))
       )
     )
@@ -4380,7 +4976,7 @@
     (INSTANCE LEDR_a4_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0582:0.0582:0.0582) (0.0582:0.0582:0.0582))
+        (PORT datain (0.0272:0.0272:0.0272) (0.0272:0.0272:0.0272))
         (IOPATH datain padio (0.1518:0.1518:0.1518) (0.1518:0.1518:0.1518))
       )
     )
@@ -4390,7 +4986,7 @@
     (INSTANCE LEDR_a5_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0571:0.0571:0.0571) (0.0571:0.0571:0.0571))
+        (PORT datain (0.0341:0.0341:0.0341) (0.0341:0.0341:0.0341))
         (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
@@ -4400,7 +4996,7 @@
     (INSTANCE LEDR_a6_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0567:0.0567:0.0567) (0.0567:0.0567:0.0567))
+        (PORT datain (0.0402:0.0402:0.0402) (0.0402:0.0402:0.0402))
         (IOPATH datain padio (0.1408:0.1408:0.1408) (0.1408:0.1408:0.1408))
       )
     )
@@ -4410,7 +5006,7 @@
     (INSTANCE LEDR_a7_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0431:0.0431:0.0431) (0.0431:0.0431:0.0431))
+        (PORT datain (0.0279:0.0279:0.0279) (0.0279:0.0279:0.0279))
         (IOPATH datain padio (0.1518:0.1518:0.1518) (0.1518:0.1518:0.1518))
       )
     )
@@ -4420,7 +5016,7 @@
     (INSTANCE LEDR_a8_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0435:0.0435:0.0435) (0.0435:0.0435:0.0435))
+        (PORT datain (0.0424:0.0424:0.0424) (0.0424:0.0424:0.0424))
         (IOPATH datain padio (0.1388:0.1388:0.1388) (0.1388:0.1388:0.1388))
       )
     )
@@ -4430,7 +5026,7 @@
     (INSTANCE LEDR_a9_a_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (0.0499:0.0499:0.0499) (0.0499:0.0499:0.0499))
+        (PORT datain (0.0284:0.0284:0.0284) (0.0284:0.0284:0.0284))
         (IOPATH datain padio (0.1378:0.1378:0.1378) (0.1378:0.1378:0.1378))
       )
     )
@@ -5088,7 +5684,7 @@
     (INSTANCE SD_CLK_aI.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (0.1513:0.1513:0.1513) (0.1513:0.1513:0.1513))
+        (IOPATH datain padio (0.1523:0.1523:0.1523) (0.1523:0.1523:0.1523))
       )
     )
   )
