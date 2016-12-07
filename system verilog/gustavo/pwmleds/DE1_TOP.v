@@ -210,7 +210,7 @@ assign	HEX0		=	7'h7F;
 assign	HEX1		=	7'h7F;
 assign	HEX2		=	7'h7F;
 assign	HEX3		=	7'h7F;
-//assign	LEDG		=	8'h0;
+assign	LEDG		=	8'h0;
 //assign	LEDR		=	10'h0;
 
 //	All unused inout port turn to tri-state
@@ -231,7 +231,6 @@ pwmleds pwmledsinstance(
 	.clk(CLOCK_50),
 	.rst(~KEY[0]),
 	.sentido(SW[0]),
-	.LEDG(LEDG),
 	.LEDR(LEDR)
 );
 

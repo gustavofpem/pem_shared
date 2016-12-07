@@ -1,6 +1,5 @@
 module pwmleds(
 	input logic clk, rst, sentido,
-	output logic [7:0] LEDG,
 	output logic [9:0] LEDR
 );
 
@@ -52,7 +51,7 @@ begin
 		end
 	end
 end
-assign LEDG = tau[5];
+
 assign LEDR[0] = (periodo > tau[0]) ? 'd0 : 'd1;
 assign LEDR[1] = (periodo > tau[1]) ? 'd0 : 'd1;
 assign LEDR[2] = (periodo > tau[2]) ? 'd0 : 'd1;
