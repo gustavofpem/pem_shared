@@ -1,5 +1,5 @@
 Fitter report for pwmleds
-Wed Dec  7 09:32:22 2016
+Wed Dec  7 16:46:36 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -63,14 +63,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                          ;
 +------------------------------------+----------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Dec  7 09:32:22 2016              ;
+; Fitter Status                      ; Successful - Wed Dec  7 16:46:36 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; pwmleds                                            ;
 ; Top-level Entity Name              ; DE1_TOP                                            ;
 ; Family                             ; Cyclone II                                         ;
 ; Device                             ; EP2C20F484C7                                       ;
 ; Timing Models                      ; Final                                              ;
-; Total logic elements               ; 157 / 18,752 ( < 1 % )                             ;
+; Total logic elements               ; 158 / 18,752 ( < 1 % )                             ;
 ;     Total combinational functions  ; 157 / 18,752 ( < 1 % )                             ;
 ;     Dedicated logic registers      ; 75 / 18,752 ( < 1 % )                              ;
 ; Total registers                    ; 75                                                 ;
@@ -140,12 +140,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 2.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  33.3%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -188,7 +188,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.pin.
+The pin-out file can be found in /home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.pin.
 
 
 +----------------------------------------------------------------------+
@@ -196,16 +196,16 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 157 / 18,752 ( < 1 % ) ;
-;     -- Combinational with no register       ; 82                     ;
-;     -- Register only                        ; 0                      ;
-;     -- Combinational with a register        ; 75                     ;
+; Total logic elements                        ; 158 / 18,752 ( < 1 % ) ;
+;     -- Combinational with no register       ; 83                     ;
+;     -- Register only                        ; 1                      ;
+;     -- Combinational with a register        ; 74                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
 ;     -- 4 input functions                    ; 9                      ;
 ;     -- 3 input functions                    ; 93                     ;
 ;     -- <=2 input functions                  ; 55                     ;
-;     -- Register only                        ; 0                      ;
+;     -- Register only                        ; 1                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
 ;     -- normal mode                          ; 66                     ;
@@ -231,11 +231,11 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 1% / 0% / 2%           ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%           ;
 ; Maximum fan-out                             ; 75                     ;
 ; Highest non-global fan-out                  ; 75                     ;
-; Total fan-out                               ; 738                    ;
-; Average fan-out                             ; 1.42                   ;
+; Total fan-out                               ; 733                    ;
+; Average fan-out                             ; 1.41                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -248,16 +248,16 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 157 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 82                    ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
-;     -- Combinational with a register        ; 75                    ; 0                              ;
+; Total logic elements                        ; 158 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 83                    ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
+;     -- Combinational with a register        ; 74                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
 ;     -- 4 input functions                    ; 9                     ; 0                              ;
 ;     -- 3 input functions                    ; 93                    ; 0                              ;
 ;     -- <=2 input functions                  ; 55                    ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
 ;     -- normal mode                          ; 66                    ; 0                              ;
@@ -282,8 +282,8 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 738                   ; 0                              ;
-;     -- Registered Connections               ; 286                   ; 0                              ;
+;     -- Total Connections                    ; 733                   ; 0                              ;
+;     -- Registered Connections               ; 280                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -595,9 +595,9 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ; GPIO_1[8]   ; F12   ; 4        ; 31           ; 27           ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; GPIO_1[9]   ; F13   ; 4        ; 35           ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; I2C_SDAT    ; B3    ; 3        ; 1            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; SD_CMD      ; H8    ; 3        ; 7            ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_CMD      ; F10   ; 3        ; 18           ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; SD_DAT      ; Y17   ; 7        ; 46           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; SD_DAT3     ; P9    ; 8        ; 7            ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; SD_DAT3     ; F11   ; 3        ; 18           ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[0]  ; AA6   ; 8        ; 7            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[10] ; V9    ; 8        ; 9            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; SRAM_DQ[11] ; U9    ; 8        ; 13           ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
@@ -624,12 +624,12 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 +----------+------------------+---------------+--------------+
 ; 1        ; 40 / 41 ( 98 % ) ; 3.3V          ; --           ;
 ; 2        ; 32 / 33 ( 97 % ) ; 3.3V          ; --           ;
-; 3        ; 29 / 43 ( 67 % ) ; 3.3V          ; --           ;
+; 3        ; 30 / 43 ( 70 % ) ; 3.3V          ; --           ;
 ; 4        ; 39 / 40 ( 98 % ) ; 3.3V          ; --           ;
 ; 5        ; 36 / 39 ( 92 % ) ; 3.3V          ; --           ;
 ; 6        ; 31 / 36 ( 86 % ) ; 3.3V          ; --           ;
 ; 7        ; 37 / 40 ( 93 % ) ; 3.3V          ; --           ;
-; 8        ; 42 / 43 ( 98 % ) ; 3.3V          ; --           ;
+; 8        ; 41 / 43 ( 95 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -801,8 +801,8 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ; F7       ;            ;          ; GNDA_PLL3                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F8       ; 312        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F9       ; 307        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F10      ; 295        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F11      ; 294        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F10      ; 295        ; 3        ; SD_CMD                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F11      ; 294        ; 3        ; SD_DAT3                                  ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F12      ; 276        ; 4        ; GPIO_1[8]                                ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F13      ; 269        ; 4        ; GPIO_1[9]                                ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F14      ; 268        ; 4        ; UART_RXD                                 ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -843,7 +843,7 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ; H5       ; 18         ; 2        ; HEX1[2]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H6       ; 19         ; 2        ; HEX1[1]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H7       ; 318        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H8       ; 314        ; 3        ; SD_CMD                                   ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H8       ; 314        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H9       ; 300        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H10      ; 299        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H11      ; 290        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -976,7 +976,7 @@ The pin-out file can be found in /home/tiagot/pem_shared/system verilog/gustavo/
 ; P6       ; 56         ; 1        ; DRAM_ADDR[6]                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P7       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P8       ; 95         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; P9       ; 94         ; 8        ; SD_DAT3                                  ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; P9       ; 94         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P10      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1168,8 +1168,8 @@ Note: User assignments will override these defaults. The user specified values a
 +------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name              ; Library Name ;
 +------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------+--------------+
-; |DE1_TOP                     ; 157 (0)     ; 75 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 283  ; 0            ; 82 (0)       ; 0 (0)             ; 75 (0)           ; |DE1_TOP                         ; work         ;
-;    |pwmleds:pwmledsinstance| ; 157 (157)   ; 75 (75)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (82)      ; 0 (0)             ; 75 (75)          ; |DE1_TOP|pwmleds:pwmledsinstance ; work         ;
+; |DE1_TOP                     ; 158 (0)     ; 75 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 283  ; 0            ; 83 (0)       ; 1 (0)             ; 74 (0)           ; |DE1_TOP                         ; work         ;
+;    |pwmleds:pwmledsinstance| ; 158 (158)   ; 75 (75)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 83 (83)      ; 1 (1)             ; 74 (74)          ; |DE1_TOP|pwmleds:pwmledsinstance ; work         ;
 +------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1459,9 +1459,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUD_ADCDAT    ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; AUD_DACDAT    ; Output   ; --            ; --            ; --                    ; --  ;
 ; AUD_XCK       ; Output   ; --            ; --            ; --                    ; --  ;
+; SW[0]         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; CLOCK_50      ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; KEY[0]        ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; SW[0]         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +---------------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1613,6 +1613,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PS2_DAT                                   ;                   ;         ;
 ; PS2_CLK                                   ;                   ;         ;
 ; AUD_ADCDAT                                ;                   ;         ;
+; SW[0]                                     ;                   ;         ;
 ; CLOCK_50                                  ;                   ;         ;
 ; KEY[0]                                    ;                   ;         ;
 ;      - pwmleds:pwmledsinstance|tau[0][1]  ; 1                 ; 6       ;
@@ -1638,6 +1639,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwmleds:pwmledsinstance|tau[8][2]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[8][3]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[9][2]  ; 1                 ; 6       ;
+;      - pwmleds:pwmledsinstance|periodo[6] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|cont[0]    ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|cont[1]    ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|cont[2]    ; 1                 ; 6       ;
@@ -1664,17 +1666,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwmleds:pwmledsinstance|cont[23]   ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|cont[24]   ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|cont[25]   ; 1                 ; 6       ;
-;      - pwmleds:pwmledsinstance|periodo[6] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[0] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[1] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[2] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[3] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[4] ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|periodo[5] ; 1                 ; 6       ;
-;      - pwmleds:pwmledsinstance|tau[1][1]  ; 1                 ; 6       ;
-;      - pwmleds:pwmledsinstance|tau[5][4]  ; 1                 ; 6       ;
-;      - pwmleds:pwmledsinstance|tau[5][5]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[1][3]  ; 1                 ; 6       ;
+;      - pwmleds:pwmledsinstance|tau[1][1]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[2][4]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[2][2]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[3][4]  ; 1                 ; 6       ;
@@ -1682,6 +1681,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwmleds:pwmledsinstance|tau[3][2]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[4][5]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[4][3]  ; 1                 ; 6       ;
+;      - pwmleds:pwmledsinstance|tau[5][5]  ; 1                 ; 6       ;
+;      - pwmleds:pwmledsinstance|tau[5][4]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[6][5]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[6][4]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[6][3]  ; 1                 ; 6       ;
@@ -1690,7 +1691,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwmleds:pwmledsinstance|tau[8][4]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[9][4]  ; 1                 ; 6       ;
 ;      - pwmleds:pwmledsinstance|tau[9][3]  ; 1                 ; 6       ;
-; SW[0]                                     ;                   ;         ;
 +-------------------------------------------+-------------------+---------+
 
 
@@ -1701,8 +1701,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                            ; PIN_L1            ; 75      ; Clock                      ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 ; KEY[0]                              ; PIN_R22           ; 75      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; pwmleds:pwmledsinstance|LessThan0~1 ; LCCOMB_X47_Y3_N30 ; 7       ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; pwmleds:pwmledsinstance|LessThan1~9 ; LCCOMB_X47_Y4_N28 ; 68      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; pwmleds:pwmledsinstance|LessThan0~1 ; LCCOMB_X45_Y4_N24 ; 7       ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; pwmleds:pwmledsinstance|LessThan1~9 ; LCCOMB_X46_Y3_N26 ; 68      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
 +-------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1731,21 +1731,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwmleds:pwmledsinstance|periodo[5]    ; 12      ;
 ; pwmleds:pwmledsinstance|periodo[6]    ; 12      ;
 ; pwmleds:pwmledsinstance|LessThan0~1   ; 7       ;
-; pwmleds:pwmledsinstance|tau[1][1]     ; 7       ;
+; pwmleds:pwmledsinstance|tau[1][1]     ; 6       ;
 ; pwmleds:pwmledsinstance|tau[0][1]     ; 6       ;
-; pwmleds:pwmledsinstance|tau[2][5]     ; 5       ;
-; pwmleds:pwmledsinstance|tau[5][5]     ; 5       ;
 ; pwmleds:pwmledsinstance|tau[6][5]     ; 4       ;
+; pwmleds:pwmledsinstance|tau[5][5]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[4][5]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[3][5]     ; 4       ;
+; pwmleds:pwmledsinstance|tau[2][5]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[2][6]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[1][5]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[1][6]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[0][5]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[0][6]     ; 4       ;
-; pwmleds:pwmledsinstance|tau[5][4]     ; 4       ;
-; pwmleds:pwmledsinstance|tau[5][3]     ; 4       ;
-; pwmleds:pwmledsinstance|tau[5][2]     ; 4       ;
 ; pwmleds:pwmledsinstance|tau[9][2]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[9][3]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[9][4]     ; 3       ;
@@ -1758,6 +1755,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwmleds:pwmledsinstance|tau[6][2]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[6][3]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[6][4]     ; 3       ;
+; pwmleds:pwmledsinstance|tau[5][2]     ; 3       ;
+; pwmleds:pwmledsinstance|tau[5][3]     ; 3       ;
+; pwmleds:pwmledsinstance|tau[5][4]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[4][2]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[4][3]     ; 3       ;
 ; pwmleds:pwmledsinstance|tau[4][4]     ; 3       ;
@@ -1799,8 +1799,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwmleds:pwmledsinstance|cont[23]      ; 2       ;
 ; pwmleds:pwmledsinstance|cont[25]      ; 2       ;
 ; pwmleds:pwmledsinstance|cont[24]      ; 2       ;
-; pwmleds:pwmledsinstance|tau[0][1]~43  ; 1       ;
-; pwmleds:pwmledsinstance|tau[1][1]~40  ; 1       ;
+; pwmleds:pwmledsinstance|tau[1][1]~42  ; 1       ;
+; pwmleds:pwmledsinstance|tau[0][1]~40  ; 1       ;
 ; pwmleds:pwmledsinstance|tau~39        ; 1       ;
 ; pwmleds:pwmledsinstance|tau~38        ; 1       ;
 ; pwmleds:pwmledsinstance|tau~37        ; 1       ;
@@ -1835,13 +1835,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwmleds:pwmledsinstance|tau~8         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~7         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~6         ; 1       ;
-; pwmleds:pwmledsinstance|LessThan0~0   ; 1       ;
 ; pwmleds:pwmledsinstance|tau~5         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~4         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~3         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~2         ; 1       ;
 ; pwmleds:pwmledsinstance|tau~1         ; 1       ;
-; pwmleds:pwmledsinstance|tau~0         ; 1       ;
+; pwmleds:pwmledsinstance|LessThan0~0   ; 1       ;
 ; pwmleds:pwmledsinstance|LessThan1~8   ; 1       ;
 ; pwmleds:pwmledsinstance|LessThan1~7   ; 1       ;
 ; pwmleds:pwmledsinstance|LessThan1~6   ; 1       ;
@@ -1851,6 +1850,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwmleds:pwmledsinstance|LessThan1~2   ; 1       ;
 ; pwmleds:pwmledsinstance|LessThan1~1   ; 1       ;
 ; pwmleds:pwmledsinstance|LessThan1~0   ; 1       ;
+; pwmleds:pwmledsinstance|tau~0         ; 1       ;
 ; pwmleds:pwmledsinstance|cont[25]~76   ; 1       ;
 ; pwmleds:pwmledsinstance|cont[24]~75   ; 1       ;
 ; pwmleds:pwmledsinstance|cont[24]~74   ; 1       ;
@@ -1993,21 +1993,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 176 / 54,004 ( < 1 % ) ;
-; C16 interconnects           ; 0 / 2,100 ( 0 % )      ;
-; C4 interconnects            ; 92 / 36,000 ( < 1 % )  ;
-; Direct links                ; 25 / 54,004 ( < 1 % )  ;
+; Block interconnects         ; 181 / 54,004 ( < 1 % ) ;
+; C16 interconnects           ; 1 / 2,100 ( < 1 % )    ;
+; C4 interconnects            ; 73 / 36,000 ( < 1 % )  ;
+; Direct links                ; 39 / 54,004 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 76 / 18,752 ( < 1 % )  ;
-; R24 interconnects           ; 0 / 1,900 ( 0 % )      ;
-; R4 interconnects            ; 76 / 46,920 ( < 1 % )  ;
+; Local interconnects         ; 73 / 18,752 ( < 1 % )  ;
+; R24 interconnects           ; 1 / 1,900 ( < 1 % )    ;
+; R4 interconnects            ; 85 / 46,920 ( < 1 % )  ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 14.27) ; Number of LABs  (Total = 11) ;
+; Number of Logic Elements  (Average = 14.36) ; Number of LABs  (Total = 11) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
@@ -2015,27 +2015,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
+; 9                                           ; 1                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
 ; 12                                          ; 0                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 5                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 5                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 4                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.45) ; Number of LABs  (Total = 11) ;
+; LAB-wide Signals  (Average = 1.73) ; Number of LABs  (Total = 11) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 4                            ;
-; 1 Clock                            ; 6                            ;
-; 1 Clock enable                     ; 4                            ;
+; 1 Async. clear                     ; 5                            ;
+; 1 Clock                            ; 7                            ;
+; 1 Clock enable                     ; 5                            ;
 ; 1 Sync. clear                      ; 2                            ;
 +------------------------------------+------------------------------+
 
@@ -2043,10 +2043,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.64) ; Number of LABs  (Total = 11) ;
+; Number of Signals Sourced  (Average = 15.73) ; Number of LABs  (Total = 11) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 0                            ;
 ; 2                                            ; 4                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
@@ -2060,78 +2060,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 1                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 1                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 0                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 1                            ;
-; 32                                           ; 1                            ;
-+----------------------------------------------+------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                        ;
-+-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.55) ; Number of LABs  (Total = 11) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 1                            ;
-; 2                                               ; 4                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 0                            ;
-; 7                                               ; 0                            ;
-; 8                                               ; 2                            ;
-; 9                                               ; 0                            ;
-; 10                                              ; 0                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 0                            ;
-; 15                                              ; 0                            ;
-; 16                                              ; 0                            ;
-; 17                                              ; 1                            ;
-; 18                                              ; 1                            ;
-+-------------------------------------------------+------------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.91) ; Number of LABs  (Total = 11) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 1                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 4                            ;
+; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
@@ -2140,7 +2072,76 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
-; 27                                           ; 1                            ;
+; 27                                           ; 2                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 1                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 1                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 7.73) ; Number of LABs  (Total = 11) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 0                            ;
+; 2                                               ; 4                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 1                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 1                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 0                            ;
+; 17                                              ; 0                            ;
+; 18                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 15.00) ; Number of LABs  (Total = 11) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 4                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2228,7 +2229,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 256 output pins without output pin load capacitance assignment
     Info (306007): Pin "SD_DAT3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2612,17 +2613,17 @@ Warning (169064): Following 119 pins have no output enable or a GND or VCC outpu
     Info (169065): Pin GPIO_1[34] has a permanently disabled output enable
     Info (169065): Pin GPIO_1[35] has a permanently disabled output enable
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file /home/tiagot/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.fit.smsg
+Info (144001): Generated suppressed messages file /home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 878 megabytes
-    Info: Processing ended: Wed Dec  7 09:32:22 2016
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Wed Dec  7 16:46:37 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/tiagot/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.fit.smsg.
+The suppressed messages can be found in /home/gustavof/pem/pem_shared/system verilog/gustavo/pwmleds/output_files/pwmleds.fit.smsg.
 
 

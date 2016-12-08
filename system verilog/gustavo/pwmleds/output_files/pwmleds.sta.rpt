@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for pwmleds
-Wed Dec  7 09:32:31 2016
+Wed Dec  7 16:46:46 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -113,7 +113,7 @@ applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 186.85 MHz ; 186.85 MHz      ; CLOCK_50   ;      ;
+; 187.37 MHz ; 187.37 MHz      ; CLOCK_50   ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -123,7 +123,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+---------------+
 ; Clock    ; Slack  ; End Point TNS ;
 +----------+--------+---------------+
-; CLOCK_50 ; -4.352 ; -292.185      ;
+; CLOCK_50 ; -4.337 ; -291.378      ;
 +----------+--------+---------------+
 
 
@@ -132,7 +132,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+---------------+
 ; Clock    ; Slack ; End Point TNS ;
 +----------+-------+---------------+
-; CLOCK_50 ; 0.627 ; 0.000         ;
+; CLOCK_50 ; 0.628 ; 0.000         ;
 +----------+-------+---------------+
 
 
@@ -162,106 +162,106 @@ No paths to report.
 +--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                       ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.352 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.391      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.346 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.385      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.332 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.371      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.326 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.365      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.306 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.345      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.300 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.339      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[13]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[15]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[16]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[17]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[18]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[19]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[20]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[21]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[22]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
-; -4.214 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[23]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.004      ; 5.256      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.337 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.377      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.332 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.372      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.328 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.367      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.316 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.356      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.311 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.351      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.307 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.346      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.292 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.332      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.287 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.002      ; 5.327      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.283 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 5.322      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[13]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[14]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[15]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[16]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[17]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[18]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[19]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[20]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[21]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
+; -4.199 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[22]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 5.240      ;
 +--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -270,106 +270,106 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.627 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.913      ;
-; 0.632 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.918      ;
-; 0.637 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.923      ;
-; 0.642 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.928      ;
-; 0.643 ; pwmleds:pwmledsinstance|tau[0][2]  ; pwmleds:pwmledsinstance|tau[1][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.929      ;
-; 0.644 ; pwmleds:pwmledsinstance|periodo[6] ; pwmleds:pwmledsinstance|periodo[6] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.930      ;
-; 0.644 ; pwmleds:pwmledsinstance|tau[0][2]  ; pwmleds:pwmledsinstance|tau[9][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.930      ;
-; 0.644 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.930      ;
-; 0.646 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.932      ;
-; 0.646 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.932      ;
-; 0.647 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.933      ;
-; 0.647 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.933      ;
-; 0.780 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.066      ;
-; 0.788 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.074      ;
-; 0.788 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.074      ;
-; 0.789 ; pwmleds:pwmledsinstance|tau[0][1]  ; pwmleds:pwmledsinstance|tau[1][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.075      ;
-; 0.789 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.075      ;
-; 0.790 ; pwmleds:pwmledsinstance|tau[1][1]  ; pwmleds:pwmledsinstance|tau[0][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.076      ;
-; 0.790 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.076      ;
-; 0.791 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.077      ;
-; 0.791 ; pwmleds:pwmledsinstance|tau[1][5]  ; pwmleds:pwmledsinstance|tau[0][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.077      ;
-; 0.792 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.078      ;
-; 0.797 ; pwmleds:pwmledsinstance|tau[1][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.083      ;
-; 0.859 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[2][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.145      ;
-; 0.863 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.149      ;
-; 0.863 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.149      ;
-; 0.867 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.153      ;
-; 0.869 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[6][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.155      ;
-; 0.870 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.156      ;
-; 0.935 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[1][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.221      ;
-; 0.953 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.239      ;
-; 0.956 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.242      ;
-; 0.956 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.242      ;
-; 0.964 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.250      ;
+; 0.628 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.914      ;
+; 0.637 ; pwmleds:pwmledsinstance|periodo[6] ; pwmleds:pwmledsinstance|periodo[6] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.923      ;
+; 0.638 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.924      ;
+; 0.638 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.924      ;
+; 0.638 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.924      ;
+; 0.639 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.925      ;
+; 0.775 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.786 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.787 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.073      ;
+; 0.789 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.075      ;
+; 0.791 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.077      ;
+; 0.791 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.077      ;
+; 0.791 ; pwmleds:pwmledsinstance|tau[1][6]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.077      ;
+; 0.793 ; pwmleds:pwmledsinstance|tau[0][6]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.079      ;
+; 0.794 ; pwmleds:pwmledsinstance|tau[0][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.080      ;
+; 0.859 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.145      ;
+; 0.939 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.225      ;
+; 0.944 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.230      ;
+; 0.948 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.234      ;
+; 0.949 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.235      ;
+; 0.950 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.236      ;
+; 0.953 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.239      ;
 ; 0.968 ; pwmleds:pwmledsinstance|cont[13]   ; pwmleds:pwmledsinstance|cont[13]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.254      ;
-; 0.968 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.254      ;
-; 0.972 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[22]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.258      ;
-; 0.974 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.260      ;
+; 0.974 ; pwmleds:pwmledsinstance|periodo[0] ; pwmleds:pwmledsinstance|periodo[0] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.260      ;
+; 0.975 ; pwmleds:pwmledsinstance|periodo[1] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.261      ;
 ; 0.976 ; pwmleds:pwmledsinstance|cont[1]    ; pwmleds:pwmledsinstance|cont[1]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
 ; 0.976 ; pwmleds:pwmledsinstance|cont[4]    ; pwmleds:pwmledsinstance|cont[4]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
 ; 0.976 ; pwmleds:pwmledsinstance|cont[6]    ; pwmleds:pwmledsinstance|cont[6]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
 ; 0.976 ; pwmleds:pwmledsinstance|cont[8]    ; pwmleds:pwmledsinstance|cont[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
 ; 0.976 ; pwmleds:pwmledsinstance|cont[15]   ; pwmleds:pwmledsinstance|cont[15]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
-; 0.977 ; pwmleds:pwmledsinstance|periodo[0] ; pwmleds:pwmledsinstance|periodo[0] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
+; 0.976 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[22]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
+; 0.976 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.262      ;
 ; 0.977 ; pwmleds:pwmledsinstance|cont[10]   ; pwmleds:pwmledsinstance|cont[10]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
 ; 0.977 ; pwmleds:pwmledsinstance|cont[11]   ; pwmleds:pwmledsinstance|cont[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
 ; 0.977 ; pwmleds:pwmledsinstance|cont[12]   ; pwmleds:pwmledsinstance|cont[12]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
 ; 0.977 ; pwmleds:pwmledsinstance|cont[17]   ; pwmleds:pwmledsinstance|cont[17]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
 ; 0.977 ; pwmleds:pwmledsinstance|cont[20]   ; pwmleds:pwmledsinstance|cont[20]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
-; 0.977 ; pwmleds:pwmledsinstance|cont[24]   ; pwmleds:pwmledsinstance|cont[24]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
-; 0.978 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[3][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.264      ;
-; 0.985 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.271      ;
-; 0.985 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.271      ;
-; 0.986 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.272      ;
-; 0.987 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.273      ;
-; 0.988 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[8][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.274      ;
-; 0.988 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.274      ;
-; 0.988 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.274      ;
-; 0.989 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.275      ;
-; 0.989 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.275      ;
-; 0.990 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.276      ;
-; 0.990 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[6][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.276      ;
-; 0.992 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.278      ;
-; 0.993 ; pwmleds:pwmledsinstance|periodo[2] ; pwmleds:pwmledsinstance|periodo[2] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.279      ;
-; 0.993 ; pwmleds:pwmledsinstance|periodo[4] ; pwmleds:pwmledsinstance|periodo[4] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.279      ;
-; 0.997 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.283      ;
-; 1.003 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.289      ;
-; 1.003 ; pwmleds:pwmledsinstance|tau[1][2]  ; pwmleds:pwmledsinstance|tau[2][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.289      ;
+; 0.977 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.263      ;
+; 0.978 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.264      ;
+; 0.980 ; pwmleds:pwmledsinstance|cont[14]   ; pwmleds:pwmledsinstance|cont[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.266      ;
+; 0.980 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.266      ;
+; 0.981 ; pwmleds:pwmledsinstance|cont[24]   ; pwmleds:pwmledsinstance|cont[24]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.267      ;
+; 0.981 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[7][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.267      ;
+; 0.981 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.267      ;
+; 0.983 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.269      ;
+; 0.983 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.269      ;
+; 0.984 ; pwmleds:pwmledsinstance|periodo[2] ; pwmleds:pwmledsinstance|periodo[2] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.270      ;
+; 0.984 ; pwmleds:pwmledsinstance|periodo[4] ; pwmleds:pwmledsinstance|periodo[4] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.270      ;
+; 0.984 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[7][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.270      ;
+; 0.985 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[2][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.271      ;
+; 0.985 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.271      ;
+; 0.986 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.272      ;
+; 0.986 ; pwmleds:pwmledsinstance|tau[7][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.272      ;
+; 0.990 ; pwmleds:pwmledsinstance|tau[1][6]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.276      ;
+; 0.993 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.279      ;
+; 0.994 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.280      ;
+; 0.997 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[7][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.283      ;
+; 1.014 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[3][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.300      ;
 ; 1.015 ; pwmleds:pwmledsinstance|cont[21]   ; pwmleds:pwmledsinstance|cont[21]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.301      ;
+; 1.015 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[4][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.301      ;
+; 1.015 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[2][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.301      ;
 ; 1.016 ; pwmleds:pwmledsinstance|cont[23]   ; pwmleds:pwmledsinstance|cont[23]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.302      ;
 ; 1.016 ; pwmleds:pwmledsinstance|cont[25]   ; pwmleds:pwmledsinstance|cont[25]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.302      ;
-; 1.016 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.302      ;
+; 1.017 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.303      ;
 ; 1.018 ; pwmleds:pwmledsinstance|cont[5]    ; pwmleds:pwmledsinstance|cont[5]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.304      ;
-; 1.018 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.304      ;
+; 1.018 ; pwmleds:pwmledsinstance|cont[7]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.304      ;
+; 1.018 ; pwmleds:pwmledsinstance|tau[7][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.304      ;
 ; 1.019 ; pwmleds:pwmledsinstance|cont[3]    ; pwmleds:pwmledsinstance|cont[3]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.305      ;
-; 1.019 ; pwmleds:pwmledsinstance|cont[7]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.305      ;
 ; 1.019 ; pwmleds:pwmledsinstance|cont[18]   ; pwmleds:pwmledsinstance|cont[18]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.305      ;
 ; 1.019 ; pwmleds:pwmledsinstance|cont[19]   ; pwmleds:pwmledsinstance|cont[19]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.305      ;
 ; 1.022 ; pwmleds:pwmledsinstance|cont[0]    ; pwmleds:pwmledsinstance|cont[0]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.308      ;
 ; 1.024 ; pwmleds:pwmledsinstance|cont[2]    ; pwmleds:pwmledsinstance|cont[2]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.310      ;
 ; 1.024 ; pwmleds:pwmledsinstance|cont[9]    ; pwmleds:pwmledsinstance|cont[9]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.310      ;
 ; 1.024 ; pwmleds:pwmledsinstance|cont[16]   ; pwmleds:pwmledsinstance|cont[16]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.310      ;
-; 1.026 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.312      ;
-; 1.028 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.314      ;
-; 1.028 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[0][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.314      ;
-; 1.028 ; pwmleds:pwmledsinstance|tau[6][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.314      ;
-; 1.029 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.315      ;
-; 1.031 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.317      ;
-; 1.034 ; pwmleds:pwmledsinstance|periodo[1] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.320      ;
-; 1.034 ; pwmleds:pwmledsinstance|periodo[3] ; pwmleds:pwmledsinstance|periodo[3] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.320      ;
-; 1.035 ; pwmleds:pwmledsinstance|tau[1][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.321      ;
-; 1.039 ; pwmleds:pwmledsinstance|periodo[5] ; pwmleds:pwmledsinstance|periodo[5] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.325      ;
-; 1.162 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[8][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.448      ;
-; 1.244 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[9][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.530      ;
-; 1.281 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 1.568      ;
-; 1.285 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 1.570      ;
-; 1.295 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.581      ;
-; 1.371 ; pwmleds:pwmledsinstance|tau[4][5]  ; pwmleds:pwmledsinstance|tau[5][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.657      ;
-; 1.404 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[23]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.690      ;
-; 1.408 ; pwmleds:pwmledsinstance|cont[6]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.694      ;
+; 1.026 ; pwmleds:pwmledsinstance|periodo[3] ; pwmleds:pwmledsinstance|periodo[3] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.312      ;
+; 1.026 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.312      ;
+; 1.026 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.312      ;
+; 1.027 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.313      ;
+; 1.028 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.314      ;
+; 1.030 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[5][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.316      ;
+; 1.031 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.317      ;
+; 1.036 ; pwmleds:pwmledsinstance|periodo[5] ; pwmleds:pwmledsinstance|periodo[5] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.322      ;
+; 1.201 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.217 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.503      ;
+; 1.218 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[4][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.504      ;
+; 1.230 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.516      ;
+; 1.247 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.533      ;
+; 1.258 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.544      ;
+; 1.266 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.552      ;
+; 1.270 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.556      ;
+; 1.280 ; pwmleds:pwmledsinstance|tau[1][1]  ; pwmleds:pwmledsinstance|tau[0][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.564      ;
+; 1.281 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 1.566      ;
+; 1.283 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.569      ;
+; 1.287 ; pwmleds:pwmledsinstance|tau[4][5]  ; pwmleds:pwmledsinstance|tau[5][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.573      ;
+; 1.290 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.576      ;
+; 1.296 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[9][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 1.583      ;
+; 1.299 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[1][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.585      ;
+; 1.319 ; pwmleds:pwmledsinstance|tau[1][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 1.604      ;
+; 1.400 ; pwmleds:pwmledsinstance|cont[13]   ; pwmleds:pwmledsinstance|cont[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.686      ;
+; 1.406 ; pwmleds:pwmledsinstance|periodo[0] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.692      ;
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -486,10 +486,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 4.878 ; 4.878 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 4.878 ; 4.878 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 1.838 ; 1.838 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 1.838 ; 1.838 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 4.811 ; 4.811 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 4.811 ; 4.811 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 1.952 ; 1.952 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 1.952 ; 1.952 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -498,10 +498,10 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -4.269 ; -4.269 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -4.269 ; -4.269 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; -0.225 ; -0.225 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.225 ; -0.225 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -4.557 ; -4.557 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -4.557 ; -4.557 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.073  ; 0.073  ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 0.073  ; 0.073  ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -510,24 +510,17 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 7.215  ; 7.215  ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 7.215  ; 7.215  ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 7.156  ; 7.156  ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 7.160  ; 7.160  ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 6.934  ; 6.934  ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 6.811  ; 6.811  ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 6.919  ; 6.919  ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 10.353 ; 10.353 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 10.353 ; 10.353 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 9.889  ; 9.889  ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 9.568  ; 9.568  ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 9.380  ; 9.380  ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 9.998  ; 9.998  ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 9.616  ; 9.616  ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 10.178 ; 10.178 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 9.865  ; 9.865  ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 9.847  ; 9.847  ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 9.487  ; 9.487  ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 10.331 ; 10.331 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 10.331 ; 10.331 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 9.850  ; 9.850  ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 9.269  ; 9.269  ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 9.948  ; 9.948  ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 9.821  ; 9.821  ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 9.843  ; 9.843  ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 10.152 ; 10.152 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 9.434  ; 9.434  ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 10.195 ; 10.195 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 9.885  ; 9.885  ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -536,24 +529,17 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 6.811 ; 6.811 ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 7.215 ; 7.215 ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 7.156 ; 7.156 ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 7.160 ; 7.160 ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 6.934 ; 6.934 ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 6.811 ; 6.811 ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 6.919 ; 6.919 ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 7.781 ; 7.781 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 8.315 ; 8.315 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 8.843 ; 8.843 ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 7.874 ; 7.874 ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 7.902 ; 7.902 ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 7.913 ; 7.913 ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 7.954 ; 7.954 ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 8.171 ; 8.171 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 7.781 ; 7.781 ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 8.567 ; 8.567 ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 8.131 ; 8.131 ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 7.684 ; 7.684 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 8.509 ; 8.509 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 8.272 ; 8.272 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 7.842 ; 7.842 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 8.318 ; 8.318 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 8.486 ; 8.486 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 8.508 ; 8.508 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 8.552 ; 8.552 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 7.684 ; 7.684 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 8.557 ; 8.557 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 8.432 ; 8.432 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -562,7 +548,7 @@ No paths to report.
 +----------+--------+---------------+
 ; Clock    ; Slack  ; End Point TNS ;
 +----------+--------+---------------+
-; CLOCK_50 ; -1.045 ; -65.647       ;
+; CLOCK_50 ; -1.057 ; -65.633       ;
 +----------+--------+---------------+
 
 
@@ -571,7 +557,7 @@ No paths to report.
 +----------+-------+---------------+
 ; Clock    ; Slack ; End Point TNS ;
 +----------+-------+---------------+
-; CLOCK_50 ; 0.241 ; 0.000         ;
+; CLOCK_50 ; 0.243 ; 0.000         ;
 +----------+-------+---------------+
 
 
@@ -596,112 +582,112 @@ No paths to report.
 +----------+--------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'CLOCK_50'                                                                                                                       ;
-+--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                       ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.045 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.040 ; pwmleds:pwmledsinstance|cont[2] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.073      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[6][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[5][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[3][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -1.032 ; pwmleds:pwmledsinstance|cont[1] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.065      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[13]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[15]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[16]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[17]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[18]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[19]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[20]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[21]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[22]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-; -0.971 ; pwmleds:pwmledsinstance|cont[0] ; pwmleds:pwmledsinstance|cont[23]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.003      ; 2.006      ;
-+--------+---------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLOCK_50'                                                                                                                        ;
++--------+----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.057 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.090      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.055 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.088      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.052 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.085      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[0]  ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.050 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.083      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.045 ; pwmleds:pwmledsinstance|cont[2]  ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.078      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.044 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.077      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[2][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[3][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[4][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.042 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[5][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.075      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[8][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[7][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[6][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[5][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[4][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[3][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[2][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[4][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[5][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[6][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[7][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[8][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[9][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[0][3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[2][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -1.037 ; pwmleds:pwmledsinstance|cont[1]  ; pwmleds:pwmledsinstance|tau[4][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.070      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[9][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[0][2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[7][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[8][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[9][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[0][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[1][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.974 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[0][5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.005      ;
+; -0.972 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[1][1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.003      ;
+; -0.972 ; pwmleds:pwmledsinstance|cont[17] ; pwmleds:pwmledsinstance|tau[1][4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.003      ;
++--------+----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -709,104 +695,104 @@ No paths to report.
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.241 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.393      ;
-; 0.244 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.396      ;
-; 0.250 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.402      ;
-; 0.250 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.402      ;
-; 0.251 ; pwmleds:pwmledsinstance|periodo[6] ; pwmleds:pwmledsinstance|periodo[6] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.403      ;
-; 0.251 ; pwmleds:pwmledsinstance|tau[0][2]  ; pwmleds:pwmledsinstance|tau[1][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.403      ;
-; 0.251 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.403      ;
-; 0.252 ; pwmleds:pwmledsinstance|tau[0][2]  ; pwmleds:pwmledsinstance|tau[9][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.404      ;
-; 0.252 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.404      ;
-; 0.253 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.405      ;
-; 0.253 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.405      ;
-; 0.254 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.406      ;
-; 0.297 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.449      ;
-; 0.298 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.450      ;
-; 0.298 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.450      ;
-; 0.300 ; pwmleds:pwmledsinstance|tau[0][1]  ; pwmleds:pwmledsinstance|tau[1][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
-; 0.300 ; pwmleds:pwmledsinstance|tau[1][1]  ; pwmleds:pwmledsinstance|tau[0][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
-; 0.300 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
-; 0.300 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
-; 0.302 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.454      ;
-; 0.303 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.455      ;
-; 0.304 ; pwmleds:pwmledsinstance|tau[1][5]  ; pwmleds:pwmledsinstance|tau[0][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.456      ;
-; 0.305 ; pwmleds:pwmledsinstance|tau[1][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.457      ;
-; 0.325 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[2][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.478      ;
-; 0.329 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.481      ;
-; 0.329 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.480      ;
-; 0.330 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.482      ;
-; 0.332 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[6][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.484      ;
-; 0.332 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.484      ;
+; 0.243 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.395      ;
+; 0.248 ; pwmleds:pwmledsinstance|periodo[6] ; pwmleds:pwmledsinstance|periodo[6] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.400      ;
+; 0.248 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.400      ;
+; 0.248 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.400      ;
+; 0.248 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.400      ;
+; 0.249 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.401      ;
+; 0.295 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.447      ;
+; 0.295 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.447      ;
+; 0.296 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.448      ;
+; 0.300 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
+; 0.300 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
+; 0.300 ; pwmleds:pwmledsinstance|tau[9][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.452      ;
+; 0.301 ; pwmleds:pwmledsinstance|tau[0][6]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.453      ;
+; 0.302 ; pwmleds:pwmledsinstance|tau[0][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.454      ;
+; 0.303 ; pwmleds:pwmledsinstance|tau[1][6]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.455      ;
+; 0.324 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.476      ;
 ; 0.355 ; pwmleds:pwmledsinstance|cont[13]   ; pwmleds:pwmledsinstance|cont[13]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.507      ;
 ; 0.359 ; pwmleds:pwmledsinstance|periodo[0] ; pwmleds:pwmledsinstance|periodo[0] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; pwmleds:pwmledsinstance|tau[2][2]  ; pwmleds:pwmledsinstance|tau[1][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; pwmleds:pwmledsinstance|periodo[1] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
 ; 0.360 ; pwmleds:pwmledsinstance|cont[6]    ; pwmleds:pwmledsinstance|cont[6]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; pwmleds:pwmledsinstance|cont[8]    ; pwmleds:pwmledsinstance|cont[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; pwmleds:pwmledsinstance|cont[15]   ; pwmleds:pwmledsinstance|cont[15]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
-; 0.360 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[22]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.361 ; pwmleds:pwmledsinstance|cont[10]   ; pwmleds:pwmledsinstance|cont[10]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; pwmleds:pwmledsinstance|cont[11]   ; pwmleds:pwmledsinstance|cont[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; pwmleds:pwmledsinstance|cont[12]   ; pwmleds:pwmledsinstance|cont[12]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; pwmleds:pwmledsinstance|cont[14]   ; pwmleds:pwmledsinstance|cont[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; pwmleds:pwmledsinstance|cont[17]   ; pwmleds:pwmledsinstance|cont[17]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; pwmleds:pwmledsinstance|cont[20]   ; pwmleds:pwmledsinstance|cont[20]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; pwmleds:pwmledsinstance|cont[24]   ; pwmleds:pwmledsinstance|cont[24]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
-; 0.362 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
-; 0.362 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[3][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
+; 0.361 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[22]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
 ; 0.363 ; pwmleds:pwmledsinstance|cont[1]    ; pwmleds:pwmledsinstance|cont[1]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
 ; 0.363 ; pwmleds:pwmledsinstance|cont[4]    ; pwmleds:pwmledsinstance|cont[4]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
-; 0.365 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
-; 0.366 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.518      ;
-; 0.367 ; pwmleds:pwmledsinstance|periodo[2] ; pwmleds:pwmledsinstance|periodo[2] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
-; 0.367 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[3][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
-; 0.368 ; pwmleds:pwmledsinstance|periodo[4] ; pwmleds:pwmledsinstance|periodo[4] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.520      ;
-; 0.368 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.520      ;
-; 0.370 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[4][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
+; 0.363 ; pwmleds:pwmledsinstance|cont[24]   ; pwmleds:pwmledsinstance|cont[24]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.365 ; pwmleds:pwmledsinstance|periodo[2] ; pwmleds:pwmledsinstance|periodo[2] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; pwmleds:pwmledsinstance|periodo[4] ; pwmleds:pwmledsinstance|periodo[4] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; pwmleds:pwmledsinstance|tau[6][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; pwmleds:pwmledsinstance|tau[3][4]  ; pwmleds:pwmledsinstance|tau[2][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; pwmleds:pwmledsinstance|tau[7][3]  ; pwmleds:pwmledsinstance|tau[8][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[7][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; pwmleds:pwmledsinstance|tau[2][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.519      ;
+; 0.370 ; pwmleds:pwmledsinstance|tau[1][6]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[2][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.522      ;
 ; 0.371 ; pwmleds:pwmledsinstance|cont[21]   ; pwmleds:pwmledsinstance|cont[21]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.371 ; pwmleds:pwmledsinstance|cont[23]   ; pwmleds:pwmledsinstance|cont[23]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; pwmleds:pwmledsinstance|tau[7][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; pwmleds:pwmledsinstance|tau[8][4]  ; pwmleds:pwmledsinstance|tau[9][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.372 ; pwmleds:pwmledsinstance|cont[25]   ; pwmleds:pwmledsinstance|cont[25]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
-; 0.373 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.525      ;
-; 0.373 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.525      ;
-; 0.373 ; pwmleds:pwmledsinstance|tau[9][4]  ; pwmleds:pwmledsinstance|tau[8][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.525      ;
-; 0.374 ; pwmleds:pwmledsinstance|cont[5]    ; pwmleds:pwmledsinstance|cont[5]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
-; 0.374 ; pwmleds:pwmledsinstance|tau[5][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
-; 0.374 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[8][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
-; 0.374 ; pwmleds:pwmledsinstance|tau[5][4]  ; pwmleds:pwmledsinstance|tau[6][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
+; 0.372 ; pwmleds:pwmledsinstance|tau[8][3]  ; pwmleds:pwmledsinstance|tau[7][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.374 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[2][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
+; 0.375 ; pwmleds:pwmledsinstance|cont[5]    ; pwmleds:pwmledsinstance|cont[5]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; pwmleds:pwmledsinstance|cont[7]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[5][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.527      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[0]    ; pwmleds:pwmledsinstance|cont[0]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[2]    ; pwmleds:pwmledsinstance|cont[2]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[3]    ; pwmleds:pwmledsinstance|cont[3]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
-; 0.376 ; pwmleds:pwmledsinstance|cont[7]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[9]    ; pwmleds:pwmledsinstance|cont[9]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[16]   ; pwmleds:pwmledsinstance|cont[16]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[18]   ; pwmleds:pwmledsinstance|cont[18]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.376 ; pwmleds:pwmledsinstance|cont[19]   ; pwmleds:pwmledsinstance|cont[19]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
-; 0.377 ; pwmleds:pwmledsinstance|tau[4][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
-; 0.377 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[0][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
-; 0.378 ; pwmleds:pwmledsinstance|tau[7][2]  ; pwmleds:pwmledsinstance|tau[6][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.530      ;
-; 0.379 ; pwmleds:pwmledsinstance|tau[0][4]  ; pwmleds:pwmledsinstance|tau[1][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.531      ;
-; 0.379 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[7][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.531      ;
-; 0.380 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.532      ;
-; 0.381 ; pwmleds:pwmledsinstance|tau[5][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
-; 0.381 ; pwmleds:pwmledsinstance|tau[1][2]  ; pwmleds:pwmledsinstance|tau[2][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
-; 0.381 ; pwmleds:pwmledsinstance|tau[1][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
-; 0.381 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
-; 0.382 ; pwmleds:pwmledsinstance|periodo[1] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.534      ;
-; 0.382 ; pwmleds:pwmledsinstance|periodo[3] ; pwmleds:pwmledsinstance|periodo[3] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.534      ;
-; 0.382 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[9][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.534      ;
-; 0.384 ; pwmleds:pwmledsinstance|tau[6][4]  ; pwmleds:pwmledsinstance|tau[5][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.536      ;
-; 0.385 ; pwmleds:pwmledsinstance|periodo[5] ; pwmleds:pwmledsinstance|periodo[5] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.537      ;
-; 0.386 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.538      ;
-; 0.448 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[8][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.599      ;
-; 0.453 ; pwmleds:pwmledsinstance|tau[8][2]  ; pwmleds:pwmledsinstance|tau[9][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.606      ;
-; 0.478 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[0][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.631      ;
-; 0.480 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.631      ;
-; 0.489 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.640      ;
-; 0.498 ; pwmleds:pwmledsinstance|cont[22]   ; pwmleds:pwmledsinstance|cont[23]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.376 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[3][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377 ; pwmleds:pwmledsinstance|periodo[3] ; pwmleds:pwmledsinstance|periodo[3] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
+; 0.377 ; pwmleds:pwmledsinstance|tau[4][2]  ; pwmleds:pwmledsinstance|tau[5][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; pwmleds:pwmledsinstance|tau[2][6]  ; pwmleds:pwmledsinstance|tau[1][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; pwmleds:pwmledsinstance|tau[6][3]  ; pwmleds:pwmledsinstance|tau[7][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.531      ;
+; 0.381 ; pwmleds:pwmledsinstance|periodo[5] ; pwmleds:pwmledsinstance|periodo[5] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
+; 0.381 ; pwmleds:pwmledsinstance|tau[2][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.533      ;
+; 0.381 ; pwmleds:pwmledsinstance|tau[2][5]  ; pwmleds:pwmledsinstance|tau[3][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.532      ;
+; 0.382 ; pwmleds:pwmledsinstance|tau[7][3]  ; pwmleds:pwmledsinstance|tau[6][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.534      ;
+; 0.384 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[4][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.537      ;
+; 0.386 ; pwmleds:pwmledsinstance|tau[6][5]  ; pwmleds:pwmledsinstance|tau[5][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.538      ;
+; 0.386 ; pwmleds:pwmledsinstance|tau[3][3]  ; pwmleds:pwmledsinstance|tau[4][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.539      ;
+; 0.439 ; pwmleds:pwmledsinstance|tau[1][3]  ; pwmleds:pwmledsinstance|tau[0][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.592      ;
+; 0.454 ; pwmleds:pwmledsinstance|tau[1][4]  ; pwmleds:pwmledsinstance|tau[0][4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.606      ;
+; 0.457 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[4][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.610      ;
+; 0.462 ; pwmleds:pwmledsinstance|tau[3][5]  ; pwmleds:pwmledsinstance|tau[2][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.615      ;
+; 0.467 ; pwmleds:pwmledsinstance|tau[4][3]  ; pwmleds:pwmledsinstance|tau[3][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.618      ;
+; 0.468 ; pwmleds:pwmledsinstance|tau[9][2]  ; pwmleds:pwmledsinstance|tau[0][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.620      ;
+; 0.473 ; pwmleds:pwmledsinstance|tau[0][3]  ; pwmleds:pwmledsinstance|tau[1][3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.624      ;
+; 0.475 ; pwmleds:pwmledsinstance|tau[1][1]  ; pwmleds:pwmledsinstance|tau[0][1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.626      ;
+; 0.477 ; pwmleds:pwmledsinstance|tau[4][5]  ; pwmleds:pwmledsinstance|tau[5][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.628      ;
+; 0.479 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[1][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.631      ;
+; 0.481 ; pwmleds:pwmledsinstance|tau[5][5]  ; pwmleds:pwmledsinstance|tau[6][5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.633      ;
+; 0.482 ; pwmleds:pwmledsinstance|tau[3][2]  ; pwmleds:pwmledsinstance|tau[4][2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.634      ;
+; 0.486 ; pwmleds:pwmledsinstance|tau[0][5]  ; pwmleds:pwmledsinstance|tau[2][6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.001     ; 0.637      ;
+; 0.493 ; pwmleds:pwmledsinstance|cont[13]   ; pwmleds:pwmledsinstance|cont[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.645      ;
+; 0.497 ; pwmleds:pwmledsinstance|periodo[0] ; pwmleds:pwmledsinstance|periodo[1] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.649      ;
+; 0.497 ; pwmleds:pwmledsinstance|periodo[1] ; pwmleds:pwmledsinstance|periodo[2] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.649      ;
 ; 0.498 ; pwmleds:pwmledsinstance|cont[6]    ; pwmleds:pwmledsinstance|cont[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.650      ;
 ; 0.498 ; pwmleds:pwmledsinstance|cont[8]    ; pwmleds:pwmledsinstance|cont[9]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.650      ;
 +-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -925,10 +911,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 2.249 ; 2.249 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 2.249 ; 2.249 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.198 ; 0.198 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 0.198 ; 0.198 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 2.211 ; 2.211 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 2.211 ; 2.211 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.247 ; 0.247 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 0.247 ; 0.247 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -937,10 +923,10 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -1.984 ; -1.984 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -1.984 ; -1.984 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.476  ; 0.476  ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 0.476  ; 0.476  ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -2.087 ; -2.087 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -2.087 ; -2.087 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.543  ; 0.543  ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 0.543  ; 0.543  ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -949,24 +935,17 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 3.868 ; 3.868 ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 3.868 ; 3.868 ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 3.759 ; 3.759 ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 3.697 ; 3.697 ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 3.758 ; 3.758 ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 5.018 ; 5.018 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 5.018 ; 5.018 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 4.825 ; 4.825 ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 4.706 ; 4.706 ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 4.622 ; 4.622 ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 4.901 ; 4.901 ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 4.731 ; 4.731 ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 4.924 ; 4.924 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.864 ; 4.864 ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 4.782 ; 4.782 ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 4.646 ; 4.646 ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 5.031 ; 5.031 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 5.031 ; 5.031 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 4.802 ; 4.802 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 4.577 ; 4.577 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 4.879 ; 4.879 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 4.847 ; 4.847 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 4.787 ; 4.787 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 4.928 ; 4.928 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 4.702 ; 4.702 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 4.931 ; 4.931 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 4.793 ; 4.793 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -975,24 +954,17 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 3.697 ; 3.697 ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 3.868 ; 3.868 ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 3.759 ; 3.759 ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 3.697 ; 3.697 ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 3.758 ; 3.758 ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 4.080 ; 4.080 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 4.270 ; 4.270 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 4.427 ; 4.427 ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 4.086 ; 4.086 ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 4.089 ; 4.089 ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 4.127 ; 4.127 ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 4.118 ; 4.118 ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 4.183 ; 4.183 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.080 ; 4.080 ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 4.312 ; 4.312 ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 4.132 ; 4.132 ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 4.057 ; 4.057 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 4.335 ; 4.335 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 4.231 ; 4.231 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 4.059 ; 4.059 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 4.255 ; 4.255 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 4.352 ; 4.352 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 4.311 ; 4.311 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 4.338 ; 4.338 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 4.057 ; 4.057 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 4.336 ; 4.336 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 4.259 ; 4.259 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1001,10 +973,10 @@ No paths to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -4.352   ; 0.241 ; N/A      ; N/A     ; -1.631              ;
-;  CLOCK_50        ; -4.352   ; 0.241 ; N/A      ; N/A     ; -1.631              ;
-; Design-wide TNS  ; -292.185 ; 0.0   ; 0.0      ; 0.0     ; -93.281             ;
-;  CLOCK_50        ; -292.185 ; 0.000 ; N/A      ; N/A     ; -93.281             ;
+; Worst-case Slack ; -4.337   ; 0.243 ; N/A      ; N/A     ; -1.631              ;
+;  CLOCK_50        ; -4.337   ; 0.243 ; N/A      ; N/A     ; -1.631              ;
+; Design-wide TNS  ; -291.378 ; 0.0   ; 0.0      ; 0.0     ; -93.281             ;
+;  CLOCK_50        ; -291.378 ; 0.000 ; N/A      ; N/A     ; -93.281             ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -1013,10 +985,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 4.878 ; 4.878 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 4.878 ; 4.878 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 1.838 ; 1.838 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 1.838 ; 1.838 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 4.811 ; 4.811 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 4.811 ; 4.811 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 1.952 ; 1.952 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 1.952 ; 1.952 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1025,10 +997,10 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -1.984 ; -1.984 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -1.984 ; -1.984 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.476  ; 0.476  ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 0.476  ; 0.476  ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -2.087 ; -2.087 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -2.087 ; -2.087 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.543  ; 0.543  ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 0.543  ; 0.543  ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1037,24 +1009,17 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 7.215  ; 7.215  ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 7.215  ; 7.215  ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 7.156  ; 7.156  ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 7.160  ; 7.160  ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 6.934  ; 6.934  ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 6.811  ; 6.811  ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 6.919  ; 6.919  ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 10.353 ; 10.353 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 10.353 ; 10.353 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 9.889  ; 9.889  ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 9.568  ; 9.568  ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 9.380  ; 9.380  ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 9.998  ; 9.998  ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 9.616  ; 9.616  ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 10.178 ; 10.178 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 9.865  ; 9.865  ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 9.847  ; 9.847  ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 9.487  ; 9.487  ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 10.331 ; 10.331 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 10.331 ; 10.331 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 9.850  ; 9.850  ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 9.269  ; 9.269  ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 9.948  ; 9.948  ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 9.821  ; 9.821  ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 9.843  ; 9.843  ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 10.152 ; 10.152 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 9.434  ; 9.434  ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 10.195 ; 10.195 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 9.885  ; 9.885  ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1063,24 +1028,17 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; LEDG[*]   ; CLOCK_50   ; 3.697 ; 3.697 ; Rise       ; CLOCK_50        ;
-;  LEDG[1]  ; CLOCK_50   ; 3.868 ; 3.868 ; Rise       ; CLOCK_50        ;
-;  LEDG[2]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[3]  ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
-;  LEDG[4]  ; CLOCK_50   ; 3.759 ; 3.759 ; Rise       ; CLOCK_50        ;
-;  LEDG[5]  ; CLOCK_50   ; 3.697 ; 3.697 ; Rise       ; CLOCK_50        ;
-;  LEDG[6]  ; CLOCK_50   ; 3.758 ; 3.758 ; Rise       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 4.080 ; 4.080 ; Rise       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 4.270 ; 4.270 ; Rise       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 4.427 ; 4.427 ; Rise       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 4.086 ; 4.086 ; Rise       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 4.089 ; 4.089 ; Rise       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 4.127 ; 4.127 ; Rise       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 4.118 ; 4.118 ; Rise       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 4.183 ; 4.183 ; Rise       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.080 ; 4.080 ; Rise       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 4.312 ; 4.312 ; Rise       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 4.132 ; 4.132 ; Rise       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 4.057 ; 4.057 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 4.335 ; 4.335 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 4.231 ; 4.231 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 4.059 ; 4.059 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 4.255 ; 4.255 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 4.352 ; 4.352 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 4.311 ; 4.311 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 4.338 ; 4.338 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 4.057 ; 4.057 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 4.336 ; 4.336 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 4.259 ; 4.259 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1125,8 +1083,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
 ; Unconstrained Input Port Paths  ; 115   ; 115  ;
-; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 136   ; 136  ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 130   ; 130  ;
 +---------------------------------+-------+------+
 
 
@@ -1136,8 +1094,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Wed Dec  7 09:32:31 2016
-Info: Command: quartus_sta questao1 -c pwmleds
+    Info: Processing started: Wed Dec  7 16:46:45 2016
+Info: Command: quartus_sta pwmleds -c pwmleds
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
@@ -1149,14 +1107,14 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.352
+Info (332146): Worst-case setup slack is -4.337
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -4.352      -292.185 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.627
+    Info (332119):    -4.337      -291.378 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.628
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.627         0.000 CLOCK_50 
+    Info (332119):     0.628         0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.631
@@ -1166,14 +1124,14 @@ Info (332146): Worst-case minimum pulse width slack is -1.631
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.045
+Info (332146): Worst-case setup slack is -1.057
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.045       -65.647 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.241
+    Info (332119):    -1.057       -65.633 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.243
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.241         0.000 CLOCK_50 
+    Info (332119):     0.243         0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
@@ -1184,9 +1142,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 684 megabytes
-    Info: Processing ended: Wed Dec  7 09:32:31 2016
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 682 megabytes
+    Info: Processing ended: Wed Dec  7 16:46:46 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
