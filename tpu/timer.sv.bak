@@ -1,0 +1,7 @@
+module timer(
+	input logic SYS_CLK,
+	input logic RST,
+	input logic [15:0] TIMER_INT_VALUE,
+	output logic TPUINT,
+	output logic [15:0] TIME
+);

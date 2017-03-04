@@ -1,0 +1,6 @@
+module rf(
+	input logic SYS_CLK,
+	input logic valid_out_m,
+	input logic ready_out,
+	input logic [7:0] data_out,
+);

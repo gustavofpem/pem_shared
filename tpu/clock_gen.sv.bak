@@ -1,0 +1,8 @@
+module clock_gen(
+	input logic SYS_CLK,
+	input logic [15:0] TIME,
+	input logic [7:0] TX_SLOT,
+	input logic [7:0] RX_SLOT,
+	output logic G_CLK_TX,
+	output logic G_CLK_RX
+);
