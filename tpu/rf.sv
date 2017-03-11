@@ -5,6 +5,8 @@ module rf(
 	input logic [7:0] data_rf,
 	output logic ready_rf,
 	output logic RSTTPU,
+	output logic TIMERINTMSK,
+	output logic INTFLAG,
 	output logic TXSLOT_EN,
 	output logic RXSLOT_EN,
 	output logic [7:0] TX_SLOT,
@@ -25,7 +27,7 @@ assign ready_rf = 'd1;
 
 always_ff @(posedge SYS_CLK)
 begin
-	if(we_rf and ready_rf)
+	if(we_rf && ready_rf)
 	begin
 		case(addr_rf)
 			TPU_CONTROL_ADDR:	regfile[TPU_CONTROL_ADDR] <= data_rf;
@@ -40,8 +42,10 @@ end
 assign RSTTPU = regfile[TPU_CONTROL_ADDR][0];
 assign TXSLOT_EN = regfile[TPU_CONTROL_ADDR][1];
 assign RXSLOT_EN = regfile[TPU_CONTROL_ADDR][2];
+assign TIMERINTMSK = regfile[TPU_CONTROL_ADDR][3];
+assign INTFLAG = regfile[TPU_CONTROL_ADDR][4];
 assign TXSLOT = regfile[TX_SLOT_ADDR];
 assign RXSLOT = regfile[RX_SLOT_ADDR];
-assign TIMER_INT_VALUE = regfile[TPUINT_BYTE1_ADDR] << 8 | regfile[TPUINT_BYTE0_ADDR];
+assign TIMER_INT_VALUE = {regfile[TPUINT_BYTE1_ADDR], regfile[TPUINT_BYTE0_ADDR]};
 
 endmodule

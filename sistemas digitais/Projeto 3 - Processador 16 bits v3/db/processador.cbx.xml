@@ -2,8 +2,5 @@
 <LOG_ROOT>
 	<PROJECT NAME="processador">
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|processador:processadorinstance|dram:draminstance|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r4a1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|processador:processadorinstance|seg7:seg7instance0|altsyncram:WideOr0_rtl_0" CBX_FILE_NAME="altsyncram_rov.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|processador:processadorinstance|seg7:seg7instance2|altsyncram:WideOr0_rtl_0" CBX_FILE_NAME="altsyncram_sov.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|processador:processadorinstance|seg7:seg7instance3|altsyncram:WideOr0_rtl_0" CBX_FILE_NAME="altsyncram_tov.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

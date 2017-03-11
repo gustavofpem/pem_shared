@@ -230,7 +230,7 @@ assign	GPIO_1		=	36'hzzzzzzzzz;
 processador processadorinstance(
 	.clk(~KEY[3]),					//Input operand - clock signal
 	.rst(~KEY[0]),
-	.SW(SW[7:0]),
+	.SW(SW[9:0]),
 	.KEY(KEY[2:1]),
 	.LEDG(LEDG),
 	.LEDR(LEDR),

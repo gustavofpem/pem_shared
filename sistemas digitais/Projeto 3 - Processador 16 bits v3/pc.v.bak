@@ -1,0 +1,9 @@
+module pc(
+    input clk,	
+	 output [7:0] pc
+);
+
+always @(posedge clk)
+	pc <= pc + 1;
+
+endmodule
