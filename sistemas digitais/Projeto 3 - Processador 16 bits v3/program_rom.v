@@ -28,10 +28,13 @@ parameter JMP = 4'd12;
 	initial
 	begin
 		prom[0] = 16'b1000000000000100; // MOVE 4 para ACC
-		prom[1] = 16'b1000001000000101; // MOVE 5 para REGB
-		prom[2] = 16'b0001001000000000; // ADD ACC com REGB
-		//prom[3] = 16'b1010010000000000; // STORE REGC no endereço 0 da RAM
-		prom[3] = 16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[1] = 16'b1000000000001001; // MOVE 9 para ACC
+		prom[2] = 16'b1000001000000101; // MOVE 5 para REGB
+		prom[3] = 16'b0001001000000000; // ADD ACC com REGB
+		prom[4] = 16'b1011010100000000; // PRINT out_ula no LEDG
+		prom[5] = 16'b1011001000000000; // PRINT REGB no LEDG
+		prom[6] = 16'b1010010000000000; // STORE REGC no endereço 0 da RAM
+		
 	/*	prom[5] = ;
 		prom[6] = ;
 		prom[7] = ;

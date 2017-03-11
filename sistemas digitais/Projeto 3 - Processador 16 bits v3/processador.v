@@ -1,10 +1,10 @@
 module processador(
 	input clk,
 	input rst,
-	input [7:0] SW,
+	input [9:0] SW,
 	input	[2:1] KEY,
-	output reg [2:0] LEDG,
-	output reg [7:0] LEDR,
+	output reg [7:0] LEDG,
+	output reg [9:0] LEDR,
 	output reg [3:0] disp0,
 	output reg [3:0] disp1,
 	output reg [3:0] disp2,
@@ -36,27 +36,42 @@ reg [7:0] data;
 reg addr_d;
 wire [7:0] out_dram;
 
+//Register File
+reg we_reg;
+reg [3:0] addr_reg;
+reg [3:0] data_reg;
+wire [7:0] out_reg;
+
 //Program ROM
 wire [15:0] out_prom;
 
 //AUX
 wire [7:0] STDIN;
 wire [7:0] STDOUT;
-
-//Registradores
-reg [7:0] PC;
+wire [7:0] PC;
 reg [3:0] OPCODE;
-reg [7:0] ACC;
-reg [7:0] ACC2;
-reg [7:0] REGA;
-reg [7:0] REGB;
-reg [7:0] REGC;
-reg [7:0] MADDR;
-reg [7:0] ZERO;
 
 // ULA
+wire [7:0] ACC;
+reg [7:0] ACC2;
 wire [7:0] out_ula;
 wire CARRY;
+
+pc pcinstance(
+	.clk(clk),
+	.rst(rst),
+	.pc(PC)
+);
+
+regfile regfileinstance(
+	.clk(clk),	
+	.rst(rst),
+	.we_reg(we_reg),
+	.addr_reg(addr_reg),
+	.data_reg(data_reg),
+	.out_reg(out_reg),
+	.ACC(ACC)
+);
 
 program_rom prominstance(
 	.addr_p(PC),
@@ -72,9 +87,7 @@ dram draminstance(
 	.q(out_dram)
 );
 	  
-ula ulainstance(		
-	.clk(clk),
-	.rst(rst),
+ula ulainstance(
 	.a(ACC),
 	.b(ACC2),
 	.op(OPCODE),
@@ -102,7 +115,7 @@ seg7 seg7instance3(
 	.hex_out(HEX3)
 );
 
-assign STDIN = SW[7:0];
+assign STDIN = SW[9:0];
 
 /*
 ALTERAÇOES:
@@ -116,139 +129,85 @@ FAZER:
 	- REGISTER FILE (BANCO DE REGISTRADORES)
 */
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
-	ZERO <= 8'd0;
 	if(rst)
 	begin
-		PC <= 'd0;
-		ACC <= 'd0;
-		ACC2 <= 'd0;
-		REGA <= 'd0;
-		REGB <= 'd0;
-		REGC <= 'd0;
 		LEDR <= 10'b1111111111;
 	end
 	else
 	begin
-		PC <= PC + 1;
 		OPCODE <= out_prom[15:12]; // 4 bits opcode
+		LEDR <= out_reg;
+		LEDG <= ACC;
 		case(OPCODE)
 			MOVE:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC <= out_prom[7:0];
-					4'b0001: REGA <= out_prom[7:0];
-					4'b0010: REGB <= out_prom[7:0];
-					4'b0011: REGC <= out_prom[7:0];
-					4'b0100: MADDR <= out_prom[7:0];
-					default: ACC <= out_prom[7:0];
-				endcase
+				we_reg <= 'd1;
+				addr_reg <= out_prom[11:8];
+				data_reg <= out_prom[7:0];
 			end
 			ADD:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC2 <= out_prom[7:0];
-					4'b0001: ACC2 <= REGA;
-					4'b0010: ACC2 <= REGB;
-					4'b0011: ACC2 <= REGC;
-					default: ACC2 <= out_prom[7:0];
-				endcase
-				REGC <= out_ula;
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
 			AND:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC2 <= out_prom[7:0];
-					4'b0001: ACC2 <= REGA;
-					4'b0010: ACC2 <= REGB;
-					4'b0011: ACC2 <= REGC;
-					default: ACC2 <= out_prom[7:0];
-				endcase
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
 			OR:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC2 <= out_prom[7:0];
-					4'b0001: ACC2 <= REGA;
-					4'b0010: ACC2 <= REGB;
-					4'b0011: ACC2 <= REGC;
-					default: ACC2 <= out_prom[7:0];
-				endcase
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
 			NOT:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC2 <= out_prom[7:0];
-					4'b0001: ACC2 <= REGA;
-					4'b0010: ACC2 <= REGB;
-					4'b0011: ACC2 <= REGC;
-					default: ACC2 <= out_prom[7:0];
-				endcase
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
 			XOR:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC2 <= out_prom[7:0];
-					4'b0001: ACC2 <= REGA;
-					4'b0010: ACC2 <= REGB;
-					4'b0011: ACC2 <= REGC;
-					default: ACC2 <= out_prom[7:0];
-				endcase
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				ACC2 <= out_reg;
 			end
 			LOAD:
 			begin
 				addr_d <= out_prom[7:0];
-				we_d <= 1'b0;
-				case(out_prom[11:8])
-					4'b0000: ACC <= out_dram;
-					4'b0001: REGA <= out_dram;
-					4'b0010: REGB <= out_dram;
-					4'b0011: REGC <= out_dram;
-					4'b0100: MADDR <= out_dram;
-					default: ACC <= out_dram;
-				endcase
+				addr_reg <= out_prom[11:8];
+				data_reg <= out_dram;
+				we_d <= 'd0;
+				we_reg <= 'd1;
 			end
 			STORE:
 			begin
 				addr_d <= out_prom[7:0];
-				we_d <= 1'b1;
-				case(out_prom[11:8])
-					4'b0000: data <= out_prom;
-					4'b0001: data <= REGA;
-					4'b0010: data <= REGB;
-					4'b0011: data <= REGC;
-					4'b0100: data <= MADDR;
-					4'b0101: data <= out_ula;
-					default: data <= ACC;
-				endcase
+				addr_reg <= out_prom[11:8];
+				we_reg <= 'd0;
+				data_reg <= out_dram;
+				we_d <= 'd1;
 			end
 			CLEAR:
 			begin
-				case(out_prom[11:8])
-					4'b0000: ACC <= 8'd0;
-					4'b0001: REGA <= 8'd0;
-					4'b0010: REGB <= 8'd0;
-					4'b0011: REGC <= 8'd0;
-					4'b0100: MADDR <= 8'd0;
-					default: ACC <= 8'd0;
-				endcase
+				we_reg <= 'd1;
+				addr_reg <= out_prom[11:8];
+				data_reg <= 'd0;
 			end
 			PRINT:
 			begin
-				case(out_prom[11:8])
-					4'b0000: LEDG <= ACC;
-					4'b0001: LEDG <= ACC2;
-					4'b0010: LEDG <= REGA;
-					4'b0011: LEDG <= REGB;
-					4'b0100: LEDG <= REGC;
-					4'b0101: LEDG <= out_ula;
-					default: LEDG <= ACC;
-				endcase
+				we_reg <= 'd0;
+				addr_reg <= out_prom[11:8];
+				LEDG <= out_reg;
 			end
 			PRINT7SEG:
 			begin
-				case(out_prom[11:8])
+				/*case(out_prom[11:8])
 					4'b0000: 
 					begin	
 						disp0 <= out_ula[3:0];
@@ -270,11 +229,10 @@ begin
 						disp2 <= ACC2;
 						disp3 <= ACC;
 					end
-				endcase
+				endcase*/
 			end
 			JMP:
 			begin
-				PC <= out_prom[7:0];
 			end
 		endcase
 	end
