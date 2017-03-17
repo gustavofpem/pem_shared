@@ -6,7 +6,6 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
-vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
 vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
 vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
 

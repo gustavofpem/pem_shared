@@ -1,5 +1,6 @@
 module timer(
 	input logic SYS_CLK,
+	input logic RST,
 	input logic RSTTPU,
 	input logic TIMERINTMSK,
 	input logic INTFLAG,
@@ -12,24 +13,32 @@ logic [15:0] TIMER_COUNTER;
 
 always_ff @(posedge SYS_CLK)
 begin
-	if(RSTTPU)
+	if(RST)
 	begin
 		TIMER_COUNTER <= 'd0;
 		TPUINT <= 'd0;
 	end
 	else
 	begin
-		if(TIMER_COUNTER >= 16'd65535)
+		if(RSTTPU)
 		begin
 			TIMER_COUNTER <= 'd0;
+			//TPUINT <= 'd0;
 		end
 		else
-			TIMER_COUNTER <= TIMER_COUNTER + 1'd1;
-			
-		if(TIMERINTMSK && TIMER_COUNTER == TIMER_INT_VALUE)
-			TPUINT <= 'd1;
-		else
-			TPUINT <= TIMERINTMSK & INTFLAG;
+		begin
+			if(TIMER_COUNTER >= 16'd65535)
+			begin
+				TIMER_COUNTER <= 'd0;
+			end
+			else
+				TIMER_COUNTER <= TIMER_COUNTER + 1'd1;
+				
+			if(TIMERINTMSK && TIMER_COUNTER == TIMER_INT_VALUE)
+				TPUINT <= 'd1;
+			else
+				TPUINT <= TIMERINTMSK & INTFLAG;
+		end
 	end
 end
 

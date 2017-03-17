@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tpu
-Fri Mar 10 19:59:49 2017
+Fri Mar 17 12:13:20 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -15,8 +15,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web E
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: rf:rf_instance
+ 11. Port Connectivity Checks: "rf:rf_instance"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 10 19:59:49 2017              ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 17 12:13:20 2017              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; tpu                                                ;
 ; Top-level Entity Name              ; tpu                                                ;
 ; Family                             ; Cyclone II                                         ;
-; Total logic elements               ; 46                                                 ;
-;     Total combinational functions  ; 46                                                 ;
-;     Dedicated logic registers      ; 17                                                 ;
-; Total registers                    ; 17                                                 ;
-; Total pins                         ; 59                                                 ;
+; Total logic elements               ; 134                                                ;
+;     Total combinational functions  ; 104                                                ;
+;     Dedicated logic registers      ; 57                                                 ;
+; Total registers                    ; 57                                                 ;
+; Total pins                         ; 31                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 0                                                  ;
 ; Embedded Multiplier 9-bit elements ; 0                                                  ;
@@ -161,6 +163,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                   ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
 ; tpu.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/tpu/tpu.sv       ;         ;
+; rf.sv                            ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/tpu/rf.sv        ;         ;
 ; timer.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/tpu/timer.sv     ;         ;
 ; clock_gen.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/gustavof/pem/pem_shared/tpu/clock_gen.sv ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
@@ -171,28 +174,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimated Total logic elements              ; 46      ;
+; Estimated Total logic elements              ; 134     ;
 ;                                             ;         ;
-; Total combinational functions               ; 46      ;
+; Total combinational functions               ; 104     ;
 ; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 26      ;
-;     -- 3 input functions                    ; 0       ;
-;     -- <=2 input functions                  ; 20      ;
+;     -- 4 input functions                    ; 66      ;
+;     -- 3 input functions                    ; 9       ;
+;     -- <=2 input functions                  ; 29      ;
 ;                                             ;         ;
 ; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 31      ;
+;     -- normal mode                          ; 89      ;
 ;     -- arithmetic mode                      ; 15      ;
 ;                                             ;         ;
-; Total registers                             ; 17      ;
-;     -- Dedicated logic registers            ; 17      ;
+; Total registers                             ; 57      ;
+;     -- Dedicated logic registers            ; 57      ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 59      ;
+; I/O pins                                    ; 31      ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ; Maximum fan-out node                        ; SYS_CLK ;
-; Maximum fan-out                             ; 19      ;
-; Total fan-out                               ; 196     ;
-; Average fan-out                             ; 1.61    ;
+; Maximum fan-out                             ; 59      ;
+; Total fan-out                               ; 531     ;
+; Average fan-out                             ; 2.77    ;
 +---------------------------------------------+---------+
 
 
@@ -201,8 +204,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Library Name ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
-; |tpu                              ; 46 (0)            ; 17 (0)       ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |tpu                              ; work         ;
+; |tpu                              ; 104 (0)           ; 57 (0)       ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |tpu                              ; work         ;
 ;    |clock_gen:clock_gen_instance| ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tpu|clock_gen:clock_gen_instance ; work         ;
+;    |rf:rf_instance|               ; 58 (58)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tpu|rf:rf_instance               ; work         ;
 ;    |timer:timer_instance|         ; 34 (34)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tpu|timer:timer_instance         ; work         ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -213,23 +217,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 17    ;
-; Number of registers using Synchronous Clear  ; 16    ;
+; Total registers                              ; 57    ;
+; Number of registers using Synchronous Clear  ; 19    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 38    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |tpu|timer:timer_instance|TIMER_COUNTER[15] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |tpu|rf:rf_instance|regfile[36][3]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |tpu|rf:rf_instance|regfile[35][2]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |tpu|rf:rf_instance|regfile[34][6]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |tpu|rf:rf_instance|regfile[33][4]         ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |tpu|rf:rf_instance|regfile[32][1]         ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |tpu|timer:timer_instance|TIMER_COUNTER[8] ;
+; 64:1               ; 8 bits    ; 336 LEs       ; 40 LEs               ; 296 LEs                ; No         ; |tpu|rf:rf_instance|Mux5                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rf:rf_instance ;
++-------------------+----------+------------------------------+
+; Parameter Name    ; Value    ; Type                         ;
++-------------------+----------+------------------------------+
+; TPU_CONTROL_ADDR  ; 00100000 ; Unsigned Binary              ;
+; TX_SLOT_ADDR      ; 00100001 ; Unsigned Binary              ;
+; RX_SLOT_ADDR      ; 00100010 ; Unsigned Binary              ;
+; TPUINT_BYTE1_ADDR ; 00100011 ; Unsigned Binary              ;
+; TPUINT_BYTE0_ADDR ; 00100100 ; Unsigned Binary              ;
++-------------------+----------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_instance"                                                                                                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; TIME ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (1 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -247,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Fri Mar 10 19:59:48 2017
+    Info: Processing started: Fri Mar 17 12:13:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tpu -c tpu
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file tpu.sv
@@ -258,43 +291,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file timer.s
     Info (12023): Found entity 1: timer
 Info (12021): Found 1 design units, including 1 entities, in source file clock_gen.sv
     Info (12023): Found entity 1: clock_gen
-Warning (10236): Verilog HDL Implicit Net warning at rf.sv(47): created implicit net for "TXSLOT"
-Warning (10236): Verilog HDL Implicit Net warning at rf.sv(48): created implicit net for "RXSLOT"
+Info (12021): Found 1 design units, including 1 entities, in source file tb.sv
+    Info (12023): Found entity 1: tb
 Info (12127): Elaborating entity "tpu" for the top level hierarchy
-Warning (10034): Output port "ready_out" at tpu.sv(6) has no driver
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_instance"
+Warning (10230): Verilog HDL assignment warning at rf.sv(30): truncated value with size 32 to match size of target (1)
+Warning (10030): Net "regfile[63..37]" at rf.sv(28) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regfile[31..0]" at rf.sv(28) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "timer" for hierarchy "timer:timer_instance"
 Info (12128): Elaborating entity "clock_gen" for hierarchy "clock_gen:clock_gen_instance"
-Warning (10230): Verilog HDL assignment warning at clock_gen.sv(12): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at clock_gen.sv(13): truncated value with size 32 to match size of target (1)
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ready_out" is stuck at GND
+Warning (10230): Verilog HDL assignment warning at clock_gen.sv(14): truncated value with size 32 to match size of target (1)
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 17 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "addr_out[0]"
-    Warning (15610): No output dependent on input pin "addr_out[1]"
-    Warning (15610): No output dependent on input pin "addr_out[2]"
-    Warning (15610): No output dependent on input pin "addr_out[3]"
-    Warning (15610): No output dependent on input pin "addr_out[4]"
-    Warning (15610): No output dependent on input pin "addr_out[5]"
-    Warning (15610): No output dependent on input pin "addr_out[6]"
-    Warning (15610): No output dependent on input pin "addr_out[7]"
-    Warning (15610): No output dependent on input pin "data_out[0]"
-    Warning (15610): No output dependent on input pin "data_out[1]"
-    Warning (15610): No output dependent on input pin "data_out[2]"
-    Warning (15610): No output dependent on input pin "data_out[3]"
-    Warning (15610): No output dependent on input pin "data_out[4]"
-    Warning (15610): No output dependent on input pin "data_out[5]"
-    Warning (15610): No output dependent on input pin "data_out[6]"
-    Warning (15610): No output dependent on input pin "data_out[7]"
-    Warning (15610): No output dependent on input pin "valid_out_m"
-Info (21057): Implemented 105 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 55 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 46 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 699 megabytes
-    Info: Processing ended: Fri Mar 10 19:59:49 2017
+Info (21057): Implemented 173 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 142 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 700 megabytes
+    Info: Processing ended: Fri Mar 17 12:13:20 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
