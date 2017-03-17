@@ -49,16 +49,17 @@
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Too few port connections. Expected 10, found 4.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'RST'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
 # 
 # add wave *
@@ -67,22 +68,67 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1 ns
-run -all
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TPUINT_BYTE1_ADDR
+sim:/tb/tpu_instance/ready_out
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TX_SLOT
+sim:/tb/tpu_instance/RSTTPU
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/RX_SLOT
+sim:/tb/tpu_instance/TIMERINTMSK
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TPUINT_RF
-run -all
+sim:/tb/tpu_instance/INTFLAG
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TIME
-run -all
+sim:/tb/tpu_instance/TXSLOT_EN
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/clock_gen_instance/TXSLOT_EN
-step -current
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+run
 restart -f
 # Loading sv_std.std
 # Loading work.tb
@@ -90,45 +136,26 @@ restart -f
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Too few port connections. Expected 10, found 4.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'RST'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
-run -all
+run
+run
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/RSTTPU
-restart -f
-# Loading sv_std.std
-# Loading work.tb
-# Loading work.tpu
-# Loading work.rf
-# Loading work.timer
-# Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
-#         Region: /tb/tpu_instance/rf_instance
-run -all
-add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TIME
+sim:/tb/tpu_instance/rf_instance/TX_SLOT_ADDR
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/rf_instance/TIMERINTMSK
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/INTFLAG
+sim:/tb/tpu_instance/rf_instance/TXSLOT_EN
 restart -f
 # Loading sv_std.std
 # Loading work.tb
@@ -136,39 +163,20 @@ restart -f
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Too few port connections. Expected 10, found 4.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'RST'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(33): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
-run -all
-stop
-restart
-# Loading sv_std.std
-# Loading work.tb
-# Loading work.tpu
-# Loading work.rf
-# Loading work.timer
-# Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
-#         Region: /tb/tpu_instance/rf_instance
-run -all
-do tpu_run_msim_rtl_verilog.do 
+run
+do tpu_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -216,16 +224,16 @@ do tpu_run_msim_rtl_verilog.do
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
 # 
 # add wave *
@@ -234,17 +242,400 @@ do tpu_run_msim_rtl_verilog.do
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1 ns
-run 100
-run -all
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/INTFLAG
+sim:/tb/tpu_instance/ready_out
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TXSLOT_EN
+sim:/tb/tpu_instance/G_CLK_TX
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TX_SLOT
+sim:/tb/tpu_instance/G_CLK_RX
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/TIMER_INT_VALUE
-run -all
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+run
+run
+run
+# Paste insertion failed: do: (vish-4014) No objects found matching 'do'.
+# Paste insertion failed: tpu_run_msim_rtl_verilog.do: (vish-4014) No objects found matching 'tpu_run_msim_rtl_verilog.do'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/ready_out: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/ready_out'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/G_CLK_TX: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/G_CLK_TX'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/G_CLK_RX: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/G_CLK_RX'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TPUINT: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TPUINT'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/RSTTPU: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/RSTTPU'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TIMERINTMSK: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TIMERINTMSK'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/INTFLAG: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/INTFLAG'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TXSLOT_EN: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TXSLOT_EN'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/RXSLOT_EN: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/RXSLOT_EN'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TX_SLOT: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TX_SLOT'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/RX_SLOT: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/RX_SLOT'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TIMER_INT_VALUE: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TIMER_INT_VALUE'.
+# Paste insertion failed: add: (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -position: Unrecognized option: "-position" ignored.
+# Missing signal name or pattern.
+# Paste insertion failed: insertpoint: (vish-4014) No objects found matching 'insertpoint'.
+# Paste insertion failed:  sim:/tb/tpu_instance/TIME: (vish-4014) No objects found matching ' sim:/tb/tpu_instance/TIME'.
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+run
+run
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
 restart -f
 # Loading sv_std.std
 # Loading work.tb
@@ -252,24 +643,693 @@ restart -f
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
-run all
-# Invalid time value: all
-run -all
+run
+run
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/we_rf
+sim:/tb/tpu_instance/ready_out
 add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/ready_rf
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+restart -f
+run
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+zoom full
+# invalid command name "zoom"
+zoom modelsim.ini
+# invalid command name "zoom"
+# WARNING: No extended dataflow license exists
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+restart -f
+run
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+restart -f
+run
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+restart -f
+run
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+do tpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tpu
+# 
+# Top level modules:
+# 	tpu
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/rf.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rf
+# 
+# Top level modules:
+# 	rf
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/timer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/clock_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# 
+# vlog -sv -work work +incdir+/home/gustavof/pem/pem_shared/tpu {/home/gustavof/pem/pem_shared/tpu/tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ns
+
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/ready_out
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_TX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/G_CLK_RX
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RSTTPU
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMERINTMSK
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/INTFLAG
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RXSLOT_EN
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/RX_SLOT
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIMER_INT_VALUE
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/TIME
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+restart -f
+run
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.tpu
+# Loading work.rf
+# Loading work.timer
+# Loading work.clock_gen
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
+#         Region: /tb/tpu_instance
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
+#         Region: /tb/tpu_instance/rf_instance
 restart -f
 # Loading sv_std.std
 # Loading work.tb
@@ -277,38 +1337,16 @@ restart -f
 # Loading work.rf
 # Loading work.timer
 # Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
+# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Too few port connections. Expected 10, found 5.
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(6).
 #         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'ready_out'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_TX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'G_CLK_RX'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'TPUINT'.
+# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(34): [TFMPC] - Missing connection for port 'data_out'.
+# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(51): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(8).
 #         Region: /tb/tpu_instance/rf_instance
-run all
-# Invalid time value: all
-run -all
-add wave -position insertpoint  \
-sim:/tb/tpu_instance/rf_instance/RSTTPU
-restart -f
-# Loading sv_std.std
-# Loading work.tb
-# Loading work.tpu
-# Loading work.rf
-# Loading work.timer
-# Loading work.clock_gen
-# ** Warning: (vsim-3017) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Too few port connections. Expected 9, found 4.
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'valid'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/tpu.sv(5).
-#         Region: /tb/tpu_instance
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'ready_out'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_TX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'G_CLK_RX'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'TPUINT'.
-# ** Warning: (vsim-3722) /home/gustavof/pem/pem_shared/tpu/tb.sv(32): [TFMPC] - Missing connection for port 'data_out'.
-# ** Warning: (vsim-3015) /home/gustavof/pem/pem_shared/tpu/tpu.sv(49): [PCDPC] - Port size (1 or 1) does not match connection size (7) for port 'TIME'. The port definition is at: /home/gustavof/pem/pem_shared/tpu/rf.sv(7).
-#         Region: /tb/tpu_instance/rf_instance
-run -all
+run
+run

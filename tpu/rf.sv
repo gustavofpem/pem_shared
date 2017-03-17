@@ -27,7 +27,7 @@ parameter TPUINT_BYTE0_ADDR = 8'h24;
 
 logic [7:0] regfile[63:0];
 
-assign ready_rf = ((TIME == TX_SLOT || TIME == RX_SLOT) && ~RST) ? 'd0:'d1;
+assign ready_rf = ~RST;
 
 always_ff @(posedge SYS_CLK)
 begin
@@ -51,11 +51,34 @@ begin
 				TPUINT_BYTE0_ADDR:	regfile[TPUINT_BYTE0_ADDR] <= data_rf;
 			endcase
 		end
-		else
+		/*else
 		begin
 			regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
 			regfile[TPU_CONTROL_ADDR][0] <= 'd0;
-		end
+			case(addr_rf)
+				TPU_CONTROL_ADDR:
+				begin
+					ready_rf <= (TIME != TX_SLOT && TIME != RX_SLOT)
+				end
+				TX_SLOT_ADDR:
+				begin
+					ready_rf <= 
+				end
+				RX_SLOT_ADDR:
+				begin
+					
+				end
+				TPUINT_BYTE1_ADDR:
+				begin
+					
+				end
+				TPUINT_BYTE0_ADDR:
+				begin
+					
+				end
+			if (TIME != TX_SLOT && TIME != RX_SLOT && ~TXSLOT_EN && ~RXSLOT_EN)
+				ready_rf <= 'd1;
+		end*/
 	end
 end
 

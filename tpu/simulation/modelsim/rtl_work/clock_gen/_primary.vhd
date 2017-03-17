@@ -3,6 +3,7 @@ use verilog.vl_types.all;
 entity clock_gen is
     port(
         SYS_CLK         : in     vl_logic;
+        RST             : in     vl_logic;
         TIME            : in     vl_logic_vector(6 downto 0);
         TX_SLOT         : in     vl_logic_vector(7 downto 0);
         RX_SLOT         : in     vl_logic_vector(7 downto 0);

@@ -3,6 +3,7 @@ use verilog.vl_types.all;
 entity timer is
     port(
         SYS_CLK         : in     vl_logic;
+        RST             : in     vl_logic;
         RSTTPU          : in     vl_logic;
         TIMERINTMSK     : in     vl_logic;
         INTFLAG         : in     vl_logic;

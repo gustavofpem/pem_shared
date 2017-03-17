@@ -10,6 +10,7 @@ entity rf is
     );
     port(
         SYS_CLK         : in     vl_logic;
+        RST             : in     vl_logic;
         we_rf           : in     vl_logic;
         addr_rf         : in     vl_logic_vector(7 downto 0);
         data_rf         : in     vl_logic_vector(7 downto 0);
