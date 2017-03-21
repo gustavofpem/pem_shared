@@ -15,14 +15,14 @@ logic [15:0] TIMER_INT_VALUE;*/
 
 logic [7:0] addr;
 logic [7:0] data_in;
-logic [7:0] valid;
+logic we;
 	
 tpu tpu_instance(
 	.SYS_CLK(SYS_CLK),
 	.RST(RST),
 	.addr(addr),
 	.data_in(data_in),
-	.valid(valid)
+	.we(we)
 	/*.RSTTPU(RSTTPU),
 	.TIMERINTMSK(TIMERINTMSK),
 	.INTFLAG(INTFLAG),
@@ -39,7 +39,7 @@ begin
 	RST = 'd1;
 	addr = 'h21;
 	data_in = 'd0;
-	valid = 'd0;
+	we = 'd0;
 	
 	/*RSTTPU = 'd1;
 	TIMERINTMSK = 'd0;
@@ -55,16 +55,18 @@ begin
 	TX_SLOT = 'd60; RX_SLOT = 'd120; TIMER_INT_VALUE = 'd33000;
 	#30000000ns TXSLOT_EN = 'd0; RX_SLOT = 'd30;	*/
 	#5 RST = 'd0;
-	#10 data_in = 'd100; valid = 'd1;
-	#2 valid = 'd0;
-	#5 addr = 'h22; data_in = 'd200; valid = 'd1;
-	#2 valid = 'd0;
-	#5 addr = 'h20; data_in = 'h0F; valid = 'd1;
-	#2 valid = 'd0;
-	#5 addr = 'h23; data_in = 'd16; valid = 'd1;
-	#2 valid = 'd0;
-	#5 addr = 'h24; data_in = 'd01; valid = 'd1;
-	#2 valid = 'd0;
+	#10 data_in = 'd100; we = 'd1;
+	#2 we = 'd0;
+	#5 addr = 'h22; data_in = 'd50; we = 'd1;
+	#2 we = 'd0;
+	#5 addr = 'h20; data_in = 'h0F; we = 'd1;
+	#2 we = 'd0;
+	#5 addr = 'h23; data_in = 'd16; we = 'd1;
+	#2 we = 'd0;
+	#5 addr = 'h24; data_in = 'd01; we = 'd1;
+	#2 we = 'd0;
+	#5 addr = 'h20; data_in = 'h0E; we = 'd1;
+	#2 we = 'd0;
 	
 end
 

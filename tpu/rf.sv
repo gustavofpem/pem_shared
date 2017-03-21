@@ -27,13 +27,14 @@ parameter TPUINT_BYTE0_ADDR = 8'h24;
 
 logic [7:0] regfile[63:0];
 
-assign ready_rf = ~RST;
+//assign ready_rf = ~RST;
 
 always_ff @(posedge SYS_CLK)
 begin
 	if(RST)
 	begin
-		regfile[TPU_CONTROL_ADDR] <= 'd0;
+		regfile[TPU_CONTROL_ADDR][7:5] <= 'd0;
+		regfile[TPU_CONTROL_ADDR][3:0] <= 'd0;
 		regfile[TX_SLOT_ADDR] <= 'd0;
 		regfile[RX_SLOT_ADDR] <= 'd0;
 		regfile[TPUINT_BYTE1_ADDR] <= 'd0;
@@ -41,44 +42,45 @@ begin
 	end
 	else
 	begin
-		if(we_rf && ready_rf)
+		if(we_rf)
 		begin
-			case(addr_rf)
-				TPU_CONTROL_ADDR:	regfile[TPU_CONTROL_ADDR] <= data_rf;
-				TX_SLOT_ADDR:	regfile[TX_SLOT_ADDR] <= data_rf;
-				RX_SLOT_ADDR:	regfile[RX_SLOT_ADDR] <= data_rf;
-				TPUINT_BYTE1_ADDR:	regfile[TPUINT_BYTE1_ADDR] <= data_rf;
-				TPUINT_BYTE0_ADDR:	regfile[TPUINT_BYTE0_ADDR] <= data_rf;
-			endcase
-		end
-		/*else
-		begin
-			regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
-			regfile[TPU_CONTROL_ADDR][0] <= 'd0;
 			case(addr_rf)
 				TPU_CONTROL_ADDR:
 				begin
-					ready_rf <= (TIME != TX_SLOT && TIME != RX_SLOT)
+					regfile[TPU_CONTROL_ADDR][7:5] <= data_rf[7:5];
+					regfile[TPU_CONTROL_ADDR][3:0] <= data_rf[3:0];
 				end
 				TX_SLOT_ADDR:
 				begin
-					ready_rf <= 
+					regfile[TX_SLOT_ADDR] <= data_rf;
+					regfile[TPU_CONTROL_ADDR][0] <= 'd0;
+					//regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
 				end
 				RX_SLOT_ADDR:
 				begin
-					
+					regfile[RX_SLOT_ADDR] <= data_rf;
+					regfile[TPU_CONTROL_ADDR][0] <= 'd0;
+					//regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
 				end
 				TPUINT_BYTE1_ADDR:
 				begin
-					
+					regfile[TPUINT_BYTE1_ADDR] <= data_rf;
+					regfile[TPU_CONTROL_ADDR][0] <= 'd0;
+					//regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
 				end
 				TPUINT_BYTE0_ADDR:
 				begin
-					
+					regfile[TPUINT_BYTE0_ADDR] <= data_rf;
+					regfile[TPU_CONTROL_ADDR][0] <= 'd0;
+					//regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
 				end
-			if (TIME != TX_SLOT && TIME != RX_SLOT && ~TXSLOT_EN && ~RXSLOT_EN)
-				ready_rf <= 'd1;
-		end*/
+			endcase
+		end
+		else
+		begin
+			//regfile[TPU_CONTROL_ADDR][4] <= TPUINT_RF;
+			regfile[TPU_CONTROL_ADDR][0] <= 'd0;
+		end
 	end
 end
 
@@ -86,6 +88,7 @@ assign RSTTPU = regfile[TPU_CONTROL_ADDR][0];
 assign TXSLOT_EN = regfile[TPU_CONTROL_ADDR][1];
 assign RXSLOT_EN = regfile[TPU_CONTROL_ADDR][2];
 assign TIMERINTMSK = regfile[TPU_CONTROL_ADDR][3];
+assign regfile[TPU_CONTROL_ADDR][4] = ((we_rf && addr_rf == TPU_CONTROL_ADDR) && ~RST) ? (data_rf[4]):(TPUINT_RF & ~RST);
 assign INTFLAG = regfile[TPU_CONTROL_ADDR][4];
 assign TX_SLOT = regfile[TX_SLOT_ADDR];
 assign RX_SLOT = regfile[RX_SLOT_ADDR];

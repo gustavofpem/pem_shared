@@ -1,18 +1,16 @@
 do tpu_run_msim_rtl_verilog.do
 
-add wave -position insertpoint  \
-sim:/tb/tpu_instance/ready_out
-add wave -position insertpoint  \
+add wave -position insertpoint -color Orange  \
 sim:/tb/tpu_instance/G_CLK_TX
-add wave -position insertpoint  \
+add wave -position insertpoint -color Orchid \
 sim:/tb/tpu_instance/G_CLK_RX
-add wave -position insertpoint  \
-sim:/tb/tpu_instance/TPUINT
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/RSTTPU
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/TIMERINTMSK
-add wave -position insertpoint  \
+add wave -position insertpoint -color Blue \
+sim:/tb/tpu_instance/TPUINT
+add wave -position insertpoint -color Blue \
 sim:/tb/tpu_instance/INTFLAG
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/TXSLOT_EN
@@ -24,9 +22,11 @@ add wave -position insertpoint  \
 sim:/tb/tpu_instance/RX_SLOT
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/TIMER_INT_VALUE
-add wave -position insertpoint  \
+add wave -position insertpoint -color White \
 sim:/tb/tpu_instance/TIME
 add wave -position insertpoint  \
 sim:/tb/tpu_instance/timer_instance/TIMER_COUNTER
+add wave -position insertpoint  \
+sim:/tb/tpu_instance/data_out
 restart -f
 run

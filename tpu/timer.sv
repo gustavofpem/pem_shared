@@ -16,7 +16,7 @@ begin
 	if(RST)
 	begin
 		TIMER_COUNTER <= 'd0;
-		TPUINT <= 'd0;
+//		TPUINT <= 'd0;
 	end
 	else
 	begin
@@ -33,15 +33,17 @@ begin
 			end
 			else
 				TIMER_COUNTER <= TIMER_COUNTER + 1'd1;
-				
-			if(TIMERINTMSK && TIMER_COUNTER == TIMER_INT_VALUE)
-				TPUINT <= 'd1;
-			else
-				TPUINT <= TIMERINTMSK & INTFLAG;
 		end
 	end
 end
 
 assign TIME = TIMER_COUNTER[15:9];
+assign TPUINT = ((TIMERINTMSK && TIMER_COUNTER == TIMER_INT_VALUE) && ~RST) ? 'd1:((TIMERINTMSK & INTFLAG) & ~RST);
+
+
+//if(TIMERINTMSK && TIMER_COUNTER == TIMER_INT_VALUE)
+//				TPUINT <= 'd1;
+//			else
+//				TPUINT <= TIMERINTMSK & INTFLAG;
 
 endmodule
