@@ -1,0 +1,45 @@
+irun: 14.10-s009: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	irun	14.10-s009: Started on Dec 01, 2014 at 10:50:23 BRT
+irun
+	+gui
+	+access+rw
+	tb.sv
+file: tb.sv
+	module worklib.contador_rfwild:sv
+		errors: 0, warnings: 0
+	module worklib.contador_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		contador_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.contador_rfwild:sv <0x341f1cc1>
+			streams:   2, words:   401
+		worklib.contador_tb:sv <0x65ac98c4>
+			streams:   4, words:  2200
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        2       -
+		Vectored wires:      1       -
+		Always blocks:       1       1
+		Initial blocks:      2       2
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.contador_tb:sv
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/cadence/INCISIV141/tools/inca/files/ncsimrc
+ncsim> run 10u
+ncsim: *E,PILUNT: Invalid unit in time or delta cycle specification: u.
+ncsim> run 10n
+ncsim: *E,PILUNT: Invalid unit in time or delta cycle specification: n.
+ncsim> ^C
+ncsim> exit
+TOOL:	irun	14.10-s009: Exiting on Dec 01, 2014 at 11:10:15 BRT  (total: 00:19:52)

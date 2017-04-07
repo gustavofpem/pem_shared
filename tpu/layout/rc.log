@@ -1,0 +1,1768 @@
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+License 'RTL_Compiler_Ultra' (main version: 14.2, alternate version: 14.2) checkout failed.
+Checking out license 'Genus_Synthesis'... (0 seconds elapsed)
+Finished loading tool scripts (8 seconds elapsed)
+
+                                                 Cadence Encounter(R) RTL Compiler
+                                    Version RC14.28 - v14.20-s067_1 (64-bit), built Jun 22 2016
+
+
+Copyright notice: Copyright 1997-2015 Cadence Design Systems, Inc. All rights reserved worldwide. 
+
+WARNING: This version of RC is 289 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+===================================================================================================================================
+                                           Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  base_mode
+            design  disable_power_mode_factorization
+            design  dp_perform_rewriting_operations
+            design  lp_clock_gating_hierarchical
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  gint_has_connected_pg_pin
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+            libpin  q_pin_of_d_pin
+               net  hier_net
+               net  logic0_driven
+               net  logic1_driven
+      power_domain  library_domain_by_mode
+      power_domain  shutoff_signal
+      power_domain  shutoff_signal_polarity
+              root  auto_ungroup_min_effort
+              root  constant_prop_through_iso_cell
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  driver_for_unloaded_ports
+              root  enable_parallel_iopt
+              root  enc_in_place_opt
+              root  enc_opt_drv
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  hdl_use_params_in_cell_search
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  lp_clock_gating_hierarchical
+              root  lp_insert_clock_gating_incremental
+              root  lp_iopt_mvt_multipass_flow
+              root  lp_multi_vt_optimization_effort
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  power_optimization_effort
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+         subdesign  lp_clock_gating_hierarchical
+
+Send us feedback at rc_feedback@cadence.com.
+===================================================================================================================================
+
+rc:/> source      source synth/      config/synth.tcl 
+Sourcing './config/synth.tcl' (Fri Apr 07 19:32:18 -0300 2017)...
+invalid command name "set_attributes"
+rc:/> source config/synth.tcl 
+Sourcing './config/synth.tcl' (Fri Apr 07 19:32:51 -0300 2017)...
+  Setting attribute of root '/': 'hdl_search_path' = ./rtl
+  Setting attribute of root '/': 'information_level' = 9
+  Setting attribute of root '/': 'lib_search_path' = /opt/techlib/ibm013/bicmos8hp/synopsys  /opt/techlib/ibm013/bicmos8hp/gds2  /opt/techlib/ibm013/bicmos8hp/lef   /opt/techlib/ibm013/bicmos8hp/captable  /opt/techlib/ibm013/bicmos8hp/ict  /opt/techlib/ibm013/bicmos8hp/tch
+            Reading file '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib'
+    Loading library typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : (PnomV1p20T025_STD_CELL_8HP_12T.lib, block starting at: 31) Unknown Liberty attribute (library_features) encountered. Ignoring
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_B' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_B' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_C' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_C' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_D' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_D' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_E' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_E' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_F' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_F' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_B' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_C' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_D' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_E' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_F' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_H' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_I' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_J' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_K' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND3_B' is not defined in the library.
+
+  Message Summary for Library typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib:
+  *****************************************************************************
+  Could not find an attribute in the library. [LBR-436]: 433
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *****************************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.200000, 25.000000) in library 'PnomV1p20T025_STD_CELL_8HP_12T.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+  Setting attribute of root '/': 'library' = {typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib}
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_1x' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_1x_h' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_1x_v' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xh_h' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xv_v' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xn_v' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xs_v' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xw_h' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xe' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M1_M2_via_2xe_h' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_1x' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M3_via_2xe' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_1x' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M4_via_2xe' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_1x' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_MQ_via_2xe' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'MQ_LY_via_2xe' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xh' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xv' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xn' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xs' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xw' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'LY_AM_via_2xe' has no resistance value.
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'ADDF_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'ADDF_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'ADDF_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'ADDF_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'ADDF_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND2_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND3_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AND4_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO21_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO2222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO22_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO33_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO33_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO33_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO44_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO44_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AO44_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI21_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI2222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI2222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI2222_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI222_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI22_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI33_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI33_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI33_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI44_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI44_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'AOI44_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_N' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'BUFFER_O' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_O' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLKI_Q' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_O' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'CLK_Q' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'COMP2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'COMP2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'COMP2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'COMP2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'COMP2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DECAP_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY4_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY4_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY4_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY6_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY6_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY6_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DELAY6_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFR_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFSR_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFFS_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFF_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFF_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'DFF_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FGTIE' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL1' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL128' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL16' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL2' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL32' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL4' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL64' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'FILL8' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERTBAL_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_N' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'INVERT_O' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'LATSRLV_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'LATSRLV_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'LATSRLV_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21BAL_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21BAL_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21BAL_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21I_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21I_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21I_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21I_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21I_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX21_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX41_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX41_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'MUX41_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2BAL_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2BAL_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2BAL_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2BAL_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_L' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND2_M' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND3_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NAND4_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR4_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR4_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR4_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NOR4_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'NWSX' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA21_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA2222_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA2222_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA2222_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA2222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA2222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA222_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA222_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA222_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA222_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OA22_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI21_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI2222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI2222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI222_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI222_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OAI22_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR2_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR3_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'OR4_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFR_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFSR_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFFS_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFF_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFF_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SDFF_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SLATSRLV_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SLATSRLV_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'SLATSRLV_K' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'TIE0_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'TIE1_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XNOR3_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_A' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_I' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR2_J' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_B' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_C' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_D' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_E' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_F' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_H' has non-zero origin (200, 200).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'XOR3_I' has non-zero origin (200, 200).
+
+  According to lef_library, there are total 7 routing layers [ V(3) / H(4) ]
+
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M1' [line 92 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+        : Check the parameter in technology section.
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M2' [line 127 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M3' [line 160 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M4' [line 193 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'MQ' [line 221 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'LY' [line 246 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'AM' [line 268 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M1' [line 92 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M2' [line 127 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M3' [line 160 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M4' [line 193 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'MQ' [line 221 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'LY' [line 246 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'AM' [line 268 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M1' [line 92 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M2' [line 127 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M3' [line 160 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M4' [line 193 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'MQ' [line 221 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'LY' [line 246 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'AM' [line 268 in file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef]
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.16, 2) of 'WIDTH' for layers 'M1' and 'AM' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.4, 8) of 'PITCH' for layers 'M1' and 'AM' is too large.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.16, 5) of 'MINSPACING' for layers 'M1' and 'AM' is too large.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_B'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_C'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_C'.
+  Library has 330 usable logic and 48 usable sequential lib-cells.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'PnomV1p20T025_STD_CELL_8HP_12T.lib', Total cells: 382, Unusable cells: 2.
+	List of unusable cells: 'DECAP_C FGTIE .'
+        : For more information, refer to 'Cells Identified as Unusable' in the RC User Guide. The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'lef_library' = /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef /opt/techlib/ibm013/bicmos8hp/lef/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef
+
+  According to cap_table_file, there are total 7 routing layers [ V(3) / H(4) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.16, 2) of 'WIDTH' for layers 'M1' and 'M7' is too large.
+  Setting attribute of root '/': 'cap_table_file' = /opt/techlib/ibm013/bicmos8hp/captable/bicmos8hp_7AM_41_nm.CapTbl
+  Setting attribute of root '/': 'interconnect_mode' = ple
+  Setting attribute of root '/': 'tns_opto' = true
+            Reading Verilog file './rtl/tpu.sv'
+            Reading Verilog file './rtl/rf.sv'
+            Reading Verilog file './rtl/clock_gen.sv'
+            Reading Verilog file './rtl/timer.sv'
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'PnomV1p20T025_STD_CELL_8HP_12T.lib', Total cells: 382, Unusable cells: 2.
+	List of unusable cells: 'DECAP_C FGTIE .'
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'physical_cells', Total cells: 9, Unusable cells: 9.
+	List of unusable cells: 'FILL1 FILL128 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 NWSX .'
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'tpu' from file './rtl/tpu.sv'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'rf' from file './rtl/rf.sv'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'rf' with default parameters value.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'regfile' in module 'rf' in file './rtl/rf.sv' on line 28.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [3] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 36.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [4] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 37.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...]' [8] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 38.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...]' [8] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 39.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...]' [8] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...]' [8] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 56.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 62.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 68.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 74.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'regfile[...][...]' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/rf.sv' on line 82.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'TIME' is not used in module 'rf' in file './rtl/rf.sv' on line 8.
+        : The value of the input port is not used within the design.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=8 B=6 Z=1) at line 91 in the file './rtl/rf.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=8 B=6 Z=1) at line 91 in the file './rtl/rf.sv' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[0]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven net during elaboration.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[1]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[2]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[3]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[4]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[5]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[6]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[7]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[8]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[9]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[10]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[11]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[12]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[13]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[14]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[15]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[16]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[17]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[18]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[19]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[20]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[21]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[22]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[23]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[24]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[25]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[26]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[27]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[28]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[29]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[30]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[31]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[37]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[38]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[39]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[40]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[41]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[42]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[43]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[44]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[45]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[46]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[47]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[48]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[49]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[50]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[51]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[52]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[53]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[54]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[55]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[56]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[57]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[58]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[59]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[60]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[61]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[62]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'regfile[63]' in module 'rf' in file './rtl/rf.sv' on line 96, column 19.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'ready_rf' in module 'rf' in file './rtl/rf.sv' on line 9, column 23.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+Warning : Connected signal is wider than input port. [CDFG-464]
+        : Signal width (7) does not match width of port 'TIME' (1) of instance 'rf_instance' of module 'rf' in file './rtl/tpu.sv' on line 33.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'ready_rf' of instance 'rf_instance' of module 'rf' inside module 'tpu' in file './rtl/tpu.sv' on line 33.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'timer' from file './rtl/timer.sv'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'TIMER_COUNTER' [16] doesn't match the width of right hand side [32] in assignment in file './rtl/timer.sv' on line 18.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'TIMER_COUNTER' [16] doesn't match the width of right hand side [32] in assignment in file './rtl/timer.sv' on line 25.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'TIMER_COUNTER' [16] doesn't match the width of right hand side [32] in assignment in file './rtl/timer.sv' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'TPUINT' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/timer.sv' on line 41.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=16 B=16 Z=1) at line 41 in the file './rtl/timer.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=16 B=16 Z=1) at line 41 in the file './rtl/timer.sv' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/geq_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'GEQ_UNS_OP' (pin widths: A=16 B=16 Z=1) at line 30 in the file './rtl/timer.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'GEQ_UNS_OP' (pin widths: A=16 B=16 Z=1) at line 30 in the file './rtl/timer.sv' will be considered in the following order: {'/hdl_libraries/GB/components/geq_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/geq_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/geq_unsigned/implementations/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=1 Z=16) at line 35 in the file './rtl/timer.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=1 Z=16) at line 35 in the file './rtl/timer.sv' will be considered in the following order: {'/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'clock_gen' from file './rtl/clock_gen.sv'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'G_CLK_TX' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/clock_gen.sv' on line 13.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'G_CLK_RX' [1] doesn't match the width of right hand side [32] in assignment in file './rtl/clock_gen.sv' on line 14.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=7 B=8 Z=1) at line 13 in the file './rtl/clock_gen.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=7 B=8 Z=1) at line 13 in the file './rtl/clock_gen.sv' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=7 B=8 Z=1) at line 14 in the file './rtl/clock_gen.sv'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=7 B=8 Z=1) at line 14 in the file './rtl/clock_gen.sv' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'tpu'.
+        Computing net loads.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '16' of the SDC file './config/tpu.sdc': extra characters after close-quote.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      2 , failed      0 (runtime  0.00)
+ "current_design"          - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"               - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_gating_check"  - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_latency"       - successful      1 , failed      0 (runtime  0.00)
+ "set_input_transition"    - successful      2 , failed      0 (runtime  0.00)
+ "set_load"                - successful      4 , failed      0 (runtime  0.00)
+ "set_time_unit"           - successful      1 , failed      0 (runtime  0.00)
+Error   : One or more commands failed when these constraints were applied. [SDC-210] [read_sdc]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands. By default, the 'read_sdc' command will not stop if it encounters an error and if the '-stop_on_errors' option is not used.
+Failed on read_sdc
+rc:/> source config/synth.tcl 
+Sourcing './config/synth.tcl' (Fri Apr 07 19:34:26 -0300 2017)...
+  Setting attribute of root '/': 'hdl_search_path' = ./rtl
+  Setting attribute of root '/': 'information_level' = 9
+  Setting attribute of root '/': 'lib_search_path' = /opt/techlib/ibm013/bicmos8hp/synopsys  /opt/techlib/ibm013/bicmos8hp/gds2  /opt/techlib/ibm013/bicmos8hp/lef   /opt/techlib/ibm013/bicmos8hp/captable  /opt/techlib/ibm013/bicmos8hp/ict  /opt/techlib/ibm013/bicmos8hp/tch
+Freeing libraries in memory ({typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib})
+
+            Reading file '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib'
+    Loading library typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.200000, 25.000000) in library 'PnomV1p20T025_STD_CELL_8HP_12T.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_C'.
+  Library has 330 usable logic and 48 usable sequential lib-cells.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'PnomV1p20T025_STD_CELL_8HP_12T.lib', Total cells: 382, Unusable cells: 2.
+	List of unusable cells: 'DECAP_C FGTIE .'
+  Setting attribute of root '/': 'library' = {typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib}
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+        : Set the 'lef_library' attribute before doing 'elab'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value '{bicmos8hp_7AM_41_tech.lef  IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef}' cannot be set for attribute 'lef_library'.
+        : To see the usage/description for this attribute, type 'set_attribute -h <attr_name> *'.
+1
+rc:/> #name of toplevel module
+rc:/> set DESIGN   tpu;
+tpu
+rc:/> #name of Encounter file export folder
+rc:/> set LAYDIR   layout;
+layout
+rc:/> #synthesis log and reports root dir name
+rc:/> set SYNDIR   synth;
+synth
+rc:/> #report dir name
+rc:/> set RPTDIR   rpt;
+rpt
+rc:/> #RC log dir name
+rc:/> set LOGDIR   log;
+log
+rc:/> set HDL_FILES [list tpu.sv rf.sv clock_gen.sv timer.sv]
+tpu.sv rf.sv clock_gen.sv timer.sv
+rc:/> set_attribute hdl_search_path ./rtl
+  Setting attribute of root '/': 'hdl_search_path' = ./rtl
+rc:/> 
+rc:/> set_attribute information_level 9 
+  Setting attribute of root '/': 'information_level' = 9
+rc:/> 
+rc:/> set TECHLIBBASE    "/opt/techlib/ibm013/bicmos8hp"
+/opt/techlib/ibm013/bicmos8hp
+rc:/> set TECHLIB_S_PATH "$TECHLIBBASE/synopsys \
+==>                     $TECHLIBBASE/gds2 \
+==>                     $TECHLIBBASE/lef  \
+==>                     $TECHLIBBASE/captable \
+==>                     $TECHLIBBASE/ict \
+==>                     $TECHLIBBASE/tch"
+/opt/techlib/ibm013/bicmos8hp/synopsys  /opt/techlib/ibm013/bicmos8hp/gds2  /opt/techlib/ibm013/bicmos8hp/lef   /opt/techlib/ibm013/bicmos8hp/captable  /opt/techlib/ibm013/bicmos8hp/ict  /opt/techlib/ibm013/bicmos8hp/tch
+rc:/> set LEF_LIST "{bicmos8hp_7AM_41_tech.lef \
+==>           IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef}"
+{bicmos8hp_7AM_41_tech.lef  IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef}
+rc:/> set TIME_LIST "{typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib}" 
+{typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib}
+rc:/> set CAPTBL_LIST "bicmos8hp_7AM_41_nm.CapTbl"
+bicmos8hp_7AM_41_nm.CapTbl
+rc:/> set_attribute lib_search_path $TECHLIB_S_PATH
+  Setting attribute of root '/': 'lib_search_path' = /opt/techlib/ibm013/bicmos8hp/synopsys  /opt/techlib/ibm013/bicmos8hp/gds2  /opt/techlib/ibm013/bicmos8hp/lef   /opt/techlib/ibm013/bicmos8hp/captable  /opt/techlib/ibm013/bicmos8hp/ict  /opt/techlib/ibm013/bicmos8hp/tch
+rc:/> set_attribute library $TIME_LIST
+Freeing libraries in memory ({typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib})
+
+            Reading file '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib'
+    Loading library typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.200000, 25.000000) in library 'PnomV1p20T025_STD_CELL_8HP_12T.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP_C' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FGTIE' must have an output pin.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_B' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_B'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_C' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_C'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'SUM' in libcell 'ADDF_D' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_D'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CIN' and 'SUM' in libcell 'ADDF_E' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_E'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CIN' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'SUM' in libcell 'ADDF_F'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'COMP2_B'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B2' and 'Z' in libcell 'COMP2_C'.
+  Library has 330 usable logic and 48 usable sequential lib-cells.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'PnomV1p20T025_STD_CELL_8HP_12T.lib', Total cells: 382, Unusable cells: 2.
+	List of unusable cells: 'DECAP_C FGTIE .'
+  Setting attribute of root '/': 'library' = {typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib}
+rc:/> set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value '{bicmos8hp_7AM_41_tech.lef  IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef}' cannot be set for attribute 'lef_library'.
+1
+rc:/> set LEF_LIST "bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef"
+bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef
+rc:/> set LEF_LIST "bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef"_attribute lef_library $LEFLIST                                              
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> ls
+./                            flows/                        libraries/                    mmmc_designs_spec/          
+designs/                      hdl_libraries/                messages/                     object_types/               
+rc:/> l k ls bic      lsset_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST                                   set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> set_attribute lef_library $LEF_LIST                                   set_attribute lef_library $LEF_LIST
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'bicmos8hp_7AM_41_tech.lef IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef' cannot be set for attribute 'lef_library'.
+1
+rc:/> quit

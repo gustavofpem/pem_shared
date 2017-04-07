@@ -1,0 +1,19 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.21-s018_1, built Fri Feb 10 2017
+Options: 
+Date:    Sat Apr 01 11:21:59 2017
+Host:    pem-24 (x86_64 w/Linux 3.10.0-514.10.2.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz 8192KB) (32703384KB)
+OS:      CentOS Linux release 7.3.1611 (Core) 
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (7 seconds elapsed).
+
+genus@root:> a
+ambiguous command name "a": abot actionCmd activateWin addColorBarGroup addColorBarLayer addHdlViewerInPopupMenus add_analyzed_test_points add_assign_buffer_options add_clock_gates_obs add_clock_gates_test_connection add_core_wrapper_cell add_core_wrapper_mode_decode_block add_jtag_boundary_scan add_jtag_macro add_lbist add_lockup_element add_opcg add_opcg_hold_mux add_pmbist add_ptam add_scan_power_gating add_shadow_logic add_shift_register_test_points add_test_compression add_test_point add_tieoffs add_to_collection add_user_test_point add_wir_signal_bits after aleft alias all_clocks all_connected all_fanin all_fanout all_inputs all_instances all_outputs all_registers analyze_atpg_testability analyze_library_corners analyze_paths_by_basic_path_group analyze_paths_by_bottleneck analyze_paths_by_clock_domain analyze_paths_by_critical_false_path analyze_paths_by_drv analyze_paths_by_hier_port analyze_paths_by_hierarchy analyze_scan_compressibility append append_to_collection applet apply apropos aright array assemble_design atop attribute_exists auto_execok auto_import auto_load auto_load_index auto_mkindex auto_mkindex_old auto_qualify auto_reset
+Normal exit.

@@ -1,0 +1,2594 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.28-s033_1 (64bit) 03/21/2016 13:34 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.28-s005 NR160313-1959/14_28-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.28-s006_1 (64bit) 03/08/2016 00:08:23 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.28-s002 (64bit) 03/21/2016 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.28-s007_1 (64bit) Mar  7 2016 23:11:05 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.28-s006
+@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.28-s033_1" on Sat Apr  1 14:40:32 2017 (mem=94.1M) ---
+--- Running on pem-24 (x86_64 w/Linux 3.10.0-514.10.2.el7.x86_64) ---
+This version was compiled on Mon Mar 21 13:34:48 PDT 2016.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_pwr_net {{VDD} {VDD150}}
+<CMD> set init_gnd_net VSS
+<CMD> set conf_ioOri R0
+<CMD> set init_verilog ./config/chip.v
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell chip_rfwild
+<CMD> set init_mmmc_file ./config/MMMCSetup.tcl
+<CMD> set init_io_file ./config/chip.io
+<CMD> setImportMode -treatUndefinedCellAsBbox 0 -keepEmptyModule 1 -useLefDef56 1
+<CMD> init_design
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef ...
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/CMOS8HP_BASE_WB_IO_7LM.lef ...
+INFO (LEFPARS-3000): There are still data after the END LIBRARY See file /opt/techlib/ibm013/bicmos8hp/lef/CMOS8HP_BASE_WB_IO_7LM.lef at line 12286.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'VSS_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'VSS_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PT' in macro 'AINSD_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PT' in macro 'AINSD_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'AINSD_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'AINSD_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_K' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_K' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_H' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_H' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_E' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_E' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'FGTIE' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Sat Apr  1 14:45:30 2017
+viaInitial ends at Sat Apr  1 14:45:30 2017
+*** Begin netlist parsing (mem=333.9M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './config/chip.v'
+
+*** Memory Usage v#1 (Current mem = 334.930M, initial mem = 94.102M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=334.9M) ***
+Set top cell to chip_rfwild.
+Loading view definition file from ./config/MMMCSetup.tcl
+Reading nom_v1p25_T25c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_H' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_I' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_J' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_K' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND3_B' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PnomV1p20T025_STD_CELL_8HP_12T' 
+Reading nom_v1p25_T25c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_v150_t25/IBM_CMOS8HP_BASE_WB_IO_TYP_V120_V150_T25.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_TYP_V120_V150_T25' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.94min, fe_real=5.00min, fe_mem=369.4M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell chip_rfwild ...
+*** Netlist is unique.
+** info: there are 431 modules.
+** info: there are 22 stdCell insts.
+** info: there are 7 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 374.855M, initial mem = 94.102M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "./config/chip.io" ...
+Original cellDensity(chipDen)=0.700, nrRow=4.
+Number of standard cell rows = 4.
+**WARN: (ENCFP-3961):	The techSite 'IO' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+**WARN: (ENCFP-3961):	The techSite 'CornerSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+**WARN: (ENCFP-3961):	The techSite 'CoreSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+This command "init_design" required an extra checkout of license tpsxl.
+Additional license(s) checked out: 1 'Tempus_Timing_Signoff_XL' license(s)
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Importing multi-corner technology file(s) for preRoute extraction...
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmax.tch
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmin.tch
+Completed (cpu: 0:00:03.9 real: 0:00:03.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: v_test_nom_25c
+    RC-Corner Name        : nom_T25c
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch'
+ 
+ Analysis View: v_test_slow_125c
+    RC-Corner Name        : wc_T125c_cmax
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmax.tch'
+ 
+ Analysis View: v_test_fast_m40c
+    RC-Corner Name        : bc_Tm40c_cmin
+    RC-Corner Index       : 2
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmin.tch'
+Technology file '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch' associated with first view 'v_test_nom_25c' specified to command 'set_analysis_view' will be used as the primary corner for the multi-corner extraction. TQRC/IQRC extraction leverages a single primary corner extraction, then derives the other corners based on their technology files and operating conditions from the primary corner.
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading wc_v1p08_T125c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/slow_v108_t125/PwcV1p08T125_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PwcV1p08T125_STD_CELL_8HP_12T' 
+Reading wc_v1p08_T125c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/slow_v108_v140_t125/IBM_CMOS8HP_BASE_WB_IO_SLOW_V108_V140_T125.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_SLOW_V108_V140_T125' 
+Reading bc_v1p32_Tm40c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/fast_v132_tm40/PbcV1p32Tm40_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PbcV1p32Tm40_STD_CELL_8HP_12T' 
+Reading bc_v1p32_Tm40c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/fast_v132_v160_tm40/IBM_CMOS8HP_BASE_WB_IO_FAST_V132_V160_TM40.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_FAST_V132_V160_TM40' 
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:01, real=0:05:03, peak res=466.9M, current mem=554.9M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=481.4M, current mem=569.4M)
+Current (total cpu=0:01:01, real=0:05:03, peak res=481.4M, current mem=569.4M)
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:01, real=0:05:03, peak res=481.5M, current mem=569.4M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=481.8M, current mem=569.4M)
+Current (total cpu=0:01:01, real=0:05:03, peak res=481.8M, current mem=569.4M)
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:01, real=0:05:03, peak res=481.8M, current mem=569.4M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=482.2M, current mem=570.8M)
+Current (total cpu=0:01:01, real=0:05:03, peak res=482.2M, current mem=570.8M)
+Total number of combinational cells: 334
+Total number of sequential cells: 48
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFER_C BUFFER_E BUFFER_D BUFFER_H BUFFER_F BUFFER_J BUFFER_I BUFFER_L BUFFER_K BUFFER_M BUFFER_N BUFFER_O CLK_D CLK_C CLK_E CLK_H CLK_F CLK_I CLK_K CLK_M CLK_O CLK_Q
+Total number of usable buffers: 22
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKI_D CLKI_C CLKI_E CLKI_H CLKI_F CLKI_I CLKI_K CLKI_M CLKI_O CLKI_Q INVERT_A INVERT_B INVERT_C INVERT_D INVERT_E INVERT_H INVERT_F INVERT_I INVERT_J INVERT_K INVERT_L INVERT_M INVERT_N INVERT_O INVERTBAL_C INVERTBAL_E INVERTBAL_D INVERTBAL_H INVERTBAL_F INVERTBAL_J INVERTBAL_L
+Total number of usable inverters: 31
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DELAY4_C DELAY4_J DELAY4_F DELAY6_C DELAY6_F DELAY6_M DELAY6_J
+Total number of identified usable delay cells: 7
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCLF-200           10  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   ENCLF-201            3  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   ENCFP-3961           3  The techSite '%s' has no related cells i...
+*** Message Summary: 16 warning(s), 0 error(s)
+
+**ERROR: (ENCSYT-6000):	No Object Selected.
+<CMD> fit
+<CMD> fit
+<CMD> zoomIn
+<CMD> fit
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> setEdit -force_regular 1
+<CMD> fit
+**ERROR: (ENCSYT-6000):	No Object Selected.
+<CMD> fit
+<CMD> windowSelect 703.770 474.357 853.019 381.296
+<CMD> deselectAll
+<CMD> windowSelect 682.700 453.287 745.911 351.447
+<CMD> deselectAll
+**ERROR: (ENCSYT-6000):	No Object Selected.
+<CMD> windowSelect 730.108 500.695 796.831 386.564
+<CMD> deselectAll
+<CMD> fit
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> setIoFlowFlag 0
+<CMD> loadIoFile ./config/chip.io
+Reading IO assignment file "./config/chip.io" ...
+<CMD> floorPlan -fplanOrigin l -dieSizeByIoHeight max -site CORE -r 0.25 0.70 15.0 15.0 15.0 15.0
+Adjusting Core to Left to: 15.4000. Core to Bottom to: 15.4000.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> loadIoFile ./config/chip.io
+Reading IO assignment file "./config/chip.io" ...
+<CMD> fit
+<CMD> fit
+**ERROR: (ENCSYT-6000):	No Object Selected.
+<CMD> fit
+**INFO (INTERRUPT): One more Ctrl-C to exit Encounter ...
+<CMD> addIoFiller -cell FILLER10_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLER10_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLER10_VDD150_PM' on left side.
+Added 7 of filler cell 'FILLER10_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLER10_VDD150_PM' on right side.
+<CMD> addIoFiller -cell FILLER1_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLER1_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLER1_VDD150_PM' on left side.
+Added 3 of filler cell 'FILLER1_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLER1_VDD150_PM' on right side.
+<CMD> addIoFiller -cell FILLERDOT1_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on left side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on right side.
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> fit
+<CMD> redraw
+<CMD> clearGlobalNets
+**WARN: (ENCDB-2078):	Output pin PT of instance ain_vdd is connected to power net VDD.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+<CMD> set_dc_sources VDD -power -voltage 1.2
+*INFO: createPowerSupply VDD  -power -voltage 1.200
+<CMD> set_dc_sources VDD150 -power -voltage 1.5
+*INFO: createPowerSupply VDD150  -power -voltage 1.500
+<CMD> set_dc_sources VSS -ground -voltage 0.0
+*INFO: createPowerSupply VSS -ground -voltage 0.000
+<CMD> redraw
+<CMD> redraw
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -autoTie -inst *
+<CMD> globalNetConnect VDD150 -type pgpin -pin VDD150 -autoTie -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -autoTie -inst *
+<CMD> redraw
+<CMD> fit
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> redraw
+<CMD> setAddRingMode -stacked_via_top_layer AM -stacked_via_bottom_layer M1
+<CMD> addRing -nets {VDD VSS} -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -type core_rings -jog_distance 0.2 -threshold 0.2 -follow core -layer {bottom M1 top M1 right M2 left M2} -width 5 -spacing 3 -offset 0.2
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 578.8M) ***
+<CMD> redraw
+<CMD> fit
+<CMD> fit
+<CMD> set sprCreateIeStripeNets {}
+<CMD> set sprCreateIeStripeLayers {}
+<CMD> set sprCreateIeStripeWidth 3.0
+<CMD> set sprCreateIeStripeSpacing 5.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> addStripe -nets {VSS VDD} -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit MQ -max_same_layer_jog_length 4 -padcore_ring_bottom_layer_limit M1 -set_to_set_distance 30 -skip_via_on_pin Standardcell -stacked_via_top_layer M2 -padcore_ring_top_layer_limit M2 -spacing 33 -merge_stripes_value 1.0 -layer M2 -block_ring_bottom_layer_limit M1 -width 3 -stacked_via_bottom_layer M1
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_bottom_layer layerName"..
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+**WARN: (ENCPP-385):	The set width(VSS width+spacing(3+33) + VDD width(3)=39) specified by -width and -spacing is greater than or is equal to set distance specified by -set_to_set_distance 30. Tool will not check drc between stripes in different sets so that there may be potential drc issues.
+Stripe generation is complete; vias are now being generated.
+The power planner created 21 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 578.8M) ***
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> setSrouteMode -connect { padPin padRing corePin floatingStripe } -layerChangeRange { M1 AM } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget {padring ring stripe ringpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1 AM } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1 AM }
+<CMD> sroute -deleteExistingRoutes -nets {VDD VDD150 VSS}
+*** Begin SPECIAL ROUTE on Sat Apr  1 15:45:22 2017 ***
+SPECIAL ROUTE ran on directory: /home/gustavof/pem/pem_shared/layout/RFWild130_chip_danilo_novo
+SPECIAL ROUTE ran on machine: pem-24 (Linux 3.10.0-514.10.2.el7.x86_64 x86_64 938Mhz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VDD150 VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 7
+srouteFloatingStripeTarget set to "padring ring stripe ringpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteTopLayerLimit set to 7
+srouteTopTargetLayerLimit set to 7
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1234.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+	-1	4009	
+-1	200	280	
+4009	280	0	
+Read in 15 layers, 7 routing layers, 1 overlap layer
+Read in 399 macros, 16 used
+Read in 40 components
+  7 core components: 7 unplaced, 0 placed, 0 fixed
+  29 pad components: 0 unplaced, 10 placed, 19 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 6 logical pins
+Read in 6 nets
+Read in 3 special nets, 2 routed
+Read in 113 terminals
+3 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD150.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD150. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Type 'man ENCSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD150. Check net list, or change port class in LEF file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 2
+  Number of Core ports routed: 276
+  Number of Pad Ring connections: 240
+  Number of Followpin connections: 138
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1250.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 53 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sat Apr  1 15:45:22 2017
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sat Apr  1 15:45:22 2017
+
+sroute post-processing starts at Sat Apr  1 15:45:22 2017
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sat Apr  1 15:45:22 2017
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 16.92 megs
+sroute: Total Peak Memory used = 592.59 megs
+<CMD> fit
+<CMD> fit
+<CMD> redraw
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> setPlaceMode -fp false -placeIoPins true -timingDriven true -congEffort medium -reorderScan false
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.11546 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 130nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in Single mode...
+Calculate delays in Single mode...
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 640.2M, InitMEM = 640.2M)
+siFlow : Timing analysis mode is single, using late cdB files
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=758.32 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.2  real=0:00:00.0  mem= 758.3M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Starting "NanoPlace(TM) placement v#1 (mem=734.3M)" ...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:00.5 mem=734.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.7 mem=734.4M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=medium gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man ENCSP-9042' for more detail.
+**WARN: (ENCDB-2078):	Output pin PT of instance ain_vdd is connected to power net VDD.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+chip_rfwild
+chip_rfwild
+chip_rfwild
+#std cell=22 (0 fixed + 22 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=33 #net=31 #term=76 #term/net=2.45, #fixedIo=33, #floatIo=0, #fixedPin=6, #floatPin=0
+stdCell: 22 single + 0 double + 0 multi
+Total standard cell length = 0.0608 (mm), area = 0.0003 (mm^2)
+Average module density = 0.006.
+Density for the design = 0.006.
+       = stdcell_area 152 sites (292 um^2) / alloc_area 24841 sites (47694 um^2).
+Pin Density = 0.500.
+            = total # of pins 76 / total Instance area 152.
+=== lastAutoLevel = 7 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.582e+03 (2.22e+03 1.36e+03)
+              Est.  stn bbox = 3.711e+03 (2.29e+03 1.42e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  2: Total net bbox = 3.582e+03 (2.22e+03 1.36e+03)
+              Est.  stn bbox = 3.711e+03 (2.29e+03 1.42e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  3: Total net bbox = 1.456e+03 (5.60e+02 8.96e+02)
+              Est.  stn bbox = 1.537e+03 (5.94e+02 9.43e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  4: Total net bbox = 1.423e+03 (5.48e+02 8.75e+02)
+              Est.  stn bbox = 1.503e+03 (5.82e+02 9.21e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  5: Total net bbox = 1.428e+03 (5.62e+02 8.66e+02)
+              Est.  stn bbox = 1.510e+03 (5.97e+02 9.13e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  6: Total net bbox = 1.464e+03 (5.95e+02 8.68e+02)
+              Est.  stn bbox = 1.549e+03 (6.31e+02 9.18e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 761.4M
+Iteration  7: Total net bbox = 1.494e+03 (6.08e+02 8.86e+02)
+              Est.  stn bbox = 1.580e+03 (6.45e+02 9.35e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+Iteration  8: Total net bbox = 1.494e+03 (6.08e+02 8.86e+02)
+              Est.  stn bbox = 1.580e+03 (6.45e+02 9.35e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+Iteration  9: Total net bbox = 1.647e+03 (6.35e+02 1.01e+03)
+              Est.  stn bbox = 1.735e+03 (6.70e+02 1.07e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 765.4M
+Iteration 10: Total net bbox = 1.647e+03 (6.35e+02 1.01e+03)
+              Est.  stn bbox = 1.735e+03 (6.70e+02 1.07e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+Iteration 11: Total net bbox = 1.578e+03 (6.56e+02 9.23e+02)
+              Est.  stn bbox = 1.664e+03 (6.90e+02 9.74e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+Iteration 12: Total net bbox = 1.578e+03 (6.56e+02 9.23e+02)
+              Est.  stn bbox = 1.664e+03 (6.90e+02 9.74e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+Iteration 13: Total net bbox = 1.578e+03 (6.56e+02 9.23e+02)
+              Est.  stn bbox = 1.664e+03 (6.90e+02 9.74e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 765.4M
+*** cost = 1.578e+03 (6.56e+02 9.23e+02) (cpu for global=0:00:00.1) real=0:00:01.0***
+Info: 1 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:01.0
+**WARN: (ENCDB-2078):	Output pin PT of instance ain_vdd is connected to power net VDD.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+chip_rfwild
+chip_rfwild
+chip_rfwild
+*** Starting refinePlace (0:12:44 mem=712.7M) ***
+Total net length = 1.578e+03 (6.556e+02 9.225e+02) (ext = 0.000e+00)
+Move report: Detail placement moves 22 insts, mean move: 3.10 um, max move: 6.93 um
+	Max move on inst (tiehi_contador1): (186.43, 252.56) --> (189.60, 248.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 712.7MB
+Summary Report:
+Instances move: 22 (out of 22 movable)
+Mean displacement: 3.10 um
+Max displacement: 6.93 um (Instance: tiehi_contador1) (186.428, 252.561) -> (189.6, 248.8)
+	Length: 3 sites, height: 1 rows, site name: CORE, cell type: TIE1_D
+	Violation at original loc: Placement Blockage Violation
+Total net length = 1.577e+03 (6.540e+02 9.225e+02) (ext = 0.000e+00)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 712.7MB
+*** Finished refinePlace (0:12:44 mem=712.7M) ***
+Total net length = 1.623e+03 (6.565e+02 9.669e+02) (ext = 0.000e+00)
+*** End of Placement (cpu=0:00:01.1, real=0:00:02.0, mem=712.7M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 49 )
+Density distribution unevenness ratio = 84.041%
+*** Free Virtual Timing Model ...(mem=712.7M)
+Starting IO pin assignment...
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 2, mem = 712.7M **
+Active setup views: v_test_nom_25c v_test_slow_125c v_test_fast_m40c 
+Active hold views: v_test_nom_25c v_test_slow_125c v_test_fast_m40c 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCTS-403            1  Delay calculation was forced to extrapol...
+WARNING   ENCDB-2078           2  Output pin %s of instance %s is connecte...
+WARNING   ENCDC-1629           1  The default delay limit was set to %d. T...
+WARNING   ENCSP-9042           1  Scan chains were not defined, -ignoreSca...
+*** Message Summary: 5 warning(s), 0 error(s)
+
+<CMD> setDrawView place
+<CMD> fit
+<CMD> windowSelect 195.366 515.188 212.766 446.831
+<CMD> deselectAll
+<CMD> windowSelect 213.180 460.917 197.438 448.074
+<CMD> zoomIn
+<CMD> windowSelect 210.581 459.261 190.568 444.420
+<CMD> fit
+<CMD> windowSelect 158.525 564.402 254.090 273.313
+<CMD> deselectAll
+<CMD> selectInst tielo_clk
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isSelectable 1
+<CMD> setLayerPreference cellBlkgObj -isSelectable 1
+<CMD> setLayerPreference layoutObj -isSelectable 1
+<CMD> setLayerPreference pinObj -isSelectable 0
+<CMD> setLayerPreference cellBlkgObj -isSelectable 0
+<CMD> setLayerPreference layoutObj -isSelectable 0
+<CMD> deselectAll
+<CMD> selectInst tiehi_clk
+<CMD> deselectAll
+<CMD> selectInst tielo_contador3
+<CMD> deselectAll
+<CMD> selectInst {contador1/contador_reg[3]}
+<CMD> deselectAll
+<CMD> selectInst {contador1/contador_reg[3]}
+<CMD> deselectAll
+<CMD> selectInst {contador1/contador_reg[3]}
+<CMD> deselectAll
+<CMD> selectInst {contador1/contador_reg[3]}
+<CMD> deselectAll
+<CMD> fit
+<CMD> specifyClockTree -file ./config/Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file './config/Clock.ctstch' ...
+
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View v_test_nom_25c :
+Est. Cap                : 0.168668(V=0.155534 H=0.181802) (ff/um) [0.000168668]
+Est. Res                : 0.290455(V=0.290455 H=0.290455)(ohm/um) [0.000290455]
+Est. Via Res            : 0.514286(ohm) [1.05429]
+Est. Via Cap            : 0.183125(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.137(ff/um) res=0.518(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.186(ff/um) res=0.29(ohm/um) viaRes=0.54(ohm) viaCap=0.193293(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.182(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.199701(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.183125(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.0992(ohm/um) viaRes=0.142857(ohm) viaCap=0.339215(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.014(ohm/um) viaRes=0.255(ohm) viaCap=2.36486(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00359(ohm/um) viaRes=0.19(ohm) viaCap=2.58854(ff)
+
+RC Information for View v_test_slow_125c :
+Est. Cap                : 0.170655(V=0.160171 H=0.181139) (ff/um) [0.000170655]
+Est. Res                : 0.377591(V=0.377591 H=0.377591)(ohm/um) [0.000377591]
+Est. Via Res            : 4.56(ohm) [9.348]
+Est. Via Cap            : 0.185282(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.138(ff/um) res=0.673(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.378(ohm/um) viaRes=4.788(ohm) viaCap=0.192917(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.19748(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.16(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.185282(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.153(ff/um) res=0.129(ohm/um) viaRes=2.28(ohm) viaCap=0.339651(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.0186(ohm/um) viaRes=2.235(ohm) viaCap=2.33731(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00495(ohm/um) viaRes=2.235(ohm) viaCap=2.58293(ff)
+
+RC Information for View v_test_fast_m40c :
+Est. Cap                : 0.168742(V=0.156369 H=0.181116) (ff/um) [0.000168742]
+Est. Res                : 0.233816(V=0.233816 H=0.233816)(ohm/um) [0.000233816]
+Est. Via Res            : 0.0897714(ohm) [0.184031]
+Est. Via Cap            : 0.183206(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.144(ff/um) res=0.417(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.234(ohm/um) viaRes=0.09426(ohm) viaCap=0.195528(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.197474(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.183206(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.149(ff/um) res=0.0799(ohm/um) viaRes=0.0448857(ohm) viaCap=0.33127(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.011(ohm/um) viaRes=0.06815(ohm) viaCap=2.32643(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.202(ff/um) res=0.0027(ohm/um) viaRes=0.06815(ohm) viaCap=2.60198(ff)
+
+RouteType               : specialRoute
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View v_test_nom_25c :
+Est. Cap                : 0.168668(V=0.155534 H=0.181802) (ff/um) [0.000168668]
+Est. Res                : 0.290455(V=0.290455 H=0.290455)(ohm/um) [0.000290455]
+Est. Via Res            : 0.514286(ohm) [1.05429]
+Est. Via Cap            : 0.183125(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.137(ff/um) res=0.518(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.186(ff/um) res=0.29(ohm/um) viaRes=0.54(ohm) viaCap=0.193293(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.182(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.199701(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.183125(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.0992(ohm/um) viaRes=0.142857(ohm) viaCap=0.339215(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.014(ohm/um) viaRes=0.255(ohm) viaCap=2.36486(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00359(ohm/um) viaRes=0.19(ohm) viaCap=2.58854(ff)
+
+RC Information for View v_test_slow_125c :
+Est. Cap                : 0.170655(V=0.160171 H=0.181139) (ff/um) [0.000170655]
+Est. Res                : 0.377591(V=0.377591 H=0.377591)(ohm/um) [0.000377591]
+Est. Via Res            : 4.56(ohm) [9.348]
+Est. Via Cap            : 0.185282(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.138(ff/um) res=0.673(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.378(ohm/um) viaRes=4.788(ohm) viaCap=0.192917(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.19748(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.16(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.185282(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.153(ff/um) res=0.129(ohm/um) viaRes=2.28(ohm) viaCap=0.339651(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.0186(ohm/um) viaRes=2.235(ohm) viaCap=2.33731(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00495(ohm/um) viaRes=2.235(ohm) viaCap=2.58293(ff)
+
+RC Information for View v_test_fast_m40c :
+Est. Cap                : 0.168742(V=0.156369 H=0.181116) (ff/um) [0.000168742]
+Est. Res                : 0.233816(V=0.233816 H=0.233816)(ohm/um) [0.000233816]
+Est. Via Res            : 0.0897714(ohm) [0.184031]
+Est. Via Cap            : 0.183206(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.144(ff/um) res=0.417(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.234(ohm/um) viaRes=0.09426(ohm) viaCap=0.195528(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.197474(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.183206(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.149(ff/um) res=0.0799(ohm/um) viaRes=0.0448857(ohm) viaCap=0.33127(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.011(ohm/um) viaRes=0.06815(ohm) viaCap=2.32643(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.202(ff/um) res=0.0027(ohm/um) viaRes=0.06815(ohm) viaCap=2.60198(ff)
+
+RouteType               : regularRoute
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View v_test_nom_25c :
+Est. Cap                : 0.168668(V=0.155534 H=0.181802) (ff/um) [0.000168668]
+Est. Res                : 0.290455(V=0.290455 H=0.290455)(ohm/um) [0.000290455]
+Est. Via Res            : 0.514286(ohm) [1.05429]
+Est. Via Cap            : 0.183125(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.137(ff/um) res=0.518(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.186(ff/um) res=0.29(ohm/um) viaRes=0.54(ohm) viaCap=0.193293(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.182(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.199701(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.183125(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.0992(ohm/um) viaRes=0.142857(ohm) viaCap=0.339215(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.014(ohm/um) viaRes=0.255(ohm) viaCap=2.36486(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00359(ohm/um) viaRes=0.19(ohm) viaCap=2.58854(ff)
+
+RC Information for View v_test_slow_125c :
+Est. Cap                : 0.170655(V=0.160171 H=0.181139) (ff/um) [0.000170655]
+Est. Res                : 0.377591(V=0.377591 H=0.377591)(ohm/um) [0.000377591]
+Est. Via Res            : 4.56(ohm) [9.348]
+Est. Via Cap            : 0.185282(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.138(ff/um) res=0.673(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.378(ohm/um) viaRes=4.788(ohm) viaCap=0.192917(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.19748(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.16(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.185282(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.153(ff/um) res=0.129(ohm/um) viaRes=2.28(ohm) viaCap=0.339651(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.0186(ohm/um) viaRes=2.235(ohm) viaCap=2.33731(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00495(ohm/um) viaRes=2.235(ohm) viaCap=2.58293(ff)
+
+RC Information for View v_test_fast_m40c :
+Est. Cap                : 0.168742(V=0.156369 H=0.181116) (ff/um) [0.000168742]
+Est. Res                : 0.233816(V=0.233816 H=0.233816)(ohm/um) [0.000233816]
+Est. Via Res            : 0.0897714(ohm) [0.184031]
+Est. Via Cap            : 0.183206(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.144(ff/um) res=0.417(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.234(ohm/um) viaRes=0.09426(ohm) viaCap=0.195528(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.197474(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.183206(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.149(ff/um) res=0.0799(ohm/um) viaRes=0.0448857(ohm) viaCap=0.33127(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.011(ohm/um) viaRes=0.06815(ohm) viaCap=2.32643(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.202(ff/um) res=0.0027(ohm/um) viaRes=0.06815(ohm) viaCap=2.60198(ff)
+
+Switching off Advanced RC Correlation modes in AAE mode.
+Active Analysis Views for CTS are,
+#1 v_test_nom_25c
+#2 v_test_slow_125c
+#3 v_test_fast_m40c
+Default Analysis Views is v_test_nom_25c
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        specialRoute
+# LeafRouteType    regularRoute
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=722.8M) ***
+<CMD> clockDesign -specFile ./config/Clock.ctstch -outDir ./layout/rpt/clock_report -fixedInstBeforeCTS
+-engine auto                            # enums={ck ccopt auto ccopt_from_edi_spec}, default=auto
+**WARN: (ENCCK-9000):	Option -outDir is partially supported when setCTSMode -engine is not ck.
+**ERROR: (ENCCK-9000):	Option -fixedInstBeforeCTS is not supported when setCTSMode -engine is not ck, please use changeClockStatus command before clockDesign.
+
+  clockDesign
+    [-specFile {filename1 filename2 ...}]
+    [-genSpecOnly filename]
+    [-outDir dirname]
+    [-clk clockname]
+    [-macromodel filename]
+    [-check]
+    [-fixedInstBeforeCTS | -unfixedInstBeforeCTS]
+    [-noDeleteClockTree]
+    [-postCTSsdcFile filename]
+    [-incrPostCTSsdcFile filename]
+    [-pulsedLatch]
+    [-honorSDCDontTouch]
+    [-preserveAssertion]
+    [-skipTimeDesign]
+    [-noSkipTimeDesign]
+  
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     ENCCK-9000           2  %s                                       
+*** Message Summary: 0 warning(s), 2 error(s)
+
+<CMD> fit
+<CMD> specifyClockTree -file ./config/Clock.ctstch
+Redoing specifyClockTree ...
+Checking spec file integrity...
+
+Reading clock tree spec file './config/Clock.ctstch' ...
+
+RouteType               : specialRoute
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View v_test_nom_25c :
+Est. Cap                : 0.168668(V=0.155534 H=0.181802) (ff/um) [0.000168668]
+Est. Res                : 0.290455(V=0.290455 H=0.290455)(ohm/um) [0.000290455]
+Est. Via Res            : 0.514286(ohm) [1.05429]
+Est. Via Cap            : 0.183125(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.137(ff/um) res=0.518(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.186(ff/um) res=0.29(ohm/um) viaRes=0.54(ohm) viaCap=0.193293(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.182(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.199701(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.183125(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.0992(ohm/um) viaRes=0.142857(ohm) viaCap=0.339215(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.014(ohm/um) viaRes=0.255(ohm) viaCap=2.36486(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00359(ohm/um) viaRes=0.19(ohm) viaCap=2.58854(ff)
+
+RC Information for View v_test_slow_125c :
+Est. Cap                : 0.170655(V=0.160171 H=0.181139) (ff/um) [0.000170655]
+Est. Res                : 0.377591(V=0.377591 H=0.377591)(ohm/um) [0.000377591]
+Est. Via Res            : 4.56(ohm) [9.348]
+Est. Via Cap            : 0.185282(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.138(ff/um) res=0.673(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.378(ohm/um) viaRes=4.788(ohm) viaCap=0.192917(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.19748(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.16(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.185282(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.153(ff/um) res=0.129(ohm/um) viaRes=2.28(ohm) viaCap=0.339651(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.0186(ohm/um) viaRes=2.235(ohm) viaCap=2.33731(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00495(ohm/um) viaRes=2.235(ohm) viaCap=2.58293(ff)
+
+RC Information for View v_test_fast_m40c :
+Est. Cap                : 0.168742(V=0.156369 H=0.181116) (ff/um) [0.000168742]
+Est. Res                : 0.233816(V=0.233816 H=0.233816)(ohm/um) [0.000233816]
+Est. Via Res            : 0.0897714(ohm) [0.184031]
+Est. Via Cap            : 0.183206(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.144(ff/um) res=0.417(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.234(ohm/um) viaRes=0.09426(ohm) viaCap=0.195528(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.197474(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.183206(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.149(ff/um) res=0.0799(ohm/um) viaRes=0.0448857(ohm) viaCap=0.33127(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.011(ohm/um) viaRes=0.06815(ohm) viaCap=2.32643(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.202(ff/um) res=0.0027(ohm/um) viaRes=0.06815(ohm) viaCap=2.60198(ff)
+
+**WARN: (ENCCK-3189):	RouteTypeName specialRoute has been defined more than once in the clock tree specification file. Remove one of the definitions as it could lead to issues later in the flow.
+RouteType               : regularRoute
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+RC Information for View v_test_nom_25c :
+Est. Cap                : 0.168668(V=0.155534 H=0.181802) (ff/um) [0.000168668]
+Est. Res                : 0.290455(V=0.290455 H=0.290455)(ohm/um) [0.000290455]
+Est. Via Res            : 0.514286(ohm) [1.05429]
+Est. Via Cap            : 0.183125(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.137(ff/um) res=0.518(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.186(ff/um) res=0.29(ohm/um) viaRes=0.54(ohm) viaCap=0.193293(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.182(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.199701(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.29(ohm/um) viaRes=0.514286(ohm) viaCap=0.183125(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.0992(ohm/um) viaRes=0.142857(ohm) viaCap=0.339215(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.014(ohm/um) viaRes=0.255(ohm) viaCap=2.36486(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00359(ohm/um) viaRes=0.19(ohm) viaCap=2.58854(ff)
+
+RC Information for View v_test_slow_125c :
+Est. Cap                : 0.170655(V=0.160171 H=0.181139) (ff/um) [0.000170655]
+Est. Res                : 0.377591(V=0.377591 H=0.377591)(ohm/um) [0.000377591]
+Est. Via Res            : 4.56(ohm) [9.348]
+Est. Via Cap            : 0.185282(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.138(ff/um) res=0.673(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.378(ohm/um) viaRes=4.788(ohm) viaCap=0.192917(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.19748(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.16(ff/um) res=0.378(ohm/um) viaRes=4.56(ohm) viaCap=0.185282(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.153(ff/um) res=0.129(ohm/um) viaRes=2.28(ohm) viaCap=0.339651(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.0186(ohm/um) viaRes=2.235(ohm) viaCap=2.33731(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.201(ff/um) res=0.00495(ohm/um) viaRes=2.235(ohm) viaCap=2.58293(ff)
+
+RC Information for View v_test_fast_m40c :
+Est. Cap                : 0.168742(V=0.156369 H=0.181116) (ff/um) [0.000168742]
+Est. Res                : 0.233816(V=0.233816 H=0.233816)(ohm/um) [0.000233816]
+Est. Via Res            : 0.0897714(ohm) [0.184031]
+Est. Via Cap            : 0.183206(ff)
+M1(H) w=0.16(um) s=0.16(um) p=0.4(um) es=0.64(um) cap=0.144(ff/um) res=0.417(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.183(ff/um) res=0.234(ohm/um) viaRes=0.09426(ohm) viaCap=0.195528(ff)
+M3(H) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.181(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.197474(ff)
+M4(V) w=0.2(um) s=0.2(um) p=0.4(um) es=0.6(um) cap=0.156(ff/um) res=0.234(ohm/um) viaRes=0.0897714(ohm) viaCap=0.183206(ff)
+M5(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.149(ff/um) res=0.0799(ohm/um) viaRes=0.0448857(ohm) viaCap=0.33127(ff)
+M6(V) w=1.52(um) s=1.52(um) p=4.4(um) es=7.28(um) cap=0.179(ff/um) res=0.011(ohm/um) viaRes=0.06815(ohm) viaCap=2.32643(ff)
+M7(H) w=2(um) s=5(um) p=8(um) es=14(um) cap=0.202(ff/um) res=0.0027(ohm/um) viaRes=0.06815(ohm) viaCap=2.60198(ff)
+
+**WARN: (ENCCK-3189):	RouteTypeName regularRoute has been defined more than once in the clock tree specification file. Remove one of the definitions as it could lead to issues later in the flow.
+**WARN: (ENCCK-661):	Clock clk has multiple definitions in the clock tree specification file.
+Type 'man ENCCK-661' for more detail.
+Switching off Advanced RC Correlation modes in AAE mode.
+Active Analysis Views for CTS are,
+#1 v_test_nom_25c
+#2 v_test_slow_125c
+#3 v_test_fast_m40c
+Default Analysis Views is v_test_nom_25c
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        specialRoute
+# LeafRouteType    regularRoute
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=722.8M) ***
+<CMD> clockDesign -specFile ./config/Clock.ctstch -outDir ./layout/rpt/clock_report -fixedInstBeforeCTS
+-engine auto                            # enums={ck ccopt auto ccopt_from_edi_spec}, default=auto
+**WARN: (ENCCK-9000):	Option -outDir is partially supported when setCTSMode -engine is not ck.
+**ERROR: (ENCCK-9000):	Option -fixedInstBeforeCTS is not supported when setCTSMode -engine is not ck, please use changeClockStatus command before clockDesign.
+
+  clockDesign
+    [-specFile {filename1 filename2 ...}]
+    [-genSpecOnly filename]
+    [-outDir dirname]
+    [-clk clockname]
+    [-macromodel filename]
+    [-check]
+    [-fixedInstBeforeCTS | -unfixedInstBeforeCTS]
+    [-noDeleteClockTree]
+    [-postCTSsdcFile filename]
+    [-incrPostCTSsdcFile filename]
+    [-pulsedLatch]
+    [-honorSDCDontTouch]
+    [-preserveAssertion]
+    [-skipTimeDesign]
+    [-noSkipTimeDesign]
+  
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     ENCCK-9000           2  %s                                       
+*** Message Summary: 0 warning(s), 2 error(s)
+
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> fit
+<CMD> redraw
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default -routeTopRoutingLayer default -routeBottomRoutingLayer default -drouteEndIteration default -routeWithTimingDriven false -routeWithSiDriven true -routeInsertAntennaDiode false -routeAntennaCellName FGTIE
+<CMD> globalDetailRoute
+
+globalDetailRoute
+
+#setNanoRouteMode -routeAntennaCellName "FGTIE"
+#setNanoRouteMode -routeInsertAntennaDiode false
+#setNanoRouteMode -routeWithSiDriven true
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Sat Apr  1 16:36:36 2017
+#
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW VSS_VDD150_PM_A does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW AINSD_VDD150_PM_A does not have antenna diff area.
+#WARNING (NRDB-728) PIN PT in CELL_VIEW AINSD_VDD150_PM_A does not have antenna diff area.
+#WARNING (NRDB-733) PIN clk in CELL_VIEW chip_rfwild,init does not have physical port.
+#WARNING (NRDB-733) PIN contador[0] in CELL_VIEW chip_rfwild,init does not have physical port.
+#WARNING (NRDB-733) PIN contador[1] in CELL_VIEW chip_rfwild,init does not have physical port.
+#WARNING (NRDB-733) PIN contador[2] in CELL_VIEW chip_rfwild,init does not have physical port.
+#WARNING (NRDB-733) PIN contador[3] in CELL_VIEW chip_rfwild,init does not have physical port.
+#WARNING (NRDB-733) PIN reset in CELL_VIEW chip_rfwild,init does not have physical port.
+#NanoRoute Version v14.28-s005 NR160313-1959/14_28-UB
+#Bottom routing layer is M1, bottom routing layer for shielding is M1, bottom shield layer is M1
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.320.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [0.000 - 1.320] has 36 nets.
+#Voltage range [1.080 - 1.320] has 2 nets.
+# M1           H   Track-Pitch = 0.400    Line-2-Via Pitch = 0.320
+# M2           V   Track-Pitch = 0.400    Line-2-Via Pitch = 0.400
+# M3           H   Track-Pitch = 0.400    Line-2-Via Pitch = 0.400
+# M4           V   Track-Pitch = 0.400    Line-2-Via Pitch = 0.400
+# MQ           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# LY           V   Track-Pitch = 4.400    Line-2-Via Pitch = 3.900
+# AM           H   Track-Pitch = 8.000    Line-2-Via Pitch = 7.620
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.400.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 718.09 (MB), peak = 724.25 (MB)
+#Merging special wires...
+#26 (66.67%) nets are without wires.
+#13 nets are fixed|skipped|trivial (not extracted).
+#Total number of nets = 39.
+#Using S.M.A.R.T. routing technology.
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Sat Apr  1 16:36:36 2017
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Sat Apr  1 16:36:36 2017
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         437        1330       13924    73.28%
+#  Metal 2        V         341        1426       13924    73.34%
+#  Metal 3        H         464        1303       13924    73.28%
+#  Metal 4        V         463        1304       13924    73.28%
+#  Metal 5        H         231         652       13924    73.28%
+#  Metal 6        V          31          86       13924    73.71%
+#  Metal 7        H          24          64       13924    81.04%
+#  --------------------------------------------------------------
+#  Total                   1993      74.78%  97468    74.46%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 718.58 (MB), peak = 724.25 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 719.70 (MB), peak = 724.25 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 719.79 (MB), peak = 724.25 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 13 (skipped).
+#Total number of routable nets = 26.
+#Total number of nets in the design = 39.
+#
+#26 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              26  
+#-----------------------------
+#        Total              26  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              26  
+#-----------------------------
+#        Total              26  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 1530 um.
+#Total half perimeter of net bounding box = 1792 um.
+#Total wire length on LAYER M1 = 444 um.
+#Total wire length on LAYER M2 = 918 um.
+#Total wire length on LAYER M3 = 168 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER MQ = 0 um.
+#Total wire length on LAYER LY = 0 um.
+#Total wire length on LAYER AM = 0 um.
+#Total number of vias = 97
+#Up-Via Summary (total 97):
+#           
+#-----------------------
+#  Metal 1           70
+#  Metal 2           27
+#-----------------------
+#                    97 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 720.11 (MB), peak = 724.25 (MB)
+#
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Sat Apr  1 16:36:36 2017
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 720.12 (MB), peak = 724.25 (MB)
+#Start Track Assignment.
+#Done with 24 horizontal wires in 1 hboxes and 40 vertical wires in 1 hboxes.
+#Done with 2 horizontal wires in 1 hboxes and 7 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total wire length = 1543 um.
+#Total half perimeter of net bounding box = 1792 um.
+#Total wire length on LAYER M1 = 450 um.
+#Total wire length on LAYER M2 = 923 um.
+#Total wire length on LAYER M3 = 171 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER MQ = 0 um.
+#Total wire length on LAYER LY = 0 um.
+#Total wire length on LAYER AM = 0 um.
+#Total number of vias = 97
+#Up-Via Summary (total 97):
+#           
+#-----------------------
+#  Metal 1           70
+#  Metal 2           27
+#-----------------------
+#                    97 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 685.95 (MB), peak = 724.25 (MB)
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 3.24 (MB)
+#Total memory = 685.95 (MB)
+#Peak memory = 724.25 (MB)
+#Using S.M.A.R.T. routing technology.
+#routeSiEffort set to high
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 710.47 (MB), peak = 724.25 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 711.47 (MB), peak = 724.25 (MB)
+#Complete Detail Routing.
+#Total wire length = 1584 um.
+#Total half perimeter of net bounding box = 1792 um.
+#Total wire length on LAYER M1 = 518 um.
+#Total wire length on LAYER M2 = 942 um.
+#Total wire length on LAYER M3 = 125 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER MQ = 0 um.
+#Total wire length on LAYER LY = 0 um.
+#Total wire length on LAYER AM = 0 um.
+#Total number of vias = 91
+#Up-Via Summary (total 91):
+#           
+#-----------------------
+#  Metal 1           73
+#  Metal 2           18
+#-----------------------
+#                    91 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 25.53 (MB)
+#Total memory = 711.48 (MB)
+#Peak memory = 724.25 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 692.48 (MB), peak = 724.25 (MB)
+#
+#Total wire length = 1584 um.
+#Total half perimeter of net bounding box = 1792 um.
+#Total wire length on LAYER M1 = 518 um.
+#Total wire length on LAYER M2 = 942 um.
+#Total wire length on LAYER M3 = 125 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER MQ = 0 um.
+#Total wire length on LAYER LY = 0 um.
+#Total wire length on LAYER AM = 0 um.
+#Total number of vias = 91
+#Up-Via Summary (total 91):
+#           
+#-----------------------
+#  Metal 1           73
+#  Metal 2           18
+#-----------------------
+#                    91 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 6.57 (MB)
+#Total memory = 692.52 (MB)
+#Peak memory = 724.25 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 17.09 (MB)
+#Total memory = 692.68 (MB)
+#Peak memory = 724.25 (MB)
+#Number of warnings = 9
+#Total number of warnings = 9
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Sat Apr  1 16:36:36 2017
+#
+<CMD> report_timing > ./layout/rpt/4_timing_report
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 130nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Extraction called for design 'chip_rfwild' of instances=55 and nets=39 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design chip_rfwild.
+RC Extraction called in multi-corner(3) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1       2   
+Capacitance Scaling Factor   : 1.00000 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 744.797M)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 787.4M, InitMEM = 787.4M)
+AAE_THRD: End delay calculation. (MEM=819.59 CPU=0:00:00.0 REAL=0:00:00.0)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 819.6M, InitMEM = 819.6M)
+AAE_THRD: End delay calculation. (MEM=819.59 CPU=0:00:00.0 REAL=0:00:00.0)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 819.6M, InitMEM = 819.6M)
+AAE_THRD: End delay calculation. (MEM=819.59 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 819.6M) ***
+<CMD> redraw
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> deselectAll
+<CMD> fit
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference shield -isVisible 0
+<CMD> setLayerPreference metalFill -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference net -isVisible 1
+<CMD> setLayerPreference power -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference shield -isVisible 1
+<CMD> setLayerPreference metalFill -isVisible 1
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference net -isSelectable 0
+<CMD> setLayerPreference power -isSelectable 0
+<CMD> setLayerPreference pgPower -isSelectable 0
+<CMD> setLayerPreference pgGround -isSelectable 0
+<CMD> setLayerPreference shield -isSelectable 0
+<CMD> setLayerPreference metalFill -isSelectable 0
+<CMD> setLayerPreference clock -isSelectable 0
+<CMD> setLayerPreference net -isSelectable 1
+<CMD> setLayerPreference power -isSelectable 1
+<CMD> setLayerPreference pgPower -isSelectable 1
+<CMD> setLayerPreference pgGround -isSelectable 1
+<CMD> setLayerPreference shield -isSelectable 1
+<CMD> setLayerPreference metalFill -isSelectable 1
+<CMD> setLayerPreference clock -isSelectable 1
+<CMD> setLayerPreference hinst -isVisible 0
+<CMD> setLayerPreference guide -isVisible 0
+<CMD> setLayerPreference fence -isVisible 0
+<CMD> setLayerPreference region -isVisible 0
+<CMD> setLayerPreference partition -isVisible 0
+<CMD> setLayerPreference hinst -isVisible 1
+<CMD> setLayerPreference guide -isVisible 1
+<CMD> setLayerPreference fence -isVisible 1
+<CMD> setLayerPreference region -isVisible 1
+<CMD> setLayerPreference partition -isVisible 1
+<CMD> setLayerPreference obstruct -isVisible 0
+<CMD> setLayerPreference screen -isVisible 0
+<CMD> setLayerPreference macroOnly -isVisible 0
+<CMD> setLayerPreference layerBlk -isVisible 0
+<CMD> setLayerPreference fillBlk -isVisible 0
+<CMD> setLayerPreference blockHalo -isVisible 0
+<CMD> setLayerPreference routingHalo -isVisible 0
+<CMD> setLayerPreference blkLink -isVisible 0
+<CMD> setLayerPreference obstruct -isVisible 1
+<CMD> setLayerPreference screen -isVisible 1
+<CMD> setLayerPreference macroOnly -isVisible 1
+<CMD> setLayerPreference layerBlk -isVisible 1
+<CMD> setLayerPreference fillBlk -isVisible 1
+<CMD> setLayerPreference blockHalo -isVisible 1
+<CMD> setLayerPreference routingHalo -isVisible 1
+<CMD> setLayerPreference blkLink -isVisible 1
+<CMD> setLayerPreference stdRow -isVisible 0
+<CMD> setLayerPreference ioRow -isVisible 0
+<CMD> setLayerPreference sitePattern -isVisible 0
+<CMD> setLayerPreference macroSitePattern -isVisible 0
+<CMD> setLayerPreference stdRow -isVisible 1
+<CMD> setLayerPreference ioRow -isVisible 1
+<CMD> setLayerPreference sitePattern -isVisible 1
+<CMD> setLayerPreference macroSitePattern -isVisible 1
+<CMD> setLayerPreference relFPlan -isVisible 0
+<CMD> setLayerPreference sdpGroup -isVisible 0
+<CMD> setLayerPreference sdpConnect -isVisible 0
+<CMD> setLayerPreference sizeBlkg -isVisible 0
+<CMD> setLayerPreference resizeFPLine1 -isVisible 0
+<CMD> setLayerPreference resizeFPLine2 -isVisible 0
+<CMD> setLayerPreference congTag -isVisible 0
+<CMD> setLayerPreference ioSlot -isVisible 0
+<CMD> setLayerPreference overlapMacro -isVisible 0
+<CMD> setLayerPreference overlapGuide -isVisible 0
+<CMD> setLayerPreference overlapBlk -isVisible 0
+<CMD> setLayerPreference datapath -isVisible 0
+<CMD> setLayerPreference relFPlan -isVisible 1
+<CMD> setLayerPreference sdpGroup -isVisible 1
+<CMD> setLayerPreference sdpConnect -isVisible 1
+<CMD> setLayerPreference sizeBlkg -isVisible 1
+<CMD> setLayerPreference resizeFPLine1 -isVisible 1
+<CMD> setLayerPreference resizeFPLine2 -isVisible 1
+<CMD> setLayerPreference congTag -isVisible 1
+<CMD> setLayerPreference ioSlot -isVisible 1
+<CMD> setLayerPreference overlapMacro -isVisible 1
+<CMD> setLayerPreference overlapGuide -isVisible 1
+<CMD> setLayerPreference overlapBlk -isVisible 1
+<CMD> setLayerPreference datapath -isVisible 1
+<CMD> setLayerPreference relFPlan -isSelectable 0
+<CMD> setLayerPreference sdpGroup -isSelectable 0
+<CMD> setLayerPreference sdpConnect -isSelectable 0
+<CMD> setLayerPreference sizeBlkg -isSelectable 0
+<CMD> setLayerPreference resizeFPLine1 -isSelectable 0
+<CMD> setLayerPreference resizeFPLine2 -isSelectable 0
+<CMD> setLayerPreference congTag -isSelectable 0
+<CMD> setLayerPreference ioSlot -isSelectable 0
+<CMD> setLayerPreference overlapMacro -isSelectable 0
+<CMD> setLayerPreference overlapGuide -isSelectable 0
+<CMD> setLayerPreference overlapBlk -isSelectable 0
+<CMD> setLayerPreference datapath -isSelectable 0
+<CMD> setLayerPreference relFPlan -isSelectable 1
+<CMD> setLayerPreference sdpGroup -isSelectable 1
+<CMD> setLayerPreference sdpConnect -isSelectable 1
+<CMD> setLayerPreference sizeBlkg -isSelectable 1
+<CMD> setLayerPreference resizeFPLine1 -isSelectable 1
+<CMD> setLayerPreference resizeFPLine2 -isSelectable 1
+<CMD> setLayerPreference congTag -isSelectable 1
+<CMD> setLayerPreference ioSlot -isSelectable 1
+<CMD> setLayerPreference overlapMacro -isSelectable 1
+<CMD> setLayerPreference overlapGuide -isSelectable 1
+<CMD> setLayerPreference overlapBlk -isSelectable 1
+<CMD> setLayerPreference datapath -isSelectable 1
+<CMD> setLayerPreference pwrdm -isVisible 0
+<CMD> setLayerPreference netRect -isVisible 0
+<CMD> setLayerPreference substrateNoise -isVisible 0
+<CMD> setLayerPreference powerNet -isVisible 0
+<CMD> setLayerPreference pwrdm -isVisible 1
+<CMD> setLayerPreference netRect -isVisible 1
+<CMD> setLayerPreference substrateNoise -isVisible 1
+<CMD> setLayerPreference powerNet -isVisible 1
+<CMD> setLayerPreference mGrid -isVisible 1
+<CMD> setLayerPreference pGrid -isVisible 1
+<CMD> setLayerPreference userGrid -isVisible 1
+<CMD> setLayerPreference fGrid -isVisible 1
+<CMD> setLayerPreference gcell -isVisible 1
+<CMD> setLayerPreference mGrid -isVisible 0
+<CMD> setLayerPreference pGrid -isVisible 0
+<CMD> setLayerPreference userGrid -isVisible 0
+<CMD> setLayerPreference fGrid -isVisible 0
+<CMD> setLayerPreference gcell -isVisible 0
+<CMD> setLayerPreference trackObj -isVisible 1
+<CMD> setLayerPreference nonPrefTrackObj -isVisible 1
+<CMD> setLayerPreference trackObj -isVisible 0
+<CMD> setLayerPreference nonPrefTrackObj -isVisible 0
+<CMD> setLayerPreference densityMap -isVisible 0
+<CMD> setLayerPreference pinDensityMap -isVisible 0
+<CMD> setLayerPreference clkTree -isVisible 0
+<CMD> setLayerPreference thermal -isVisible 0
+<CMD> setLayerPreference checkFPlanSpace -isVisible 0
+<CMD> setLayerPreference flColors -isVisible 0
+<CMD> setLayerPreference gtdObj -isVisible 0
+<CMD> setLayerPreference dpt -isVisible 0
+<CMD> setLayerPreference densityMap -isVisible 1
+<CMD> setLayerPreference pinDensityMap -isVisible 1
+<CMD> setLayerPreference clkTree -isVisible 1
+<CMD> setLayerPreference thermal -isVisible 1
+<CMD> setLayerPreference checkFPlanSpace -isVisible 1
+<CMD> setLayerPreference flColors -isVisible 1
+<CMD> setLayerPreference gtdObj -isVisible 1
+<CMD> setLayerPreference dpt -isVisible 1
+<CMD> setLayerPreference congest -isVisible 0
+<CMD> setLayerPreference congestObj -isVisible 0
+<CMD> setLayerPreference gcellOvflow -isVisible 0
+<CMD> setLayerPreference congChan -isVisible 0
+<CMD> setLayerPreference congestH -isVisible 0
+<CMD> setLayerPreference congestV -isVisible 0
+<CMD> setLayerPreference congest -isVisible 1
+<CMD> setLayerPreference congestObj -isVisible 1
+<CMD> setLayerPreference gcellOvflow -isVisible 1
+<CMD> setLayerPreference congChan -isVisible 1
+<CMD> setLayerPreference congestH -isVisible 1
+<CMD> setLayerPreference congestV -isVisible 1
+<CMD> setLayerPreference congest -isVisible 0
+<CMD> setLayerPreference congestObj -isVisible 0
+<CMD> setLayerPreference gcellOvflow -isVisible 0
+<CMD> setLayerPreference congChan -isVisible 0
+<CMD> setLayerPreference congestH -isVisible 0
+<CMD> setLayerPreference congestV -isVisible 0
+<CMD> setLayerPreference congest -isVisible 1
+<CMD> setLayerPreference congestObj -isVisible 1
+<CMD> setLayerPreference gcellOvflow -isVisible 1
+<CMD> setLayerPreference congChan -isVisible 1
+<CMD> setLayerPreference congestH -isVisible 1
+<CMD> setLayerPreference congestV -isVisible 1
+<CMD> setLayerPreference term -isVisible 0
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> setLayerPreference busguide -isVisible 0
+<CMD> setLayerPreference aggress -isVisible 0
+<CMD> setLayerPreference select -isVisible 0
+<CMD> setLayerPreference text -isVisible 0
+<CMD> setLayerPreference pinText -isVisible 0
+<CMD> setLayerPreference channel -isVisible 0
+<CMD> setLayerPreference flightLine -isVisible 0
+<CMD> setLayerPreference reduced -isVisible 0
+<CMD> setLayerPreference portNum -isVisible 0
+<CMD> setLayerPreference gridRes -isVisible 0
+<CMD> setLayerPreference term -isVisible 1
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> setLayerPreference busguide -isVisible 1
+<CMD> setLayerPreference aggress -isVisible 1
+<CMD> setLayerPreference select -isVisible 1
+<CMD> setLayerPreference text -isVisible 1
+<CMD> setLayerPreference pinText -isVisible 1
+<CMD> setLayerPreference channel -isVisible 1
+<CMD> setLayerPreference flightLine -isVisible 1
+<CMD> setLayerPreference reduced -isVisible 1
+<CMD> setLayerPreference portNum -isVisible 1
+<CMD> setLayerPreference gridRes -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference shield -isVisible 0
+<CMD> setLayerPreference metalFill -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference net -isVisible 1
+<CMD> setLayerPreference power -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference shield -isVisible 1
+<CMD> setLayerPreference metalFill -isVisible 1
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference net -isSelectable 0
+<CMD> setLayerPreference power -isSelectable 0
+<CMD> setLayerPreference pgPower -isSelectable 0
+<CMD> setLayerPreference pgGround -isSelectable 0
+<CMD> setLayerPreference shield -isSelectable 0
+<CMD> setLayerPreference metalFill -isSelectable 0
+<CMD> setLayerPreference clock -isSelectable 0
+<CMD> setLayerPreference net -isSelectable 1
+<CMD> setLayerPreference power -isSelectable 1
+<CMD> setLayerPreference pgPower -isSelectable 1
+<CMD> setLayerPreference pgGround -isSelectable 1
+<CMD> setLayerPreference shield -isSelectable 1
+<CMD> setLayerPreference metalFill -isSelectable 1
+<CMD> setLayerPreference clock -isSelectable 1
+<CMD> setLayerPreference hinst -isVisible 0
+<CMD> setLayerPreference guide -isVisible 0
+<CMD> setLayerPreference fence -isVisible 0
+<CMD> setLayerPreference region -isVisible 0
+<CMD> setLayerPreference partition -isVisible 0
+<CMD> setLayerPreference hinst -isVisible 1
+<CMD> setLayerPreference guide -isVisible 1
+<CMD> setLayerPreference fence -isVisible 1
+<CMD> setLayerPreference region -isVisible 1
+<CMD> setLayerPreference partition -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> deselectAll
+<CMD> fit
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> displayClockTree -skew -allLevel -clkRouteOnly
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -clkRouteOnly 
+Clock clk is Gated-Clock. displayClockTree on Gated Clock
+<CMD> fit
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage -1 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> deselectAll
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> addFiller -prefix corefiller128_ -cell FILL128 -util 0.35
+**WARN: (ENCSP-5215):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute command to make the DRC clean.
+Type 'man ENCSP-5215' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 157 filler insts (cell FILL128 / prefix corefiller128_).
+*INFO: Total 157 filler insts added - prefix corefiller128_ (CPU: 0:00:00.0).
+*INFO: Achieved 34.9 filler util. (reqd. 35.0).
+For 157 new insts, *** Applied 3 GNC rules (cpu = 0:00:00.0)
+<CMD> addFiller -prefix nwsx -cell NWSX -util 0.5
+**WARN: (ENCSP-5215):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute command to make the DRC clean.
+Type 'man ENCSP-5215' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 4672 filler insts (cell NWSX / prefix nwsx).
+*INFO: Total 4672 filler insts added - prefix nwsx (CPU: 0:00:00.0).
+*INFO: Achieved 49.9 filler util. (reqd. 50.0).
+For 4672 new insts, *** Applied 3 GNC rules (cpu = 0:00:00.0)
+<CMD> setFillerMode -core {{FILL64 FILL32 FILL16} {FILL4 FILL2 FILL1}} -corePrefix corefiller -doDRC true
+<CMD> addFiller
+**WARN: (ENCSP-5215):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute command to make the DRC clean.
+Type 'man ENCSP-5215' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst  (cell FILL64 / prefix corefiller).
+*INFO:   Added 0 filler inst  (cell FILL32 / prefix corefiller).
+*INFO:   Added 83 filler insts (cell FILL16 / prefix corefiller).
+*INFO:   Added 3030 filler insts (cell FILL4 / prefix corefiller).
+*INFO:   Added 2301 filler insts (cell FILL2 / prefix corefiller).
+*INFO:   Added 698 filler insts (cell FILL1 / prefix corefiller).
+*INFO: Total 6112 filler insts added - prefix corefiller (CPU: 0:00:00.1).
+For 6112 new insts, *** Applied 3 GNC rules (cpu = 0:00:00.0)
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 819.6) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2560
+VG: elapsed time: 1.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.4  MEM: 64.2M)
+
+<CMD> addFiller -fixDRC
+**WARN: (ENCSP-5215):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute command to make the DRC clean.
+Type 'man ENCSP-5215' for more detail.
+**WARN: (ENCSP-9082):	verifyGeometry needs to be executed before -fixDRC option could be used.
+If verifyGeometry has been executed, then there is no DRC violation to fix.
+<CMD> selectInst {contador1/contador_reg[3]}
+<CMD> fit
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> group
+<CMD> group
+<CMD> fit
+<CMD> group
+<CMD> group
+<CMD> fit
+<CMD> group
+<CMD> ungroup
+**WARN: (ENCSYT-3162):	Cannot ungroup Module 'contador1' because it has no child.
+<CMD> deselectAll
+<CMD> group
+<CMD> group
+<CMD> fit
+<CMD> group
+<CMD> group
+<CMD> group
+<CMD> group
+<CMD> ungroup
+<CMD> group
+<CMD> fit
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference areaIo -isVisible 0
+<CMD> setLayerPreference areaIo -isVisible 1
+<CMD> setLayerPreference io -isVisible 0
+<CMD> setLayerPreference io -isVisible 1
+<CMD> setLayerPreference phyCell -isVisible 0
+<CMD> setLayerPreference phyCell -isVisible 1
+<CMD> setLayerPreference phyCell -isVisible 0
+<CMD> setLayerPreference phyCell -isVisible 1
+<CMD> setLayerPreference coverCell -isVisible 0
+<CMD> setLayerPreference coverCell -isVisible 1
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 1
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 1
+<CMD> setLayerPreference block -isVisible 0
+<CMD> setLayerPreference block -isVisible 1
+<CMD> setLayerPreference inst -isVisible 0
+<CMD> setLayerPreference inst -isVisible 1
+<CMD> setLayerPreference inst -isVisible 0
+<CMD> setLayerPreference inst -isVisible 1
+<CMD> fit
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> fit
+<CMD> setLayerPreference pinObj -isVisible 0
+<CMD> setLayerPreference cellBlkgObj -isVisible 0
+<CMD> setLayerPreference layoutObj -isVisible 0
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> fit
+<CMD> setExtractRCMode -engine postRoute -effortLevel high
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+<CMD> extractRC
+Extraction called for design 'chip_rfwild' of instances=10996 and nets=39 using extraction engine 'postRoute' at effort level 'high' .
+Integrated QRC (IQRC) Extraction in Multi-Corner mode called for design 'chip_rfwild'. Number of corners is 3.
+No IQRC parasitic data in Encounter. Going for full-chip extraction.
+IQRC Extraction invoked in single CPU mode. Commands setDistributeHost/setMultiCpuUsage can be used to activate multiCPU extraction.
+
+IQRC Extraction engine initialization using 3 tech files:
+	/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch at temperature 25C , 
+	/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmax.tch at temperature 125C & 
+	/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmin.tch at temperature -40C . 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQRC-101) : 
+  Integrated QRC - 64-bit Parasitic Extractor - Version 14.2.2-s217
+---------------------------------------------------------------------
+             Copyright 2015 Cadence Design Systems, Inc.
+
+
+INFO (EXTIQRC-103) : Starting at 2017-Apr-01 17:03:03 (2017-Apr-01 20:03:03 GMT).
+
+INFO (EXTIQRC-104) : Starting extraction session...
+
+INFO (EXTIQRC-159) : Loading technology data from file:
+  /opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch
+
+WARNING (EXTZTECH-270) : Warning [input]: No diffusion layer is specified in ICT file. 
+
+WARNING (EXTZTECH-270) : Warning [input]: No diffusion layer is specified in ICT file. 
+
+WARNING (EXTZTECH-270) : Warning [input]: No diffusion layer is specified in ICT file. 
+
+INFO (EXTIQRC-289) : Loading RCgen extraction models from file:
+  /opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch
+
+INFO (EXTIQRC-345) : Checking Command/Tech/License Files. 
+
+INFO (EXTIQRC-105) : Starting design extraction....
+No layermap file specified. Automatically mapping tech and lef layers. Log file is 'extLogDir/IQRC_01-Apr-2017_17:03:02_11546_fHsUuN/extr.chip_rfwild.layermap.log'.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IQRC Extraction engine initialized successfully.
+
+Dumping IQRC extraction options in file 'extLogDir/IQRC_01-Apr-2017_17:03:02_11546_fHsUuN/extr.chip_rfwild.extraction_options.log'.
+Initialization for IQRC Fullchip Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:01.0  MEM: 915.715M)
+
+Geometry processing of Gray and Metal fill STARTED.................... DONE (CPU Time: 0:00:00.3  Real Time: 0:00:00.0  MEM: 915.727M)
+Geometry processing of nets STARTED.................... DONE (NETS: 25  Geometries: 298  CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 915.754M)
+
+Extraction of Geometries STARTED.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQRC-282) : Checking Command/Tech Files. 
+
+INFO (EXTIQRC-277) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does     contain WEE data.     
+    does NOT contain Erosion data t=f( density ) 
+    does     contain R(w) data.    
+    does NOT contain R(w, s) data.  
+    does NOT contain TC(w) data.    
+    does     contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+
+INFO (EXTIQRC-287) : Capacitance Models Information :- 
+ ICECAPS models are not available. 
+ RCgen   models are     available. 
+ This IQRC session uses RCgen models. 
+Your final RCs may vary depending on which models you use. 
+Please check Quantus QRC Manual for more information.
+
+INFO (EXTIQRC-286) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : rc 
+ Erosion Effects  : n/a t=f( density ) 
+ T/B Enlargements : ON 
+ R(w) Effects     : ON 
+ R(w,s) Effects   : n/a 
+ TC(w) Effects     : n/a 
+Some effects indicate n/a because of non-availability of relevantinput data
+(or) requested to be off (and/or) usage of older Icecaps models.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    9%
+
+INFO (EXTHPY-104) :    18%
+
+INFO (EXTHPY-104) :    27%
+
+INFO (EXTHPY-104) :    36%
+
+INFO (EXTHPY-104) :    45%
+
+INFO (EXTHPY-104) :    55%
+
+INFO (EXTHPY-104) :    64%
+
+INFO (EXTHPY-104) :    73%
+
+INFO (EXTHPY-104) :    82%
+
+INFO (EXTHPY-104) :    91%
+
+INFO (EXTHPY-104) :    100%
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Extraction of Geometries DONE (NETS: 25  CPU Time: 0:00:00.8  Real Time: 0:00:01.0  MEM: 975.219M)
+
+Parasitic Network Creation STARTED
+....................
+Number of Extracted Resistors     : 226
+Number of Extracted Ground Caps   : 257
+Number of Extracted Coupling Caps : 92
+Parasitic Network Creation DONE (Nets: 25  CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 923.055M)
+
+IQRC Extraction engine is being closed... 
+IQRC Fullchip Extraction DONE (CPU Time: 0:00:02.2  Real Time: 0:00:03.0  MEM: 908.566M)
+<CMD> rcOut -rc_corner nom_T25c -spf ./layout/done/chip_rfwild_routed_nom.spf
+RC Out has the following PVT Info:
+   RC:nom_T25c
+Printing *|NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 884.5M)
+<CMD> rcOut -rc_corner bc_Tm40c_cmin -spf ./layout/done/chip_rfwild_routed_bc.spf
+RC Out has the following PVT Info:
+   RC:bc_Tm40c_cmin
+Printing *|NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 884.5M)
+<CMD> rcOut -rc_corner wc_T125c_cmax -spf ./layout/done/chip_rfwild_routed_wc.spf
+RC Out has the following PVT Info:
+   RC:wc_T125c_cmax
+Printing *|NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 884.5M)
+<CMD> fit
+<CMD> redraw
+<CMD> redraw
+<CMD> fit
+<CMD> saveNetlist ./layout/done/chip_rfwild.routed.v
+Writing Netlist "./layout/done/chip_rfwild.routed.v" ...
+<CMD> saveNetlist -phys -excludeLeafCell -flattenBus ./layout/done/chip_rfwild.phys_inst.v
+Writing Netlist "./layout/done/chip_rfwild.phys_inst.v" ...
+Pwr name (VDD).
+Pwr name (VDD150).
+Gnd name (VSS).
+2 Pwr names and 1 Gnd names.
+Creating all pg connections for top cell (chip_rfwild).
+<CMD> write_sdf -recompute_parallel_arcs -min_view v_test_fast_m40c -typ_view v_test_nom_25c -max_view v_test_slow_125c \
+  -process best:typical:worst \
+  -voltage 1.32:1.25:1.08 -temperature -40.0:25.0:125.0  \
+  -timescale 1ps \
+  ./layout/done/chip_rfwild.routed.sdf
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 130nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 914.8M, InitMEM = 914.8M)
+AAE_INFO: 1 threads acquired from CTE.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=928.977 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 929.0M) ***
+<CMD> redraw
+<CMD> redraw
+<CMD> setLayerPreference pwrdm -isVisible 0
+<CMD> setLayerPreference netRect -isVisible 0
+<CMD> setLayerPreference substrateNoise -isVisible 0
+<CMD> setLayerPreference powerNet -isVisible 0
+<CMD> setLayerPreference pwrdm -isVisible 1
+<CMD> setLayerPreference netRect -isVisible 1
+<CMD> setLayerPreference substrateNoise -isVisible 1
+<CMD> setLayerPreference powerNet -isVisible 1
+<CMD> fit
+<CMD> streamOut ./layout/done/chip_rfwild.gds -mapFile /opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_Tech_LEF/bicmos8hp_techlef_20160204/techlef/v.20160204/lef/bicmos8hp_soce2gds.map -merge {/opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_Digital_Kit/ibm_cmos8hp_sc_1p2v_12t_rvt_20130404/sc_1p2v_12t_rvt/v.20130404/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds  /opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_WBIO_Base/ibm_cmos8hp_short_io_base_wb_io_20160727/short_io/base_wb_io/v.20160727/gds2/CMOS8HP_BASE_WB_IO_7LM.gds} -reportFile ./layout/done/GDS2rpt
+Usage: streamOut                <gdsFileName> 
+                                [-mapFile <mapFileName>] 
+                                [-libName <libName>] 
+                                [-noStructureName | -structureName <structureName>] 
+                                [-units {100|200|1000|2000|10000|20000}] 
+                                [-mode {ALL|FILLONLY|NOFILL|NOINSTANCES}] 
+                                [-offset x y] 
+                                [-outputMacros] 
+                                [-dieAreaAsBoundary] 
+                                [-stripes <number>] 
+                                [-merge {list of external Stream files}] 
+                                [-uniquifyCellNames] 
+                                [-reportFile <fileName>] 
+                                [-attachInstanceName <attrNumber>] 
+                                [-attachNetName <attrNumber>]
+
+ERROR: Incorrect usage for command "streamOut"
+**ERROR: (ENCOGDS-2):	Cannot open '/opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_Tech_LEF/bicmos8hp_techlef_20160204/techlef/v.20160204/lef/bicmos8hp_soce2gds.map'
+
+<CMD> verifyGeometry -report ./layout/rpt/v_geometry_drc
+ *** Starting Verify Geometry (MEM: 880.9) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2560
+VG: elapsed time: 1.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.4  MEM: 35.8M)
+
+<CMD> verifyConnectivity -report ./layout/rpt/v_connectivity
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Apr  1 17:13:41 2017
+
+Design Name: chip_rfwild
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (707.0000, 707.0000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net VDD150: has an unconnected terminal, has special routes with opens.
+
+Begin Summary 
+    1 Problem(s) (ENCVFC-96): Terminal(s) are not connected.
+    1 Problem(s) (ENCVFC-200): Special Wires: Pieces of the net are not connected together.
+    2 total info(s) created.
+End Summary
+
+End Time: Sat Apr  1 17:13:41 2017
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 2 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> verify_PG_short -report ./layout/rpt/v_PG_short
+ *** Starting VERIFY PG SHORT(MEM: 916.7) ***
+
+  VERIFY PG SHORT ...... Initializing
+  VERIFY PG SHORT ...... Deleting Existing Violations
+  VERIFY PG SHORT ...... Creating Sub-Areas
+                  ...... bin size: 2560
+  VERIFY PG SHORT ...... SubArea : 1 of 4
+  VERIFY PG SHORT ...... Short:  0 Viols.
+  VERIFY PG SHORT ...... SubArea : 2 of 4
+  VERIFY PG SHORT ...... Short:  0 Viols.
+  VERIFY PG SHORT ...... SubArea : 3 of 4
+  VERIFY PG SHORT ...... Short:  0 Viols.
+  VERIFY PG SHORT ...... SubArea : 4 of 4
+  VERIFY PG SHORT ...... Short:  0 Viols.
+  Verification Complete : 0 Short Viols.
+
+**********End: VERIFY PG SHORT**********
+ *** verify PG short (CPU: 0:00:00.2  MEM: 0.0M)
+
+<CMD> verifyProcessAntenna -report ./layout/rpt/v_antenna
+
+******* START VERIFY ANTENNA ********
+Report File: ./layout/rpt/v_antenna
+LEF Macro File: chip_rfwild.antenna.lef
+Verification Complete: 0 Violations
+******* DONE VERIFY ANTENNA ********
+(CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> summaryReport -outdir ./layout/rpt/v_summary
+Creating directory ./layout/rpt/v_summary.
+Start to collect the design information.
+Build netlist information for Cell chip_rfwild.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Generating IO cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Generate no-driven nets information report.
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file ./layout/rpt/v_summary/chip_rfwild.main.htm.ascii.
+<CMD> selectMarker 0.1200 0.1200 706.8800 706.8800 -1 3 7
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+<CMD> setLayerPreference inst -isVisible 0
+<CMD> setLayerPreference block -isVisible 0
+<CMD> setLayerPreference stdCell -isVisible 0
+<CMD> setLayerPreference coverCell -isVisible 0
+<CMD> setLayerPreference phyCell -isVisible 0
+<CMD> setLayerPreference io -isVisible 0
+<CMD> setLayerPreference areaIo -isVisible 0
+<CMD> setLayerPreference blackBox -isVisible 0
+<CMD> deselectAll
+<CMD> selectMarker 0.1200 0.1200 706.8800 706.8800 -1 3 7
+<CMD> deselectAll
+<CMD> selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+<CMD> deselectAll
+<CMD> selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+<CMD> deselectAll
+<CMD> selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> violationBrowser -all -no_display_false
+<CMD> zoomBox 269.0 555.49 438.0 757.49
+<CMD> zoomBox 269.0 555.49 438.0 757.49
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD> ::Rda_Browser::VB::violationBrowserSetObjs
+<CMD> zoomBox 269.0 555.49 438.0 757.49
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD_INTERNAL> violationBrowserHide -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD_INTERNAL> violationBrowserShow -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD_INTERNAL> violationBrowserHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}} -color #fa1340
+<CMD_INTERNAL> violationBrowserHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}} -color #fa1340
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD> zoomBox -353.26 -353.26 1060.26 1060.26
+<CMD> fit
+<CMD> fit
+<CMD> deselectAll
+<CMD> setLayerPreference inst -isVisible 1
+<CMD> setLayerPreference block -isVisible 1
+<CMD> setLayerPreference stdCell -isVisible 1
+<CMD> setLayerPreference coverCell -isVisible 1
+<CMD> setLayerPreference phyCell -isVisible 1
+<CMD> setLayerPreference io -isVisible 1
+<CMD> setLayerPreference areaIo -isVisible 1
+<CMD> setLayerPreference blackBox -isVisible 1
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> streamOut ./layout/done/chip_rfwild.gds -mapFile /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map -merge {/opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds  /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds} -reportFile ./layout/done/GDS2rpt
+Finding the highest version number among the merge files
+Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds has version number: 600
+Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds has version number: 600
+
+Parse map file...
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer RX 
+**WARN: (ENCOGDS-392):	Unknown layer NW 
+**WARN: (ENCOGDS-392):	Unknown layer NW 
+**WARN: (ENCOGDS-392):	Unknown layer NW 
+**WARN: (ENCOGDS-392):	Unknown layer NW 
+**WARN: (ENCOGDS-392):	Unknown layer NW 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (ENCOGDS-392):	Unknown layer E1 
+**WARN: (EMS-63):	Message <ENCOGDS-392> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (M1) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (PC CA M1) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): PC CA or remove VIAFILL construct(s) from the map file for the following layer(s): M1.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (M1 M2) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (M1 V1 M2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): V1 or remove VIAFILL construct(s) from the map file for the following layer(s): M1 M2.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (M2 M3) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (M2 V2 M3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): V2 or remove VIAFILL construct(s) from the map file for the following layer(s): M2 M3.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (M3 M4) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (M3 V3 M4) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): V3 or remove VIAFILL construct(s) from the map file for the following layer(s): M3 M4.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (M4 MQ) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (M4 VL MQ) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): VL or remove VIAFILL construct(s) from the map file for the following layer(s): M4 MQ.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (MQ LY) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (MQ VY LY) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): VY or remove VIAFILL construct(s) from the map file for the following layer(s): MQ LY.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (LY AM) of a VIAFILL object is(are) specified in map file '/opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map'. A VIAFILL object needs 3 layers (LY AV AM) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): AV or remove VIAFILL construct(s) from the map file for the following layer(s): LY AM.
+Type 'man ENCOGDS-399' for more detail.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 600)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    7                                 PC
+    14                                CA
+    15                                M1
+    16                                V1
+    17                                M2
+    18                                V2
+    19                                M3
+    20                                V3
+    21                                M4
+    35                                VL
+    34                                MQ
+    129                               VY
+    42                                LY
+    52                                AV
+    53                                AM
+    7                                 PC
+    15                                M1
+    17                                M2
+    19                                M3
+    21                                M4
+    34                                MQ
+    42                                LY
+    53                                AM
+
+
+Stream Out Information Processed for GDS version 600:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          10996
+
+Ports/Pins                             0
+
+Nets                                 118
+    metal layer M1                    43
+    metal layer M2                    66
+    metal layer M3                     9
+
+    Via Instances                     91
+
+Special Nets                         685
+    metal layer M1                   418
+    metal layer M2                    27
+    metal layer M3                    60
+    metal layer M4                    60
+    metal layer MQ                    60
+    metal layer LY                    60
+
+    Via Instances                   1776
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   6
+    metal layer AM                     6
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Merging with GDS libraries
+Scanning GDS file /opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds to register cell name ......
+Scanning GDS file /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds to register cell name ......
+Merging GDS file /opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds ......
+	****** Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds has version number: 600.
+	****** Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds has units: 1000 per micron.
+	****** unit scaling factor = 1 ******
+Merging GDS file /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds ......
+	****** Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds has version number: 600.
+	****** Merge file: /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds has units: 1000 per micron.
+	****** unit scaling factor = 1 ******
+######Streamout is finished!
+<CMD> fit
+<CMD> fit
+<CMD> redraw
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 833.508M, initial mem = 94.102M) ***
+*** Message Summary: 75 warning(s), 9 error(s)
+
+--- Ending "Encounter" (totcpu=0:37:57, real=3:13:38, mem=833.5M) ---

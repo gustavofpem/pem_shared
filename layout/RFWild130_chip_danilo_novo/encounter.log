@@ -1,0 +1,319 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.28-s033_1 (64bit) 03/21/2016 13:34 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.28-s005 NR160313-1959/14_28-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.28-s006_1 (64bit) 03/08/2016 00:08:23 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.28-s002 (64bit) 03/21/2016 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.28-s007_1 (64bit) Mar  7 2016 23:11:05 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.28-s006
+@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.28-s033_1" on Sat Apr  1 14:31:09 2017 (mem=94.1M) ---
+--- Running on pem-24 (x86_64 w/Linux 3.10.0-514.10.2.el7.x86_64) ---
+This version was compiled on Mon Mar 21 13:34:48 PDT 2016.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_pwr_net {{VDD} {VDD150}}
+<CMD> set init_gnd_net VSS
+<CMD> set conf_ioOri R0
+<CMD> set init_verilog ./config/chip.v
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell chip_rfwild
+<CMD> set init_mmmc_file ./config/MMMCSetup.tcl
+<CMD> set init_io_file ./config/chip.io
+<CMD> setImportMode -treatUndefinedCellAsBbox 0 -keepEmptyModule 1 -useLefDef56 1
+<CMD> init_design
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_7AM_41_tech.lef ...
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /opt/techlib/ibm013/bicmos8hp/lef/CMOS8HP_BASE_WB_IO_7LM.lef ...
+INFO (LEFPARS-3000): There are still data after the END LIBRARY See file /opt/techlib/ibm013/bicmos8hp/lef/CMOS8HP_BASE_WB_IO_7LM.lef at line 12286.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'VSS_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'VSS_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PT' in macro 'AINSD_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PT' in macro 'AINSD_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'AINSD_VDD150_PM_A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'AINSD_VDD150_PM_A' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_K' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_K' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_H' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_H' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'SI' in macro 'SLATSRLV_E' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'D' in macro 'SLATSRLV_E' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'FGTIE' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Sat Apr  1 14:38:30 2017
+viaInitial ends at Sat Apr  1 14:38:30 2017
+*** Begin netlist parsing (mem=333.3M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './config/chip.v'
+
+*** Memory Usage v#1 (Current mem = 334.328M, initial mem = 94.102M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=334.3M) ***
+Set top cell to chip_rfwild.
+Loading view definition file from ./config/MMMCSetup.tcl
+Reading nom_v1p25_T25c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_t025/PnomV1p20T025_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'COUT' of cell 'ADDF_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'SUM' of cell 'ADDF_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_B' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_C' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_D' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_E' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_F' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_H' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_I' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_J' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND2_K' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AND3_B' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PnomV1p20T025_STD_CELL_8HP_12T' 
+Reading nom_v1p25_T25c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/typ_v120_v150_t25/IBM_CMOS8HP_BASE_WB_IO_TYP_V120_V150_T25.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_TYP_V120_V150_T25' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=1.37min, fe_real=7.40min, fe_mem=367.8M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell chip_rfwild ...
+*** Netlist is unique.
+** info: there are 431 modules.
+** info: there are 22 stdCell insts.
+** info: there are 7 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 373.254M, initial mem = 94.102M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "./config/chip.io" ...
+Original cellDensity(chipDen)=0.700, nrRow=4.
+Number of standard cell rows = 4.
+**WARN: (ENCFP-3961):	The techSite 'IO' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+**WARN: (ENCFP-3961):	The techSite 'CornerSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+**WARN: (ENCFP-3961):	The techSite 'CoreSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+This command "init_design" required an extra checkout of license tpsxl.
+Additional license(s) checked out: 1 'Tempus_Timing_Signoff_XL' license(s)
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Importing multi-corner technology file(s) for preRoute extraction...
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmax.tch
+/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmin.tch
+Completed (cpu: 0:00:03.8 real: 0:00:03.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: v_test_nom_25c
+    RC-Corner Name        : nom_T25c
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch'
+ 
+ Analysis View: v_test_slow_125c
+    RC-Corner Name        : wc_T125c_cmax
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmax.tch'
+ 
+ Analysis View: v_test_fast_m40c
+    RC-Corner Name        : bc_Tm40c_cmin
+    RC-Corner Index       : 2
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_SigCmin.tch'
+Technology file '/opt/techlib/ibm013/bicmos8hp/tch/bicmos8hp_7AM_41_nm.tch' associated with first view 'v_test_nom_25c' specified to command 'set_analysis_view' will be used as the primary corner for the multi-corner extraction. TQRC/IQRC extraction leverages a single primary corner extraction, then derives the other corners based on their technology files and operating conditions from the primary corner.
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading wc_v1p08_T125c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/slow_v108_t125/PwcV1p08T125_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PwcV1p08T125_STD_CELL_8HP_12T' 
+Reading wc_v1p08_T125c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/slow_v108_v140_t125/IBM_CMOS8HP_BASE_WB_IO_SLOW_V108_V140_T125.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_SLOW_V108_V140_T125' 
+Reading bc_v1p32_Tm40c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/fast_v132_tm40/PbcV1p32Tm40_STD_CELL_8HP_12T.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FGTIE'. The cell will only be used for analysis.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP_C'. The cell will only be used for analysis.
+Read 382 cells in library 'PbcV1p32Tm40_STD_CELL_8HP_12T' 
+Reading bc_v1p32_Tm40c timing library '/opt/techlib/ibm013/bicmos8hp/synopsys/fast_v132_v160_tm40/IBM_CMOS8HP_BASE_WB_IO_FAST_V132_V160_TM40.lib' ...
+Read 30 cells in library 'IBM_CMOS8HP_BASE_WB_IO_FAST_V132_V160_TM40' 
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:27, real=0:07:27, peak res=465.9M, current mem=551.3M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=480.5M, current mem=564.8M)
+Current (total cpu=0:01:27, real=0:07:27, peak res=480.5M, current mem=564.8M)
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:27, real=0:07:27, peak res=480.5M, current mem=564.8M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=480.9M, current mem=564.8M)
+Current (total cpu=0:01:27, real=0:07:27, peak res=480.9M, current mem=564.8M)
+CTE reading timing constraint file './config/chip_rfwild.sdc' ...
+Current (total cpu=0:01:27, real=0:07:27, peak res=480.9M, current mem=564.8M)
+chip_rfwild
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=481.2M, current mem=566.3M)
+Current (total cpu=0:01:27, real=0:07:27, peak res=481.2M, current mem=566.3M)
+Total number of combinational cells: 334
+Total number of sequential cells: 48
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFER_C BUFFER_E BUFFER_D BUFFER_H BUFFER_F BUFFER_J BUFFER_I BUFFER_L BUFFER_K BUFFER_M BUFFER_N BUFFER_O CLK_D CLK_C CLK_E CLK_H CLK_F CLK_I CLK_K CLK_M CLK_O CLK_Q
+Total number of usable buffers: 22
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKI_D CLKI_C CLKI_E CLKI_H CLKI_F CLKI_I CLKI_K CLKI_M CLKI_O CLKI_Q INVERT_A INVERT_B INVERT_C INVERT_D INVERT_E INVERT_H INVERT_F INVERT_I INVERT_J INVERT_K INVERT_L INVERT_M INVERT_N INVERT_O INVERTBAL_C INVERTBAL_E INVERTBAL_D INVERTBAL_H INVERTBAL_F INVERTBAL_J INVERTBAL_L
+Total number of usable inverters: 31
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DELAY4_C DELAY4_J DELAY4_F DELAY6_C DELAY6_F DELAY6_M DELAY6_J
+Total number of identified usable delay cells: 7
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCLF-200           10  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   ENCLF-201            3  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   ENCFP-3961           3  The techSite '%s' has no related cells i...
+*** Message Summary: 16 warning(s), 0 error(s)
+
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> setIoFlowFlag 0
+<CMD> loadIoFile ./config/chip.io
+Reading IO assignment file "./config/chip.io" ...
+<CMD> floorPlan -fplanOrigin l -dieSizeByIoHeight max -site CORE -r 0.25 0.70 15.0 15.0 15.0 15.0
+Adjusting Core to Left to: 15.4000. Core to Bottom to: 15.4000.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> loadIoFile ./config/chip.io
+Reading IO assignment file "./config/chip.io" ...
+<CMD> addIoFiller -cell FILLER10_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLER10_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLER10_VDD150_PM' on left side.
+Added 7 of filler cell 'FILLER10_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLER10_VDD150_PM' on right side.
+<CMD> addIoFiller -cell FILLER1_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLER1_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLER1_VDD150_PM' on left side.
+Added 3 of filler cell 'FILLER1_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLER1_VDD150_PM' on right side.
+<CMD> addIoFiller -cell FILLERDOT1_VDD150_PM -prefix padfill
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on top side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on left side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on bottom side.
+Added 0 of filler cell 'FILLERDOT1_VDD150_PM' on right side.
+<CMD> fit
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 612.184M, initial mem = 94.102M) ***
+*** Message Summary: 17 warning(s), 0 error(s)
+
+--- Ending "Encounter" (totcpu=0:01:44, real=0:08:45, mem=612.2M) ---

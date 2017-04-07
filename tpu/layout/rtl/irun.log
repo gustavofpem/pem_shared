@@ -1,0 +1,31 @@
+irun: 14.10-s009: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	irun	14.10-s009: Started on Dec 01, 2014 at 10:06:59 BRT
+irun
+	+access+rw
+	contador_rfwild.sv
+file: contador_rfwild.sv
+	module worklib.contador_rfwild:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		contador_rfwild
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.contador_rfwild:sv <0x33acbac1>
+			streams:   2, words:   351
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		        Instances  Unique
+		Modules:        1       1
+		Registers:      1       1
+		Scalar wires:   2       -
+		Always blocks:  1       1
+	Writing initial simulation snapshot: worklib.contador_rfwild:sv
+Loading snapshot worklib.contador_rfwild:sv .................... Done
+ncsim> source /opt/cadence/INCISIV141/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun	14.10-s009: Exiting on Dec 01, 2014 at 10:07:05 BRT  (total: 00:00:06)

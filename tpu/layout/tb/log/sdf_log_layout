@@ -1,0 +1,29 @@
+======================================================================
+
+Annotating SDF timing data:
+  Compiled SDF file:     ./layout/done/chip_rfwild.routed.sdf.X
+  Log file:              ./tb/log/sdf_log_layout
+  Backannotation scope:  contador_tb:DUV
+  Configuration file:    
+  MTM control:           
+  Scale factors:         
+  Scale type:            
+
+Time units: 1ps
+
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.contador1.g65 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 82>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.contador1.g65 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 83>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.contador1.g65 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 84>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.contador1.g65 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 85>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.contador1.g67 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 116>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.contador1.g67 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 117>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.contador1.g67 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 118>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.contador1.g67 of module XNOR2_C <./layout/done/chip_rfwild.routed.sdf, line 119>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.contador1.g69 of module XOR2_C <./layout/done/chip_rfwild.routed.sdf, line 171>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.contador1.g69 of module XOR2_C <./layout/done/chip_rfwild.routed.sdf, line 172>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.contador1.g69 of module XOR2_C <./layout/done/chip_rfwild.routed.sdf, line 173>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.contador1.g69 of module XOR2_C <./layout/done/chip_rfwild.routed.sdf, line 174>.
+ncelab: *W,SDFNDP: Annotation resulted in a negative delay value or pulse limit to specify path or interconnect delay (PORT/INTERCONNECT contador_tb.DUV.p_contador3.A), setting to 0 <./layout/done/chip_rfwild.routed.sdf, line 20>.
+ncelab: *W,SDFNDP: Annotation resulted in a negative delay value or pulse limit to specify path or interconnect delay (PORT/INTERCONNECT contador_tb.DUV.p_contador2.A), setting to 0 <./layout/done/chip_rfwild.routed.sdf, line 24>.
+ncelab: *W,SDFNDP: Annotation resulted in a negative delay value or pulse limit to specify path or interconnect delay (PORT/INTERCONNECT contador_tb.DUV.p_contador1.A), setting to 0 <./layout/done/chip_rfwild.routed.sdf, line 29>.
+ncelab: *W,SDFNDP: Annotation resulted in a negative delay value or pulse limit to specify path or interconnect delay (PORT/INTERCONNECT contador_tb.DUV.p_contador0.A), setting to 0 <./layout/done/chip_rfwild.routed.sdf, line 35>.

@@ -1,0 +1,25 @@
+======================================================================
+
+Annotating SDF timing data:
+  Compiled SDF file:     ./layout/done/contador_rfwild.routed.sdf.X
+  Log file:              ./tb/log/sdf_log
+  Backannotation scope:  contador_tb:DUV
+  Configuration file:    
+  MTM control:           
+  Scale factors:         
+  Scale type:            
+
+Time units: 1ns
+
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.g64 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 87>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.g64 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 88>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.g64 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 89>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.g64 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 90>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.g66 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 153>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.g66 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 154>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.g66 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 155>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.g66 of module XNOR2_A <./layout/done/contador_rfwild.routed.sdf, line 156>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Z) of instance contador_tb.DUV.g68 of module XOR2_A <./layout/done/contador_rfwild.routed.sdf, line 166>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Z) of instance contador_tb.DUV.g68 of module XOR2_A <./layout/done/contador_rfwild.routed.sdf, line 167>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Z) of instance contador_tb.DUV.g68 of module XOR2_A <./layout/done/contador_rfwild.routed.sdf, line 168>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Z) of instance contador_tb.DUV.g68 of module XOR2_A <./layout/done/contador_rfwild.routed.sdf, line 169>.

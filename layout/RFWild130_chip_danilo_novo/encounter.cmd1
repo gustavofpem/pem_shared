@@ -1,0 +1,955 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Sat Apr  1 14:40:32 2017                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.28-s033_1 (64bit) 03/21/2016 13:34 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute v14.28-s005 NR160313-1959/14_28-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+#@(#)CDS: CeltIC v14.28-s006_1 (64bit) 03/08/2016 00:08:23 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.28-s002 (64bit) 03/21/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.28-s007_1 (64bit) Mar  7 2016 23:11:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.28-s006
+#@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_pwr_net {{VDD} {VDD150}}
+set init_gnd_net VSS
+set conf_ioOri R0
+set init_verilog ./config/chip.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell chip_rfwild
+set init_mmmc_file ./config/MMMCSetup.tcl
+set init_io_file ./config/chip.io
+setImportMode -treatUndefinedCellAsBbox 0 -keepEmptyModule 1 -useLefDef56 1
+init_design
+fit
+fit
+zoomIn
+fit
+zoomIn
+zoomIn
+zoomIn
+setEdit -force_regular 1
+fit
+fit
+windowSelect 703.770 474.357 853.019 381.296
+deselectAll
+windowSelect 682.700 453.287 745.911 351.447
+deselectAll
+windowSelect 730.108 500.695 796.831 386.564
+deselectAll
+fit
+setDesignMode -process 130 -flowEffort high
+setIoFlowFlag 0
+loadIoFile ./config/chip.io
+floorPlan -fplanOrigin l -dieSizeByIoHeight max -site CORE -r 0.25 0.70 15.0 15.0 15.0 15.0
+fit
+fit
+fit
+loadIoFile ./config/chip.io
+fit
+fit
+fit
+addIoFiller -cell FILLER10_VDD150_PM -prefix padfill
+addIoFiller -cell FILLER1_VDD150_PM -prefix padfill
+addIoFiller -cell FILLERDOT1_VDD150_PM -prefix padfill
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+fit
+redraw
+clearGlobalNets
+set_dc_sources VDD -power -voltage 1.2
+set_dc_sources VDD150 -power -voltage 1.5
+set_dc_sources VSS -ground -voltage 0.0
+redraw
+redraw
+globalNetConnect VDD -type pgpin -pin VDD -autoTie -inst *
+globalNetConnect VDD150 -type pgpin -pin VDD150 -autoTie -inst *
+globalNetConnect VSS -type pgpin -pin VSS -autoTie -inst *
+redraw
+fit
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+redraw
+setAddRingMode -stacked_via_top_layer AM -stacked_via_bottom_layer M1
+addRing -nets {VDD VSS} -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -type core_rings -jog_distance 0.2 -threshold 0.2 -follow core -layer {bottom M1 top M1 right M2 left M2} -width 5 -spacing 3 -offset 0.2
+redraw
+fit
+fit
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 3.0
+set sprCreateIeStripeSpacing 5.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -nets {VSS VDD} -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit MQ -max_same_layer_jog_length 4 -padcore_ring_bottom_layer_limit M1 -set_to_set_distance 30 -skip_via_on_pin Standardcell -stacked_via_top_layer M2 -padcore_ring_top_layer_limit M2 -spacing 33 -merge_stripes_value 1.0 -layer M2 -block_ring_bottom_layer_limit M1 -width 3 -stacked_via_bottom_layer M1
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+fit
+setSrouteMode -connect { padPin padRing corePin floatingStripe } -layerChangeRange { M1 AM } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget {padring ring stripe ringpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1 AM } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1 AM }
+sroute -deleteExistingRoutes -nets {VDD VDD150 VSS}
+fit
+fit
+redraw
+fit
+fit
+fit
+setPlaceMode -fp false -placeIoPins true -timingDriven true -congEffort medium -reorderScan false
+placeDesign
+setDrawView place
+fit
+windowSelect 195.366 515.188 212.766 446.831
+deselectAll
+windowSelect 213.180 460.917 197.438 448.074
+zoomIn
+windowSelect 210.581 459.261 190.568 444.420
+fit
+windowSelect 158.525 564.402 254.090 273.313
+deselectAll
+selectInst tielo_clk
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isSelectable 1
+setLayerPreference cellBlkgObj -isSelectable 1
+setLayerPreference layoutObj -isSelectable 1
+setLayerPreference pinObj -isSelectable 0
+setLayerPreference cellBlkgObj -isSelectable 0
+setLayerPreference layoutObj -isSelectable 0
+deselectAll
+selectInst tiehi_clk
+deselectAll
+selectInst tielo_contador3
+deselectAll
+selectInst {contador1/contador_reg[3]}
+deselectAll
+selectInst {contador1/contador_reg[3]}
+deselectAll
+selectInst {contador1/contador_reg[3]}
+deselectAll
+selectInst {contador1/contador_reg[3]}
+deselectAll
+fit
+specifyClockTree -file ./config/Clock.ctstch
+clockDesign -specFile ./config/Clock.ctstch -outDir ./layout/rpt/clock_report -fixedInstBeforeCTS
+fit
+specifyClockTree -file ./config/Clock.ctstch
+clockDesign -specFile ./config/Clock.ctstch -outDir ./layout/rpt/clock_report -fixedInstBeforeCTS
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+fit
+redraw
+setNanoRouteMode -quiet -drouteStartIteration default -routeTopRoutingLayer default -routeBottomRoutingLayer default -drouteEndIteration default -routeWithTimingDriven false -routeWithSiDriven true -routeInsertAntennaDiode false -routeAntennaCellName FGTIE
+globalDetailRoute
+report_timing > ./layout/rpt/4_timing_report
+redraw
+displayClockTree -skew -allLevel -clkRouteOnly
+displayClockTree -skew -allLevel -clkRouteOnly
+deselectAll
+fit
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference net -isVisible 0
+setLayerPreference power -isVisible 0
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgGround -isVisible 0
+setLayerPreference shield -isVisible 0
+setLayerPreference metalFill -isVisible 0
+setLayerPreference clock -isVisible 0
+setLayerPreference net -isVisible 1
+setLayerPreference power -isVisible 1
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgGround -isVisible 1
+setLayerPreference shield -isVisible 1
+setLayerPreference metalFill -isVisible 1
+setLayerPreference clock -isVisible 1
+setLayerPreference net -isSelectable 0
+setLayerPreference power -isSelectable 0
+setLayerPreference pgPower -isSelectable 0
+setLayerPreference pgGround -isSelectable 0
+setLayerPreference shield -isSelectable 0
+setLayerPreference metalFill -isSelectable 0
+setLayerPreference clock -isSelectable 0
+setLayerPreference net -isSelectable 1
+setLayerPreference power -isSelectable 1
+setLayerPreference pgPower -isSelectable 1
+setLayerPreference pgGround -isSelectable 1
+setLayerPreference shield -isSelectable 1
+setLayerPreference metalFill -isSelectable 1
+setLayerPreference clock -isSelectable 1
+setLayerPreference hinst -isVisible 0
+setLayerPreference guide -isVisible 0
+setLayerPreference fence -isVisible 0
+setLayerPreference region -isVisible 0
+setLayerPreference partition -isVisible 0
+setLayerPreference hinst -isVisible 1
+setLayerPreference guide -isVisible 1
+setLayerPreference fence -isVisible 1
+setLayerPreference region -isVisible 1
+setLayerPreference partition -isVisible 1
+setLayerPreference obstruct -isVisible 0
+setLayerPreference screen -isVisible 0
+setLayerPreference macroOnly -isVisible 0
+setLayerPreference layerBlk -isVisible 0
+setLayerPreference fillBlk -isVisible 0
+setLayerPreference blockHalo -isVisible 0
+setLayerPreference routingHalo -isVisible 0
+setLayerPreference blkLink -isVisible 0
+setLayerPreference obstruct -isVisible 1
+setLayerPreference screen -isVisible 1
+setLayerPreference macroOnly -isVisible 1
+setLayerPreference layerBlk -isVisible 1
+setLayerPreference fillBlk -isVisible 1
+setLayerPreference blockHalo -isVisible 1
+setLayerPreference routingHalo -isVisible 1
+setLayerPreference blkLink -isVisible 1
+setLayerPreference stdRow -isVisible 0
+setLayerPreference ioRow -isVisible 0
+setLayerPreference sitePattern -isVisible 0
+setLayerPreference macroSitePattern -isVisible 0
+setLayerPreference stdRow -isVisible 1
+setLayerPreference ioRow -isVisible 1
+setLayerPreference sitePattern -isVisible 1
+setLayerPreference macroSitePattern -isVisible 1
+setLayerPreference relFPlan -isVisible 0
+setLayerPreference sdpGroup -isVisible 0
+setLayerPreference sdpConnect -isVisible 0
+setLayerPreference sizeBlkg -isVisible 0
+setLayerPreference resizeFPLine1 -isVisible 0
+setLayerPreference resizeFPLine2 -isVisible 0
+setLayerPreference congTag -isVisible 0
+setLayerPreference ioSlot -isVisible 0
+setLayerPreference overlapMacro -isVisible 0
+setLayerPreference overlapGuide -isVisible 0
+setLayerPreference overlapBlk -isVisible 0
+setLayerPreference datapath -isVisible 0
+setLayerPreference relFPlan -isVisible 1
+setLayerPreference sdpGroup -isVisible 1
+setLayerPreference sdpConnect -isVisible 1
+setLayerPreference sizeBlkg -isVisible 1
+setLayerPreference resizeFPLine1 -isVisible 1
+setLayerPreference resizeFPLine2 -isVisible 1
+setLayerPreference congTag -isVisible 1
+setLayerPreference ioSlot -isVisible 1
+setLayerPreference overlapMacro -isVisible 1
+setLayerPreference overlapGuide -isVisible 1
+setLayerPreference overlapBlk -isVisible 1
+setLayerPreference datapath -isVisible 1
+setLayerPreference relFPlan -isSelectable 0
+setLayerPreference sdpGroup -isSelectable 0
+setLayerPreference sdpConnect -isSelectable 0
+setLayerPreference sizeBlkg -isSelectable 0
+setLayerPreference resizeFPLine1 -isSelectable 0
+setLayerPreference resizeFPLine2 -isSelectable 0
+setLayerPreference congTag -isSelectable 0
+setLayerPreference ioSlot -isSelectable 0
+setLayerPreference overlapMacro -isSelectable 0
+setLayerPreference overlapGuide -isSelectable 0
+setLayerPreference overlapBlk -isSelectable 0
+setLayerPreference datapath -isSelectable 0
+setLayerPreference relFPlan -isSelectable 1
+setLayerPreference sdpGroup -isSelectable 1
+setLayerPreference sdpConnect -isSelectable 1
+setLayerPreference sizeBlkg -isSelectable 1
+setLayerPreference resizeFPLine1 -isSelectable 1
+setLayerPreference resizeFPLine2 -isSelectable 1
+setLayerPreference congTag -isSelectable 1
+setLayerPreference ioSlot -isSelectable 1
+setLayerPreference overlapMacro -isSelectable 1
+setLayerPreference overlapGuide -isSelectable 1
+setLayerPreference overlapBlk -isSelectable 1
+setLayerPreference datapath -isSelectable 1
+setLayerPreference pwrdm -isVisible 0
+setLayerPreference netRect -isVisible 0
+setLayerPreference substrateNoise -isVisible 0
+setLayerPreference powerNet -isVisible 0
+setLayerPreference pwrdm -isVisible 1
+setLayerPreference netRect -isVisible 1
+setLayerPreference substrateNoise -isVisible 1
+setLayerPreference powerNet -isVisible 1
+setLayerPreference mGrid -isVisible 1
+setLayerPreference pGrid -isVisible 1
+setLayerPreference userGrid -isVisible 1
+setLayerPreference fGrid -isVisible 1
+setLayerPreference gcell -isVisible 1
+setLayerPreference mGrid -isVisible 0
+setLayerPreference pGrid -isVisible 0
+setLayerPreference userGrid -isVisible 0
+setLayerPreference fGrid -isVisible 0
+setLayerPreference gcell -isVisible 0
+setLayerPreference trackObj -isVisible 1
+setLayerPreference nonPrefTrackObj -isVisible 1
+setLayerPreference trackObj -isVisible 0
+setLayerPreference nonPrefTrackObj -isVisible 0
+setLayerPreference densityMap -isVisible 0
+setLayerPreference pinDensityMap -isVisible 0
+setLayerPreference clkTree -isVisible 0
+setLayerPreference thermal -isVisible 0
+setLayerPreference checkFPlanSpace -isVisible 0
+setLayerPreference flColors -isVisible 0
+setLayerPreference gtdObj -isVisible 0
+setLayerPreference dpt -isVisible 0
+setLayerPreference densityMap -isVisible 1
+setLayerPreference pinDensityMap -isVisible 1
+setLayerPreference clkTree -isVisible 1
+setLayerPreference thermal -isVisible 1
+setLayerPreference checkFPlanSpace -isVisible 1
+setLayerPreference flColors -isVisible 1
+setLayerPreference gtdObj -isVisible 1
+setLayerPreference dpt -isVisible 1
+setLayerPreference congest -isVisible 0
+setLayerPreference congestObj -isVisible 0
+setLayerPreference gcellOvflow -isVisible 0
+setLayerPreference congChan -isVisible 0
+setLayerPreference congestH -isVisible 0
+setLayerPreference congestV -isVisible 0
+setLayerPreference congest -isVisible 1
+setLayerPreference congestObj -isVisible 1
+setLayerPreference gcellOvflow -isVisible 1
+setLayerPreference congChan -isVisible 1
+setLayerPreference congestH -isVisible 1
+setLayerPreference congestV -isVisible 1
+setLayerPreference congest -isVisible 0
+setLayerPreference congestObj -isVisible 0
+setLayerPreference gcellOvflow -isVisible 0
+setLayerPreference congChan -isVisible 0
+setLayerPreference congestH -isVisible 0
+setLayerPreference congestV -isVisible 0
+setLayerPreference congest -isVisible 1
+setLayerPreference congestObj -isVisible 1
+setLayerPreference gcellOvflow -isVisible 1
+setLayerPreference congChan -isVisible 1
+setLayerPreference congestH -isVisible 1
+setLayerPreference congestV -isVisible 1
+setLayerPreference term -isVisible 0
+setLayerPreference violation -isVisible 0
+setLayerPreference busguide -isVisible 0
+setLayerPreference aggress -isVisible 0
+setLayerPreference select -isVisible 0
+setLayerPreference text -isVisible 0
+setLayerPreference pinText -isVisible 0
+setLayerPreference channel -isVisible 0
+setLayerPreference flightLine -isVisible 0
+setLayerPreference reduced -isVisible 0
+setLayerPreference portNum -isVisible 0
+setLayerPreference gridRes -isVisible 0
+setLayerPreference term -isVisible 1
+setLayerPreference violation -isVisible 1
+setLayerPreference busguide -isVisible 1
+setLayerPreference aggress -isVisible 1
+setLayerPreference select -isVisible 1
+setLayerPreference text -isVisible 1
+setLayerPreference pinText -isVisible 1
+setLayerPreference channel -isVisible 1
+setLayerPreference flightLine -isVisible 1
+setLayerPreference reduced -isVisible 1
+setLayerPreference portNum -isVisible 1
+setLayerPreference gridRes -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference net -isVisible 0
+setLayerPreference power -isVisible 0
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgGround -isVisible 0
+setLayerPreference shield -isVisible 0
+setLayerPreference metalFill -isVisible 0
+setLayerPreference clock -isVisible 0
+setLayerPreference net -isVisible 1
+setLayerPreference power -isVisible 1
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgGround -isVisible 1
+setLayerPreference shield -isVisible 1
+setLayerPreference metalFill -isVisible 1
+setLayerPreference clock -isVisible 1
+setLayerPreference net -isSelectable 0
+setLayerPreference power -isSelectable 0
+setLayerPreference pgPower -isSelectable 0
+setLayerPreference pgGround -isSelectable 0
+setLayerPreference shield -isSelectable 0
+setLayerPreference metalFill -isSelectable 0
+setLayerPreference clock -isSelectable 0
+setLayerPreference net -isSelectable 1
+setLayerPreference power -isSelectable 1
+setLayerPreference pgPower -isSelectable 1
+setLayerPreference pgGround -isSelectable 1
+setLayerPreference shield -isSelectable 1
+setLayerPreference metalFill -isSelectable 1
+setLayerPreference clock -isSelectable 1
+setLayerPreference hinst -isVisible 0
+setLayerPreference guide -isVisible 0
+setLayerPreference fence -isVisible 0
+setLayerPreference region -isVisible 0
+setLayerPreference partition -isVisible 0
+setLayerPreference hinst -isVisible 1
+setLayerPreference guide -isVisible 1
+setLayerPreference fence -isVisible 1
+setLayerPreference region -isVisible 1
+setLayerPreference partition -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+displayClockTree -skew -allLevel -clkRouteOnly
+displayClockTree -skew -allLevel -clkRouteOnly
+deselectAll
+fit
+displayClockTree -skew -allLevel -clkRouteOnly
+displayClockTree -skew -allLevel -clkRouteOnly
+fit
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage -1 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+deselectAll
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 1
+addFiller -prefix corefiller128_ -cell FILL128 -util 0.35
+addFiller -prefix nwsx -cell NWSX -util 0.5
+setFillerMode -core {{FILL64 FILL32 FILL16} {FILL4 FILL2 FILL1}} -corePrefix corefiller -doDRC true
+addFiller
+verifyGeometry
+addFiller -fixDRC
+selectInst {contador1/contador_reg[3]}
+fit
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+group
+group
+fit
+group
+group
+fit
+group
+ungroup
+deselectAll
+group
+group
+fit
+group
+group
+group
+group
+ungroup
+group
+fit
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference areaIo -isVisible 0
+setLayerPreference areaIo -isVisible 1
+setLayerPreference io -isVisible 0
+setLayerPreference io -isVisible 1
+setLayerPreference phyCell -isVisible 0
+setLayerPreference phyCell -isVisible 1
+setLayerPreference phyCell -isVisible 0
+setLayerPreference phyCell -isVisible 1
+setLayerPreference coverCell -isVisible 0
+setLayerPreference coverCell -isVisible 1
+setLayerPreference stdCell -isVisible 0
+setLayerPreference stdCell -isVisible 1
+setLayerPreference stdCell -isVisible 0
+setLayerPreference stdCell -isVisible 1
+setLayerPreference block -isVisible 0
+setLayerPreference block -isVisible 1
+setLayerPreference inst -isVisible 0
+setLayerPreference inst -isVisible 1
+setLayerPreference inst -isVisible 0
+setLayerPreference inst -isVisible 1
+fit
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM7 -isVisible 0
+fit
+setLayerPreference pinObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+fit
+setExtractRCMode -engine postRoute -effortLevel high
+extractRC
+rcOut -rc_corner nom_T25c -spf ./layout/done/chip_rfwild_routed_nom.spf
+rcOut -rc_corner bc_Tm40c_cmin -spf ./layout/done/chip_rfwild_routed_bc.spf
+rcOut -rc_corner wc_T125c_cmax -spf ./layout/done/chip_rfwild_routed_wc.spf
+fit
+redraw
+redraw
+fit
+saveNetlist ./layout/done/chip_rfwild.routed.v
+saveNetlist -phys -excludeLeafCell -flattenBus ./layout/done/chip_rfwild.phys_inst.v
+write_sdf -recompute_parallel_arcs -min_view v_test_fast_m40c -typ_view v_test_nom_25c -max_view v_test_slow_125c \
+  -process best:typical:worst \
+  -voltage 1.32:1.25:1.08 -temperature -40.0:25.0:125.0  \
+  -timescale 1ps \
+  ./layout/done/chip_rfwild.routed.sdf
+redraw
+redraw
+setLayerPreference pwrdm -isVisible 0
+setLayerPreference netRect -isVisible 0
+setLayerPreference substrateNoise -isVisible 0
+setLayerPreference powerNet -isVisible 0
+setLayerPreference pwrdm -isVisible 1
+setLayerPreference netRect -isVisible 1
+setLayerPreference substrateNoise -isVisible 1
+setLayerPreference powerNet -isVisible 1
+fit
+streamOut ./layout/done/chip_rfwild.gds -mapFile /opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_Tech_LEF/bicmos8hp_techlef_20160204/techlef/v.20160204/lef/bicmos8hp_soce2gds.map -merge {/opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_Digital_Kit/ibm_cmos8hp_sc_1p2v_12t_rvt_20130404/sc_1p2v_12t_rvt/v.20130404/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds  /opt/cadence/IBM_PDK/bicmos8hp/BiCMOS8HP_WBIO_Base/ibm_cmos8hp_short_io_base_wb_io_20160727/short_io/base_wb_io/v.20160727/gds2/CMOS8HP_BASE_WB_IO_7LM.gds} -reportFile ./layout/done/GDS2rpt
+verifyGeometry -report ./layout/rpt/v_geometry_drc
+verifyConnectivity -report ./layout/rpt/v_connectivity
+verify_PG_short -report ./layout/rpt/v_PG_short
+verifyProcessAntenna -report ./layout/rpt/v_antenna
+summaryReport -outdir ./layout/rpt/v_summary
+selectMarker 0.1200 0.1200 706.8800 706.8800 -1 3 7
+fit
+fit
+fit
+fit
+fit
+fit
+deselectAll
+selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+setLayerPreference inst -isVisible 0
+setLayerPreference block -isVisible 0
+setLayerPreference stdCell -isVisible 0
+setLayerPreference coverCell -isVisible 0
+setLayerPreference phyCell -isVisible 0
+setLayerPreference io -isVisible 0
+setLayerPreference areaIo -isVisible 0
+setLayerPreference blackBox -isVisible 0
+deselectAll
+selectMarker 0.1200 0.1200 706.8800 706.8800 -1 3 7
+deselectAll
+selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+deselectAll
+selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+deselectAll
+selectMarker 319.5000 605.9900 387.5000 706.9900 7 3 21
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+zoomBox 269.0 555.49 438.0 757.49
+zoomBox 269.0 555.49 438.0 757.49
+zoomBox -353.26 -353.26 1060.26 1060.26
+zoomBox -353.26 -353.26 1060.26 1060.26
+zoomBox -353.26 -353.26 1060.26 1060.26
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 269.0 555.49 438.0 757.49
+zoomBox -353.26 -353.26 1060.26 1060.26
+violationBrowserHide -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+zoomBox -353.26 -353.26 1060.26 1060.26
+violationBrowserShow -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+zoomBox -353.26 -353.26 1060.26 1060.26
+violationBrowserHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}} -color #fa1340
+violationBrowserHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}} -color #fa1340
+violationBrowserUnHilite -tool Verify -type Connectivity -subtype Open -violation {    VDD150    (0.120, 0.120) (706.880, 706.880)  {0x7fbe8295f0a0}}
+zoomBox -353.26 -353.26 1060.26 1060.26
+zoomBox -353.26 -353.26 1060.26 1060.26
+fit
+fit
+deselectAll
+setLayerPreference inst -isVisible 1
+setLayerPreference block -isVisible 1
+setLayerPreference stdCell -isVisible 1
+setLayerPreference coverCell -isVisible 1
+setLayerPreference phyCell -isVisible 1
+setLayerPreference io -isVisible 1
+setLayerPreference areaIo -isVisible 1
+setLayerPreference blackBox -isVisible 1
+fit
+fit
+fit
+fit
+streamOut ./layout/done/chip_rfwild.gds -mapFile /opt/techlib/ibm013/bicmos8hp/lef/bicmos8hp_soce2gds.map -merge {/opt/techlib/ibm013/bicmos8hp/gds2/IBM_BICMOS8HP_SC_1P2V_12T_RVT_091712.gds  /opt/techlib/ibm013/bicmos8hp/gds2/CMOS8HP_BASE_WB_IO_7LM.gds} -reportFile ./layout/done/GDS2rpt
+fit
+fit
+redraw
+fit

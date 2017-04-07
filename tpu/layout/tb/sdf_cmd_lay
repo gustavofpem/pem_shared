@@ -1,0 +1,7 @@
+COMPILED_SDF_FILE = "./layout/done/chip_rfwild.routed.sdf.X",
+LOG_FILE = "./tb/log/sdf_log_layout",
+SCOPE = contador_tb:DUV;
+MTM_CONTROL = "MAXIMUM",
+SCALE_FACTORS = "1.0:1.0:1.0",
+SCALE_TYPE = "FROM_MAXIMUM";
+

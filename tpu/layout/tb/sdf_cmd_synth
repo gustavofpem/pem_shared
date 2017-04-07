@@ -1,0 +1,7 @@
+COMPILED_SDF_FILE = "./synth/contador_rfwild.synth.sdf.X",
+LOG_FILE = "./tb/log/sdf_log_synth",
+SCOPE = contador_tb:DUV;
+MTM_CONTROL = "MAXIMUM",
+SCALE_FACTORS = "1.0:1.0:1.0",
+SCALE_TYPE = "FROM_MAXIMUM";
+
